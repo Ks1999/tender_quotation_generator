@@ -64,6 +64,8 @@
   .btn-action { background: var(--surface); color: var(--text-secondary); border: 1px solid var(--border-strong); border-radius: 7px; font-weight: 600; font-size: 12.5px; padding: 7px 13px; cursor: pointer; }
   .btn-action:hover { background: var(--surface-2); }
   .btn-action-accent { background: var(--accent); color: white; border: none; border-radius: 7px; font-weight: 700; font-size: 12.5px; padding: 7px 13px; cursor: pointer; }
+  .btn-action-danger { background: var(--danger-soft); color: var(--danger); border: 1px solid var(--danger-border); border-radius: 7px; font-weight: 700; font-size: 12.5px; padding: 7px 13px; cursor: pointer; }
+  .btn-action-danger:hover { background: var(--danger); color: white; border-color: var(--danger); }
   .btn-sort { background: transparent; border: none; color: var(--text-tertiary); font-size: 12.5px; font-weight: 600; padding: 6px 10px; border-radius: 6px; cursor: pointer; }
   .btn-sort:hover { background: var(--surface-2); }
   .btn-sort-active { background: var(--accent-soft); color: var(--accent); }
@@ -392,6 +394,19 @@ function sampleItems() {
 }
 
 /* =========================================================================
+   LOCAL STORAGE (contributor name only — remembered per browser/device, not
+   synced anywhere. Wrapped in try/catch since some contexts (private
+   browsing, certain embedded viewers) can throw on access.
+   ========================================================================= */
+var CONTRIBUTOR_NAME_KEY = 'quotationStudio.contributorName';
+function loadStoredContributorName() {
+  try { return localStorage.getItem(CONTRIBUTOR_NAME_KEY) || ''; } catch (e) { return ''; }
+}
+function saveStoredContributorName(name) {
+  try { localStorage.setItem(CONTRIBUTOR_NAME_KEY, name); } catch (e) { /* ignore — not fatal */ }
+}
+
+/* =========================================================================
    STATE
    ========================================================================= */
 var state = {
@@ -403,13 +418,17 @@ var state = {
   customerSearch: '',
   customerPage: 1,
   customerPageSize: 8,
-  reviewSortMode: 'rowid',
+  reviewSortMode: 'status',
   reviewSortOrder: [],
   reviewPage: 1,
   reviewPageSize: 25,
   comment: '',
-  contributorName: '',
-  userMenuOpen: false,
+  contributorName: loadStoredContributorName(),
+  // Auto-open the "what should we call you" modal only when there is no name on
+  // record for this browser yet — first-ever visit, or the record was cleared
+  // (cookies/storage wiped, private browsing, etc). Once a name is saved it will
+  // not pop up on its own again; it can still be reopened from the header.
+  userMenuOpen: !loadStoredContributorName().trim(),
   toast: ''
 };
 
@@ -449,8 +468,12 @@ function recomputeSortOrder() {
   } else if (mode === 'model') {
     items.sort(function (a, b) { return String(a.matchedSku || '').localeCompare(String(b.matchedSku || '')); });
   } else if (mode === 'status') {
+    // Needs-review-first: nomatch and review need attention, so they sort ahead of
+    // not_carried and matched. Note: rank values include 0, so a `|| fallback` would
+    // wrongly treat nomatch's rank of 0 as falsy — use an explicit `in` check instead.
     var rank = { nomatch: 0, review: 1, not_carried: 2, matched: 3 };
-    items.sort(function (a, b) { return (rank[a.status] || 9) - (rank[b.status] || 9); });
+    var rankOf = function (status) { return (status in rank) ? rank[status] : 9; };
+    items.sort(function (a, b) { return rankOf(a.status) - rankOf(b.status); });
   } else {
     items.sort(function (a, b) { return a.rowId - b.rowId; });
   }
@@ -496,10 +519,11 @@ function renderStepRail() {
 }
 
 function renderShell(innerHtml) {
-  var initials = (state.contributorName || '').trim()
+  var hasName = !!(state.contributorName || '').trim();
+  var initials = hasName
     ? state.contributorName.trim().split(/\s+/).map(function (w) { return w[0]; }).slice(0, 2).join('').toUpperCase()
-    : 'KS';
-  var displayName = (state.contributorName || '').trim() || 'Kian Seen';
+    : '?';
+  var displayName = hasName ? state.contributorName.trim() : 'Set your name';
 
   var toastHtml = '';
   if (state.toast) {
@@ -512,18 +536,27 @@ function renderShell(innerHtml) {
 
   var userMenuHtml = '';
   if (state.userMenuOpen) {
+    // Same modal is used for the automatic first-visit welcome and for a manual
+    // reopen from the header — copy just adapts depending on whether a name is
+    // already on record.
+    var modalTitle = hasName ? 'Update your name' : 'Welcome — what should we call you?';
+    var modalDesc = hasName
+      ? 'This name is saved on this device and stamped on any corrections you make.'
+      : 'This name is saved on this device and stamped on any corrections you make, so the team can tell whose changes are whose.';
     userMenuHtml =
-      '<div style="position:absolute; top:44px; right:0; width:270px; background:var(--surface); border:1px solid var(--border); border-radius:12px; box-shadow:0 10px 30px rgba(20,20,40,0.16); padding:16px; z-index:50; text-align:left;">' +
-        '<p style="margin:0 0 6px 0; font-size:12px; font-weight:700; color:var(--text-tertiary); text-transform:uppercase; letter-spacing:0.03em;">Your name</p>' +
-        '<p style="margin:0 0 10px 0; font-size:12px; color:var(--text-secondary); line-height:1.4;">Stamped on any corrections you export, so the admin knows whose changes are whose.</p>' +
-        '<input type="text" id="userMenuNameInput" value="' + escapeHtml(state.contributorName) + '" placeholder="e.g. Kian Seen" style="width:100%; padding:10px 12px; font-size:13.5px; border:1px solid var(--border-strong); border-radius:8px; outline:none; margin-bottom:12px; box-sizing:border-box;">' +
-        '<button class="btn-primary" style="width:100%;" data-action="close-user-menu">Done</button>' +
+      '<div data-action="close-user-menu" style="position:fixed; inset:0; background:rgba(15,23,42,0.45); z-index:60;"></div>' +
+      '<div style="position:fixed; top:50%; left:50%; transform:translate(-50%,-50%); background:var(--surface); border-radius:16px; box-shadow:0 24px 60px rgba(15,23,42,0.28); padding:28px 30px; width:460px; max-width:90vw; z-index:61; text-align:left;">' +
+        '<h2 style="margin:0 0 10px 0; font-size:19px; font-weight:700; color:var(--text);">' + escapeHtml(modalTitle) + '</h2>' +
+        '<p style="margin:0 0 18px 0; font-size:13.5px; color:var(--text-secondary); line-height:1.5;">' + escapeHtml(modalDesc) + '</p>' +
+        '<input type="text" id="userMenuNameInput" value="' + escapeHtml(state.contributorName) + '" placeholder="e.g. Kian Seen" style="width:100%; padding:11px 13px; font-size:14px; border:1px solid var(--border-strong); border-radius:9px; outline:none; margin-bottom:18px; box-sizing:border-box;">' +
+        '<div style="display:flex; justify-content:flex-end;">' +
+          '<button class="btn-primary" data-action="close-user-menu" style="padding:9px 22px;">Continue</button>' +
+        '</div>' +
       '</div>';
   }
 
   return (
     '<div style="min-height:100vh; background:var(--bg); display:flex; flex-direction:column;">' +
-      (state.userMenuOpen ? '<div data-action="close-user-menu" style="position:fixed; inset:0; z-index:40;"></div>' : '') +
       '<div style="height:72px; flex-shrink:0; display:flex; align-items:center; justify-content:space-between; padding:0 40px; background:var(--surface); border-bottom:1px solid var(--border);">' +
         '<div style="display:flex; align-items:center; gap:12px; width:260px;">' +
           '<div style="width:32px; height:32px; border-radius:8px; background:var(--accent); display:flex; align-items:center; justify-content:center; color:white; font-weight:700; font-size:14px;">G</div>' +
@@ -538,12 +571,12 @@ function renderShell(innerHtml) {
             '<span style="font-size:13px; color:var(--text-secondary);">' + escapeHtml(displayName) + '</span>' +
             '<div style="width:30px; height:30px; border-radius:999px; background:var(--accent-soft); color:var(--accent); display:flex; align-items:center; justify-content:center; font-size:12px; font-weight:700; flex-shrink:0;">' + escapeHtml(initials) + '</div>' +
           '</button>' +
-          userMenuHtml +
         '</div>' +
       '</div>' +
       '<div style="flex:1; display:flex; justify-content:center; padding:48px 40px;">' +
         '<div style="width:1000px;">' + innerHtml + '</div>' +
       '</div>' +
+      userMenuHtml +
     '</div>' +
     toastHtml
   );
@@ -754,7 +787,7 @@ function renderReviewItemRow(it) {
         '<input type="text" class="item-search-input" data-id="' + it.id + '" value="' + escapeHtml(it.query) + '" placeholder="Search the product catalog&hellip;" style="width:100%; padding:10px 14px; font-size:13.5px; border:1px solid var(--border-strong); border-radius:8px; outline:none; margin-bottom:10px;">' +
         resultsHtml +
         '<div style="display:flex; justify-content:flex-end; gap:8px; margin-top:8px;">' +
-          '<button class="btn-action" style="flex-shrink:0;" data-action="mark-not-carried" data-id="' + it.id + '">Mark as not carried</button>' +
+          '<button class="btn-action-danger" style="flex-shrink:0;" data-action="mark-not-carried" data-id="' + it.id + '">Mark as not carried</button>' +
           '<button class="btn-action" data-action="cancel-open" data-id="' + it.id + '">Cancel</button>' +
         '</div>' +
       '</div>';
@@ -817,7 +850,16 @@ function renderStep3() {
     : '<div style="background:var(--success-soft); border:1px solid var(--success-border); border-radius:12px; padding:14px 18px; margin-bottom:20px; font-size:13.5px; color:var(--text); font-weight:600;">All items matched. Ready to continue.</div>';
 
   function sortBtn(mode, label) {
-    return '<button class="btn-sort ' + (state.reviewSortMode === mode ? 'btn-sort-active' : '') + '" data-action="set-sort" data-mode="' + mode + '">' + label + '</button>';
+    var isActive = state.reviewSortMode === mode;
+    var cls = 'btn-sort' + (isActive ? ' btn-sort-active' : '');
+    // The "needs review" sort doubles as a status indicator: while any items still
+    // need review it's highlighted yellow (whether or not it's the active sort),
+    // as a nudge to switch to it; once nothing needs review it drops back to the
+    // normal active/inactive button styling.
+    var extraStyle = (mode === 'status' && attention > 0)
+      ? ' style="background:var(--warning-soft); color:var(--warning); border:1px solid var(--warning-border); font-weight:700;"'
+      : '';
+    return '<button class="' + cls + '"' + extraStyle + ' data-action="set-sort" data-mode="' + mode + '">' + label + '</button>';
   }
 
   return (
@@ -831,7 +873,7 @@ function renderStep3() {
     '<div style="margin:18px 0;">' + bannerHtml + '</div>' +
 
     '<div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:10px;">' +
-      '<div style="display:flex; align-items:center; gap:4px;">' + sortBtn('rowid', 'Spec order (default)') + sortBtn('name', 'Product name') + sortBtn('model', 'Model') + sortBtn('status', 'Match status') + '</div>' +
+      '<div style="display:flex; align-items:center; gap:4px;">' + sortBtn('status', 'Needs review first (default)') + sortBtn('rowid', 'Spec order') + sortBtn('name', 'Product name') + sortBtn('model', 'Model') + '</div>' +
       '<span style="font-size:12px; color:var(--text-tertiary);">' + matchedCount + ' matched &middot; ' + reviewCount + ' review &middot; ' + nomatchCount + ' no match' + (notCarriedCount ? (' &middot; ' + notCarriedCount + ' not carried') : '') + '</span>' +
     '</div>' +
 
@@ -903,7 +945,6 @@ function computeLineItems() {
 
 function renderStep5() {
   var lineItems = computeLineItems();
-  var total = lineItems.reduce(function (sum, li) { return sum + li.qty * li.price; }, 0);
   var excludedCount = state.items.length - lineItems.length;
   var corrected = getCorrectedItems();
   var canGenerate = !!state.customer && lineItems.length > 0;
@@ -914,8 +955,6 @@ function renderStep5() {
         '<td>' + escapeHtml(li.model) + '</td>' +
         '<td>' + escapeHtml(li.name) + '</td>' +
         '<td style="text-align:right;">' + li.qty + '</td>' +
-        '<td style="text-align:right;">' + money(li.price) + '</td>' +
-        '<td style="text-align:right; font-weight:600;">' + money(li.qty * li.price) + '</td>' +
       '</tr>'
     );
   }).join('');
@@ -960,11 +999,10 @@ function renderStep5() {
 
     '<h2 style="font-size:13px; font-weight:700; color:var(--text-tertiary); text-transform:uppercase; letter-spacing:0.03em; margin:0 0 10px 0;">Line items (' + lineItems.length + ')</h2>' +
     '<div style="background:var(--surface); border:1px solid var(--border); border-radius:14px; overflow:hidden; margin-bottom:6px;">' +
-      '<table><thead><tr style="background:var(--surface-2);"><th style="padding-top:14px;">Model</th><th style="padding-top:14px;">Product Name</th><th style="padding-top:14px; text-align:right;">Qty</th><th style="padding-top:14px; text-align:right;">Unit Price</th><th style="padding-top:14px; text-align:right;">Subtotal</th></tr></thead>' +
+      '<table><thead><tr style="background:var(--surface-2);"><th style="padding-top:14px;">Model</th><th style="padding-top:14px;">Product Name</th><th style="padding-top:14px; text-align:right;">Qty</th></tr></thead>' +
       '<tbody>' + lineItemsHtml + '</tbody></table>' +
     '</div>' +
     excludedNote + nameHintNote +
-    '<div style="display:flex; justify-content:flex-end; margin-top:14px;"><span style="font-size:15px; font-weight:700;">Estimated total: ' + money(total) + '</span></div>' +
 
     '<div style="display:flex; justify-content:space-between; align-items:center; margin-top:36px; padding-top:28px; border-top:1px solid var(--border);">' +
       '<button class="btn-prev" data-action="prev-step"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>Previous</button>' +
@@ -1156,7 +1194,7 @@ function resetAll() {
   state.customer = null;
   state.customerSearch = '';
   state.customerPage = 1;
-  state.reviewSortMode = 'rowid';
+  state.reviewSortMode = 'status';
   state.reviewSortOrder = [];
   state.reviewPage = 1;
   state.comment = '';
@@ -1282,6 +1320,7 @@ root.addEventListener('input', function (e) {
     render();
   } else if (t.id === 'userMenuNameInput') {
     state.contributorName = t.value;
+    saveStoredContributorName(t.value);
     render();
   } else if (t.classList.contains('item-search-input')) {
     var it = itemById(t.getAttribute('data-id'));
