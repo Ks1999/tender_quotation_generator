@@ -423,6 +423,7 @@ var state = {
   reviewPage: 1,
   reviewPageSize: 25,
   comment: '',
+  fileDragActive: false,
   contributorName: loadStoredContributorName(),
   // Auto-open the "what should we call you" modal only when there is no name on
   // record for this browser yet — first-ever visit, or the record was cleared
@@ -616,12 +617,16 @@ function renderStep1() {
 
         '<input type="file" accept=".json,application/json" id="extractedItemsInput" style="display:none;">' +
 
-        '<div id="dropzone" style="border:2px dashed var(--border-strong); border-radius:16px; background:var(--surface); padding:56px 40px; display:flex; flex-direction:column; align-items:center; text-align:center; gap:16px; cursor:pointer;" data-action="trigger-file-input">' +
-          '<div style="width:56px; height:56px; border-radius:14px; background:var(--accent-soft); display:flex; align-items:center; justify-content:center; color:var(--accent);">' +
+        // pointer-events:none on every child keeps drag events landing squarely on
+        // #dropzone itself (never on the icon/text/button inside it) — otherwise
+        // dragenter/dragleave fire on those children as the cursor crosses them,
+        // which flickers the highlight on and off while dragging over the box.
+        '<div id="dropzone" style="border:2px dashed ' + (state.fileDragActive ? 'var(--accent)' : 'var(--border-strong)') + '; border-radius:16px; background:' + (state.fileDragActive ? 'var(--accent-soft)' : 'var(--surface)') + '; padding:56px 40px; display:flex; flex-direction:column; align-items:center; text-align:center; gap:16px; cursor:pointer; transition:border-color 0.15s ease, background 0.15s ease;" data-action="trigger-file-input">' +
+          '<div style="pointer-events:none; width:56px; height:56px; border-radius:14px; background:var(--accent-soft); display:flex; align-items:center; justify-content:center; color:var(--accent);">' +
             '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a4.6 4.4 0 0 1-1.242-8.99 4.5 4.5 0 0 1 8.965-1.686A4.6 4.6 0 0 1 17.5 18"/><path d="M12 12v9"/><path d="m9.5 14.5 2.5-2.5 2.5 2.5"/></svg>' +
           '</div>' +
-          '<div>' +
-            '<p style="font-size:15px; font-weight:700; margin:0 0 4px 0;">Click to import extracted_items.json</p>' +
+          '<div style="pointer-events:none;">' +
+            '<p style="font-size:15px; font-weight:700; margin:0 0 4px 0;">' + (state.fileDragActive ? 'Drop to import' : 'Click or drag &amp; drop extracted_items.json here') + '</p>' +
             '<p style="font-size:13px; color:var(--text-tertiary); margin:0;">JSON only &mdash; produced by the goh-sku-extractor skill</p>' +
           '</div>' +
           '<button class="btn-primary" style="pointer-events:none;">Browse files</button>' +
@@ -1205,6 +1210,7 @@ function resetAll() {
   state.reviewPage = 1;
   state.comment = '';
   state.toast = '';
+  state.fileDragActive = false;
   state.contributorName = keepName;
 }
 
@@ -1338,6 +1344,42 @@ root.addEventListener('change', function (e) {
   if (e.target.id === 'extractedItemsInput') {
     var file = e.target.files && e.target.files[0];
     if (file) handleImportFile(file);
+  }
+});
+
+/* =========================================================================
+   DRAG & DROP — extracted_items.json onto the Step 1 dropzone
+   ========================================================================= */
+// Without this, dragging a file anywhere over the page and missing the
+// dropzone makes the browser navigate to / render the raw file, replacing
+// the whole app. Always prevent default at the document level regardless
+// of drop target; the dropzone-specific handling below runs first during
+// the bubble phase and does the actual import.
+document.addEventListener('dragover', function (e) { e.preventDefault(); });
+document.addEventListener('drop', function (e) { e.preventDefault(); });
+
+root.addEventListener('dragenter', function (e) {
+  if (e.target && e.target.id === 'dropzone' && !state.fileDragActive) {
+    state.fileDragActive = true;
+    render();
+  }
+});
+root.addEventListener('dragleave', function (e) {
+  if (e.target && e.target.id === 'dropzone' && state.fileDragActive) {
+    state.fileDragActive = false;
+    render();
+  }
+});
+root.addEventListener('drop', function (e) {
+  if (!(e.target && e.target.id === 'dropzone')) return;
+  e.preventDefault();
+  state.fileDragActive = false;
+  var file = e.dataTransfer && e.dataTransfer.files && e.dataTransfer.files[0];
+  if (file) {
+    handleImportFile(file);
+  } else {
+    state.importError = 'Could not read the dropped file — try Browse files instead.';
+    render();
   }
 });
 
