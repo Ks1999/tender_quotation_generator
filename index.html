@@ -1036,7 +1036,13 @@ function currentStepHtml() {
 function render() {
   var active = document.activeElement;
   var focusInfo = null;
-  if (active && active.id && (active.tagName === 'INPUT' || active.tagName === 'TEXTAREA')) {
+  // Preserve focus across the full re-render below. Most inputs are identified
+  // by a stable id (customerSearchInput, commentBox, ...), but per-row inputs
+  // like the review-page product search (.item-search-input) only have a
+  // class + data-id — requiring `active.id` here used to skip capture for
+  // those entirely, which is why that search box lost focus on every
+  // keystroke. Capture on id OR class so both kinds of input survive.
+  if (active && (active.tagName === 'INPUT' || active.tagName === 'TEXTAREA') && (active.id || active.className)) {
     focusInfo = { id: active.id, selStart: active.selectionStart, selEnd: active.selectionEnd, cls: active.className, dataId: active.getAttribute('data-id') };
   }
 
