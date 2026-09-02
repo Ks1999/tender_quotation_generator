@@ -420,8 +420,13 @@ var state = {
   customerPageSize: 8,
   reviewSortMode: 'status',
   reviewSortOrder: [],
+  reviewSearch: '',
   reviewPage: 1,
   reviewPageSize: 25,
+  // One-shot: set to an item id right after that item's search panel opens, so
+  // render() can focus its newly-created .item-search-input without the user
+  // having to click it first. Cleared by render() the very next time it runs.
+  pendingFocusId: null,
   comment: '',
   fileDragActive: false,
   contributorName: loadStoredContributorName(),
@@ -490,6 +495,23 @@ function getCorrectedItems() {
   return state.items.filter(function (it) {
     return it.status !== it.originalStatus || it.matchedSku !== it.originalMatchedSku;
   });
+}
+
+// Review Matches search: looks at the item's own description (the product name
+// as it came from the spec) plus, once matched, the catalog product's name and
+// its SKU/model — so searching either "stapler" or a model number like
+// "B07TEST1" finds the right row.
+function reviewItemMatchesQuery(it, query) {
+  var q = String(query || '').trim().toLowerCase();
+  if (!q) return true;
+  var matched = productByModel(it.matchedSku);
+  var haystack = (
+    (it.description || '') + ' ' +
+    (it.matchedSku || '') + ' ' +
+    (matched ? matched.name : '') + ' ' +
+    (matched ? matched.model : '')
+  ).toLowerCase();
+  return haystack.indexOf(q) !== -1;
 }
 
 /* =========================================================================
@@ -837,12 +859,19 @@ function renderStep3() {
   state.items.forEach(function (it) { itemsById[it.id] = it; });
   var ordered = state.reviewSortOrder.map(function (id) { return itemsById[id]; }).filter(Boolean);
 
-  var totalCount = state.items.length;
+  // Find-in-list search: filters the (already sorted) review list by the spec's
+  // product name/description or, once matched, the catalog product name/SKU.
+  // This is separate from the per-item "search the product catalog" box inside
+  // an open row — this one narrows which rows show up at all.
+  var searchQuery = (state.reviewSearch || '').trim();
+  var searched = searchQuery ? ordered.filter(function (it) { return reviewItemMatchesQuery(it, searchQuery); }) : ordered;
+
+  var totalCount = searched.length;
   var pageSize = state.reviewPageSize;
   var totalPages = Math.max(1, Math.ceil(totalCount / pageSize));
   var currentPage = Math.max(1, Math.min(state.reviewPage, totalPages));
   var startIdx = (currentPage - 1) * pageSize;
-  var pageItems = ordered.slice(startIdx, startIdx + pageSize);
+  var pageItems = searched.slice(startIdx, startIdx + pageSize);
 
   var matchedCount = state.items.filter(function (i) { return i.status === 'matched'; }).length;
   var reviewCount = state.items.filter(function (i) { return i.status === 'review'; }).length;
@@ -877,15 +906,25 @@ function renderStep3() {
 
     '<div style="margin:18px 0;">' + bannerHtml + '</div>' +
 
+    '<div style="position:relative; margin-bottom:14px;">' +
+      '<div style="position:absolute; left:14px; top:50%; transform:translateY(-50%); color:var(--text-tertiary); pointer-events:none;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></div>' +
+      '<input type="text" id="reviewSearchInput" value="' + escapeHtml(state.reviewSearch) + '" placeholder="Find an item by product name or SKU&hellip;" style="width:100%; padding:11px 36px 11px 40px; font-size:13.5px; border:1px solid var(--border-strong); border-radius:10px; background:var(--surface); color:var(--text); outline:none; box-sizing:border-box;">' +
+      (searchQuery
+        ? '<button data-action="clear-review-search" title="Clear search" style="position:absolute; right:10px; top:50%; transform:translateY(-50%); background:none; border:none; cursor:pointer; color:var(--text-tertiary); padding:4px; display:flex;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></button>'
+        : '') +
+    '</div>' +
+
     '<div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:10px;">' +
       '<div style="display:flex; align-items:center; gap:4px;">' + sortBtn('status', 'Needs review first (default)') + sortBtn('rowid', 'Spec order') + sortBtn('name', 'Product name') + sortBtn('model', 'Model') + '</div>' +
       '<span style="font-size:12px; color:var(--text-tertiary);">' + matchedCount + ' matched &middot; ' + reviewCount + ' review &middot; ' + nomatchCount + ' no match' + (notCarriedCount ? (' &middot; ' + notCarriedCount + ' not carried') : '') + '</span>' +
     '</div>' +
 
-    pageItems.map(renderReviewItemRow).join('') +
+    (pageItems.length
+      ? pageItems.map(renderReviewItemRow).join('')
+      : '<div style="text-align:center; padding:48px 0; color:var(--text-tertiary); font-size:13.5px;">No items match &ldquo;' + escapeHtml(searchQuery) + '&rdquo;. <button data-action="clear-review-search" style="background:none; border:none; color:var(--accent); font-weight:600; cursor:pointer; padding:0; font-size:13.5px; text-decoration:underline;">Clear search</button></div>') +
 
     '<div style="display:flex; align-items:center; justify-content:space-between; margin-top:8px;">' +
-      '<span style="font-size:12.5px; color:var(--text-tertiary);">Showing ' + (startIdx + 1) + '–' + Math.min(startIdx + pageSize, totalCount) + ' of ' + totalCount + '</span>' +
+      '<span style="font-size:12.5px; color:var(--text-tertiary);">' + (totalCount === 0 ? 'No matching items' : ('Showing ' + (startIdx + 1) + '–' + Math.min(startIdx + pageSize, totalCount) + ' of ' + totalCount + (searchQuery ? (' (' + state.items.length + ' total)') : ''))) + '</span>' +
       '<div style="display:flex; align-items:center; gap:8px;">' +
         '<button class="btn-outline" data-action="review-prev-page" ' + (currentPage <= 1 ? 'disabled' : '') + '>Previous</button>' +
         '<span style="font-size:12.5px; color:var(--text-secondary); padding:0 6px;">Page ' + currentPage + ' of ' + totalPages + '</span>' +
@@ -1053,6 +1092,16 @@ function render() {
 
   root.innerHTML = renderShell(currentStepHtml());
 
+  // One-shot autofocus request: e.g. right after opening a review item's search
+  // panel, so the user can start typing immediately without clicking into it.
+  // Consumed (cleared) here every render regardless of whether the element was
+  // found, so it never lingers and fires on some unrelated later render.
+  if (state.pendingFocusId) {
+    var pendingEl = document.querySelector('.item-search-input[data-id="' + CSS.escape(state.pendingFocusId) + '"]');
+    if (pendingEl) { pendingEl.focus(); }
+    state.pendingFocusId = null;
+  }
+
   if (focusInfo) {
     var el = null;
     if (focusInfo.id) {
@@ -1207,7 +1256,9 @@ function resetAll() {
   state.customerPage = 1;
   state.reviewSortMode = 'status';
   state.reviewSortOrder = [];
+  state.reviewSearch = '';
   state.reviewPage = 1;
+  state.pendingFocusId = null;
   state.comment = '';
   state.toast = '';
   state.fileDragActive = false;
@@ -1280,13 +1331,28 @@ root.addEventListener('click', function (e) {
       break;
     case 'review-prev-page': state.reviewPage = Math.max(1, state.reviewPage - 1); break;
     case 'review-next-page': {
-      var totalReviewPages = Math.max(1, Math.ceil(state.items.length / state.reviewPageSize));
+      var reviewQuery = (state.reviewSearch || '').trim();
+      var filteredReviewCount = reviewQuery
+        ? state.items.filter(function (i) { return reviewItemMatchesQuery(i, reviewQuery); }).length
+        : state.items.length;
+      var totalReviewPages = Math.max(1, Math.ceil(filteredReviewCount / state.reviewPageSize));
       state.reviewPage = Math.min(totalReviewPages, state.reviewPage + 1);
       break;
     }
+    case 'clear-review-search':
+      state.reviewSearch = '';
+      state.reviewPage = 1;
+      break;
     case 'toggle-open': {
       var it = itemById(id);
-      if (it) { it.open = !it.open; if (it.open) it.query = ''; }
+      if (it) {
+        it.open = !it.open;
+        // Autofocus the search box that just appeared, so the user can start
+        // typing immediately instead of having to click into it first. render()
+        // consumes this one-shot flag right after using it.
+        if (it.open) { it.query = ''; state.pendingFocusId = it.id; }
+        else { state.pendingFocusId = null; }
+      }
       break;
     }
     case 'cancel-open': {
@@ -1326,6 +1392,10 @@ root.addEventListener('input', function (e) {
   if (t.id === 'customerSearchInput') {
     state.customerSearch = t.value;
     state.customerPage = 1;
+    render();
+  } else if (t.id === 'reviewSearchInput') {
+    state.reviewSearch = t.value;
+    state.reviewPage = 1;
     render();
   } else if (t.id === 'commentBox') {
     state.comment = t.value;
