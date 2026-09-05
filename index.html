@@ -353,6 +353,28 @@ function describeCustomerList(customers) {
   if (customers.length === 2) return customers[0].name + ' and ' + customers[1].name;
   return customers.length + ' customers';
 }
+// Turns a spec item's raw extracted description into a starting guess for the
+// product-catalog search box, so opening the search panel already shows
+// relevant candidates instead of the default top-6 list. Strips one narrow,
+// well-evidenced piece of noise: a "Jenama <Brand> atau Setara" clause (Malay
+// for "<Brand> brand or equivalent") that shows up consistently across real
+// GOH tender specs (see sku_matching_corrections.md) as a qualifier, never as
+// part of the actual product name — removing just the "Jenama"/"atau Setara"
+// connector words keeps the brand name itself (still a useful search term)
+// while dropping text that never helps match against the English-language
+// catalog. Deliberately narrow: it only fires on this exact Malay idiom, so
+// it can't accidentally eat a real product name it doesn't recognize.
+function guessSearchQuery(it) {
+  var raw = String((it && it.description) || '').trim();
+  if (!raw) return '';
+  var cleaned = raw
+    .replace(/\bJenama\s+[^()\n]*?\s+atau\s+Setara?\b/gi, '')
+    .replace(/\(\s*\)/g, ' ')
+    .replace(/\s{2,}/g, ' ')
+    .replace(/\s+([),.;:])/g, '$1')
+    .trim();
+  return cleaned || raw;
+}
 function searchProducts(q) {
   var query = (q || '').trim().toLowerCase();
   if (!query) return PRODUCTS.slice(0, 6);
@@ -1157,7 +1179,13 @@ function render() {
   // found, so it never lingers and fires on some unrelated later render.
   if (state.pendingFocusId) {
     var pendingEl = document.querySelector('.item-search-input[data-id="' + CSS.escape(state.pendingFocusId) + '"]');
-    if (pendingEl) { pendingEl.focus(); }
+    if (pendingEl) {
+      pendingEl.focus();
+      // Select any pre-filled guess text (see guessSearchQuery()) so typing
+      // immediately replaces it in one go, if the guess isn't close enough —
+      // no separate click-and-clear step needed first.
+      try { pendingEl.select(); } catch (e) { /* ignore */ }
+    }
     state.pendingFocusId = null;
   }
 
@@ -1429,10 +1457,14 @@ root.addEventListener('click', function (e) {
       var it = itemById(id);
       if (it) {
         it.open = !it.open;
-        // Autofocus the search box that just appeared, so the user can start
-        // typing immediately instead of having to click into it first. render()
-        // consumes this one-shot flag right after using it.
-        if (it.open) { it.query = ''; state.pendingFocusId = it.id; }
+        // Pre-fill the search box with a cleaned-up guess from the item's own
+        // extracted description, so relevant candidates show up immediately
+        // without the user having to type anything first — see
+        // guessSearchQuery(). Also autofocus the box (and select the pre-filled
+        // text) so the user can start typing right away to override the guess
+        // if it's not close enough, without an extra click-and-clear step.
+        // render() consumes the pendingFocusId flag once, right after using it.
+        if (it.open) { it.query = guessSearchQuery(it); state.pendingFocusId = it.id; }
         else { state.pendingFocusId = null; }
       }
       break;
