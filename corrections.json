@@ -6,7 +6,7 @@
     "sourceSpec": "05_Spesifikasi.pdf (sample)",
     "description": "Bateri AA (Jenama Energizer atau Setara)",
     "qty": 60,
-    "uom": "pieces ÃÂÃÂ· 4/pek",
+    "uom": "pieces ÃÂÃÂÃÂÃÂ· 4/pek",
     "autoMatchAttempt": "No match",
     "correctProductName": "Not carried",
     "correctSku": "N/A",
@@ -23,7 +23,7 @@
     "autoMatchAttempt": "No match",
     "correctProductName": "Not carried",
     "correctSku": "N/A",
-    "notes": "No eraser product found in the catalog Ã¢ÂÂ search to select one, or mark not carried."
+    "notes": "No eraser product found in the catalog ÃÂ¢ÃÂÃÂ search to select one, or mark not carried."
   },
   {
     "id": 3,
@@ -33,10 +33,10 @@
     "description": "Stapler Berat (Heavy Duty)",
     "qty": 5,
     "uom": "unit",
-    "autoMatchAttempt": "Flagged for review â candidate: B07 41 (MAX HD-12F Heavy Duty Stapler - 150 sheets Capacity (Item No: B07-41) A7R1B36)",
+    "autoMatchAttempt": "Flagged for review Ã¢ÂÂ candidate: B07 41 (MAX HD-12F Heavy Duty Stapler - 150 sheets Capacity (Item No: B07-41) A7R1B36)",
     "correctProductName": "MAX HD-12F Heavy Duty Stapler - 150 sheets Capacity (Item No: B07-41) A7R1B36",
     "correctSku": "B07 41",
-    "notes": "Several heavy-duty capacity variants exist in the catalog â confirm sheet capacity before finalizing."
+    "notes": "Several heavy-duty capacity variants exist in the catalog Ã¢ÂÂ confirm sheet capacity before finalizing."
   },
   {
     "id": 4,
@@ -45,10 +45,23 @@
     "sourceSpec": "05_Spesifikasi.pdf (sample)",
     "description": "Bateri AA (Jenama Energizer atau Setara)",
     "qty": 60,
-    "uom": "pieces · 4/pek",
+    "uom": "pieces Â· 4/pek",
     "autoMatchAttempt": "No match",
     "correctProductName": "Not carried",
     "correctSku": "N/A",
     "notes": "No AA battery product found in the catalog."
+  },
+  {
+    "id": 5,
+    "contributedBy": "asd",
+    "date": "2026-09-08",
+    "sourceSpec": "05_Spesifikasi.pdf (sample)",
+    "description": "Getah Pemadam Pensil (Jenama Faber-Castell atau Setara)",
+    "qty": 100,
+    "uom": "pieces",
+    "autoMatchAttempt": "No match",
+    "correctProductName": "Not carried",
+    "correctSku": "N/A",
+    "notes": "No eraser product found in the catalog — search to select one, or mark not carried."
   }
 ]
