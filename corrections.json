@@ -1,0 +1,15 @@
+[
+  {
+    "id": 1,
+    "contributedBy": "asd",
+    "date": "2026-09-08",
+    "sourceSpec": "05_Spesifikasi.pdf (sample)",
+    "description": "Bateri AA (Jenama Energizer atau Setara)",
+    "qty": 60,
+    "uom": "pieces · 4/pek",
+    "autoMatchAttempt": "No match",
+    "correctProductName": "Not carried",
+    "correctSku": "N/A",
+    "notes": "No AA battery product found in the catalog."
+  }
+]
