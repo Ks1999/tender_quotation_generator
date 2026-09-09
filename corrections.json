@@ -7928,5 +7928,18 @@
     "correctProductName": "OKI C610/711/711WT Transfer Belt 60K (Item No: OKI C610 TR BLT) - 44341903",
     "correctSku": "OKI C610 TR BLT",
     "notes": ""
+  },
+  {
+    "id": 1099,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi105.pdf",
+    "description": "Toner Cartridge Oki B412/ B432/B512/MB472/MB49 2DN (3K)",
+    "qty": "24510",
+    "uom": "unit",
+    "autoMatchAttempt": "OKI C432   7K — OKI 45807107 Black High Capacity Toner Cartridge 7k - B412/432/512/472/492",
+    "correctProductName": "OKI 45807107 Black High Capacity Toner Cartridge 7k - B412/432/512/472/492",
+    "correctSku": "OKI C432   7K",
+    "notes": ""
   }
 ]
