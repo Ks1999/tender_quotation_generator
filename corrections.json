@@ -6212,5 +6212,18 @@
     "correctProductName": "HP 222A Ylw LaserJet Toner Cartridge 1.2",
     "correctSku": "HP W2222A",
     "notes": ""
+  },
+  {
+    "id": 967,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Toner Cartridge for HP Laserjet Pro MFP 3303dn (Magenta)",
+    "qty": "12",
+    "uom": "unit",
+    "autoMatchAttempt": "HP W2223A — HP 222A Mgn LaserJet Toner Cartridge 1.2",
+    "correctProductName": "HP 222A Mgn LaserJet Toner Cartridge 1.2",
+    "correctSku": "HP W2223A",
+    "notes": ""
   }
 ]
