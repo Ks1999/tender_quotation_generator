@@ -4496,5 +4496,18 @@
     "correctProductName": "HP 215A Black Original LaserJet Toner Cartridge (New)",
     "correctSku": "HP W2310A",
     "notes": ""
+  },
+  {
+    "id": 835,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "HP 215A ( C ) / W 2311 A",
+    "qty": "5",
+    "uom": "unit",
+    "autoMatchAttempt": "HP W2311A — HP 215A Cyan Original LaserJet Toner Cartridge (New)",
+    "correctProductName": "HP 215A Cyan Original LaserJet Toner Cartridge (New)",
+    "correctSku": "HP W2311A",
+    "notes": ""
   }
 ]
