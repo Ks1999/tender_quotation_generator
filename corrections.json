@@ -7356,5 +7356,18 @@
     "correctProductName": "Canon Cartridge 303 Toner Cartridge",
     "correctSku": "C CATR 303",
     "notes": ""
+  },
+  {
+    "id": 1055,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_3.pdf",
+    "description": "GI-790 (BLACK)",
+    "qty": "30",
+    "uom": "unit",
+    "autoMatchAttempt": "C GI 790 BK — Canon GI-790 - Black (135ml) Ink Cartridge",
+    "correctProductName": "Canon GI-790 - Black (135ml) Ink Cartridge",
+    "correctSku": "C GI 790 BK",
+    "notes": "Confirmed correct by user."
   }
 ]
