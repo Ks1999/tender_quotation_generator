@@ -3729,5 +3729,18 @@
     "correctProductName": "CANON GI-71 CYAN INK BOTTLE (70ml)",
     "correctSku": "C GI 71 C",
     "notes": ""
+  },
+  {
+    "id": 776,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "CANON GI 71 BLACK",
+    "qty": "4",
+    "uom": "unit",
+    "autoMatchAttempt": "C GI 71 BK — CANON GI-71 BLACK INK BOTTLE (135ml)",
+    "correctProductName": "CANON GI-71 BLACK INK BOTTLE (135ml)",
+    "correctSku": "C GI 71 BK",
+    "notes": ""
   }
 ]
