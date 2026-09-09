@@ -5926,5 +5926,18 @@
     "correctProductName": "HP 126A Yellow LaserJet Toner Cartridge (CE312A)",
     "correctSku": "HP CE312A",
     "notes": ""
+  },
+  {
+    "id": 945,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Toner Cartridge for HP Laserjet Pro 100 Color MFP M175A Printer (Magenta)",
+    "qty": "4",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CE313A — HP 126A Magenta LaserJet Toner Cartridge (CE313A)",
+    "correctProductName": "HP 126A Magenta LaserJet Toner Cartridge (CE313A)",
+    "correctSku": "HP CE313A",
+    "notes": ""
   }
 ]
