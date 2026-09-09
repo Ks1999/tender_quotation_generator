@@ -3092,5 +3092,18 @@
     "correctProductName": "OKI C532,MC573 Yellow Toner #46490609 - 6K",
     "correctSku": "OKI C532 YE 6K",
     "notes": ""
+  },
+  {
+    "id": 727,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "OKI 46490610 MagentaToner Cartridge",
+    "qty": "214",
+    "uom": "unit",
+    "autoMatchAttempt": "OKI C532 MA 6K — OKI C532,MC573 Magenta Toner #46490610 - 6k",
+    "correctProductName": "OKI C532,MC573 Magenta Toner #46490610 - 6k",
+    "correctSku": "OKI C532 MA 6K",
+    "notes": ""
   }
 ]
