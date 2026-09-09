@@ -5497,5 +5497,18 @@
     "correctProductName": "HP Deskjet GT52 All-In-One Magenta Ink Bottles",
     "correctSku": "HP M0H55AA",
     "notes": ""
+  },
+  {
+    "id": 912,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_2.pdf",
+    "description": "HP GT52 Yellow",
+    "qty": "20",
+    "uom": "unit",
+    "autoMatchAttempt": "HP M0H56AA — HP Deskjet GT52 All-In-One Yellow Ink Bottles",
+    "correctProductName": "HP Deskjet GT52 All-In-One Yellow Ink Bottles",
+    "correctSku": "HP M0H56AA",
+    "notes": ""
   }
 ]
