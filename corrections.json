@@ -8123,5 +8123,18 @@
     "correctProductName": "Canon CLI-36 Color Ink Cartridge",
     "correctSku": "C CLI 36 [CL]",
     "notes": ""
+  },
+  {
+    "id": 1182,
+    "contributedBy": "(not provided)",
+    "date": "2026-09-09",
+    "sourceSpec": "BURHANI_KAJIAN_PASARAN-SUPPLIER_extracted_items.json",
+    "description": "LEXMARK CS 521, CS622 (Yellow) | PART NUMBER: 78C3XYO | MODEL: Yellow CRTG Extra Return | PAGE YIELD: 5,000",
+    "qty": 1,
+    "uom": "unit",
+    "autoMatchAttempt": "No match",
+    "correctProductName": "Not carried",
+    "correctSku": "N/A",
+    "notes": "Confirmed catalog gap: GOH does not carry Lexmark."
   }
 ]
