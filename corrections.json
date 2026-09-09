@@ -2624,5 +2624,18 @@
     "correctProductName": "HP 128A Yellow LaserJet Toner Cartridge (CE322A)",
     "correctSku": "HP CE322A",
     "notes": ""
+  },
+  {
+    "id": 691,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "HP CE323A (128A) Magenta Toner Cartridge",
+    "qty": "60",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CE323A — HP 128A Magenta LaserJet Toner Cartridge (CE323A)",
+    "correctProductName": "HP 128A Magenta LaserJet Toner Cartridge (CE323A)",
+    "correctSku": "HP CE323A",
+    "notes": ""
   }
 ]
