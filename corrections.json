@@ -6017,5 +6017,18 @@
     "correctProductName": "HP 136A Black Original LaserJet Toner Cartridge (W1360A)",
     "correctSku": "HP W1360A",
     "notes": "Confirmed via web search: HP LaserJet MFP M236dw uses HP 136A."
+  },
+  {
+    "id": 952,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Toner Cartridge for HP Color Laser MFP 179fnw Printer (Black)",
+    "qty": "15",
+    "uom": "unit",
+    "autoMatchAttempt": "No Match",
+    "correctProductName": "Not carried",
+    "correctSku": "N/A",
+    "notes": "Confirmed via web search: HP Color Laser MFP 179fnw toner is HP 117A series (W2070A/W2071A/W2072A/W2073A). GOH's catalog has zero matches. Genuine gap."
   }
 ]
