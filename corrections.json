@@ -9813,5 +9813,18 @@
     "correctProductName": "Canon Cartridge 069H Cyan Toner 5.5k",
     "correctSku": "C CATR 069H C",
     "notes": ""
+  },
+  {
+    "id": 1312,
+    "contributedBy": "(not provided)",
+    "date": "2026-09-09",
+    "sourceSpec": "KDN_Kementerian_Dalam_Negeri-BURHANI_extracted_items.json",
+    "description": "CANON CART 069H Y (Product Code 5095C003AA, Yield 5,500pg)",
+    "qty": 500,
+    "uom": "unit",
+    "autoMatchAttempt": "Flagged for review — no candidate",
+    "correctProductName": "Canon Cartridge 069H Yellow Toner 5.5k",
+    "correctSku": "C CATR 069H Y",
+    "notes": ""
   }
 ]
