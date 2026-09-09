@@ -8383,5 +8383,18 @@
     "correctProductName": "OKI B433/B513 30k Drum",
     "correctSku": "OKI C433B DR",
     "notes": ""
+  },
+  {
+    "id": 1134,
+    "contributedBy": "(not provided)",
+    "date": "2026-09-03",
+    "sourceSpec": "PKD_SEGAMAT-GOH_extracted_items.json",
+    "description": "TIME RECORDER RIBBON (generic -- for EX3500/BX6200/BX6400/EX9100/EX9200/EX9300/UT5600/UT6000/UT7600/UT8600/CM730/TM700/TM900/TM920/KT9600/9700/9800/9900)",
+    "qty": "20",
+    "uom": "unit",
+    "autoMatchAttempt": "No candidate given",
+    "correctProductName": "Not carried",
+    "correctSku": "N/A",
+    "notes": "Catalog-checked 2026-09-03: no hits for any of the listed machine models or a generic ribbon SKU. New catalog-gap category -- see pattern note above."
   }
 ]
