@@ -9683,5 +9683,18 @@
     "correctProductName": "Epson T01D100 Black ink Cartridge 50k",
     "correctSku": "EPS T01D100",
     "notes": ""
+  },
+  {
+    "id": 1302,
+    "contributedBy": "(not provided)",
+    "date": "2026-09-09",
+    "sourceSpec": "KDN_Kementerian_Dalam_Negeri-BURHANI_extracted_items.json",
+    "description": "EPSON WF-579R C/LARGE (C13T01D200, Yield 20,000pg)",
+    "qty": 100,
+    "uom": "unit",
+    "autoMatchAttempt": "Flagged for review — no candidate",
+    "correctProductName": "Epson T01D200 Cyan Ink Cartridge 20k",
+    "correctSku": "EPS T01D200",
+    "notes": ""
   }
 ]
