@@ -8344,5 +8344,18 @@
     "correctProductName": "Not carried",
     "correctSku": "N/A",
     "notes": "Confirmed via web search that the Zebra TLP3842 barcode printer uses a 110mm-wide thermal transfer wax/resin ribbon (this consumable type is in GOH's scope); no entry in corrections.md. Note: spec lists brand as 'RICOH' for a Zebra-model printer -- likely a spec labelling error (ribbon brand vs printer brand mismatch); needs catalog lookup and brand clarification."
+  },
+  {
+    "id": 1199,
+    "contributedBy": "(not provided)",
+    "date": "2026-09-09",
+    "sourceSpec": "Hospital_Tengku_Permaisuri_Norashikin_WCC_Kajang-BURHANI_extracted_items.json",
+    "description": "BROTHER DR-263CL (DRUM)",
+    "qty": 10,
+    "uom": "unit",
+    "autoMatchAttempt": "Flagged for review — no candidate",
+    "correctProductName": "Brother DR-263CL Drum Unit",
+    "correctSku": "B DR 263CL",
+    "notes": ""
   }
 ]
