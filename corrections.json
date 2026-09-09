@@ -3196,5 +3196,18 @@
     "correctProductName": "OKI Mono Laser Toner (44708001) for B820 840",
     "correctSku": "OKI B820   15K",
     "notes": "Confirmed by user 2026-08-25: GOH carries 44708001 as its own SKU (distinct from 44707701). For OKI products the 8-digit part no. lives in the catalog Product Name field, not the Model field -- exact match on that basis."
+  },
+  {
+    "id": 735,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "Original Genuine OKI B820 Hi Cap Toner 44708001",
+    "qty": "234",
+    "uom": "unit",
+    "autoMatchAttempt": "OKI B820   15K — OKI Mono Laser Toner (44708001) for B820 840",
+    "correctProductName": "OKI Mono Laser Toner (44708001) for B820 840",
+    "correctSku": "OKI B820   15K",
+    "notes": "Confirmed by user 2026-08-25: GOH carries 44708001 as its own SKU (distinct from 44707701). For OKI products the 8-digit part no. lives in the catalog Product Name field, not the Model field -- exact match on that basis."
   }
 ]
