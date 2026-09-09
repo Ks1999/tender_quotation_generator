@@ -2650,5 +2650,18 @@
     "correctProductName": "HP 305A Black LaserJet Toner Cartridge (CE410A) [676107]",
     "correctSku": "HP CE410A",
     "notes": ""
+  },
+  {
+    "id": 693,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "HP CE411A (305A) Cyan Original Laser Jet Toner Cartridge",
+    "qty": "12",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CE411A — HP 305A Cyan LaserJet Toner Cartridge (CE411A) [676108]",
+    "correctProductName": "HP 305A Cyan LaserJet Toner Cartridge (CE411A) [676108]",
+    "correctSku": "HP CE411A",
+    "notes": ""
   }
 ]
