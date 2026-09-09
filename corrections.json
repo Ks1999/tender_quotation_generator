@@ -8773,5 +8773,18 @@
     "correctProductName": "Canon 054 Yellow Toner Cartridge 1.2k",
     "correctSku": "C CATR 054Y",
     "notes": ""
+  },
+  {
+    "id": 1232,
+    "contributedBy": "(not provided)",
+    "date": "2026-09-09",
+    "sourceSpec": "Hospital_Tengku_Permaisuri_Norashikin_WCC_Kajang-BURHANI_extracted_items.json",
+    "description": "EPSON LQ-2190/2180",
+    "qty": 360,
+    "uom": "unit",
+    "autoMatchAttempt": "Flagged for review — no candidate",
+    "correctProductName": "Epson LQ2180 LQ2190 (EPS SO15531)",
+    "correctSku": "EPS SO15531",
+    "notes": ""
   }
 ]
