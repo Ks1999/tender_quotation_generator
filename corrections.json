@@ -3573,5 +3573,18 @@
     "correctProductName": "Canon PG-810 Black Ink Cartridge",
     "correctSku": "C PG 810",
     "notes": ""
+  },
+  {
+    "id": 764,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "CANON CL 811",
+    "qty": "95",
+    "uom": "unit",
+    "autoMatchAttempt": "C CL 811 — Canon CL-811 Color Ink Cartridge",
+    "correctProductName": "Canon CL-811 Color Ink Cartridge",
+    "correctSku": "C CL 811",
+    "notes": ""
   }
 ]
