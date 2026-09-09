@@ -7590,5 +7590,18 @@
     "correctProductName": "Canon PG-745 S Fine Cartridge Black (5.6 ml)",
     "correctSku": "C PG 745S",
     "notes": ""
+  },
+  {
+    "id": 1073,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_3.pdf",
+    "description": "CANON PG-89",
+    "qty": "30",
+    "uom": "unit",
+    "autoMatchAttempt": "C PG 89BK — Canon PG-89 Black Ink Cartridge",
+    "correctProductName": "Canon PG-89 Black Ink Cartridge",
+    "correctSku": "C PG 89BK",
+    "notes": ""
   }
 ]
