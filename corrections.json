@@ -5744,5 +5744,18 @@
     "correctProductName": "HP 64A Black LaserJet Toner Cartridge (CC364A) [646745]",
     "correctSku": "HP CC364A",
     "notes": "Confirmed via web search: HP LaserJet P4015n/P4014 uses HP 64A."
+  },
+  {
+    "id": 931,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Toner Cartridge for HP Laserjet Pro M404DN Printer (Black)",
+    "qty": "20",
+    "uom": "unit",
+    "autoMatchAttempt": "No Match",
+    "correctProductName": "Not carried",
+    "correctSku": "N/A",
+    "notes": "Confirmed via web search: correct toner is HP 58A (CF258A). GOH's catalog has zero matches for CF258A/258A/258X. Genuine gap, not a matching failure."
   }
 ]
