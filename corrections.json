@@ -9215,5 +9215,18 @@
     "correctProductName": "HP 26X Black LaserJet Toner Cartridge (CF226X)",
     "correctSku": "HP CF226X",
     "notes": ""
+  },
+  {
+    "id": 1266,
+    "contributedBy": "(not provided)",
+    "date": "2026-09-09",
+    "sourceSpec": "KDN_Kementerian_Dalam_Negeri-BURHANI_extracted_items.json",
+    "description": "LEXMARK YELLOW CRTG ULTRA RETURN CS521/CS622/CX622/CX625 (78C3UY0)",
+    "qty": 100,
+    "uom": "unit",
+    "autoMatchAttempt": "No match",
+    "correctProductName": "Not carried",
+    "correctSku": "N/A",
+    "notes": "Confirmed catalog gap: GOH does not carry Lexmark."
   }
 ]
