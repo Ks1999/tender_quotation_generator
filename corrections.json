@@ -5172,5 +5172,18 @@
     "correctProductName": "HP 678 Black Ink Cartridge (CZ107AA)",
     "correctSku": "HP CZ107AA",
     "notes": ""
+  },
+  {
+    "id": 887,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_2.pdf",
+    "description": "HP 678 TRI COLOR CZ108AA",
+    "qty": "30",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CZ108AA — HP 678 Tri-color Ink Cartridge (CZ108AA)",
+    "correctProductName": "HP 678 Tri-color Ink Cartridge (CZ108AA)",
+    "correctSku": "HP CZ108AA",
+    "notes": ""
   }
 ]
