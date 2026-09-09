@@ -6108,5 +6108,18 @@
     "correctProductName": "HP 201A Yellow Original LaserJet Toner Cartridge (CF402A) [748847]",
     "correctSku": "HP CF402A",
     "notes": ""
+  },
+  {
+    "id": 959,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Toner Cartridge for HP Color LaserJet Pro M252dw (Magenta)",
+    "qty": "8",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CF403A — HP 201A Magenta Original LaserJet Toner Cartridge (CF403A) [748848]",
+    "correctProductName": "HP 201A Magenta Original LaserJet Toner Cartridge (CF403A) [748848]",
+    "correctSku": "HP CF403A",
+    "notes": ""
   }
 ]
