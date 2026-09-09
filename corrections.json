@@ -1714,5 +1714,18 @@
     "correctProductName": "HP 128A Black LaserJet Toner Cartridge (CE320A)",
     "correctSku": "HP CE320A",
     "notes": ""
+  },
+  {
+    "id": 621,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "HP CE321A (128A) Cyan Toner Cartridge",
+    "qty": "60",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CE321A — HP 128A Cyan LaserJet Toner Cartridge (CE321A)",
+    "correctProductName": "HP 128A Cyan LaserJet Toner Cartridge (CE321A)",
+    "correctSku": "HP CE321A",
+    "notes": ""
   }
 ]
