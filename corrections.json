@@ -6914,5 +6914,18 @@
     "correctProductName": "Epson L800 Magenta Ink (T6733)",
     "correctSku": "EPS T673300",
     "notes": "See Black entry."
+  },
+  {
+    "id": 1021,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Ink for EPSON L1800 A3 PRINTER (Light Cyan)",
+    "qty": "11",
+    "uom": "unit",
+    "autoMatchAttempt": "EPS T673500 — Epson L800 Light Cyan Ink (T6735)",
+    "correctProductName": "Epson L800 Light Cyan Ink (T6735)",
+    "correctSku": "EPS T673500",
+    "notes": "See Black entry."
   }
 ]
