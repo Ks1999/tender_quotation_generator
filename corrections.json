@@ -3638,5 +3638,18 @@
     "correctProductName": "Not carried",
     "correctSku": "N/A",
     "notes": "Canon CL-41 not carried (confirmed by user 2026-08-25)"
+  },
+  {
+    "id": 769,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "CANON GI-790 (BK)",
+    "qty": "4",
+    "uom": "unit",
+    "autoMatchAttempt": "C GI 790 BK — Canon GI-790 - Black (135ml) Ink Cartridge",
+    "correctProductName": "Canon GI-790 - Black (135ml) Ink Cartridge",
+    "correctSku": "C GI 790 BK",
+    "notes": ""
   }
 ]
