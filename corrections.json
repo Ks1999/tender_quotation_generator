@@ -5770,5 +5770,18 @@
     "correctProductName": "HP 78A Black LaserJet Toner Cartridge (CE278A) [644808]",
     "correctSku": "HP CE278A",
     "notes": "Confirmed by user: HP LaserJet Pro M1536dnf uses HP 78A."
+  },
+  {
+    "id": 933,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Toner Cartridge for HP Laserjet PRO M12A Printer (Black)",
+    "qty": "8",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CF279A — HP 79A Black Original LaserJet Toner Cartridge (CF279A)",
+    "correctProductName": "HP 79A Black Original LaserJet Toner Cartridge (CF279A)",
+    "correctSku": "HP CF279A",
+    "notes": "Confirmed by user: HP LaserJet Pro M12A uses HP 79A."
   }
 ]
