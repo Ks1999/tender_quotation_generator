@@ -1818,5 +1818,18 @@
     "correctProductName": "HP 131A Black LaserJet Toner Cartridge (CF210A)",
     "correctSku": "HP CF210A",
     "notes": ""
+  },
+  {
+    "id": 629,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "Brother Original TN-2280",
+    "qty": "232",
+    "uom": "unit",
+    "autoMatchAttempt": "B TN 2280 — Brother TN-2280 Toner Cartridge - HIGH Capacity",
+    "correctProductName": "Brother TN-2280 Toner Cartridge - HIGH Capacity",
+    "correctSku": "B TN 2280",
+    "notes": ""
   }
 ]
