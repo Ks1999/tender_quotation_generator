@@ -2845,5 +2845,18 @@
     "correctProductName": "HP 680 Tri-Color Original Ink Advantage Cartridge (F6V26AA)",
     "correctSku": "HP F6V26AA",
     "notes": ""
+  },
+  {
+    "id": 708,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "HP F6V27AA (HP 680 Black) Original Ink Advantage Cartridge",
+    "qty": "92",
+    "uom": "unit",
+    "autoMatchAttempt": "HP F6V27AA — HP 680 Black Original Ink Advantage Cartridge (F6V27AA)",
+    "correctProductName": "HP 680 Black Original Ink Advantage Cartridge (F6V27AA)",
+    "correctSku": "HP F6V27AA",
+    "notes": ""
   }
 ]
