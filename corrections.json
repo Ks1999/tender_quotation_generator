@@ -8175,5 +8175,18 @@
     "correctProductName": "OKI C650 YELLOW DRUM 50K",
     "correctSku": "OKI C650 YE DR",
     "notes": ""
+  },
+  {
+    "id": 1118,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi105.pdf",
+    "description": "OKI C650dn Magenta Image Drum",
+    "qty": "80",
+    "uom": "unit",
+    "autoMatchAttempt": "OKI C650 MA DR — OKI C650 MAGENTA DRUM 50K",
+    "correctProductName": "OKI C650 MAGENTA DRUM 50K",
+    "correctSku": "OKI C650 MA DR",
+    "notes": ""
   }
 ]
