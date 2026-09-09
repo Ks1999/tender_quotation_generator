@@ -4535,5 +4535,18 @@
     "correctProductName": "HP 215A Magenta Original LaserJet Toner Cartridge (New)",
     "correctSku": "HP W2313A",
     "notes": ""
+  },
+  {
+    "id": 838,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "HP 508A (BK) / CF 360 A",
+    "qty": "2",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CF360A — HP 508A Black Original LaserJet Toner Cartridge (CF360A)",
+    "correctProductName": "HP 508A Black Original LaserJet Toner Cartridge (CF360A)",
+    "correctSku": "HP CF360A",
+    "notes": ""
   }
 ]
