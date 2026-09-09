@@ -1727,5 +1727,18 @@
     "correctProductName": "HP 128A Cyan LaserJet Toner Cartridge (CE321A)",
     "correctSku": "HP CE321A",
     "notes": ""
+  },
+  {
+    "id": 622,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "HP CE322A (128A) Yellow Toner Cartridge",
+    "qty": "60",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CE322A — HP 128A Yellow LaserJet Toner Cartridge (CE322A)",
+    "correctProductName": "HP 128A Yellow LaserJet Toner Cartridge (CE322A)",
+    "correctSku": "HP CE322A",
+    "notes": ""
   }
 ]
