@@ -7408,5 +7408,18 @@
     "correctProductName": "Canon GI-790 - Yellow (70ml) Ink Cartridge",
     "correctSku": "C GI 790 Y",
     "notes": "Confirmed correct by user."
+  },
+  {
+    "id": 1059,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_3.pdf",
+    "description": "HP 46 COLOUR",
+    "qty": "30",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CZ638AA — HP 46 Tri-color Ink Cartridge (CZ638AA)",
+    "correctProductName": "HP 46 Tri-color Ink Cartridge (CZ638AA)",
+    "correctSku": "HP CZ638AA",
+    "notes": ""
   }
 ]
