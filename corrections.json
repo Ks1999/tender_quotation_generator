@@ -7070,5 +7070,18 @@
     "correctProductName": "Canon CL-811 Color Ink Cartridge",
     "correctSku": "C CL 811",
     "notes": ""
+  },
+  {
+    "id": 1033,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Ribbon for Epson LQ-590 Printer",
+    "qty": "50",
+    "uom": "unit",
+    "autoMatchAttempt": "EPS SO15589 — Epson LQ590 (EPS SO15589)",
+    "correctProductName": "Epson LQ590 (EPS SO15589)",
+    "correctSku": "EPS SO15589",
+    "notes": ""
   }
 ]
