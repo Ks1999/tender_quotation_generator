@@ -2832,5 +2832,18 @@
     "correctProductName": "HP 46 Tri-color Ink Cartridge (CZ638AA)",
     "correctSku": "HP CZ638AA",
     "notes": ""
+  },
+  {
+    "id": 707,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "HP F6V26AA (HP 680 Tri-Color Original Ink Cartridge)",
+    "qty": "92",
+    "uom": "unit",
+    "autoMatchAttempt": "HP F6V26AA — HP 680 Tri-Color Original Ink Advantage Cartridge (F6V26AA)",
+    "correctProductName": "HP 680 Tri-Color Original Ink Advantage Cartridge (F6V26AA)",
+    "correctSku": "HP F6V26AA",
+    "notes": ""
   }
 ]
