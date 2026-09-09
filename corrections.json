@@ -5055,5 +5055,18 @@
     "correctProductName": "Canon Cartridge 325 Toner Cartridge",
     "correctSku": "C CATR 325",
     "notes": ""
+  },
+  {
+    "id": 878,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_2.pdf",
+    "description": "HP CF283A",
+    "qty": "12",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CF283A — HP 83A Black Original LaserJet Toner Cartridge (CF283A)",
+    "correctProductName": "HP 83A Black Original LaserJet Toner Cartridge (CF283A)",
+    "correctSku": "HP CF283A",
+    "notes": ""
   }
 ]
