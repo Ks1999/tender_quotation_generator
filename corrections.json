@@ -8045,5 +8045,18 @@
     "correctProductName": "OKI C532, C573 Yellow Drum #46484109 - 30k",
     "correctSku": "OKI C532 YE DR",
     "notes": ""
+  },
+  {
+    "id": 1108,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi105.pdf",
+    "description": "Oki C532/MC573 Magenta Image Drum",
+    "qty": "15",
+    "uom": "unit",
+    "autoMatchAttempt": "OKI C532 MA DR — OKI C532, MC573 Magenta Drum #46484110  - 30k",
+    "correctProductName": "OKI C532, MC573 Magenta Drum #46484110  - 30k",
+    "correctSku": "OKI C532 MA DR",
+    "notes": ""
   }
 ]
