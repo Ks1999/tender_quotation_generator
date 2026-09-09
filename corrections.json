@@ -4288,5 +4288,18 @@
     "correctProductName": "HP 126A Cyan LaserJet Toner Cartridge (CE311A)",
     "correctSku": "HP CE311A",
     "notes": ""
+  },
+  {
+    "id": 819,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "ITEM HP CE 312A (Y) / 126A (Y)",
+    "qty": "1",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CE312A — HP 126A Yellow LaserJet Toner Cartridge (CE312A)",
+    "correctProductName": "HP 126A Yellow LaserJet Toner Cartridge (CE312A)",
+    "correctSku": "HP CE312A",
+    "notes": ""
   }
 ]
