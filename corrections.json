@@ -7837,5 +7837,18 @@
     "correctProductName": "OKI C610 Magenta Toner Cartridge (44315310)",
     "correctSku": "OKI C610 MA",
     "notes": ""
+  },
+  {
+    "id": 1092,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi105.pdf",
+    "description": "Toner Oki C610DN Yellow",
+    "qty": "45",
+    "uom": "unit",
+    "autoMatchAttempt": "OKI C610 YE — OKI C610 Yellow Toner Cartridge (44315309)",
+    "correctProductName": "OKI C610 Yellow Toner Cartridge (44315309)",
+    "correctSku": "OKI C610 YE",
+    "notes": ""
   }
 ]
