@@ -3001,5 +3001,18 @@
     "correctProductName": "OKI C412 black Toner 45807103 (Item no: OKI C412)",
     "correctSku": "OKI C412",
     "notes": ""
+  },
+  {
+    "id": 720,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "OKI 45807107 Black Toner Cartridge",
+    "qty": "6000",
+    "uom": "unit",
+    "autoMatchAttempt": "OKI C432   7K — OKI 45807107 Black High Capacity Toner Cartridge 7k - B412/432/512/472/492",
+    "correctProductName": "OKI 45807107 Black High Capacity Toner Cartridge 7k - B412/432/512/472/492",
+    "correctSku": "OKI C432   7K",
+    "notes": ""
   }
 ]
