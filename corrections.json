@@ -6979,5 +6979,18 @@
     "correctProductName": "Epson 003 T00V400 Ink Bottle Yellow 65ml",
     "correctSku": "EPS T00V400",
     "notes": ""
+  },
+  {
+    "id": 1026,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Ink for EPSON L5190 Printer (Magenta)",
+    "qty": "8",
+    "uom": "unit",
+    "autoMatchAttempt": "EPS T00V300 — Epson 003 T00V300 Ink Bottle Magenta 65ml",
+    "correctProductName": "Epson 003 T00V300 Ink Bottle Magenta 65ml",
+    "correctSku": "EPS T00V300",
+    "notes": ""
   }
 ]
