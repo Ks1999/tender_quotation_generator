@@ -2676,5 +2676,18 @@
     "correctProductName": "HP 305A Yellow LaserJet Toner Cartridge (CE412A) [676110]",
     "correctSku": "HP CE412A",
     "notes": ""
+  },
+  {
+    "id": 695,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "HP CE413A (305A) Magenta Original Laser Jet Toner Cartridge",
+    "qty": "12",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CE413A — HP 305A Magenta LaserJet Toner Cartridge (CE413A) [676109]",
+    "correctProductName": "HP 305A Magenta LaserJet Toner Cartridge (CE413A) [676109]",
+    "correctSku": "HP CE413A",
+    "notes": ""
   }
 ]
