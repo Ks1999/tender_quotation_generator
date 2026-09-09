@@ -1064,5 +1064,18 @@
     "correctProductName": "Canon Cartridge 329 Cyan Toner Cartridge",
     "correctSku": "C CATR 329C",
     "notes": ""
+  },
+  {
+    "id": 571,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "Canon Cartridge 329 Magenta",
+    "qty": "3",
+    "uom": "unit",
+    "autoMatchAttempt": "C CATR 329M — Canon Cartridge 329 Magenta Toner Cartridge",
+    "correctProductName": "Canon Cartridge 329 Magenta Toner Cartridge",
+    "correctSku": "C CATR 329M",
+    "notes": ""
   }
 ]
