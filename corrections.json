@@ -6329,5 +6329,18 @@
     "correctProductName": "Canon Cartridge 335 Cyan Toner 16.5k",
     "correctSku": "C CATR 335 C",
     "notes": ""
+  },
+  {
+    "id": 976,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Toner Cartridge for CANON imageCLASS LBP841Cdn Printer (Yellow)",
+    "qty": "100",
+    "uom": "unit",
+    "autoMatchAttempt": "C CATR 335 Y — Canon Cartridge 335  Yellow Toner 16.5k",
+    "correctProductName": "Canon Cartridge 335  Yellow Toner 16.5k",
+    "correctSku": "C CATR 335 Y",
+    "notes": ""
   }
 ]
