@@ -4418,5 +4418,18 @@
     "correctProductName": "HP 202A Yellow LaserJet Toner Cartridge",
     "correctSku": "HP CF502A",
     "notes": ""
+  },
+  {
+    "id": 829,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "HP 202A (M) / CF 500A (M)",
+    "qty": "1",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CF503A — HP 202A Magenta LaserJet Toner Cartridge",
+    "correctProductName": "HP 202A Magenta LaserJet Toner Cartridge",
+    "correctSku": "HP CF503A",
+    "notes": ""
   }
 ]
