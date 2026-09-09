@@ -4483,5 +4483,18 @@
     "correctProductName": "HP 206A Magenta Original LaserJet Toner Cartridge (W2113A)",
     "correctSku": "HP W2113A",
     "notes": ""
+  },
+  {
+    "id": 834,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "HP 215A (BK) / W 2310 A",
+    "qty": "10",
+    "uom": "unit",
+    "autoMatchAttempt": "HP W2310A — HP 215A Black Original LaserJet Toner Cartridge (New)",
+    "correctProductName": "HP 215A Black Original LaserJet Toner Cartridge (New)",
+    "correctSku": "HP W2310A",
+    "notes": ""
   }
 ]
