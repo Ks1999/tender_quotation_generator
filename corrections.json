@@ -6823,5 +6823,18 @@
     "correctProductName": "Not carried",
     "correctSku": "N/A",
     "notes": "HP OfficeJet Pro 7720 Wide Format AiO uses HP 953 ink series. Genuine gap."
+  },
+  {
+    "id": 1014,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Ink for HP OFFICEJET PRO 7720 WIDE FORMAT AiO Printer (Cyan)",
+    "qty": "8",
+    "uom": "unit",
+    "autoMatchAttempt": "No Match",
+    "correctProductName": "Not carried",
+    "correctSku": "N/A",
+    "notes": "HP 953 series. Genuine gap."
   }
 ]
