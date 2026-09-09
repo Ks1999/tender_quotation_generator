@@ -7720,5 +7720,18 @@
     "correctProductName": "OKI C301, C321, C331, C511, C531 Drum Cartridge Unit Black, Cyan, Magenta, Yellow - 44968302",
     "correctSku": "OKI C511 DR",
     "notes": ""
+  },
+  {
+    "id": 1083,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi105.pdf",
+    "description": "Oki C510/C531/MC561/MC56 2/C332/MC363 CMYK Fuser Unit",
+    "qty": "310",
+    "uom": "unit",
+    "autoMatchAttempt": "OKI C310 FU — OKI C310 C330 C510 C530 Fuser Unit 44472604 (Item No: OKI C310 FU)",
+    "correctProductName": "OKI C310 C330 C510 C530 Fuser Unit 44472604 (Item No: OKI C310 FU)",
+    "correctSku": "OKI C310 FU",
+    "notes": ""
   }
 ]
