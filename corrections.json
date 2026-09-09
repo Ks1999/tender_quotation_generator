@@ -3456,5 +3456,18 @@
     "correctProductName": "Brother DR-2355 Drum",
     "correctSku": "B DR 2355",
     "notes": ""
+  },
+  {
+    "id": 755,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "BROTHER DRUM 2255",
+    "qty": "5",
+    "uom": "unit",
+    "autoMatchAttempt": "B DR 2255 — Brother DR-2255 Drum Cartridge",
+    "correctProductName": "Brother DR-2255 Drum Cartridge",
+    "correctSku": "B DR 2255",
+    "notes": ""
   }
 ]
