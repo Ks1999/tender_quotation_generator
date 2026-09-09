@@ -2780,5 +2780,18 @@
     "correctProductName": "HP 83A Black Original LaserJet Toner Cartridge (CF283A)",
     "correctSku": "HP CF283A",
     "notes": ""
+  },
+  {
+    "id": 703,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "HP CF410A Black Toner Cartridge",
+    "qty": "270",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CF410A — HP 410A Black LaserJet Toner Cartridge (CF410A)",
+    "correctProductName": "HP 410A Black LaserJet Toner Cartridge (CF410A)",
+    "correctSku": "HP CF410A",
+    "notes": ""
   }
 ]
