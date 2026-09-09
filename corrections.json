@@ -5315,5 +5315,18 @@
     "correctProductName": "HP 131A Cyan LaserJet Toner Cartridge (CF211A)",
     "correctSku": "HP CF211A",
     "notes": ""
+  },
+  {
+    "id": 898,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_2.pdf",
+    "description": "HP CF213A MAGENTA 131A",
+    "qty": "3",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CF213A — HP 131A Magenta LaserJet Toner Cartridge (CF213A)",
+    "correctProductName": "HP 131A Magenta LaserJet Toner Cartridge (CF213A)",
+    "correctSku": "HP CF213A",
+    "notes": ""
   }
 ]
