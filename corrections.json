@@ -7889,5 +7889,18 @@
     "correctProductName": "OKI C610 Magenta Drum - 44315110",
     "correctSku": "OKI C610M DR",
     "notes": "Label reconstructed from a PDF page-break split."
+  },
+  {
+    "id": 1096,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi105.pdf",
+    "description": "Oki C610DN Cyan Image Drum",
+    "qty": "15",
+    "uom": "unit",
+    "autoMatchAttempt": "OKI C610C DR — OKI C610 Cyan Drum - 44315111",
+    "correctProductName": "OKI C610 Cyan Drum - 44315111",
+    "correctSku": "OKI C610C DR",
+    "notes": ""
   }
 ]
