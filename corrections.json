@@ -5640,5 +5640,18 @@
     "correctProductName": "HP 12A Black LaserJet Toner Cartridge (Q2612A)",
     "correctSku": "HP Q2612A",
     "notes": "Confirmed via web search: correct toner for the HP LaserJet M1005 MFP is HP 12A."
+  },
+  {
+    "id": 923,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Toner Cartridge for HP Laserjet PRO M402DN Printer (Black)",
+    "qty": "60",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CF226A — HP 26A Black LaserJet Toner Cartridge (CF226A)",
+    "correctProductName": "HP 26A Black LaserJet Toner Cartridge (CF226A)",
+    "correctSku": "HP CF226A",
+    "notes": "Confirmed via web search: HP LaserJet Pro M402dn uses HP 26A."
   }
 ]
