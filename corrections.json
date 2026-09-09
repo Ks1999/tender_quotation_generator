@@ -5679,5 +5679,18 @@
     "correctProductName": "HP 35A Black LaserJet Toner Cartridge (CB435A)",
     "correctSku": "HP CB435A",
     "notes": "Confirmed via web search: HP LaserJet P1006 uses HP 35A."
+  },
+  {
+    "id": 926,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Toner Cartridge for HP Laserjet P1505 Printer (Black)",
+    "qty": "20",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CB436A — HP 36A Black LaserJet Toner Cartridge (CB436A)",
+    "correctProductName": "HP 36A Black LaserJet Toner Cartridge (CB436A)",
+    "correctSku": "HP CB436A",
+    "notes": "Confirmed via web search: HP LaserJet P1505 uses HP 36A."
   }
 ]
