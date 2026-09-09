@@ -8474,5 +8474,18 @@
     "correctProductName": "Epson LQ2180 LQ2190 (EPS SO15531)",
     "correctSku": "EPS SO15531",
     "notes": ""
+  },
+  {
+    "id": 1209,
+    "contributedBy": "(not provided)",
+    "date": "2026-09-09",
+    "sourceSpec": "Hospital_Tengku_Permaisuri_Norashikin_WCC_Kajang-BURHANI_extracted_items.json",
+    "description": "LEXMARK 3070166 RIBBON / LEXMARK 11A3540 RIBBON",
+    "qty": 180,
+    "uom": "unit",
+    "autoMatchAttempt": "No match",
+    "correctProductName": "Not carried",
+    "correctSku": "N/A",
+    "notes": "Confirmed catalog gap: GOH does not carry Lexmark (including ribbons)."
   }
 ]
