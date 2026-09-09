@@ -7577,5 +7577,18 @@
     "correctProductName": "Canon CL-746 S Fine Cartridge Color (6.2 ml)",
     "correctSku": "C CL 746S",
     "notes": ""
+  },
+  {
+    "id": 1072,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_3.pdf",
+    "description": "CANON PG-745",
+    "qty": "50",
+    "uom": "unit",
+    "autoMatchAttempt": "C PG 745S — Canon PG-745 S Fine Cartridge Black (5.6 ml)",
+    "correctProductName": "Canon PG-745 S Fine Cartridge Black (5.6 ml)",
+    "correctSku": "C PG 745S",
+    "notes": ""
   }
 ]
