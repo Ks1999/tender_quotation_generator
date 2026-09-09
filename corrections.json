@@ -9280,5 +9280,18 @@
     "correctProductName": "HP 416X High Yield Magenta Original LaserJet Toner Cartridge",
     "correctSku": "HP W2043X",
     "notes": ""
+  },
+  {
+    "id": 1271,
+    "contributedBy": "(not provided)",
+    "date": "2026-09-09",
+    "sourceSpec": "KDN_Kementerian_Dalam_Negeri-BURHANI_extracted_items.json",
+    "description": "HP 416X HIGH YIELD YELLOW ORIGINAL LASERJET TONER CARTRIDGE (W2042XC)",
+    "qty": 30,
+    "uom": "unit",
+    "autoMatchAttempt": "Flagged for review — no candidate",
+    "correctProductName": "HP 416X High Yield Yellow Original LaserJet Toner Cartridge",
+    "correctSku": "HP W2042X",
+    "notes": ""
   }
 ]
