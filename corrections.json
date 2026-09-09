@@ -7980,5 +7980,18 @@
     "correctProductName": "OKI C532, MC573 Black Toner #46490508 - 3.5k",
     "correctSku": "OKI C532 BK",
     "notes": "Label reconstructed from a PDF page-break split."
+  },
+  {
+    "id": 1103,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi105.pdf",
+    "description": "Toner cartridge Oki C532/MC573 Yellow",
+    "qty": "80",
+    "uom": "unit",
+    "autoMatchAttempt": "OKI C532 YE — OKI C532, MC573 Yellow Toner #46490505 - 3k",
+    "correctProductName": "OKI C532, MC573 Yellow Toner #46490505 - 3k",
+    "correctSku": "OKI C532 YE",
+    "notes": ""
   }
 ]
