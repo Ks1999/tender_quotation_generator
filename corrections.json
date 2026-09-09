@@ -3560,5 +3560,18 @@
     "correctProductName": "Canon Cartridge 329 Black Toner Cartridge",
     "correctSku": "C CATR 329B",
     "notes": ""
+  },
+  {
+    "id": 763,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "CANON PG810",
+    "qty": "130",
+    "uom": "unit",
+    "autoMatchAttempt": "C PG 810 — Canon PG-810 Black Ink Cartridge",
+    "correctProductName": "Canon PG-810 Black Ink Cartridge",
+    "correctSku": "C PG 810",
+    "notes": ""
   }
 ]
