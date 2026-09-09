@@ -4912,5 +4912,18 @@
     "correctProductName": "Xerox DPC115-116-225 Toner Standard Cap 1.4k - Cyan (Item No: XER CP115C)",
     "correctSku": "XER CP115C",
     "notes": "Confirmed by user 2026-08-25 (\"XER CP115 series\"): Fuji Xerox CT202265 = GOH catalog XER CP115C."
+  },
+  {
+    "id": 867,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "FUJI XEROX CT202266/ M (1.4K) ---- (B)",
+    "qty": "1",
+    "uom": "unit",
+    "autoMatchAttempt": "XER CP115M — Xerox DPC115-116-225 Toner Standard Cap 1.4k - Magenta (Item No: XER CP115M)",
+    "correctProductName": "Xerox DPC115-116-225 Toner Standard Cap 1.4k - Magenta (Item No: XER CP115M)",
+    "correctSku": "XER CP115M",
+    "notes": "Confirmed by user 2026-08-25 (\"XER CP115 series\"): Fuji Xerox CT202266 = GOH catalog XER CP115M."
   }
 ]
