@@ -3417,5 +3417,18 @@
     "correctProductName": "Brother TN-2380 Toner",
     "correctSku": "B TN 2380",
     "notes": ""
+  },
+  {
+    "id": 752,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "BROHER TN 2480",
+    "qty": "10",
+    "uom": "unit",
+    "autoMatchAttempt": "B TN 2480 — Brother Original TN-2480 Toner 3K",
+    "correctProductName": "Brother Original TN-2480 Toner 3K",
+    "correctSku": "B TN 2480",
+    "notes": ""
   }
 ]
