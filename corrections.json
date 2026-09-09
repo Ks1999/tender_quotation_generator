@@ -4392,5 +4392,18 @@
     "correctProductName": "HP 202A Black LaserJet Toner Cartridge",
     "correctSku": "HP CF500A",
     "notes": ""
+  },
+  {
+    "id": 827,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "HP 202A (C) / CF 500A (C)",
+    "qty": "1",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CF501A — HP 202A Cyan LaserJet Toner Cartridge",
+    "correctProductName": "HP 202A Cyan LaserJet Toner Cartridge",
+    "correctSku": "HP CF501A",
+    "notes": ""
   }
 ]
