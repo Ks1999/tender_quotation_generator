@@ -3443,5 +3443,18 @@
     "correctProductName": "Brother TN-2280 Toner Cartridge - HIGH Capacity",
     "correctSku": "B TN 2280",
     "notes": ""
+  },
+  {
+    "id": 754,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "BROTHER DRUM 2355",
+    "qty": "5",
+    "uom": "unit",
+    "autoMatchAttempt": "B DR 2355 — Brother DR-2355 Drum",
+    "correctProductName": "Brother DR-2355 Drum",
+    "correctSku": "B DR 2355",
+    "notes": ""
   }
 ]
