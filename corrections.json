@@ -1987,5 +1987,18 @@
     "correctProductName": "Not carried",
     "correctSku": "N/A",
     "notes": "Canon CL-41 not carried (confirmed by user 2026-08-25)"
+  },
+  {
+    "id": 642,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "Canon CL-746 Color Fine Cartridge",
+    "qty": "36",
+    "uom": "unit",
+    "autoMatchAttempt": "C CL 746 — Canon CL-746 Color Ink Cartridge",
+    "correctProductName": "Canon CL-746 Color Ink Cartridge",
+    "correctSku": "C CL 746",
+    "notes": ""
   }
 ]
