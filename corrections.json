@@ -6056,5 +6056,18 @@
     "correctProductName": "Not carried",
     "correctSku": "N/A",
     "notes": "HP 117A series, catalog code W2072A for Yellow. Genuine gap."
+  },
+  {
+    "id": 955,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Toner Cartridge for HP Color Laser MFP 179fnw Printer (Magenta)",
+    "qty": "8",
+    "uom": "unit",
+    "autoMatchAttempt": "No Match",
+    "correctProductName": "Not carried",
+    "correctSku": "N/A",
+    "notes": "HP 117A series, catalog code W2073A for Magenta. Genuine gap."
   }
 ]
