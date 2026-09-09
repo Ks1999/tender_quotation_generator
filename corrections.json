@@ -3170,5 +3170,18 @@
     "correctProductName": "OKI C650 MAGENTA TONER 6K [YA8001-1088G034]",
     "correctSku": "OKI C650 MA",
     "notes": ""
+  },
+  {
+    "id": 733,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "OKI C650 Yellow Toner Cartridge",
+    "qty": "1394",
+    "uom": "unit",
+    "autoMatchAttempt": "OKI C650 YE — OKI C650 YELLOW TONER 6K [YA8001-1088G033]",
+    "correctProductName": "OKI C650 YELLOW TONER 6K [YA8001-1088G033]",
+    "correctSku": "OKI C650 YE",
+    "notes": ""
   }
 ]
