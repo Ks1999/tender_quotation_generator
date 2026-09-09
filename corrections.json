@@ -4314,5 +4314,18 @@
     "correctProductName": "HP 126A Magenta LaserJet Toner Cartridge (CE313A)",
     "correctSku": "HP CE313A",
     "notes": ""
+  },
+  {
+    "id": 821,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "HP 83A",
+    "qty": "1",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CF283A — HP 83A Black Original LaserJet Toner Cartridge (CF283A)",
+    "correctProductName": "HP 83A Black Original LaserJet Toner Cartridge (CF283A)",
+    "correctSku": "HP CF283A",
+    "notes": ""
   }
 ]
