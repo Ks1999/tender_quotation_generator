@@ -6472,5 +6472,18 @@
     "correctProductName": "Canon Cartridge 051 Drum (23k)",
     "correctSku": "C CATR 051 DR",
     "notes": "Confirmed by user (\"Canon 051 series\"): drum for Canon imageCLASS LBP162dw is Canon Cartridge 051 Drum."
+  },
+  {
+    "id": 987,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Waste Toner Container for Canon imageClass LBP841Cdn",
+    "qty": "5",
+    "uom": "unit",
+    "autoMatchAttempt": "No Match",
+    "correctProductName": "Not carried",
+    "correctSku": "N/A",
+    "notes": "Confirmed by user: GOH does not carry any Canon waste toner containers at all."
   }
 ]
