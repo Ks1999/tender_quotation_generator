@@ -5198,5 +5198,18 @@
     "correctProductName": "Epson 003 T00V100 Ink Bottle Black 65ml",
     "correctSku": "EPS T00V100",
     "notes": ""
+  },
+  {
+    "id": 889,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_2.pdf",
+    "description": "EPSON 003 - CYAN",
+    "qty": "10",
+    "uom": "unit",
+    "autoMatchAttempt": "EPS T00V200 — Epson 003 T00V200 Ink Bottle Cyan 65ml",
+    "correctProductName": "Epson 003 T00V200 Ink Bottle Cyan 65ml",
+    "correctSku": "EPS T00V200",
+    "notes": ""
   }
 ]
