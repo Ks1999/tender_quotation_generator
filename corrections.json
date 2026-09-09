@@ -4574,5 +4574,18 @@
     "correctProductName": "HP 508A Yellow Original LaserJet Toner Cartridge (CF362A)",
     "correctSku": "HP CF362A",
     "notes": ""
+  },
+  {
+    "id": 841,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "HP 508A (M) / CF 360 A",
+    "qty": "1",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CF363A — HP 508A Magenta Original LaserJet Toner Cartridge (CF363A)",
+    "correctProductName": "HP 508A Magenta Original LaserJet Toner Cartridge (CF363A)",
+    "correctSku": "HP CF363A",
+    "notes": ""
   }
 ]
