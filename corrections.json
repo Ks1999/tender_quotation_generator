@@ -8279,5 +8279,18 @@
     "correctProductName": "Canon 054 Yellow Toner Cartridge 1.2k",
     "correctSku": "C CATR 054Y",
     "notes": ""
+  },
+  {
+    "id": 1194,
+    "contributedBy": "(not provided)",
+    "date": "2026-09-09",
+    "sourceSpec": "BURHANI_KAJIAN_PASARAN-SUPPLIER_extracted_items.json",
+    "description": "CANON IMAGE CLASS LBP623CDW (Magenta) | PART NUMBER: Cartridge 054 | PAGE YIELD: 1,200",
+    "qty": 1,
+    "uom": "unit",
+    "autoMatchAttempt": "Flagged for review — no candidate",
+    "correctProductName": "Canon 054 Magenta Toner Cartridge 1.2k",
+    "correctSku": "C CATR 054M",
+    "notes": ""
   }
 ]
