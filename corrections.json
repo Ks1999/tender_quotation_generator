@@ -6758,5 +6758,18 @@
     "correctProductName": "Not carried",
     "correctSku": "N/A",
     "notes": "HP 910 series. Genuine gap."
+  },
+  {
+    "id": 1009,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Ink for HP OFFICEJET 7110 WIDE FORMAT Printer (Black)",
+    "qty": "16",
+    "uom": "unit",
+    "autoMatchAttempt": "No Match",
+    "correctProductName": "Not carried",
+    "correctSku": "N/A",
+    "notes": "HP OfficeJet 7110 Wide Format ePrinter uses HP 940 series. The near-matches on a bare '940' search are unrelated HP 70 DesignJet printheads. Genuine gap."
   }
 ]
