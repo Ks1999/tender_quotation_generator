@@ -5978,5 +5978,18 @@
     "correctProductName": "HP 131A Magenta LaserJet Toner Cartridge (CF213A)",
     "correctSku": "HP CF213A",
     "notes": ""
+  },
+  {
+    "id": 949,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Toner Cartridge for HP Color Laserjet Pro 200 MFP Printer (Yellow)",
+    "qty": "6",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CF212A — HP 131A Yellow LaserJet Toner Cartridge (CF212A)",
+    "correctProductName": "HP 131A Yellow LaserJet Toner Cartridge (CF212A)",
+    "correctSku": "HP CF212A",
+    "notes": ""
   }
 ]
