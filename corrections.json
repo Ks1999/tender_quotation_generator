@@ -6134,5 +6134,18 @@
     "correctProductName": "HP 215A Black Original LaserJet Toner Cartridge (New)",
     "correctSku": "HP W2310A",
     "notes": "Confirmed by user: HP LaserJet Pro 155nw uses HP 215A -- not the coincidental Brother TN-155 number collision the auto-matcher picked."
+  },
+  {
+    "id": 961,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Toner Cartridge for HP Laserjet Pro 155nw (Cyan)",
+    "qty": "25",
+    "uom": "unit",
+    "autoMatchAttempt": "HP W2311A — HP 215A Cyan Original LaserJet Toner Cartridge (New)",
+    "correctProductName": "HP 215A Cyan Original LaserJet Toner Cartridge (New)",
+    "correctSku": "HP W2311A",
+    "notes": ""
   }
 ]
