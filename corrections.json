@@ -5653,5 +5653,18 @@
     "correctProductName": "HP 26A Black LaserJet Toner Cartridge (CF226A)",
     "correctSku": "HP CF226A",
     "notes": "Confirmed via web search: HP LaserJet Pro M402dn uses HP 26A."
+  },
+  {
+    "id": 924,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Toner Cartridge for HP Laserjet PRO M203DN Printer (Black)",
+    "qty": "100",
+    "uom": "unit",
+    "autoMatchAttempt": "HP SU917A — Samsung MLT-D203U (SU917A) Black Ultra High Yield Toner Cartridge",
+    "correctProductName": "Samsung MLT-D203U (SU917A) Black Ultra High Yield Toner Cartridge",
+    "correctSku": "HP SU917A",
+    "notes": ""
   }
 ]
