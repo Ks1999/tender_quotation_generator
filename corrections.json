@@ -4002,5 +4002,18 @@
     "correctProductName": "HP 80A Black LaserJet Toner Cartridge (CF280A)",
     "correctSku": "HP CF280A",
     "notes": ""
+  },
+  {
+    "id": 797,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "HP 85 A",
+    "qty": "100",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CE285A — HP 85A Black LaserJet Toner Cartridge (CE285A)",
+    "correctProductName": "HP 85A Black LaserJet Toner Cartridge (CE285A)",
+    "correctSku": "HP CE285A",
+    "notes": ""
   }
 ]
