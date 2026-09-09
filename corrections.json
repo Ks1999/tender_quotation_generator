@@ -5471,5 +5471,18 @@
     "correctProductName": "HP GT53XL Black Original Ink Bottle 135ml",
     "correctSku": "HP 1VV21AA",
     "notes": "Confirmed by user 2026-08-25: standard HP GT53 Black is EOL, replaced by GT53XL -- GOH catalogs the replacement as HP 1VV21AA."
+  },
+  {
+    "id": 910,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_2.pdf",
+    "description": "HP GT52 Cyan",
+    "qty": "20",
+    "uom": "unit",
+    "autoMatchAttempt": "HP M0H54AA — HP Deskjet GT52 All-In-One Cyan Ink Bottles",
+    "correctProductName": "HP Deskjet GT52 All-In-One Cyan Ink Bottles",
+    "correctSku": "HP M0H54AA",
+    "notes": ""
   }
 ]
