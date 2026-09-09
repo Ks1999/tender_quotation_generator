@@ -6030,5 +6030,18 @@
     "correctProductName": "Not carried",
     "correctSku": "N/A",
     "notes": "Confirmed via web search: HP Color Laser MFP 179fnw toner is HP 117A series (W2070A/W2071A/W2072A/W2073A). GOH's catalog has zero matches. Genuine gap."
+  },
+  {
+    "id": 953,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Toner Cartridge for HP Color Laser MFP 179fnw Printer (Cyan)",
+    "qty": "8",
+    "uom": "unit",
+    "autoMatchAttempt": "No Match",
+    "correctProductName": "Not carried",
+    "correctSku": "N/A",
+    "notes": "HP 117A series, catalog code W2071A for Cyan. Genuine gap."
   }
 ]
