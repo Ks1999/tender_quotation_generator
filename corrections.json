@@ -3378,5 +3378,18 @@
     "correctProductName": "Brother LC-535XL Yellow Ink Cartridge",
     "correctSku": "B LC 535XLY",
     "notes": ""
+  },
+  {
+    "id": 749,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "BROHER TN 2150",
+    "qty": "5",
+    "uom": "unit",
+    "autoMatchAttempt": "B TN 2150 — Brother TN-2150 (High Capacity)",
+    "correctProductName": "Brother TN-2150 (High Capacity)",
+    "correctSku": "B TN 2150",
+    "notes": ""
   }
 ]
