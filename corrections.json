@@ -8357,5 +8357,18 @@
     "correctProductName": "Not carried",
     "correctSku": "N/A",
     "notes": "Confirmed via web search: correct transfer belt for the OKI ES8473 MFP is part no. 44846209. GOH's catalog carries toner and drum SKUs but no transfer belt for this model. Genuine gap."
+  },
+  {
+    "id": 1132,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi105.pdf",
+    "description": "Toner cartridge Oki B433/B513",
+    "qty": "120",
+    "uom": "unit",
+    "autoMatchAttempt": "OKI C433B 12K — OKI B433/B513 12k Toner",
+    "correctProductName": "OKI B433/B513 12k Toner",
+    "correctSku": "OKI C433B 12K",
+    "notes": ""
   }
 ]
