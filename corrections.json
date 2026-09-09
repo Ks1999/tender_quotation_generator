@@ -7681,5 +7681,18 @@
     "correctProductName": "OKI C310 C510 Magenta Toner Cartridge (44469756)",
     "correctSku": "OKI C310 MA",
     "notes": ""
+  },
+  {
+    "id": 1080,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi105.pdf",
+    "description": "Toner Oki C510/C531/MC561/MC56 2 Yellow",
+    "qty": "1000",
+    "uom": "unit",
+    "autoMatchAttempt": "OKI C310 YE — OKI C310 C510 Yellow Toner Cartridge (44469755)",
+    "correctProductName": "OKI C310 C510 Yellow Toner Cartridge (44469755)",
+    "correctSku": "OKI C310 YE",
+    "notes": ""
   }
 ]
