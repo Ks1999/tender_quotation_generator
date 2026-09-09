@@ -8240,5 +8240,18 @@
     "correctProductName": "OKI #45862836 Black Toner 14.6k",
     "correctSku": "OKI ES8473 BK",
     "notes": ""
+  },
+  {
+    "id": 1123,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi105.pdf",
+    "description": "OKI ES8473MFP Cyan Toner Cartridge",
+    "qty": "50",
+    "uom": "unit",
+    "autoMatchAttempt": "OKI ES8473 CY — OKI #45862835 Cyan Toner 8.8k",
+    "correctProductName": "OKI #45862835 Cyan Toner 8.8k",
+    "correctSku": "OKI ES8473 CY",
+    "notes": "Confirmed correct by user. Spec text states part no. 45862833 for this Cyan item, but that part no. is GOH's catalog code for the YELLOW cartridge (OKI ES8473 YE); GOH's Cyan SKU is 45862835. The tender spec's own stated part no. is the error -- matched (and confirmed) by the stated colour name."
   }
 ]
