@@ -3872,5 +3872,18 @@
     "correctProductName": "Epson L100 L200 L300 Yellow Ink Cartridge (C13T664400)",
     "correctSku": "EPS T664400",
     "notes": ""
+  },
+  {
+    "id": 787,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "EPSON 003 T00V100 (BLACK)",
+    "qty": "10",
+    "uom": "unit",
+    "autoMatchAttempt": "EPS T00V100 — Epson 003 T00V100 Ink Bottle Black 65ml",
+    "correctProductName": "Epson 003 T00V100 Ink Bottle Black 65ml",
+    "correctSku": "EPS T00V100",
+    "notes": ""
   }
 ]
