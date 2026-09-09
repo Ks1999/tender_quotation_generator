@@ -3937,5 +3937,18 @@
     "correctProductName": "HP 05A Black LaserJet Toner Cartridge (CE505A) [646805]",
     "correctSku": "HP CE505A",
     "notes": ""
+  },
+  {
+    "id": 792,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "HP 12 A",
+    "qty": "10",
+    "uom": "unit",
+    "autoMatchAttempt": "HP Q2612A — HP 12A Black LaserJet Toner Cartridge (Q2612A)",
+    "correctProductName": "HP 12A Black LaserJet Toner Cartridge (Q2612A)",
+    "correctSku": "HP Q2612A",
+    "notes": ""
   }
 ]
