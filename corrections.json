@@ -1233,5 +1233,18 @@
     "correctProductName": "Canon PG-745 Black Ink Cartridge",
     "correctSku": "C PG 745",
     "notes": ""
+  },
+  {
+    "id": 584,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "Canon PG-810 Ink Cartridge Black",
+    "qty": "961",
+    "uom": "unit",
+    "autoMatchAttempt": "C PG 810 — Canon PG-810 Black Ink Cartridge",
+    "correctProductName": "Canon PG-810 Black Ink Cartridge",
+    "correctSku": "C PG 810",
+    "notes": ""
   }
 ]
