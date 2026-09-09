@@ -2026,5 +2026,18 @@
     "correctProductName": "Canon CLI-726 Black Ink Cartridge",
     "correctSku": "C CLI 726 BK",
     "notes": ""
+  },
+  {
+    "id": 645,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "Canon CLI-726 Cyan Ink Cartridge",
+    "qty": "20",
+    "uom": "unit",
+    "autoMatchAttempt": "C CLI 726 C — Canon CLI-726 Cyan Ink Cartridge",
+    "correctProductName": "Canon CLI-726 Cyan Ink Cartridge",
+    "correctSku": "C CLI 726 C",
+    "notes": ""
   }
 ]
