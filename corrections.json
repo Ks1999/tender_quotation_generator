@@ -6602,5 +6602,18 @@
     "correctProductName": "HP 61 Tri-Color Ink Cartridge",
     "correctSku": "HP C0PA5AA",
     "notes": "Label reconstructed from a PDF page-break split."
+  },
+  {
+    "id": 997,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Ink for Printer HP DeskJet 4535 Printer (Black)",
+    "qty": "20",
+    "uom": "unit",
+    "autoMatchAttempt": "No Match",
+    "correctProductName": "Not carried",
+    "correctSku": "N/A",
+    "notes": "Confirmed via web search: HP DeskJet (Ink Advantage) 4535 uses HP 664 ink series. GOH's catalog does not carry it (only unrelated Epson T664 inks, a coincidental number match). Genuine gap."
   }
 ]
