@@ -3963,5 +3963,18 @@
     "correctProductName": "HP 35A Black LaserJet Toner Cartridge (CB435A)",
     "correctSku": "HP CB435A",
     "notes": ""
+  },
+  {
+    "id": 794,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "HP 36 A",
+    "qty": "30",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CB436A — HP 36A Black LaserJet Toner Cartridge (CB436A)",
+    "correctProductName": "HP 36A Black LaserJet Toner Cartridge (CB436A)",
+    "correctSku": "HP CB436A",
+    "notes": ""
   }
 ]
