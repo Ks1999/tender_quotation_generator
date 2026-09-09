@@ -9696,5 +9696,18 @@
     "correctProductName": "Epson T01D200 Cyan Ink Cartridge 20k",
     "correctSku": "EPS T01D200",
     "notes": ""
+  },
+  {
+    "id": 1303,
+    "contributedBy": "(not provided)",
+    "date": "2026-09-09",
+    "sourceSpec": "KDN_Kementerian_Dalam_Negeri-BURHANI_extracted_items.json",
+    "description": "HP 416X HIGH YIELD BLACK ORIGINAL LASERJET TONER CARTRIDGE (W2040XC)",
+    "qty": 30,
+    "uom": "unit",
+    "autoMatchAttempt": "Flagged for review — no candidate",
+    "correctProductName": "HP 416X Black Toner Cartridge 7.5k",
+    "correctSku": "HP W2040X",
+    "notes": ""
   }
 ]
