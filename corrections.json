@@ -2312,5 +2312,18 @@
     "correctProductName": "HP 213A Yellow Toner Cartridge 3k",
     "correctSku": "HP W2132A",
     "notes": ""
+  },
+  {
+    "id": 667,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "HP 22 Tri-Color Original Ink Cartridge (C9352AA)",
+    "qty": "20",
+    "uom": "unit",
+    "autoMatchAttempt": "No Match",
+    "correctProductName": "Not carried",
+    "correctSku": "N/A",
+    "notes": "Confirmed by user 2026-08-25: HP 22 Tri-Color (C9352AA) not carried by GOH."
   }
 ]
