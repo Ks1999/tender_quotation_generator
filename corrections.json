@@ -7746,5 +7746,18 @@
     "correctProductName": "OKI C310 C330 C510 C530 Transfer Belt - 60k (44472203)",
     "correctSku": "OKI C310 TR BLT",
     "notes": ""
+  },
+  {
+    "id": 1085,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi105.pdf",
+    "description": "Toner Oki C332/MC363 Black",
+    "qty": "90",
+    "uom": "unit",
+    "autoMatchAttempt": "OKI C332 BK — OKI C332/MC363 Toner cartridge 1.5k pages - Black (46508724)",
+    "correctProductName": "OKI C332/MC363 Toner cartridge 1.5k pages - Black (46508724)",
+    "correctSku": "OKI C332 BK",
+    "notes": ""
   }
 ]
