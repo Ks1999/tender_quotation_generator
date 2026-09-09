@@ -8084,5 +8084,18 @@
     "correctProductName": "#46358502 OKI C532/MC573 FUSER UNIT 60K",
     "correctSku": "OKI C532 FU",
     "notes": ""
+  },
+  {
+    "id": 1111,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi105.pdf",
+    "description": "Oki C532/MC573 Transfer Belt",
+    "qty": "7",
+    "uom": "unit",
+    "autoMatchAttempt": "OKI C532 TR BLT — #46394902 OKI C532/M573 Transfer Belt 60",
+    "correctProductName": "#46394902 OKI C532/M573 Transfer Belt 60",
+    "correctSku": "OKI C532 TR BLT",
+    "notes": ""
   }
 ]
