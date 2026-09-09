@@ -8201,5 +8201,18 @@
     "correctProductName": "OKI C650 CYAN DRUM 50K",
     "correctSku": "OKI C650 CY DR",
     "notes": ""
+  },
+  {
+    "id": 1120,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi105.pdf",
+    "description": "OKI C650dn Fuser Unit",
+    "qty": "50",
+    "uom": "unit",
+    "autoMatchAttempt": "OKI C650 FU — OKI YA8001-1032G014  FUSER UNIT (60K)",
+    "correctProductName": "OKI YA8001-1032G014  FUSER UNIT (60K)",
+    "correctSku": "OKI C650 FU",
+    "notes": ""
   }
 ]
