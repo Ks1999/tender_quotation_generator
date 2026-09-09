@@ -5835,5 +5835,18 @@
     "correctProductName": "HP 110A Blk Original laser Toner Crtg",
     "correctSku": "HP W1112A",
     "notes": "Confirmed via web search: HP Laser 108w uses HP 110A -- GOH catalogs this under Model 'HP W1112A' even though the Product Name text says \"110A\"."
+  },
+  {
+    "id": 938,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Toner Cartridge for HP Color Laserjet 1515 Series / HP Color LaserJet CP1515n Printer (Black)",
+    "qty": "6",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CB540A — HP 125A Black LaserJet Toner Cartridge (CB540A)",
+    "correctProductName": "HP 125A Black LaserJet Toner Cartridge (CB540A)",
+    "correctSku": "HP CB540A",
+    "notes": "Confirmed via web search: HP Color LaserJet CP1515n uses HP 125A series."
   }
 ]
