@@ -4184,5 +4184,18 @@
     "correctProductName": "HP 26A Black LaserJet Toner Cartridge (CF226A)",
     "correctSku": "HP CF226A",
     "notes": ""
+  },
+  {
+    "id": 811,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "HP 680 (BK)",
+    "qty": "30",
+    "uom": "unit",
+    "autoMatchAttempt": "HP F6V27AA — HP 680 Black Original Ink Advantage Cartridge (F6V27AA)",
+    "correctProductName": "HP 680 Black Original Ink Advantage Cartridge (F6V27AA)",
+    "correctSku": "HP F6V27AA",
+    "notes": ""
   }
 ]
