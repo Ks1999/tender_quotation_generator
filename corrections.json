@@ -2273,5 +2273,18 @@
     "correctProductName": "HP 213A Black Toner Cartridge 3.5k",
     "correctSku": "HP W2130A",
     "notes": ""
+  },
+  {
+    "id": 664,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "HP 213A Cyan Original Laser Jet Toner Cartridge",
+    "qty": "24",
+    "uom": "unit",
+    "autoMatchAttempt": "HP W2131A — HP 213A Cyan Toner Cartridge 3k",
+    "correctProductName": "HP 213A Cyan Toner Cartridge 3k",
+    "correctSku": "HP W2131A",
+    "notes": ""
   }
 ]
