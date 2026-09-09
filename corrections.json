@@ -4691,5 +4691,18 @@
     "correctProductName": "HP 119A Magenta Original Laser Toner Cartridge",
     "correctSku": "HP W2093A",
     "notes": ""
+  },
+  {
+    "id": 850,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "HP 76A BLACK",
+    "qty": "2",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CF276A — HP 76A Black Original LaserJet Toner Cartridge",
+    "correctProductName": "HP 76A Black Original LaserJet Toner Cartridge",
+    "correctSku": "HP CF276A",
+    "notes": ""
   }
 ]
