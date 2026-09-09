@@ -7902,5 +7902,18 @@
     "correctProductName": "OKI C610 Cyan Drum - 44315111",
     "correctSku": "OKI C610C DR",
     "notes": ""
+  },
+  {
+    "id": 1097,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi105.pdf",
+    "description": "Oki C610DN Fuser Unit",
+    "qty": "7",
+    "uom": "unit",
+    "autoMatchAttempt": "OKI C610 FU — OKI C610 C711 Fuser Unit (44289104)",
+    "correctProductName": "OKI C610 C711 Fuser Unit (44289104)",
+    "correctSku": "OKI C610 FU",
+    "notes": ""
   }
 ]
