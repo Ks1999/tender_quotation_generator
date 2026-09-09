@@ -4613,5 +4613,18 @@
     "correctProductName": "HP 107A Black Original Laser Toner Cartridge  For Model HP Laser 100 Printer series, HP Laser MFP 130 Printer series",
     "correctSku": "HP W1107A",
     "notes": ""
+  },
+  {
+    "id": 844,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "HP CF232A",
+    "qty": "5",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CF232A — HP 32A Original LaserJet Imaging Drum (CF232A)",
+    "correctProductName": "HP 32A Original LaserJet Imaging Drum (CF232A)",
+    "correctSku": "HP CF232A",
+    "notes": "Label reconstructed from a PDF page-break split in the source spec (verified against raw extracted text)."
   }
 ]
