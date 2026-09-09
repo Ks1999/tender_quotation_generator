@@ -5731,5 +5731,18 @@
     "correctProductName": "HP 55A Black LaserJet Toner Cartridge (CE255A) [662499]",
     "correctSku": "HP CE255A",
     "notes": "Confirmed via web search: HP LaserJet P3015dn uses HP 55A."
+  },
+  {
+    "id": 930,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Toner Cartridge for HP Laserjet P4015N/P4014 Printer (Black)",
+    "qty": "2",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CC364A — HP 64A Black LaserJet Toner Cartridge (CC364A) [646745]",
+    "correctProductName": "HP 64A Black LaserJet Toner Cartridge (CC364A) [646745]",
+    "correctSku": "HP CC364A",
+    "notes": "Confirmed via web search: HP LaserJet P4015n/P4014 uses HP 64A."
   }
 ]
