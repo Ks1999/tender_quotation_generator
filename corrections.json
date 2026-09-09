@@ -6667,5 +6667,18 @@
     "correctProductName": "Not carried",
     "correctSku": "N/A",
     "notes": "HP OfficeJet Pro 6960 uses HP 902 ink series. GOH's catalog does not carry it. Genuine gap."
+  },
+  {
+    "id": 1002,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Ink for HP OFFICEJET PRO 6960 AiO Printer (Cyan)",
+    "qty": "22",
+    "uom": "unit",
+    "autoMatchAttempt": "No Match",
+    "correctProductName": "Not carried",
+    "correctSku": "N/A",
+    "notes": "HP 902 series. Genuine gap."
   }
 ]
