@@ -7486,5 +7486,18 @@
     "correctProductName": "HP 680 Black Original Ink Advantage Cartridge (F6V27AA)",
     "correctSku": "HP F6V27AA",
     "notes": ""
+  },
+  {
+    "id": 1065,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_3.pdf",
+    "description": "HP 678 COLOUR",
+    "qty": "50",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CZ108AA — HP 678 Tri-color Ink Cartridge (CZ108AA)",
+    "correctProductName": "HP 678 Tri-color Ink Cartridge (CZ108AA)",
+    "correctSku": "HP CZ108AA",
+    "notes": ""
   }
 ]
