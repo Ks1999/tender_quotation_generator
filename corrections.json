@@ -3482,5 +3482,18 @@
     "correctProductName": "Canon PG-47 Black Ink Cartridge",
     "correctSku": "C PG 47BK",
     "notes": ""
+  },
+  {
+    "id": 757,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "CANON CL 57 (BLACK)",
+    "qty": "30",
+    "uom": "unit",
+    "autoMatchAttempt": "C CL 57CL — Canon CL-57 Color Ink Cartridge",
+    "correctProductName": "Canon CL-57 Color Ink Cartridge",
+    "correctSku": "C CL 57CL",
+    "notes": "Confirmed by user 2026-08-25: this is an error in the spec itself -- CL-57 is a Color cartridge, there is no Black variant. \"(BLACK)\" in the spec should read \"(Color)\"; the auto-match (Canon CL-57 Color Ink Cartridge) is correct as-is."
   }
 ]
