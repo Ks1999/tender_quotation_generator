@@ -2793,5 +2793,18 @@
     "correctProductName": "HP 410A Black LaserJet Toner Cartridge (CF410A)",
     "correctSku": "HP CF410A",
     "notes": ""
+  },
+  {
+    "id": 704,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "HP CF412A (HP 410A) Yellow Original Laser Jet Toner Cartridge",
+    "qty": "270",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CF412A — HP 410A Yellow LaserJet Toner Cartridge (CF412A)",
+    "correctProductName": "HP 410A Yellow LaserJet Toner Cartridge (CF412A)",
+    "correctSku": "HP CF412A",
+    "notes": ""
   }
 ]
