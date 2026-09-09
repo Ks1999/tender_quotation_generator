@@ -4054,5 +4054,18 @@
     "correctProductName": "HP 704 Black Ink Cartridge (CN692AA)",
     "correctSku": "HP CN692AA",
     "notes": ""
+  },
+  {
+    "id": 801,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "HP 704 (COLOR)",
+    "qty": "15",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CN693AA — HP 704 Tri-color Ink Cartridge (CN693AA)",
+    "correctProductName": "HP 704 Tri-color Ink Cartridge (CN693AA)",
+    "correctSku": "HP CN693AA",
+    "notes": ""
   }
 ]
