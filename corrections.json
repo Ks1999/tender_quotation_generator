@@ -4210,5 +4210,18 @@
     "correctProductName": "HP 680 Tri-Color Original Ink Advantage Cartridge (F6V26AA)",
     "correctSku": "HP F6V26AA",
     "notes": "Confirmed by user 2026-08-25: the HP 680 series is a 2-cartridge system (Black + Color only, no separate CMY), so \"(C)\" here means \"Colour\", not \"Cyan\". Correct SKU is the Tri-Color cartridge, HP F6V26AA -- not the Black one (F6V27AA) the auto-matcher's default cyan-reading picked."
+  },
+  {
+    "id": 813,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "HP CF400A (BK) / 201A(BK)",
+    "qty": "1",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CF400A — HP 201A Black Original LaserJet Toner Cartridge (CF400A) [748846]",
+    "correctProductName": "HP 201A Black Original LaserJet Toner Cartridge (CF400A) [748846]",
+    "correctSku": "HP CF400A",
+    "notes": ""
   }
 ]
