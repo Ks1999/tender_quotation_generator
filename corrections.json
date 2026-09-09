@@ -2754,5 +2754,18 @@
     "correctProductName": "HP 26A Black LaserJet Toner Cartridge (CF226A)",
     "correctSku": "HP CF226A",
     "notes": ""
+  },
+  {
+    "id": 701,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "HP CF230A (30A) Black Toner Cartridge",
+    "qty": "70",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CF230A — HP 30A Black Original LaserJet Toner Cartridge (CF230A)",
+    "correctProductName": "HP 30A Black Original LaserJet Toner Cartridge (CF230A)",
+    "correctSku": "HP CF230A",
+    "notes": ""
   }
 ]
