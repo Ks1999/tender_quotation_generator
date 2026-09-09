@@ -4041,5 +4041,18 @@
     "correctProductName": "HP 678 Tri-color Ink Cartridge (CZ108AA)",
     "correctSku": "HP CZ108AA",
     "notes": ""
+  },
+  {
+    "id": 800,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "HP 704 (BLACK)",
+    "qty": "25",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CN692AA — HP 704 Black Ink Cartridge (CN692AA)",
+    "correctProductName": "HP 704 Black Ink Cartridge (CN692AA)",
+    "correctSku": "HP CN692AA",
+    "notes": ""
   }
 ]
