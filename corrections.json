@@ -6862,5 +6862,18 @@
     "correctProductName": "Not carried",
     "correctSku": "N/A",
     "notes": "HP 953 series. Genuine gap."
+  },
+  {
+    "id": 1017,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Ink for EPSON L1800 A3 PRINTER (Black)",
+    "qty": "18",
+    "uom": "unit",
+    "autoMatchAttempt": "EPS T673100 — Epson L800 Black Ink (T6731)",
+    "correctProductName": "Epson L800 Black Ink (T6731)",
+    "correctSku": "EPS T673100",
+    "notes": "Confirmed via web search: Epson L1800 A3 printer uses the 6-color T673 series (T6731-T6736), not the 4-color T664 series. The auto-matcher had previously false-matched all 6 colours to an unrelated 'GBC Fusion Plus 7000L A3 Laminator' via a coincidental 'A3' (paper size) token collision -- fixed generally by no longer treating a bare digit glued to a single letter (e.g. 'A3', 'A4') as a real product-code candidate."
   }
 ]
