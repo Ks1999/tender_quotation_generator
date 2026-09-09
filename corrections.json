@@ -6719,5 +6719,18 @@
     "correctProductName": "Not carried",
     "correctSku": "N/A",
     "notes": "HP OfficeJet Pro 8020 (8010/8020/8030 series) uses HP 910 -- not HP 962/965, which is for the visually-similar OfficeJet 9010/9020 series. GOH carries HP 965 but that's the wrong printer family. Genuine gap."
+  },
+  {
+    "id": 1006,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Ink for HP OFFICEJET PRO 8020 AiO Printer (Cyan)",
+    "qty": "24",
+    "uom": "unit",
+    "autoMatchAttempt": "No Match",
+    "correctProductName": "Not carried",
+    "correctSku": "N/A",
+    "notes": "HP 910 series (see Black entry for the 910-vs-962/965 distinction). Genuine gap."
   }
 ]
