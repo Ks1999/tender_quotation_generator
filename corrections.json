@@ -2962,5 +2962,18 @@
     "correctProductName": "OKI C510/530 MAGENTA TONER 5K 44469726 ( ITEM NO : OKI C510 MA )",
     "correctSku": "OKI C510 MA",
     "notes": ""
+  },
+  {
+    "id": 717,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "OKI 44469727 (Cyan)",
+    "qty": "212",
+    "uom": "unit",
+    "autoMatchAttempt": "OKI C510 CY — OKI C510/530 CYAN TONER 5k 44469727 ( ITEM NO : OKI C510 CY )",
+    "correctProductName": "OKI C510/530 CYAN TONER 5k 44469727 ( ITEM NO : OKI C510 CY )",
+    "correctSku": "OKI C510 CY",
+    "notes": ""
   }
 ]
