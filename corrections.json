@@ -1090,5 +1090,18 @@
     "correctProductName": "Canon Cartridge 329 Yellow Toner Cartridge",
     "correctSku": "C CATR 329Y",
     "notes": ""
+  },
+  {
+    "id": 573,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "Canon CL-41 Colour Fine Cartridge",
+    "qty": "80",
+    "uom": "unit",
+    "autoMatchAttempt": "No Match",
+    "correctProductName": "Not carried",
+    "correctSku": "N/A",
+    "notes": "Canon CL-41 not carried (confirmed by user 2026-08-25)"
   }
 ]
