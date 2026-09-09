@@ -2936,5 +2936,18 @@
     "correctProductName": "Not carried",
     "correctSku": "N/A",
     "notes": "Confirmed by user 2026-08-25: Lexmark not carried by GOH at all."
+  },
+  {
+    "id": 715,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "OKI 44469725 (Yellow)",
+    "qty": "262",
+    "uom": "unit",
+    "autoMatchAttempt": "OKI C510 YE — OKI C510/530 YELLOW TONER 5K 44469725 ( ITEM NO : OKI C510 YE )",
+    "correctProductName": "OKI C510/530 YELLOW TONER 5K 44469725 ( ITEM NO : OKI C510 YE )",
+    "correctSku": "OKI C510 YE",
+    "notes": ""
   }
 ]
