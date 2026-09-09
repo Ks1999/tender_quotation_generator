@@ -6225,5 +6225,18 @@
     "correctProductName": "HP 222A Mgn LaserJet Toner Cartridge 1.2",
     "correctSku": "HP W2223A",
     "notes": ""
+  },
+  {
+    "id": 968,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Toner Cartridge for Canon imageCLASS LBP6030/imageCLASS LBP6030w Printer",
+    "qty": "18",
+    "uom": "unit",
+    "autoMatchAttempt": "No Match",
+    "correctProductName": "Not carried",
+    "correctSku": "N/A",
+    "notes": "Confirmed via web search: correct toner is Canon Cartridge 125 (3484B001AA). GOH's catalog has no Canon 125 toner. Genuine gap."
   }
 ]
