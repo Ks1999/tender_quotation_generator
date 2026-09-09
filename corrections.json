@@ -5757,5 +5757,18 @@
     "correctProductName": "Not carried",
     "correctSku": "N/A",
     "notes": "Confirmed via web search: correct toner is HP 58A (CF258A). GOH's catalog has zero matches for CF258A/258A/258X. Genuine gap, not a matching failure."
+  },
+  {
+    "id": 932,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Toner Cartridge for HP Laserjet PRO M1536DNF (Black)",
+    "qty": "650",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CE278A — HP 78A Black LaserJet Toner Cartridge (CE278A) [644808]",
+    "correctProductName": "HP 78A Black LaserJet Toner Cartridge (CE278A) [644808]",
+    "correctSku": "HP CE278A",
+    "notes": "Confirmed by user: HP LaserJet Pro M1536dnf uses HP 78A."
   }
 ]
