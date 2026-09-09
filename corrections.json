@@ -4353,5 +4353,18 @@
     "correctProductName": "HP 17A Black Original LaserJet Toner Cartridge (CF217A)",
     "correctSku": "HP CF217A",
     "notes": ""
+  },
+  {
+    "id": 824,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "HP 682 (BK)",
+    "qty": "25",
+    "uom": "unit",
+    "autoMatchAttempt": "HP 3YM77AA — HP 682 Black Ink Cartridge (3YM77AA)",
+    "correctProductName": "HP 682 Black Ink Cartridge (3YM77AA)",
+    "correctSku": "HP 3YM77AA",
+    "notes": ""
   }
 ]
