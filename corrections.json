@@ -2949,5 +2949,18 @@
     "correctProductName": "OKI C510/530 YELLOW TONER 5K 44469725 ( ITEM NO : OKI C510 YE )",
     "correctSku": "OKI C510 YE",
     "notes": ""
+  },
+  {
+    "id": 716,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "OKI 44469726 (Magenta)",
+    "qty": "262",
+    "uom": "unit",
+    "autoMatchAttempt": "OKI C510 MA — OKI C510/530 MAGENTA TONER 5K 44469726 ( ITEM NO : OKI C510 MA )",
+    "correctProductName": "OKI C510/530 MAGENTA TONER 5K 44469726 ( ITEM NO : OKI C510 MA )",
+    "correctSku": "OKI C510 MA",
+    "notes": ""
   }
 ]
