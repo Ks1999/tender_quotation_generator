@@ -3768,5 +3768,18 @@
     "correctProductName": "Canon CLI-751 Black Ink Cartridge",
     "correctSku": "C CLI 751BK",
     "notes": ""
+  },
+  {
+    "id": 779,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "CANON CLI 751 C",
+    "qty": "50",
+    "uom": "unit",
+    "autoMatchAttempt": "C CLI 751C — Canon CLI-751 Cyan Ink Cartridge",
+    "correctProductName": "Canon CLI-751 Cyan Ink Cartridge",
+    "correctSku": "C CLI 751C",
+    "notes": ""
   }
 ]
