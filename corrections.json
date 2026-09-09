@@ -4730,5 +4730,18 @@
     "correctProductName": "HP 46 Tri-color Ink Cartridge (CZ638AA)",
     "correctSku": "HP CZ638AA",
     "notes": ""
+  },
+  {
+    "id": 853,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "HP 19A",
+    "qty": "1",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CF219A — HP 19A Original LaserJet Imaging Drum (CF219A)",
+    "correctProductName": "HP 19A Original LaserJet Imaging Drum (CF219A)",
+    "correctSku": "HP CF219A",
+    "notes": ""
   }
 ]
