@@ -7642,5 +7642,18 @@
     "correctProductName": "Canon CL-811 Color Ink Cartridge",
     "correctSku": "C CL 811",
     "notes": "Confirmed correct by user."
+  },
+  {
+    "id": 1077,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi105.pdf",
+    "description": "Toner Oki C510/C531/MC561/MC56 2 Black",
+    "qty": "1000",
+    "uom": "unit",
+    "autoMatchAttempt": "OKI C310 BK — OKI C310 C510 Black Toner Cartridge 44469818 (Item no: OKI C310 BK)",
+    "correctProductName": "OKI C310 C510 Black Toner Cartridge 44469818 (Item no: OKI C310 BK)",
+    "correctSku": "OKI C310 BK",
+    "notes": ""
   }
 ]
