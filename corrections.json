@@ -3677,5 +3677,18 @@
     "correctProductName": "Canon GI-790 - Magenta (70ml) Ink Cartridge",
     "correctSku": "C GI 790 M",
     "notes": ""
+  },
+  {
+    "id": 772,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "CANON GI-790 (Y)",
+    "qty": "3",
+    "uom": "unit",
+    "autoMatchAttempt": "C GI 790 Y — Canon GI-790 - Yellow (70ml) Ink Cartridge",
+    "correctProductName": "Canon GI-790 - Yellow (70ml) Ink Cartridge",
+    "correctSku": "C GI 790 Y",
+    "notes": ""
   }
 ]
