@@ -8227,5 +8227,18 @@
     "correctProductName": "OKI YA8001-1027G014 TRANSFER BELT (60K)",
     "correctSku": "OKI C650 TR BLT",
     "notes": ""
+  },
+  {
+    "id": 1122,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi105.pdf",
+    "description": "OKI ES8473MFP Black Toner Cartridge",
+    "qty": "50",
+    "uom": "unit",
+    "autoMatchAttempt": "OKI ES8473 BK — OKI #45862836 Black Toner 14.6k",
+    "correctProductName": "OKI #45862836 Black Toner 14.6k",
+    "correctSku": "OKI ES8473 BK",
+    "notes": ""
   }
 ]
