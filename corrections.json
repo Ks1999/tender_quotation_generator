@@ -7811,5 +7811,18 @@
     "correctProductName": "OKI C610 Black Toner Cartridge (44315312)",
     "correctSku": "OKI C610 BK",
     "notes": ""
+  },
+  {
+    "id": 1090,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi105.pdf",
+    "description": "Toner Oki C610DN Cyan",
+    "qty": "45",
+    "uom": "unit",
+    "autoMatchAttempt": "OKI C610 CY — OKI C610 Cyan Toner Cartridge (44315311)",
+    "correctProductName": "OKI C610 Cyan Toner Cartridge (44315311)",
+    "correctSku": "OKI C610 CY",
+    "notes": ""
   }
 ]
