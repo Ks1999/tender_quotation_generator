@@ -4652,5 +4652,18 @@
     "correctProductName": "HP 119A Black Original Laser Toner Cartridge",
     "correctSku": "HP W2090A",
     "notes": ""
+  },
+  {
+    "id": 847,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "HP 119A (CYAN) / W 2091A",
+    "qty": "1",
+    "uom": "unit",
+    "autoMatchAttempt": "HP W2091A — HP 119A Cyan Original Laser Toner Cartridge",
+    "correctProductName": "HP 119A Cyan Original Laser Toner Cartridge",
+    "correctSku": "HP W2091A",
+    "notes": ""
   }
 ]
