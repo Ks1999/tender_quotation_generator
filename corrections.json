@@ -4587,5 +4587,18 @@
     "correctProductName": "HP 508A Magenta Original LaserJet Toner Cartridge (CF363A)",
     "correctSku": "HP CF363A",
     "notes": ""
+  },
+  {
+    "id": 842,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "HP 136A",
+    "qty": "30",
+    "uom": "unit",
+    "autoMatchAttempt": "HP W1360A — HP 136A Black Original LaserJet Toner Cartridge (W1360A)",
+    "correctProductName": "HP 136A Black Original LaserJet Toner Cartridge (W1360A)",
+    "correctSku": "HP W1360A",
+    "notes": ""
   }
 ]
