@@ -7941,5 +7941,18 @@
     "correctProductName": "Not carried",
     "correctSku": "N/A",
     "notes": "Confirmed catalog gap: GOH does not carry Lexmark."
+  },
+  {
+    "id": 1168,
+    "contributedBy": "(not provided)",
+    "date": "2026-09-09",
+    "sourceSpec": "BURHANI_KAJIAN_PASARAN-SUPPLIER_extracted_items.json",
+    "description": "OKI C612 (Magenta) | PART NUMBER: 46507510 | PAGE YIELD: 6,000",
+    "qty": 1,
+    "uom": "unit",
+    "autoMatchAttempt": "Flagged for review — no candidate",
+    "correctProductName": "OKI C612 Magenta Toner 6K APSTNRFG - 46507510",
+    "correctSku": "OKI C612 MA",
+    "notes": ""
   }
 ]
