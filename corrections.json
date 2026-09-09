@@ -5848,5 +5848,18 @@
     "correctProductName": "HP 125A Black LaserJet Toner Cartridge (CB540A)",
     "correctSku": "HP CB540A",
     "notes": "Confirmed via web search: HP Color LaserJet CP1515n uses HP 125A series."
+  },
+  {
+    "id": 939,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Toner Cartridge for HP Color Laserjet 1515 Series / HP Color LaserJet CP1515n Printer (Cyan)",
+    "qty": "4",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CB541A — HP 125A Cyan LaserJet Toner Cartridge (CB541A)",
+    "correctProductName": "HP 125A Cyan LaserJet Toner Cartridge (CB541A)",
+    "correctSku": "HP CB541A",
+    "notes": ""
   }
 ]
