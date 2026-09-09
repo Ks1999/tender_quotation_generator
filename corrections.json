@@ -1116,5 +1116,18 @@
     "correctProductName": "Canon CL-746 Color Ink Cartridge",
     "correctSku": "C CL 746",
     "notes": ""
+  },
+  {
+    "id": 575,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "Canon CL-811 Ink Cartridge - Color",
+    "qty": "751",
+    "uom": "unit",
+    "autoMatchAttempt": "C CL 811 — Canon CL-811 Color Ink Cartridge",
+    "correctProductName": "Canon CL-811 Color Ink Cartridge",
+    "correctSku": "C CL 811",
+    "notes": ""
   }
 ]
