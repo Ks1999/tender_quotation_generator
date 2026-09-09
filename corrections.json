@@ -934,5 +934,18 @@
     "correctProductName": "Canon 047 Black Toner Cartridge",
     "correctSku": "C CATR 047",
     "notes": "Catalog-verified 2026-09-03."
+  },
+  {
+    "id": 561,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "Brother Original TN-2280",
+    "qty": "232",
+    "uom": "unit",
+    "autoMatchAttempt": "B TN 2280 — Brother TN-2280 Toner Cartridge - HIGH Capacity",
+    "correctProductName": "Brother TN-2280 Toner Cartridge - HIGH Capacity",
+    "correctSku": "B TN 2280",
+    "notes": ""
   }
 ]
