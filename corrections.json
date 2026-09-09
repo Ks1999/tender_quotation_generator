@@ -4249,5 +4249,18 @@
     "correctProductName": "HP 201A Yellow Original LaserJet Toner Cartridge (CF402A) [748847]",
     "correctSku": "HP CF402A",
     "notes": ""
+  },
+  {
+    "id": 816,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "HP CF403 (M) / 201A (M)",
+    "qty": "1",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CF403A — HP 201A Magenta Original LaserJet Toner Cartridge (CF403A) [748848]",
+    "correctProductName": "HP 201A Magenta Original LaserJet Toner Cartridge (CF403A) [748848]",
+    "correctSku": "HP CF403A",
+    "notes": ""
   }
 ]
