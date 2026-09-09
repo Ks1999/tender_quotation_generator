@@ -3846,5 +3846,18 @@
     "correctProductName": "Epson L100 L200 L300 Cyan Ink Cartridge (C13T664200)",
     "correctSku": "EPS T664200",
     "notes": ""
+  },
+  {
+    "id": 785,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "EPSON T6643 (M)",
+    "qty": "2",
+    "uom": "unit",
+    "autoMatchAttempt": "EPS T664300 — Epson L100 L200 L300 Magenta Ink Cartridge (C13T664300)",
+    "correctProductName": "Epson L100 L200 L300 Magenta Ink Cartridge (C13T664300)",
+    "correctSku": "EPS T664300",
+    "notes": ""
   }
 ]
