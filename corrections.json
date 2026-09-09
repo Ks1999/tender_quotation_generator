@@ -3612,5 +3612,18 @@
     "correctProductName": "Canon CL 98 Color Ink Cartridge",
     "correctSku": "C CL 98CL",
     "notes": ""
+  },
+  {
+    "id": 767,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "CANON PG 40",
+    "qty": "5",
+    "uom": "unit",
+    "autoMatchAttempt": "No Match",
+    "correctProductName": "Not carried",
+    "correctSku": "N/A",
+    "notes": "Canon PG-40 not carried (confirmed by user 2026-08-25)"
   }
 ]
