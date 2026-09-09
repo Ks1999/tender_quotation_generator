@@ -6420,5 +6420,18 @@
     "correctProductName": "Canon 057 Toner Cartridge - Black, 3.1k",
     "correctSku": "C CATR 057",
     "notes": "Confirmed via web search: Canon imageCLASS LBP226dw uses Canon 057 series (standard yield; GOH also carries 057H high-yield)."
+  },
+  {
+    "id": 983,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Drum for HP Laserjet PRO M203DN",
+    "qty": "10",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CF232A — HP 32A Original LaserJet Imaging Drum (CF232A)",
+    "correctProductName": "HP 32A Original LaserJet Imaging Drum (CF232A)",
+    "correctSku": "HP CF232A",
+    "notes": "Confirmed by user (\"HP 30 series\"): imaging drum for HP LaserJet Pro M203dn is HP 32A, companion drum to the HP 30A toner family."
   }
 ]
