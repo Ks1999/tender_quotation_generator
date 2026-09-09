@@ -5159,5 +5159,18 @@
     "correctProductName": "Canon CL-57S Colour Fine Cartridge - 8ml",
     "correctSku": "C CL 57S",
     "notes": ""
+  },
+  {
+    "id": 886,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_2.pdf",
+    "description": "HP 678 BLACK CZ107AA",
+    "qty": "40",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CZ107AA — HP 678 Black Ink Cartridge (CZ107AA)",
+    "correctProductName": "HP 678 Black Ink Cartridge (CZ107AA)",
+    "correctSku": "HP CZ107AA",
+    "notes": ""
   }
 ]
