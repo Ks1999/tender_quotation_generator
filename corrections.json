@@ -1636,5 +1636,18 @@
     "correctProductName": "HP 125A Cyan LaserJet Toner Cartridge (CB541A)",
     "correctSku": "HP CB541A",
     "notes": ""
+  },
+  {
+    "id": 615,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "HP CB542A (125A) Yellow Toner Cartridge",
+    "qty": "80",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CB542A — HP 125A Yellow LaserJet Toner Cartridge (CB542A)",
+    "correctProductName": "HP 125A Yellow LaserJet Toner Cartridge (CB542A)",
+    "correctSku": "HP CB542A",
+    "notes": ""
   }
 ]
