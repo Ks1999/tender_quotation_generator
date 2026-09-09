@@ -6186,5 +6186,18 @@
     "correctProductName": "HP 222A Blk LaserJet Toner Cartridge 1.3",
     "correctSku": "HP W2220A",
     "notes": "Confirmed by user: uses the HP 222 series (printer model \"3303dn\" itself doesn't match a known HP name, but user confirmed the consumable directly)."
+  },
+  {
+    "id": 965,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Toner Cartridge for HP Laserjet Pro MFP 3303dn (Cyan)",
+    "qty": "12",
+    "uom": "unit",
+    "autoMatchAttempt": "HP W2221A — HP 222A Cyn LaserJet Toner Cartridge 1.2",
+    "correctProductName": "HP 222A Cyn LaserJet Toner Cartridge 1.2",
+    "correctSku": "HP W2221A",
+    "notes": "Label reconstructed from a PDF page-break split."
   }
 ]
