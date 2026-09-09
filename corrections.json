@@ -5614,5 +5614,18 @@
     "correctProductName": "G2020",
     "correctSku": "G3020",
     "notes": "G3060"
+  },
+  {
+    "id": 921,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Toner Cartridge for HP Laserjet P2055DN Printer (Black)",
+    "qty": "24",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CE505A — HP 05A Black LaserJet Toner Cartridge (CE505A) [646805]",
+    "correctProductName": "HP 05A Black LaserJet Toner Cartridge (CE505A) [646805]",
+    "correctSku": "HP CE505A",
+    "notes": "Confirmed via web search 2026-08-26: correct toner for the HP LaserJet P2055dn is HP 05A."
   }
 ]
