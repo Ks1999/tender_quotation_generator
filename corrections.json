@@ -7122,5 +7122,18 @@
     "correctProductName": "Epson LQ2090 (EPS SO15345)",
     "correctSku": "EPS SO15345",
     "notes": "Confirmed by user: correct ribbon is EPS SO15345. The auto-matcher had previously false-matched this to an unrelated Canon toner cartridge via a coincidental bare '24' digit collision (from '24-PIN') -- fixed generally by excluding short family-less digit matches for hardware categories (drum/fuser/belt/ribbon/maintenance)."
+  },
+  {
+    "id": 1037,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Ribbon for Evolis Primacy Expert Card Printer (PM1H0000BS) YMCKO",
+    "qty": "46",
+    "uom": "unit",
+    "autoMatchAttempt": "No Match",
+    "correctProductName": "Not carried",
+    "correctSku": "N/A",
+    "notes": "Confirmed by user: not carried by GOH."
   }
 ]
