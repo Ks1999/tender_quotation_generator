@@ -4405,5 +4405,18 @@
     "correctProductName": "HP 202A Cyan LaserJet Toner Cartridge",
     "correctSku": "HP CF501A",
     "notes": ""
+  },
+  {
+    "id": 828,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "HP 202A (Y) / CF 500A (Y)",
+    "qty": "1",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CF502A — HP 202A Yellow LaserJet Toner Cartridge",
+    "correctProductName": "HP 202A Yellow LaserJet Toner Cartridge",
+    "correctSku": "HP CF502A",
+    "notes": ""
   }
 ]
