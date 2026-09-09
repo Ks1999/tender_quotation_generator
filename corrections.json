@@ -4704,5 +4704,18 @@
     "correctProductName": "HP 76A Black Original LaserJet Toner Cartridge",
     "correctSku": "HP CF276A",
     "notes": ""
+  },
+  {
+    "id": 851,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "HP 46A BLACK",
+    "qty": "4",
+    "uom": "unit",
+    "autoMatchAttempt": "No Match",
+    "correctProductName": "Not carried",
+    "correctSku": "N/A",
+    "notes": "Confirmed by user 2026-08-25: HP 46A Black not carried by GOH."
   }
 ]
