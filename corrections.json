@@ -3924,5 +3924,18 @@
     "correctProductName": "Epson 003 T00V400 Ink Bottle Yellow 65ml",
     "correctSku": "EPS T00V400",
     "notes": ""
+  },
+  {
+    "id": 791,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "HP 05A",
+    "qty": "2",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CE505A — HP 05A Black LaserJet Toner Cartridge (CE505A) [646805]",
+    "correctProductName": "HP 05A Black LaserJet Toner Cartridge (CE505A) [646805]",
+    "correctSku": "HP CE505A",
+    "notes": ""
   }
 ]
