@@ -4223,5 +4223,18 @@
     "correctProductName": "HP 201A Black Original LaserJet Toner Cartridge (CF400A) [748846]",
     "correctSku": "HP CF400A",
     "notes": ""
+  },
+  {
+    "id": 814,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "HP CF401A (C) / 201A (C)",
+    "qty": "1",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CF401A — HP 201A Cyan Original LaserJet Toner Cartridge (CF401A) [748844]",
+    "correctProductName": "HP 201A Cyan Original LaserJet Toner Cartridge (CF401A) [748844]",
+    "correctSku": "HP CF401A",
+    "notes": ""
   }
 ]
