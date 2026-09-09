@@ -4899,5 +4899,18 @@
     "correctProductName": "Xerox DPC115-116-225 Toner Standard Cap 2k - Black (Item No: XER CP115BK)",
     "correctSku": "XER CP115BK",
     "notes": "Confirmed by user 2026-08-25 (\"XER CP115 series\"): Fuji Xerox CT202264 = GOH catalog XER CP115BK."
+  },
+  {
+    "id": 866,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "FUJI XEROX CT202265/ C (1.4K) ---- (A)",
+    "qty": "1",
+    "uom": "unit",
+    "autoMatchAttempt": "XER CP115C — Xerox DPC115-116-225 Toner Standard Cap 1.4k - Cyan (Item No: XER CP115C)",
+    "correctProductName": "Xerox DPC115-116-225 Toner Standard Cap 1.4k - Cyan (Item No: XER CP115C)",
+    "correctSku": "XER CP115C",
+    "notes": "Confirmed by user 2026-08-25 (\"XER CP115 series\"): Fuji Xerox CT202265 = GOH catalog XER CP115C."
   }
 ]
