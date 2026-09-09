@@ -1480,5 +1480,18 @@
     "correctProductName": "HP 46 Black Ink Cartridge (CZ637AA)",
     "correctSku": "HP CZ637AA",
     "notes": ""
+  },
+  {
+    "id": 603,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "HP 48A (CF248A) Black Toner Cartridge",
+    "qty": "60",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CF248A — HP 48A Black Original LaserJet Toner Cartridge (CF248A)",
+    "correctProductName": "HP 48A Black Original LaserJet Toner Cartridge (CF248A)",
+    "correctSku": "HP CF248A",
+    "notes": ""
   }
 ]
