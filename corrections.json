@@ -7460,5 +7460,18 @@
     "correctProductName": "HP 682 Black Ink Cartridge (3YM77AA)",
     "correctSku": "HP 3YM77AA",
     "notes": ""
+  },
+  {
+    "id": 1063,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_3.pdf",
+    "description": "HP 680 COLOUR",
+    "qty": "50",
+    "uom": "unit",
+    "autoMatchAttempt": "HP F6V26AA — HP 680 Tri-Color Original Ink Advantage Cartridge (F6V26AA)",
+    "correctProductName": "HP 680 Tri-Color Original Ink Advantage Cartridge (F6V26AA)",
+    "correctSku": "HP F6V26AA",
+    "notes": ""
   }
 ]
