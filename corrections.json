@@ -7629,5 +7629,18 @@
     "correctProductName": "Not carried",
     "correctSku": "N/A",
     "notes": "Universal/third-party refill inks not in GOH catalog; catalog carries OEM brands only"
+  },
+  {
+    "id": 1144,
+    "contributedBy": "Kian Seen",
+    "date": "2026-09-09",
+    "sourceSpec": "05_Spesifikasi (8).pdf",
+    "description": "REFILL INK CYAN (FULLMARK/UNIVERSAL)",
+    "qty": "",
+    "uom": "",
+    "autoMatchAttempt": "No match",
+    "correctProductName": "Not carried",
+    "correctSku": "N/A",
+    "notes": "Universal/third-party refill inks not in GOH catalog; catalog carries OEM brands only"
   }
 ]
