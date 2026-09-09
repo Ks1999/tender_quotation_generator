@@ -6524,5 +6524,18 @@
     "correctProductName": "Not carried",
     "correctSku": "N/A",
     "notes": "HP 46 series. GOH's catalog does not carry HP 46 Tri-Color. Genuine gap."
+  },
+  {
+    "id": 991,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Ink for HP DESKJET D2560 COLOR PRINTER (Black)",
+    "qty": "16",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CC640WA — HP 60 Black Ink Cartridge (CC640WA)",
+    "correctProductName": "HP 60 Black Ink Cartridge (CC640WA)",
+    "correctSku": "HP CC640WA",
+    "notes": "Confirmed via web search: HP DeskJet D2560 uses HP 60 ink series."
   }
 ]
