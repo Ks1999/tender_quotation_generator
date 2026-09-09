@@ -5809,5 +5809,18 @@
     "correctProductName": "HP 85A Black LaserJet Toner Cartridge (CE285A)",
     "correctSku": "HP CE285A",
     "notes": "Confirmed by user: HP LaserJet Pro P1102 uses HP 85A."
+  },
+  {
+    "id": 936,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Toner Cartridge for HP Laser 107a Printer (black)",
+    "qty": "120",
+    "uom": "unit",
+    "autoMatchAttempt": "HP W1107A — HP 107A Black Original Laser Toner Cartridge  For Model HP Laser 100 Printer series, HP Laser MFP 130 Printer series",
+    "correctProductName": "HP 107A Black Original Laser Toner Cartridge  For Model HP Laser 100 Printer series, HP Laser MFP 130 Printer series",
+    "correctSku": "HP W1107A",
+    "notes": ""
   }
 ]
