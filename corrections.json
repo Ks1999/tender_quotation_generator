@@ -7421,5 +7421,18 @@
     "correctProductName": "HP 46 Tri-color Ink Cartridge (CZ638AA)",
     "correctSku": "HP CZ638AA",
     "notes": ""
+  },
+  {
+    "id": 1060,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_3.pdf",
+    "description": "HP 46 BLACK",
+    "qty": "30",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CZ637AA — HP 46 Black Ink Cartridge (CZ637AA)",
+    "correctProductName": "HP 46 Black Ink Cartridge (CZ637AA)",
+    "correctSku": "HP CZ637AA",
+    "notes": ""
   }
 ]
