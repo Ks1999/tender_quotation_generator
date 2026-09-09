@@ -3781,5 +3781,18 @@
     "correctProductName": "Canon CLI-751 Cyan Ink Cartridge",
     "correctSku": "C CLI 751C",
     "notes": ""
+  },
+  {
+    "id": 780,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "CANON CLI 751 M",
+    "qty": "50",
+    "uom": "unit",
+    "autoMatchAttempt": "C CLI 751M — Canon CLI-751 Magenta Ink Cartridge",
+    "correctProductName": "Canon CLI-751 Magenta Ink Cartridge",
+    "correctSku": "C CLI 751M",
+    "notes": ""
   }
 ]
