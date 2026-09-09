@@ -6576,5 +6576,18 @@
     "correctProductName": "HP 61 Tri-Color Ink Cartridge",
     "correctSku": "HP C0PA5AA",
     "notes": ""
+  },
+  {
+    "id": 995,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Ink for HP Deskjet Ink Advantage 1515 (Black)",
+    "qty": "15",
+    "uom": "unit",
+    "autoMatchAttempt": "HP C0PA4AA — HP 61XL Black Ink Cartridge",
+    "correctProductName": "HP 61XL Black Ink Cartridge",
+    "correctSku": "HP C0PA4AA",
+    "notes": "HP DeskJet Ink Advantage 1515 uses the HP 61 ink family."
   }
 ]
