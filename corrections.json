@@ -7655,5 +7655,18 @@
     "correctProductName": "OKI C310 C510 Black Toner Cartridge 44469818 (Item no: OKI C310 BK)",
     "correctSku": "OKI C310 BK",
     "notes": ""
+  },
+  {
+    "id": 1078,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi105.pdf",
+    "description": "Toner Oki C510/C531/MC561/MC56 2 Cyan",
+    "qty": "1000",
+    "uom": "unit",
+    "autoMatchAttempt": "OKI C310 CY — OKI C310 C510 Cyan Toner Cartridge (44469757)",
+    "correctProductName": "OKI C310 C510 Cyan Toner Cartridge (44469757)",
+    "correctSku": "OKI C310 CY",
+    "notes": ""
   }
 ]
