@@ -3599,5 +3599,18 @@
     "correctProductName": "Canon PG 88 Black Ink Cartridge",
     "correctSku": "C PG 88BK",
     "notes": ""
+  },
+  {
+    "id": 766,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "CANON CL 98",
+    "qty": "15",
+    "uom": "unit",
+    "autoMatchAttempt": "C CL 98CL — Canon CL 98 Color Ink Cartridge",
+    "correctProductName": "Canon CL 98 Color Ink Cartridge",
+    "correctSku": "C CL 98CL",
+    "notes": ""
   }
 ]
