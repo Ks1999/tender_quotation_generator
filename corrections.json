@@ -4106,5 +4106,18 @@
     "correctProductName": "HP 933XL Magenta Officejet Ink Cartridge (CN055AA)",
     "correctSku": "HP CN055AA",
     "notes": ""
+  },
+  {
+    "id": 805,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "HP 933 XL (YELLOW)",
+    "qty": "10",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CN056AA — HP 933XL Yellow Officejet Ink Cartridge (CN056AA)",
+    "correctProductName": "HP 933XL Yellow Officejet Ink Cartridge (CN056AA)",
+    "correctSku": "HP CN056AA",
+    "notes": ""
   }
 ]
