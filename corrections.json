@@ -4470,5 +4470,18 @@
     "correctProductName": "HP 206A Yellow Original LaserJet Toner Cartridge (W2112A)",
     "correctSku": "HP W2112A",
     "notes": ""
+  },
+  {
+    "id": 833,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "HP 206A (M) / W 2113 (M)",
+    "qty": "6",
+    "uom": "unit",
+    "autoMatchAttempt": "HP W2113A — HP 206A Magenta Original LaserJet Toner Cartridge (W2113A)",
+    "correctProductName": "HP 206A Magenta Original LaserJet Toner Cartridge (W2113A)",
+    "correctSku": "HP W2113A",
+    "notes": ""
   }
 ]
