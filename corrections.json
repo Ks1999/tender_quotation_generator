@@ -4067,5 +4067,18 @@
     "correctProductName": "HP 704 Tri-color Ink Cartridge (CN693AA)",
     "correctSku": "HP CN693AA",
     "notes": ""
+  },
+  {
+    "id": 802,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "HP 932 XL (BLACK)",
+    "qty": "15",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CN053AA — HP 932XL Black Officejet Ink Cartridge (CN053AA)",
+    "correctProductName": "HP 932XL Black Officejet Ink Cartridge (CN053AA)",
+    "correctSku": "HP CN053AA",
+    "notes": ""
   }
 ]
