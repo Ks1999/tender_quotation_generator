@@ -8409,5 +8409,18 @@
     "correctProductName": "Not carried",
     "correctSku": "N/A",
     "notes": "Catalog-checked 2026-09-03: no hits. Same gap category as #553."
+  },
+  {
+    "id": 1136,
+    "contributedBy": "(not provided)",
+    "date": "2026-09-03",
+    "sourceSpec": "PKD_SEGAMAT-GOH_extracted_items.json",
+    "description": "PUNCH CLOCK RIBBON TP68/XT33/AXT6100/ECT6200 (black and red, dual colour)",
+    "qty": "10",
+    "uom": "unit",
+    "autoMatchAttempt": "No candidate given",
+    "correctProductName": "Not carried",
+    "correctSku": "N/A",
+    "notes": "Catalog-checked 2026-09-03: no hits. Same gap category as #553."
   }
 ]
