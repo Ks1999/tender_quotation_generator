@@ -1350,5 +1350,18 @@
     "correctProductName": "HP 107A Black Original Laser Toner Cartridge  For Model HP Laser 100 Printer series, HP Laser MFP 130 Printer series",
     "correctSku": "HP W1107A",
     "notes": ""
+  },
+  {
+    "id": 593,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "HP 151A Black Toner Cartridge (W1510A)",
+    "qty": "1790",
+    "uom": "unit",
+    "autoMatchAttempt": "HP W1510A — HP 151A Black LaserJet Toner Cartridge",
+    "correctProductName": "HP 151A Black LaserJet Toner Cartridge",
+    "correctSku": "HP W1510A",
+    "notes": ""
   }
 ]
