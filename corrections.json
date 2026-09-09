@@ -3911,5 +3911,18 @@
     "correctProductName": "Epson 003 T00V300 Ink Bottle Magenta 65ml",
     "correctSku": "EPS T00V300",
     "notes": ""
+  },
+  {
+    "id": 790,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "EPSON 003 T00V400 (YELLOW)",
+    "qty": "10",
+    "uom": "unit",
+    "autoMatchAttempt": "EPS T00V400 — Epson 003 T00V400 Ink Bottle Yellow 65ml",
+    "correctProductName": "Epson 003 T00V400 Ink Bottle Yellow 65ml",
+    "correctSku": "EPS T00V400",
+    "notes": ""
   }
 ]
