@@ -8019,5 +8019,18 @@
     "correctProductName": "Canon 054 Yellow Toner Cartridge 1.2k",
     "correctSku": "C CATR 054Y",
     "notes": ""
+  },
+  {
+    "id": 1174,
+    "contributedBy": "(not provided)",
+    "date": "2026-09-09",
+    "sourceSpec": "BURHANI_KAJIAN_PASARAN-SUPPLIER_extracted_items.json",
+    "description": "OKI C612 (Cyan) | PART NUMBER: 46507511 | PAGE YIELD: 6,000",
+    "qty": 1,
+    "uom": "unit",
+    "autoMatchAttempt": "Flagged for review — no candidate",
+    "correctProductName": "OKI C612 Cyan Toner 6K APSTNRFG - 46507511",
+    "correctSku": "OKI C612 CY",
+    "notes": ""
   }
 ]
