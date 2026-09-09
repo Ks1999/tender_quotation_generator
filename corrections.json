@@ -4873,5 +4873,18 @@
     "correctProductName": "HP 126A LaserJet Imaging Drum (CE314A)",
     "correctSku": "HP CE314A",
     "notes": ""
+  },
+  {
+    "id": 864,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "SAMSUNG TONER KIT (D111s) FOR SAMSUNG PRINTER SL-M2070",
+    "qty": "1",
+    "uom": "unit",
+    "autoMatchAttempt": "HP SU812A — Samsung MLT-D111S (SU812A) Black Toner Cartridge",
+    "correctProductName": "Samsung MLT-D111S (SU812A) Black Toner Cartridge",
+    "correctSku": "HP SU812A",
+    "notes": "Confirmed correct by user 2026-08-25. GOH catalogs this Samsung-compatible toner under its own \"HP\" SKU prefix code (HP SU812A / Samsung MLT-D111S)."
   }
 ]
