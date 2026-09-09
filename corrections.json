@@ -10138,5 +10138,18 @@
     "correctProductName": "Not carried",
     "correctSku": "N/A",
     "notes": "Confirmed catalog gap: GOH does not carry Lexmark."
+  },
+  {
+    "id": 1337,
+    "contributedBy": "(not provided)",
+    "date": "2026-09-09",
+    "sourceSpec": "KDN_Kementerian_Dalam_Negeri-BURHANI_extracted_items.json",
+    "description": "HP 26X HIGH YIELD BLACK ORIGINAL LASERJET TONER CARTRIDGE (CF226XC)",
+    "qty": 100,
+    "uom": "unit",
+    "autoMatchAttempt": "Flagged for review — no candidate",
+    "correctProductName": "HP 26X Black LaserJet Toner Cartridge (CF226X)",
+    "correctSku": "HP CF226X",
+    "notes": ""
   }
 ]
