@@ -8292,5 +8292,18 @@
     "correctProductName": "OKI #4484486 BLACK DRUM 30K",
     "correctSku": "OKI ES8473 BK DR",
     "notes": ""
+  },
+  {
+    "id": 1127,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi105.pdf",
+    "description": "OKI ES8473MFP Cyan Image Drum",
+    "qty": "25",
+    "uom": "unit",
+    "autoMatchAttempt": "OKI ES8473 CY DR — OKI #4844487 CYAN DRUM 30K",
+    "correctProductName": "OKI #4844487 CYAN DRUM 30K",
+    "correctSku": "OKI ES8473 CY DR",
+    "notes": ""
   }
 ]
