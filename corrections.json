@@ -6238,5 +6238,18 @@
     "correctProductName": "Not carried",
     "correctSku": "N/A",
     "notes": "Confirmed via web search: correct toner is Canon Cartridge 125 (3484B001AA). GOH's catalog has no Canon 125 toner. Genuine gap."
+  },
+  {
+    "id": 969,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Toner Cartridge for Canon imageCLASS LBP664Cx Printer (Black)",
+    "qty": "50",
+    "uom": "unit",
+    "autoMatchAttempt": "C CATR 055B — Canon 055 Black Toner Cartridge 2.3k",
+    "correctProductName": "Canon 055 Black Toner Cartridge 2.3k",
+    "correctSku": "C CATR 055B",
+    "notes": "Confirmed via web search: Canon imageCLASS LBP664Cx uses Canon 055 series."
   }
 ]
