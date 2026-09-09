@@ -8916,5 +8916,18 @@
     "correctProductName": "HP 955XL Yellow Original Ink Cartridge (L0S69AA)",
     "correctSku": "HP L0S69AA",
     "notes": ""
+  },
+  {
+    "id": 1243,
+    "contributedBy": "(not provided)",
+    "date": "2026-09-09",
+    "sourceSpec": "Hospital_Tengku_Permaisuri_Norashikin_WCC_Kajang-BURHANI_extracted_items.json",
+    "description": "HP 61 BLACK",
+    "qty": 15,
+    "uom": "unit",
+    "autoMatchAttempt": "Flagged for review — no candidate",
+    "correctProductName": "HP 61XL Black Ink Cartridge",
+    "correctSku": "HP C0PA4AA",
+    "notes": ""
   }
 ]
