@@ -8318,5 +8318,18 @@
     "correctProductName": "Canon CLI-36 Color Ink Cartridge",
     "correctSku": "C CLI 36 [CL]",
     "notes": ""
+  },
+  {
+    "id": 1197,
+    "contributedBy": "(not provided)",
+    "date": "2026-09-09",
+    "sourceSpec": "BURHANI_KAJIAN_PASARAN-SUPPLIER_extracted_items.json",
+    "description": "NEOPOST IS-440 (Franking Machine) | PART NUMBER: Neopost Ink Cartridge 40ml | PAGE YIELD: 9,000",
+    "qty": 1,
+    "uom": "unit",
+    "autoMatchAttempt": "Flagged for review — no candidate",
+    "correctProductName": "Not carried",
+    "correctSku": "N/A",
+    "notes": "Confirmed via web search that the Neopost IS-440 franking machine uses a dedicated ink cartridge; no entry in corrections.md, and franking-machine ink is outside GOH's usual toner/ink/drum/ribbon scope. Needs confirmation this is carried before treating as a genuine match vs. a category gap."
   }
 ]
