@@ -4132,5 +4132,18 @@
     "correctProductName": "HP 130A Black Original LaserJet Toner Cartridge (CF350A)",
     "correctSku": "HP CF350A",
     "notes": ""
+  },
+  {
+    "id": 807,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "HP CF 351 A (CYAN) / HP 130A ( C )",
+    "qty": "1",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CF351A — HP 130A Cyan Original LaserJet Toner Cartridge (CF351A)",
+    "correctProductName": "HP 130A Cyan Original LaserJet Toner Cartridge (CF351A)",
+    "correctSku": "HP CF351A",
+    "notes": "Label reconstructed from a PDF page-break split in the source spec (verified against raw extracted text)."
   }
 ]
