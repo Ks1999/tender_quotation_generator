@@ -7694,5 +7694,18 @@
     "correctProductName": "OKI C310 C510 Yellow Toner Cartridge (44469755)",
     "correctSku": "OKI C310 YE",
     "notes": ""
+  },
+  {
+    "id": 1081,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi105.pdf",
+    "description": "Oki C510/MC561 CMYK Image Drum",
+    "qty": "550",
+    "uom": "unit",
+    "autoMatchAttempt": "OKI C310 DR — OKI C310 C510 Drum 44494203 (Item No: OKI C310 DR)",
+    "correctProductName": "OKI C310 C510 Drum 44494203 (Item No: OKI C310 DR)",
+    "correctSku": "OKI C310 DR",
+    "notes": "Label reconstructed from a PDF page-break split."
   }
 ]
