@@ -4262,5 +4262,18 @@
     "correctProductName": "HP 201A Magenta Original LaserJet Toner Cartridge (CF403A) [748848]",
     "correctSku": "HP CF403A",
     "notes": ""
+  },
+  {
+    "id": 817,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "HP CE 310A (BK) / 126A (BK)",
+    "qty": "2",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CE310A — HP 126A Black LaserJet Toner Cartridge (CE310A)",
+    "correctProductName": "HP 126A Black LaserJet Toner Cartridge (CE310A)",
+    "correctSku": "HP CE310A",
+    "notes": ""
   }
 ]
