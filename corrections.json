@@ -9631,5 +9631,18 @@
     "correctProductName": "HP 201X Cyan Original LaserJet Toner Cartridge (CF401X)",
     "correctSku": "HP CF401X",
     "notes": ""
+  },
+  {
+    "id": 1298,
+    "contributedBy": "(not provided)",
+    "date": "2026-09-09",
+    "sourceSpec": "KDN_Kementerian_Dalam_Negeri-BURHANI_extracted_items.json",
+    "description": "EPSON WF-579R Y/LARGE (C13T01D400, Yield 20,000pg)",
+    "qty": 100,
+    "uom": "unit",
+    "autoMatchAttempt": "Flagged for review — no candidate",
+    "correctProductName": "Epson T01D400 Yellow Ink Cartridge 20k",
+    "correctSku": "EPS T01D400",
+    "notes": ""
   }
 ]
