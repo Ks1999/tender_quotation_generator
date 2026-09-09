@@ -8565,5 +8565,18 @@
     "correctProductName": "HP 955XL Black Original Ink Cartridge (L0S72AA)",
     "correctSku": "HP L0S72AA",
     "notes": ""
+  },
+  {
+    "id": 1216,
+    "contributedBy": "(not provided)",
+    "date": "2026-09-09",
+    "sourceSpec": "Hospital_Tengku_Permaisuri_Norashikin_WCC_Kajang-BURHANI_extracted_items.json",
+    "description": "HP 955 XL CYAN",
+    "qty": 36,
+    "uom": "unit",
+    "autoMatchAttempt": "Flagged for review — no candidate",
+    "correctProductName": "HP 955XL Cyan Original Ink Cartridge (L0S63AA)",
+    "correctSku": "HP L0S63AA",
+    "notes": ""
   }
 ]
