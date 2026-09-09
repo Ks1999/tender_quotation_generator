@@ -2533,5 +2533,18 @@
     "correctProductName": "HP 125A Yellow LaserJet Toner Cartridge (CB542A)",
     "correctSku": "HP CB542A",
     "notes": ""
+  },
+  {
+    "id": 684,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "HP CB543A (125A) Magenta Toner Cartridge",
+    "qty": "80",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CB543A — HP 125A Magenta LaserJet Toner Cartridge (CB543A)",
+    "correctProductName": "HP 125A Magenta LaserJet Toner Cartridge (CB543A)",
+    "correctSku": "HP CB543A",
+    "notes": ""
   }
 ]
