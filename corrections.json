@@ -7057,5 +7057,18 @@
     "correctProductName": "Canon PG-810 Black Ink Cartridge",
     "correctSku": "C PG 810",
     "notes": "Confirmed via web search: Canon PIXMA MP287 uses PG-810 (Black) + CL-811 (Color)."
+  },
+  {
+    "id": 1032,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Ink for Canon MP287 Printer (Color)",
+    "qty": "18",
+    "uom": "unit",
+    "autoMatchAttempt": "C CL 811 — Canon CL-811 Color Ink Cartridge",
+    "correctProductName": "Canon CL-811 Color Ink Cartridge",
+    "correctSku": "C CL 811",
+    "notes": ""
   }
 ]
