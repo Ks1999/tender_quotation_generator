@@ -4366,5 +4366,18 @@
     "correctProductName": "HP 682 Black Ink Cartridge (3YM77AA)",
     "correctSku": "HP 3YM77AA",
     "notes": ""
+  },
+  {
+    "id": 825,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "HP 682 (COLOR)",
+    "qty": "25",
+    "uom": "unit",
+    "autoMatchAttempt": "HP 3YM76AA — HP 682 Color Ink Cartridge (3YM76AA)",
+    "correctProductName": "HP 682 Color Ink Cartridge (3YM76AA)",
+    "correctSku": "HP 3YM76AA",
+    "notes": "Match is correct (HP 682 Color, catalog SKU HP 3YM76AA). Flagged by user 2026-08-26: the raw spec line was garbled in the source PDF -- item 81's own boilerplate paragraph text ran on past its closing bracket and into item 82's 'ITEM :' line in the extracted text stream. Cleaned at the source-parsing stage to just 'HP 682 (COLOR)'; the auto-match itself was already correct even with the messy input."
   }
 ]
