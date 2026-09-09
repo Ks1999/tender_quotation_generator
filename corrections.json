@@ -7187,5 +7187,18 @@
     "correctProductName": "HP 136X Black Toner Cartridge",
     "correctSku": "HP W1360X",
     "notes": ""
+  },
+  {
+    "id": 1042,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_3.pdf",
+    "description": "LEXMARK 50F3HDE",
+    "qty": "60",
+    "uom": "unit",
+    "autoMatchAttempt": "No Match",
+    "correctProductName": "Not carried",
+    "correctSku": "N/A",
+    "notes": "Confirmed by user: Lexmark not carried by GOH at all."
   }
 ]
