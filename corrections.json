@@ -9657,5 +9657,18 @@
     "correctProductName": "Not carried",
     "correctSku": "N/A",
     "notes": "Confirmed via web search: genuine Polaroid P200/P900 card printer YMCKT colour ribbon kit, exact part number and 500-print yield match. No entry in corrections.md. This is one of the standing catalog-gap-check items noted from prior sessions (Polaroid ribbon) -- needs GOH catalog lookup."
+  },
+  {
+    "id": 1300,
+    "contributedBy": "(not provided)",
+    "date": "2026-09-09",
+    "sourceSpec": "KDN_Kementerian_Dalam_Negeri-BURHANI_extracted_items.json",
+    "description": "HP BLACK CONTRACT LASERJET TONER CARTRIDGE (W1030XC)",
+    "qty": 200,
+    "uom": "unit",
+    "autoMatchAttempt": "Flagged for review — no candidate",
+    "correctProductName": "Not carried",
+    "correctSku": "N/A",
+    "notes": "Confirmed via web search: genuine HP W1030XC Contract Black toner cartridge for LaserJet Pro 4003dn. No entry in corrections.md. Needs GOH catalog lookup."
   }
 ]
