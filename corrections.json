@@ -6316,5 +6316,18 @@
     "correctProductName": "Canon Cartridge 335 Black Toner 13k",
     "correctSku": "C CATR 335 BK",
     "notes": "Confirmed via web search: Canon imageCLASS LBP841Cdn uses Canon Cartridge 335 series."
+  },
+  {
+    "id": 975,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Toner Cartridge for Canon imageCLASS LBP841Cdn Printer (Cyan)",
+    "qty": "100",
+    "uom": "unit",
+    "autoMatchAttempt": "C CATR 335 C — Canon Cartridge 335 Cyan Toner 16.5k",
+    "correctProductName": "Canon Cartridge 335 Cyan Toner 16.5k",
+    "correctSku": "C CATR 335 C",
+    "notes": ""
   }
 ]
