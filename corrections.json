@@ -4860,5 +4860,18 @@
     "correctProductName": "HP 222A Mgn LaserJet Toner Cartridge 1.2",
     "correctSku": "HP W2223A",
     "notes": ""
+  },
+  {
+    "id": 863,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "DRUM HP 126A BLACK COLOR",
+    "qty": "2",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CE314A — HP 126A LaserJet Imaging Drum (CE314A)",
+    "correctProductName": "HP 126A LaserJet Imaging Drum (CE314A)",
+    "correctSku": "HP CE314A",
+    "notes": ""
   }
 ]
