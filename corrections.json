@@ -2871,5 +2871,18 @@
     "correctProductName": "Not carried",
     "correctSku": "N/A",
     "notes": "Confirmed by user 2026-08-25: HP 335A not carried by GOH."
+  },
+  {
+    "id": 710,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "HP Q2612A (12A) Black Original Laser Jet Toner Cartridge",
+    "qty": "130",
+    "uom": "unit",
+    "autoMatchAttempt": "HP Q2612A — HP 12A Black LaserJet Toner Cartridge (Q2612A)",
+    "correctProductName": "HP 12A Black LaserJet Toner Cartridge (Q2612A)",
+    "correctSku": "HP Q2612A",
+    "notes": ""
   }
 ]
