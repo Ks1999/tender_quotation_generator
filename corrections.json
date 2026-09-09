@@ -5991,5 +5991,18 @@
     "correctProductName": "HP 131A Yellow LaserJet Toner Cartridge (CF212A)",
     "correctSku": "HP CF212A",
     "notes": ""
+  },
+  {
+    "id": 950,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Toner Cartridge for HP LaserJet Pro MFP 3103 fdn Printer",
+    "qty": "80",
+    "uom": "unit",
+    "autoMatchAttempt": "HP W1450A — HP 145A Black Toner Cartridge (1.7k)",
+    "correctProductName": "HP 145A Black Toner Cartridge (1.7k)",
+    "correctSku": "HP W1450A",
+    "notes": "Confirmed via web search: HP LaserJet Pro MFP 3103fdn uses HP 145A Black, a mono-only single-toner model."
   }
 ]
