@@ -6368,5 +6368,18 @@
     "correctProductName": "Canon Cartridge 040 Black Toner 6.3k",
     "correctSku": "C CATR 040 BK",
     "notes": "Confirmed via web search: Canon imageCLASS LBP712Cx uses Canon Cartridge 040 series."
+  },
+  {
+    "id": 979,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Toner Cartridge for Canon image CLASS LBP712CX Printer (Cyan)",
+    "qty": "50",
+    "uom": "unit",
+    "autoMatchAttempt": "C CATR 040 C — Canon Cartridge 040 Cyan Toner 5.4k",
+    "correctProductName": "Canon Cartridge 040 Cyan Toner 5.4k",
+    "correctSku": "C CATR 040 C",
+    "notes": ""
   }
 ]
