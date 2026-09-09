@@ -8331,5 +8331,18 @@
     "correctProductName": "OKI #4844485 YELLOW DRUM 30K",
     "correctSku": "OKI ES8473 YE DR",
     "notes": ""
+  },
+  {
+    "id": 1130,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi105.pdf",
+    "description": "OKI ES8473MFP Fuser Unit",
+    "qty": "25",
+    "uom": "unit",
+    "autoMatchAttempt": "No Match",
+    "correctProductName": "Not carried",
+    "correctSku": "N/A",
+    "notes": "Confirmed via web search: correct fuser for the OKI ES8473 MFP is part no. 44848811 (120V). GOH's catalog carries toner and drum SKUs for the ES8473 but no fuser unit at all. Genuine gap."
   }
 ]
