@@ -9306,5 +9306,18 @@
     "correctProductName": "HP 201X Cyan Original LaserJet Toner Cartridge (CF401X)",
     "correctSku": "HP CF401X",
     "notes": ""
+  },
+  {
+    "id": 1273,
+    "contributedBy": "(not provided)",
+    "date": "2026-09-09",
+    "sourceSpec": "KDN_Kementerian_Dalam_Negeri-BURHANI_extracted_items.json",
+    "description": "HP BLACK CONTRACT LASERJET TONER CARTRIDGE (W1030XC)",
+    "qty": 200,
+    "uom": "unit",
+    "autoMatchAttempt": "Flagged for review — no candidate",
+    "correctProductName": "Not carried",
+    "correctSku": "N/A",
+    "notes": "Confirmed via web search: genuine HP W1030XC Contract Black toner cartridge for LaserJet Pro 4003dn. No entry in corrections.md. Needs GOH catalog lookup."
   }
 ]
