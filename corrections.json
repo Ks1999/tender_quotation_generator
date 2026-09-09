@@ -3066,5 +3066,18 @@
     "correctProductName": "OKI C532, MC573 Cyan Toner #46490507 - 3k",
     "correctSku": "OKI C532 CY",
     "notes": ""
+  },
+  {
+    "id": 725,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "OKI 46490508 (Black)",
+    "qty": "270",
+    "uom": "unit",
+    "autoMatchAttempt": "OKI C532 BK — OKI C532, MC573 Black Toner #46490508 - 3.5k",
+    "correctProductName": "OKI C532, MC573 Black Toner #46490508 - 3.5k",
+    "correctSku": "OKI C532 BK",
+    "notes": ""
   }
 ]
