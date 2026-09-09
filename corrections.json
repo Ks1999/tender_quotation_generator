@@ -3690,5 +3690,18 @@
     "correctProductName": "Canon GI-790 - Yellow (70ml) Ink Cartridge",
     "correctSku": "C GI 790 Y",
     "notes": ""
+  },
+  {
+    "id": 773,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "CANON GI 71 MAGENTA",
+    "qty": "3",
+    "uom": "unit",
+    "autoMatchAttempt": "C GI 71 M — CANON GI-71 MAGENTA INK BOTTLE (70ml)",
+    "correctProductName": "CANON GI-71 MAGENTA INK BOTTLE (70ml)",
+    "correctSku": "C GI 71 M",
+    "notes": ""
   }
 ]
