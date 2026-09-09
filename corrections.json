@@ -1675,5 +1675,18 @@
     "correctProductName": "HP 55X Black LaserJet Toner Cartridge (CE255X)",
     "correctSku": "HP CE255X",
     "notes": ""
+  },
+  {
+    "id": 618,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "HP CE278A (78A) Black Original Laser Jet Toner Cartridge",
+    "qty": "2217",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CE278A — HP 78A Black LaserJet Toner Cartridge (CE278A) [644808]",
+    "correctProductName": "HP 78A Black LaserJet Toner Cartridge (CE278A) [644808]",
+    "correctSku": "HP CE278A",
+    "notes": ""
   }
 ]
