@@ -3820,5 +3820,18 @@
     "correctProductName": "Canon Cartridge 328 Black Toner Cartridge",
     "correctSku": "C CATR 328",
     "notes": ""
+  },
+  {
+    "id": 783,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "EPSON T6641 (BK)",
+    "qty": "2",
+    "uom": "unit",
+    "autoMatchAttempt": "EPS T664100 — Epson L100 L200 L300 Black Ink Cartridge (T6641 - C13T664100)",
+    "correctProductName": "Epson L100 L200 L300 Black Ink Cartridge (T6641 - C13T664100)",
+    "correctSku": "EPS T664100",
+    "notes": ""
   }
 ]
