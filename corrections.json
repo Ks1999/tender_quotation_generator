@@ -3027,5 +3027,18 @@
     "correctProductName": "OKI B432/B512/MB492 BLACK TONER #45807112 (item no: OKI C512   12K)",
     "correctSku": "OKI C512   12K",
     "notes": ""
+  },
+  {
+    "id": 722,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "OKI 46490505 (Yellow)",
+    "qty": "245",
+    "uom": "unit",
+    "autoMatchAttempt": "OKI C532 YE — OKI C532, MC573 Yellow Toner #46490505 - 3k",
+    "correctProductName": "OKI C532, MC573 Yellow Toner #46490505 - 3k",
+    "correctSku": "OKI C532 YE",
+    "notes": ""
   }
 ]
