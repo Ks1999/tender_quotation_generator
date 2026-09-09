@@ -5705,5 +5705,18 @@
     "correctProductName": "HP 48A Black Original LaserJet Toner Cartridge (CF248A)",
     "correctSku": "HP CF248A",
     "notes": "Confirmed via web search: HP LaserJet Pro M15a uses HP 48A."
+  },
+  {
+    "id": 928,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Toner Cartridge for HP Laserjet 1160 Printer (Black)",
+    "qty": "32",
+    "uom": "unit",
+    "autoMatchAttempt": "HP Q5949A — HP 49A LJ1160 TONER (#Q5949A, 2.5Kpgs",
+    "correctProductName": "HP 49A LJ1160 TONER (#Q5949A, 2.5Kpgs",
+    "correctSku": "HP Q5949A",
+    "notes": ""
   }
 ]
