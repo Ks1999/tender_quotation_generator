@@ -2819,5 +2819,18 @@
     "correctProductName": "HP 410A Magenta LaserJet Toner Cartridge (CF413A)",
     "correctSku": "HP CF413A",
     "notes": ""
+  },
+  {
+    "id": 706,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "HP CZ638AA (HP 46) Tri-Colour Original Ink Cartridge",
+    "qty": "50",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CZ638AA — HP 46 Tri-color Ink Cartridge (CZ638AA)",
+    "correctProductName": "HP 46 Tri-color Ink Cartridge (CZ638AA)",
+    "correctSku": "HP CZ638AA",
+    "notes": ""
   }
 ]
