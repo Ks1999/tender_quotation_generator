@@ -1662,5 +1662,18 @@
     "correctProductName": "HP 125A Magenta LaserJet Toner Cartridge (CB543A)",
     "correctSku": "HP CB543A",
     "notes": ""
+  },
+  {
+    "id": 617,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "HP CE255X (HP 55X)",
+    "qty": "64",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CE255X — HP 55X Black LaserJet Toner Cartridge (CE255X)",
+    "correctProductName": "HP 55X Black LaserJet Toner Cartridge (CE255X)",
+    "correctSku": "HP CE255X",
+    "notes": ""
   }
 ]
