@@ -7850,5 +7850,18 @@
     "correctProductName": "OKI C610 Yellow Toner Cartridge (44315309)",
     "correctSku": "OKI C610 YE",
     "notes": ""
+  },
+  {
+    "id": 1093,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi105.pdf",
+    "description": "Oki C610DN Black Image Drum",
+    "qty": "15",
+    "uom": "unit",
+    "autoMatchAttempt": "OKI C610B DR — OKI C610 Black Drum - 44315112",
+    "correctProductName": "OKI C610 Black Drum - 44315112",
+    "correctSku": "OKI C610B DR",
+    "notes": ""
   }
 ]
