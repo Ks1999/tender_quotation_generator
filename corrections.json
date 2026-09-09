@@ -5185,5 +5185,18 @@
     "correctProductName": "HP 678 Tri-color Ink Cartridge (CZ108AA)",
     "correctSku": "HP CZ108AA",
     "notes": ""
+  },
+  {
+    "id": 888,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_2.pdf",
+    "description": "EPSON 003 - BLACK",
+    "qty": "15",
+    "uom": "unit",
+    "autoMatchAttempt": "EPS T00V100 — Epson 003 T00V100 Ink Bottle Black 65ml",
+    "correctProductName": "Epson 003 T00V100 Ink Bottle Black 65ml",
+    "correctSku": "EPS T00V100",
+    "notes": ""
   }
 ]
