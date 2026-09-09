@@ -5874,5 +5874,18 @@
     "correctProductName": "HP 125A Yellow LaserJet Toner Cartridge (CB542A)",
     "correctSku": "HP CB542A",
     "notes": ""
+  },
+  {
+    "id": 941,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Toner Cartridge for HP Color Laserjet 1515 Series / HP Color LaserJet CP1515n Printer (Magenta)",
+    "qty": "4",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CB543A — HP 125A Magenta LaserJet Toner Cartridge (CB543A)",
+    "correctProductName": "HP 125A Magenta LaserJet Toner Cartridge (CB543A)",
+    "correctSku": "HP CB543A",
+    "notes": ""
   }
 ]
