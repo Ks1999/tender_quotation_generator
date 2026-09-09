@@ -7694,5 +7694,18 @@
     "correctProductName": "Not carried",
     "correctSku": "N/A",
     "notes": "Lexmark is not carried by GOH; catalog explicitly excludes Lexmark products"
+  },
+  {
+    "id": 1149,
+    "contributedBy": "Kian Seen",
+    "date": "2026-09-09",
+    "sourceSpec": "05_Spesifikasi (8).pdf",
+    "description": "TONER LASER JET PENCETAK - TONER LASER JET PENCETAK LEXMARK MS421 56F30000",
+    "qty": "",
+    "uom": "",
+    "autoMatchAttempt": "No match",
+    "correctProductName": "Not carried",
+    "correctSku": "N/A",
+    "notes": "Lexmark is not carried by GOH; catalog explicitly excludes Lexmark products"
   }
 ]
