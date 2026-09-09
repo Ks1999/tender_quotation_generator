@@ -8799,5 +8799,18 @@
     "correctProductName": "Not carried",
     "correctSku": "N/A",
     "notes": "Confirmed catalog gap: GOH does not carry Lexmark (including ribbons)."
+  },
+  {
+    "id": 1234,
+    "contributedBy": "(not provided)",
+    "date": "2026-09-09",
+    "sourceSpec": "Hospital_Tengku_Permaisuri_Norashikin_WCC_Kajang-BURHANI_extracted_items.json",
+    "description": "HP 154A / 1540A",
+    "qty": 150,
+    "uom": "unit",
+    "autoMatchAttempt": "Flagged for review — no candidate",
+    "correctProductName": "HP 154A Black LaserJet Tank Toner Rld Kit",
+    "correctSku": "HP W1540A",
+    "notes": ""
   }
 ]
