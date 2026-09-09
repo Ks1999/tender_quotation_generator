@@ -5068,5 +5068,18 @@
     "correctProductName": "HP 83A Black Original LaserJet Toner Cartridge (CF283A)",
     "correctSku": "HP CF283A",
     "notes": ""
+  },
+  {
+    "id": 879,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_2.pdf",
+    "description": "HP CF226A",
+    "qty": "10",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CF226A — HP 26A Black LaserJet Toner Cartridge (CF226A)",
+    "correctProductName": "HP 26A Black LaserJet Toner Cartridge (CF226A)",
+    "correctSku": "HP CF226A",
+    "notes": ""
   }
 ]
