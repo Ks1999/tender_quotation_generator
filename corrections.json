@@ -9241,5 +9241,18 @@
     "correctProductName": "HP 26X Black LaserJet Toner Cartridge (CF226X)",
     "correctSku": "HP CF226X",
     "notes": ""
+  },
+  {
+    "id": 1268,
+    "contributedBy": "(not provided)",
+    "date": "2026-09-09",
+    "sourceSpec": "KDN_Kementerian_Dalam_Negeri-BURHANI_extracted_items.json",
+    "description": "HP 416X HIGH YIELD CYAN ORIGINAL LASERJET TONER CARTRIDGE (W2041XC)",
+    "qty": 30,
+    "uom": "unit",
+    "autoMatchAttempt": "Flagged for review — no candidate",
+    "correctProductName": "HP 416X High Yield Cyan Original LaserJet Toner Cartridge",
+    "correctSku": "HP W2041X",
+    "notes": ""
   }
 ]
