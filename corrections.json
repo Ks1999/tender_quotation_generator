@@ -6732,5 +6732,18 @@
     "correctProductName": "Not carried",
     "correctSku": "N/A",
     "notes": "HP 910 series (see Black entry for the 910-vs-962/965 distinction). Genuine gap."
+  },
+  {
+    "id": 1007,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Ink for HP OFFICEJET PRO 8020 AiO Printer (Yellow)",
+    "qty": "24",
+    "uom": "unit",
+    "autoMatchAttempt": "No Match",
+    "correctProductName": "Not carried",
+    "correctSku": "N/A",
+    "notes": "HP 910 series. Genuine gap."
   }
 ]
