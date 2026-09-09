@@ -2403,5 +2403,18 @@
     "correctProductName": "HP 61 Tri-Color Ink Cartridge",
     "correctSku": "HP C0PA5AA",
     "notes": ""
+  },
+  {
+    "id": 674,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "HP 64A Black Toner Cartridge (CC364A)",
+    "qty": "20",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CC364A — HP 64A Black LaserJet Toner Cartridge (CC364A) [646745]",
+    "correctProductName": "HP 64A Black LaserJet Toner Cartridge (CC364A) [646745]",
+    "correctSku": "HP CC364A",
+    "notes": ""
   }
 ]
