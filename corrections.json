@@ -7746,5 +7746,18 @@
     "correctProductName": "Not carried",
     "correctSku": "N/A",
     "notes": "Confirmed catalog gap: GOH does not carry Lexmark."
+  },
+  {
+    "id": 1153,
+    "contributedBy": "(not provided)",
+    "date": "2026-09-09",
+    "sourceSpec": "BURHANI_KAJIAN_PASARAN-SUPPLIER_extracted_items.json",
+    "description": "LEXMARK MS 810, MS 811 | PART NUMBER: 52D3HOE | MODEL: 523HE Black High Yield Corporate Toner Cartridge (M810/811/812) | PAGE YIELD: 25,000",
+    "qty": 1,
+    "uom": "unit",
+    "autoMatchAttempt": "No match",
+    "correctProductName": "Not carried",
+    "correctSku": "N/A",
+    "notes": "Confirmed catalog gap: GOH does not carry Lexmark."
   }
 ]
