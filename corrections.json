@@ -2715,5 +2715,18 @@
     "correctProductName": "HP 131A Cyan LaserJet Toner Cartridge (CF211A)",
     "correctSku": "HP CF211A",
     "notes": ""
+  },
+  {
+    "id": 698,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "HP CF212A (131A) Yellow Original Toner Cartridge",
+    "qty": "10",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CF212A — HP 131A Yellow LaserJet Toner Cartridge (CF212A)",
+    "correctProductName": "HP 131A Yellow LaserJet Toner Cartridge (CF212A)",
+    "correctSku": "HP CF212A",
+    "notes": ""
   }
 ]
