@@ -8032,5 +8032,18 @@
     "correctProductName": "OKI C612 Cyan Toner 6K APSTNRFG - 46507511",
     "correctSku": "OKI C612 CY",
     "notes": ""
+  },
+  {
+    "id": 1175,
+    "contributedBy": "(not provided)",
+    "date": "2026-09-09",
+    "sourceSpec": "BURHANI_KAJIAN_PASARAN-SUPPLIER_extracted_items.json",
+    "description": "CANON PIXMA TR150 (Black) | PART NUMBER: PGI 35 Black | PAGE YIELD: 190",
+    "qty": 1,
+    "uom": "unit",
+    "autoMatchAttempt": "Flagged for review — no candidate",
+    "correctProductName": "Canon PGI-35 Black Ink Cartridge",
+    "correctSku": "C PGI 35 [BK]",
+    "notes": ""
   }
 ]
