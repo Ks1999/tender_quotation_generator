@@ -8617,5 +8617,18 @@
     "correctProductName": "HP 61XL Black Ink Cartridge",
     "correctSku": "HP C0PA4AA",
     "notes": ""
+  },
+  {
+    "id": 1220,
+    "contributedBy": "(not provided)",
+    "date": "2026-09-09",
+    "sourceSpec": "Hospital_Tengku_Permaisuri_Norashikin_WCC_Kajang-BURHANI_extracted_items.json",
+    "description": "CANON NPG-51",
+    "qty": 15,
+    "uom": "unit",
+    "autoMatchAttempt": "Flagged for review — no candidate",
+    "correctProductName": "Not carried",
+    "correctSku": "N/A",
+    "notes": "Confirmed via web search: genuine Canon NPG-51 black toner for iR2520/2525/2530/2535 series copiers. No entry in corrections.md. Needs GOH catalog lookup."
   }
 ]
