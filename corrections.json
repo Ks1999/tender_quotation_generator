@@ -5887,5 +5887,18 @@
     "correctProductName": "HP 125A Magenta LaserJet Toner Cartridge (CB543A)",
     "correctSku": "HP CB543A",
     "notes": ""
+  },
+  {
+    "id": 942,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Toner Cartridge for HP Laserjet Pro 100 Color MFP M175A Printer (Black)",
+    "qty": "8",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CE310A — HP 126A Black LaserJet Toner Cartridge (CE310A)",
+    "correctProductName": "HP 126A Black LaserJet Toner Cartridge (CE310A)",
+    "correctSku": "HP CE310A",
+    "notes": "Confirmed via web search: HP LaserJet Pro 100 Color MFP M175a uses HP 126A series."
   }
 ]
