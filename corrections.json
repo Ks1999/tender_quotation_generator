@@ -7798,5 +7798,18 @@
     "correctProductName": "OKI C332/MC363 Toner cartridge 1.5k pages - Cyan (46508723)",
     "correctSku": "OKI C332 CY",
     "notes": ""
+  },
+  {
+    "id": 1089,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi105.pdf",
+    "description": "Toner Oki C610DN Black",
+    "qty": "45",
+    "uom": "unit",
+    "autoMatchAttempt": "OKI C610 BK — OKI C610 Black Toner Cartridge (44315312)",
+    "correctProductName": "OKI C610 Black Toner Cartridge (44315312)",
+    "correctSku": "OKI C610 BK",
+    "notes": ""
   }
 ]
