@@ -8032,5 +8032,18 @@
     "correctProductName": "OKI C532, MC573 Black Drum #46484112 - 30k",
     "correctSku": "OKI C532 BK DR",
     "notes": ""
+  },
+  {
+    "id": 1107,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi105.pdf",
+    "description": "Oki C532/MC573 Yellow Image Drum",
+    "qty": "15",
+    "uom": "unit",
+    "autoMatchAttempt": "OKI C532 YE DR — OKI C532, C573 Yellow Drum #46484109 - 30k",
+    "correctProductName": "OKI C532, C573 Yellow Drum #46484109 - 30k",
+    "correctSku": "OKI C532 YE DR",
+    "notes": ""
   }
 ]
