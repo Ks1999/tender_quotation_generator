@@ -5939,5 +5939,18 @@
     "correctProductName": "HP 126A Magenta LaserJet Toner Cartridge (CE313A)",
     "correctSku": "HP CE313A",
     "notes": ""
+  },
+  {
+    "id": 946,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Toner Cartridge for HP Color Laserjet Pro 200 MFP Printer (Black)",
+    "qty": "12",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CF210A — HP 131A Black LaserJet Toner Cartridge (CF210A)",
+    "correctProductName": "HP 131A Black LaserJet Toner Cartridge (CF210A)",
+    "correctSku": "HP CF210A",
+    "notes": "Confirmed via web search: HP Color LaserJet Pro 200 MFP (M276) uses HP 131A series."
   }
 ]
