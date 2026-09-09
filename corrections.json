@@ -2858,5 +2858,18 @@
     "correctProductName": "HP 680 Black Original Ink Advantage Cartridge (F6V27AA)",
     "correctSku": "HP F6V27AA",
     "notes": ""
+  },
+  {
+    "id": 709,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "HP Original 335A Laser Jet Toner Cartridge",
+    "qty": "2223",
+    "uom": "unit",
+    "autoMatchAttempt": "No Match",
+    "correctProductName": "Not carried",
+    "correctSku": "N/A",
+    "notes": "Confirmed by user 2026-08-25: HP 335A not carried by GOH."
   }
 ]
