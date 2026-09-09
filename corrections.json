@@ -3326,5 +3326,18 @@
     "correctProductName": "Not carried",
     "correctSku": "N/A",
     "notes": "Confirmed by user 2026-08-25: Wincor Nixdorf not carried by GOH at all."
+  },
+  {
+    "id": 745,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "BROHER LC 539 (BLACK)",
+    "qty": "15",
+    "uom": "unit",
+    "autoMatchAttempt": "B LC 539XLBK — Brother LC-539XL Black Ink Cartridge",
+    "correctProductName": "Brother LC-539XL Black Ink Cartridge",
+    "correctSku": "B LC 539XLBK",
+    "notes": ""
   }
 ]
