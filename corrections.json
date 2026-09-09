@@ -5393,5 +5393,18 @@
     "correctProductName": "Not carried",
     "correctSku": "N/A",
     "notes": "Confirmed by user 2026-08-25: Lexmark not carried by GOH at all."
+  },
+  {
+    "id": 904,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_2.pdf",
+    "description": "CANON CLI-65 (1 SET 8 CARTRIDGE)",
+    "qty": "6",
+    "uom": "unit",
+    "autoMatchAttempt": "C CLI 65 BK — Canon CLI-65 Black Ink Tank (12.6ml)",
+    "correctProductName": "Canon CLI-65 Black Ink Tank (12.6ml)",
+    "correctSku": "C CLI 65 BK",
+    "notes": ""
   }
 ]
