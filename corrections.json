@@ -8162,5 +8162,18 @@
     "correctProductName": "OKI CC650 BLACK DRUM 50K",
     "correctSku": "OKI C650 BK DR",
     "notes": ""
+  },
+  {
+    "id": 1117,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi105.pdf",
+    "description": "OKI C650dn Yellow Image Drum",
+    "qty": "80",
+    "uom": "unit",
+    "autoMatchAttempt": "OKI C650 YE DR — OKI C650 YELLOW DRUM 50K",
+    "correctProductName": "OKI C650 YELLOW DRUM 50K",
+    "correctSku": "OKI C650 YE DR",
+    "notes": ""
   }
 ]
