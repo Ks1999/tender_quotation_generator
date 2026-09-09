@@ -9735,5 +9735,18 @@
     "correctProductName": "Not carried",
     "correctSku": "N/A",
     "notes": "Confirmed via web search: genuine Polaroid P200/P900 card printer YMCKT colour ribbon kit, exact part number and 500-print yield match. No entry in corrections.md. This is one of the standing catalog-gap-check items noted from prior sessions (Polaroid ribbon) -- needs GOH catalog lookup."
+  },
+  {
+    "id": 1306,
+    "contributedBy": "(not provided)",
+    "date": "2026-09-09",
+    "sourceSpec": "KDN_Kementerian_Dalam_Negeri-BURHANI_extracted_items.json",
+    "description": "EPSON WF-579R Y/LARGE (C13T01D400, Yield 20,000pg)",
+    "qty": 100,
+    "uom": "unit",
+    "autoMatchAttempt": "Flagged for review — no candidate",
+    "correctProductName": "Epson T01D400 Yellow Ink Cartridge 20k",
+    "correctSku": "EPS T01D400",
+    "notes": ""
   }
 ]
