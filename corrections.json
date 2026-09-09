@@ -6121,5 +6121,18 @@
     "correctProductName": "HP 201A Magenta Original LaserJet Toner Cartridge (CF403A) [748848]",
     "correctSku": "HP CF403A",
     "notes": ""
+  },
+  {
+    "id": 960,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Toner Cartridge for HP Laserjet Pro 155nw (Black)",
+    "qty": "30",
+    "uom": "unit",
+    "autoMatchAttempt": "HP W2310A — HP 215A Black Original LaserJet Toner Cartridge (New)",
+    "correctProductName": "HP 215A Black Original LaserJet Toner Cartridge (New)",
+    "correctSku": "HP W2310A",
+    "notes": "Confirmed by user: HP LaserJet Pro 155nw uses HP 215A -- not the coincidental Brother TN-155 number collision the auto-matcher picked."
   }
 ]
