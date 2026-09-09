@@ -7434,5 +7434,18 @@
     "correctProductName": "HP 46 Black Ink Cartridge (CZ637AA)",
     "correctSku": "HP CZ637AA",
     "notes": ""
+  },
+  {
+    "id": 1061,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_3.pdf",
+    "description": "HP 682 COLOUR",
+    "qty": "50",
+    "uom": "unit",
+    "autoMatchAttempt": "HP 3YM76AA — HP 682 Color Ink Cartridge (3YM76AA)",
+    "correctProductName": "HP 682 Color Ink Cartridge (3YM76AA)",
+    "correctSku": "HP 3YM76AA",
+    "notes": ""
   }
 ]
