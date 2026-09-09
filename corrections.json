@@ -4717,5 +4717,18 @@
     "correctProductName": "Not carried",
     "correctSku": "N/A",
     "notes": "Confirmed by user 2026-08-25: HP 46A Black not carried by GOH."
+  },
+  {
+    "id": 852,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "HP 46 TRICOLOR",
+    "qty": "4",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CZ638AA — HP 46 Tri-color Ink Cartridge (CZ638AA)",
+    "correctProductName": "HP 46 Tri-color Ink Cartridge (CZ638AA)",
+    "correctSku": "HP CZ638AA",
+    "notes": ""
   }
 ]
