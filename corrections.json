@@ -9033,5 +9033,18 @@
     "correctProductName": "Canon Cartridge 069H Magenta Toner 5.5k",
     "correctSku": "C CATR 069H M",
     "notes": ""
+  },
+  {
+    "id": 1252,
+    "contributedBy": "(not provided)",
+    "date": "2026-09-09",
+    "sourceSpec": "KDN_Kementerian_Dalam_Negeri-BURHANI_extracted_items.json",
+    "description": "CANON CART 070H (Product Code 5640C003AA, Yield 10,200pg)",
+    "qty": 300,
+    "uom": "unit",
+    "autoMatchAttempt": "Flagged for review — no candidate",
+    "correctProductName": "Canon Cartridge 070H - 10,200 Blk -LBP24",
+    "correctSku": "C CATR 070H",
+    "notes": ""
   }
 ]
