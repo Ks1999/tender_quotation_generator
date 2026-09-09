@@ -8071,5 +8071,18 @@
     "correctProductName": "OKI C532/MC573 Cyan Drum #46484111 - 30k",
     "correctSku": "OKI C532 CY DR",
     "notes": ""
+  },
+  {
+    "id": 1110,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi105.pdf",
+    "description": "Oki C532/MC573 Fuser Unit",
+    "qty": "7",
+    "uom": "unit",
+    "autoMatchAttempt": "OKI C532 FU — #46358502 OKI C532/MC573 FUSER UNIT 60K",
+    "correctProductName": "#46358502 OKI C532/MC573 FUSER UNIT 60K",
+    "correctSku": "OKI C532 FU",
+    "notes": ""
   }
 ]
