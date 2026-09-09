@@ -7044,5 +7044,18 @@
     "correctProductName": "Not carried",
     "correctSku": "N/A",
     "notes": "Epson 902 ink-pack series. Genuine gap."
+  },
+  {
+    "id": 1031,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Ink for Canon MP287 Printer (Black)",
+    "qty": "24",
+    "uom": "unit",
+    "autoMatchAttempt": "C PG 810 — Canon PG-810 Black Ink Cartridge",
+    "correctProductName": "Canon PG-810 Black Ink Cartridge",
+    "correctSku": "C PG 810",
+    "notes": "Confirmed via web search: Canon PIXMA MP287 uses PG-810 (Black) + CL-811 (Color)."
   }
 ]
