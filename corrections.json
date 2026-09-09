@@ -4821,5 +4821,18 @@
     "correctProductName": "HP 222A Blk LaserJet Toner Cartridge 1.3",
     "correctSku": "HP W2220A",
     "notes": "Confirmed by user 2026-08-25: this is a spec typo -- sits directly beside items reading \"HP W2221A (C)\", \"HP W2222A (Y)\", \"HP W2223A (M)\" (the 222A colour series), so the Black entry should read \"W2220A\" (a digit was dropped in the spec, verified against the raw extracted PDF text -- not a page-break issue). GOH's catalog match is HP W2220A (222A Black)."
+  },
+  {
+    "id": 860,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "HP W2221A (C)",
+    "qty": "5",
+    "uom": "unit",
+    "autoMatchAttempt": "HP W2221A — HP 222A Cyn LaserJet Toner Cartridge 1.2",
+    "correctProductName": "HP 222A Cyn LaserJet Toner Cartridge 1.2",
+    "correctSku": "HP W2221A",
+    "notes": ""
   }
 ]
