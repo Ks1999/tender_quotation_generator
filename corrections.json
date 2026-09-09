@@ -7148,5 +7148,18 @@
     "correctProductName": "Not carried",
     "correctSku": "N/A",
     "notes": "Blank CD-R/DVD-R media / sleeve, not a printer consumable -- outside GOH's catalog scope."
+  },
+  {
+    "id": 1039,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "DVD-R",
+    "qty": "8000",
+    "uom": "unit",
+    "autoMatchAttempt": "No Match",
+    "correctProductName": "Not carried",
+    "correctSku": "N/A",
+    "notes": "Label reconstructed from a PDF page-break split. Blank media, outside catalog scope."
   }
 ]
