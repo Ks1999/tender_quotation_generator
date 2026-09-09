@@ -5666,5 +5666,18 @@
     "correctProductName": "Samsung MLT-D203U (SU917A) Black Ultra High Yield Toner Cartridge",
     "correctSku": "HP SU917A",
     "notes": ""
+  },
+  {
+    "id": 925,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Toner Cartridge for HP Laserjet P1006 Printer (Black)",
+    "qty": "70",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CB435A — HP 35A Black LaserJet Toner Cartridge (CB435A)",
+    "correctProductName": "HP 35A Black LaserJet Toner Cartridge (CB435A)",
+    "correctSku": "HP CB435A",
+    "notes": "Confirmed via web search: HP LaserJet P1006 uses HP 35A."
   }
 ]
