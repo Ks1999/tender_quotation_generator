@@ -2806,5 +2806,18 @@
     "correctProductName": "HP 410A Yellow LaserJet Toner Cartridge (CF412A)",
     "correctSku": "HP CF412A",
     "notes": ""
+  },
+  {
+    "id": 705,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "HP CF413A (HP 413A) Magenta Original Laser Jet Toner Cartridge",
+    "qty": "270",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CF413A — HP 410A Magenta LaserJet Toner Cartridge (CF413A)",
+    "correctProductName": "HP 410A Magenta LaserJet Toner Cartridge (CF413A)",
+    "correctSku": "HP CF413A",
+    "notes": ""
   }
 ]
