@@ -6615,5 +6615,18 @@
     "correctProductName": "Not carried",
     "correctSku": "N/A",
     "notes": "Confirmed via web search: HP DeskJet (Ink Advantage) 4535 uses HP 664 ink series. GOH's catalog does not carry it (only unrelated Epson T664 inks, a coincidental number match). Genuine gap."
+  },
+  {
+    "id": 998,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Ink for Printer HP DeskJet 4535 Printer (Tri-color)",
+    "qty": "16",
+    "uom": "unit",
+    "autoMatchAttempt": "No Match",
+    "correctProductName": "Not carried",
+    "correctSku": "N/A",
+    "notes": "HP 664 series. Genuine gap."
   }
 ]
