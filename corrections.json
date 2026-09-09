@@ -2884,5 +2884,18 @@
     "correctProductName": "HP 12A Black LaserJet Toner Cartridge (Q2612A)",
     "correctSku": "HP Q2612A",
     "notes": ""
+  },
+  {
+    "id": 711,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "HP Q5942A (42A) Black Laser Jet Toner Cartridge",
+    "qty": "3",
+    "uom": "unit",
+    "autoMatchAttempt": "HP Q5942A — HP 42A Black LaserJet Toner Cartridge (Q5942A)",
+    "correctProductName": "HP 42A Black LaserJet Toner Cartridge (Q5942A)",
+    "correctSku": "HP Q5942A",
+    "notes": ""
   }
 ]
