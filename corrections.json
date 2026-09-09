@@ -5822,5 +5822,18 @@
     "correctProductName": "HP 107A Black Original Laser Toner Cartridge  For Model HP Laser 100 Printer series, HP Laser MFP 130 Printer series",
     "correctSku": "HP W1107A",
     "notes": ""
+  },
+  {
+    "id": 937,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Toner Cartridge for HP Laser 108W Printer (black)",
+    "qty": "24",
+    "uom": "unit",
+    "autoMatchAttempt": "HP W1112A — HP 110A Blk Original laser Toner Crtg",
+    "correctProductName": "HP 110A Blk Original laser Toner Crtg",
+    "correctSku": "HP W1112A",
+    "notes": "Confirmed via web search: HP Laser 108w uses HP 110A -- GOH catalogs this under Model 'HP W1112A' even though the Product Name text says \"110A\"."
   }
 ]
