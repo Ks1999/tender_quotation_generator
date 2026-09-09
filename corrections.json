@@ -2052,5 +2052,18 @@
     "correctProductName": "Canon CLI-726 Magenta Ink Cartridge",
     "correctSku": "C CLI 726 M",
     "notes": ""
+  },
+  {
+    "id": 647,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "Canon CLI-726 Yellow Ink Cartridge",
+    "qty": "20",
+    "uom": "unit",
+    "autoMatchAttempt": "C CLI 726 Y — Canon CLI-726 Yellow Ink Cartridge",
+    "correctProductName": "Canon CLI-726 Yellow Ink Cartridge",
+    "correctSku": "C CLI 726 Y",
+    "notes": ""
   }
 ]
