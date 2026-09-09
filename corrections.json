@@ -3404,5 +3404,18 @@
     "correctProductName": "Brother TN-2360 Toner",
     "correctSku": "B TN 2360",
     "notes": ""
+  },
+  {
+    "id": 751,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "BROHER TN 2380",
+    "qty": "25",
+    "uom": "unit",
+    "autoMatchAttempt": "B TN 2380 — Brother TN-2380 Toner",
+    "correctProductName": "Brother TN-2380 Toner",
+    "correctSku": "B TN 2380",
+    "notes": ""
   }
 ]
