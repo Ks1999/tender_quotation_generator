@@ -2247,5 +2247,18 @@
     "correctProductName": "HP 151A Black LaserJet Toner Cartridge",
     "correctSku": "HP W1510A",
     "notes": ""
+  },
+  {
+    "id": 662,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "HP 21 Black Original Ink Cartridge (C9351AA)",
+    "qty": "20",
+    "uom": "unit",
+    "autoMatchAttempt": "No Match",
+    "correctProductName": "Not carried",
+    "correctSku": "N/A",
+    "notes": "Confirmed by user 2026-08-25: HP 21 (C9351AA) not carried by GOH."
   }
 ]
