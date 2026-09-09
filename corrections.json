@@ -5107,5 +5107,18 @@
     "correctProductName": "HP 48A Black Original LaserJet Toner Cartridge (CF248A)",
     "correctSku": "HP CF248A",
     "notes": ""
+  },
+  {
+    "id": 882,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_2.pdf",
+    "description": "HP CF289A",
+    "qty": "10",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CF289A — HP 89A Black Original LaserJet Toner Cartridge",
+    "correctProductName": "HP 89A Black Original LaserJet Toner Cartridge",
+    "correctSku": "HP CF289A",
+    "notes": ""
   }
 ]
