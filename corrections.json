@@ -5237,5 +5237,18 @@
     "correctProductName": "Not carried",
     "correctSku": "N/A",
     "notes": "Confirmed by user 2026-08-25: this printer itself (not a consumable) is not carried by GOH."
+  },
+  {
+    "id": 892,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_2.pdf",
+    "description": "CANON GI - 790 BLACK",
+    "qty": "12",
+    "uom": "unit",
+    "autoMatchAttempt": "C GI 790 BK — Canon GI-790 - Black (135ml) Ink Cartridge",
+    "correctProductName": "Canon GI-790 - Black (135ml) Ink Cartridge",
+    "correctSku": "C GI 790 BK",
+    "notes": ""
   }
 ]
