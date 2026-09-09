@@ -8214,5 +8214,18 @@
     "correctProductName": "OKI YA8001-1032G014  FUSER UNIT (60K)",
     "correctSku": "OKI C650 FU",
     "notes": ""
+  },
+  {
+    "id": 1121,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi105.pdf",
+    "description": "OKI C650dn Transfer Belt",
+    "qty": "50",
+    "uom": "unit",
+    "autoMatchAttempt": "OKI C650 TR BLT — OKI YA8001-1027G014 TRANSFER BELT (60K)",
+    "correctProductName": "OKI YA8001-1027G014 TRANSFER BELT (60K)",
+    "correctSku": "OKI C650 TR BLT",
+    "notes": ""
   }
 ]
