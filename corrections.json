@@ -6433,5 +6433,18 @@
     "correctProductName": "HP 32A Original LaserJet Imaging Drum (CF232A)",
     "correctSku": "HP CF232A",
     "notes": "Confirmed by user (\"HP 30 series\"): imaging drum for HP LaserJet Pro M203dn is HP 32A, companion drum to the HP 30A toner family."
+  },
+  {
+    "id": 984,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Drum for HP Laserjet PRO100 Color MFP M175A",
+    "qty": "2",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CE314A — HP 126A LaserJet Imaging Drum (CE314A)",
+    "correctProductName": "HP 126A LaserJet Imaging Drum (CE314A)",
+    "correctSku": "HP CE314A",
+    "notes": "Confirmed via web search: imaging drum for HP LaserJet Pro 100 Color MFP M175a is HP 126A Imaging Drum."
   }
 ]
