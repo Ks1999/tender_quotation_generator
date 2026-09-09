@@ -7954,5 +7954,18 @@
     "correctProductName": "OKI 45807107 Black High Capacity Toner Cartridge 7k - B412/432/512/472/492",
     "correctSku": "OKI C432   7K",
     "notes": ""
+  },
+  {
+    "id": 1101,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi105.pdf",
+    "description": "Image drum Oki B412 / B432/B512/MB472/MB49 2DN",
+    "qty": "20000",
+    "uom": "unit",
+    "autoMatchAttempt": "OKI B412 TRAY — OKI #44575714 2nd Tray B412/B432/B512/MB",
+    "correctProductName": "OKI #44575714 2nd Tray B412/B432/B512/MB",
+    "correctSku": "OKI B412 TRAY",
+    "notes": ""
   }
 ]
