@@ -7785,5 +7785,18 @@
     "correctProductName": "OKI C332/MC363 Toner cartridge 1.5k pages - Magenta (46508722)",
     "correctSku": "OKI C332 MA",
     "notes": ""
+  },
+  {
+    "id": 1088,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi105.pdf",
+    "description": "Toner Oki C332/MC363 Cyan",
+    "qty": "40",
+    "uom": "unit",
+    "autoMatchAttempt": "OKI C332 CY — OKI C332/MC363 Toner cartridge 1.5k pages - Cyan (46508723)",
+    "correctProductName": "OKI C332/MC363 Toner cartridge 1.5k pages - Cyan (46508723)",
+    "correctSku": "OKI C332 CY",
+    "notes": ""
   }
 ]
