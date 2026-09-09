@@ -2975,5 +2975,18 @@
     "correctProductName": "OKI C510/530 CYAN TONER 5k 44469727 ( ITEM NO : OKI C510 CY )",
     "correctSku": "OKI C510 CY",
     "notes": ""
+  },
+  {
+    "id": 718,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "OKI 44469806 Black Toner Cartridge",
+    "qty": "362",
+    "uom": "unit",
+    "autoMatchAttempt": "OKI C510 BK — OKI C510/530 BLACK TONER  5K - 44469806 ( ITEM NO : OKI C510 BK )",
+    "correctProductName": "OKI C510/530 BLACK TONER  5K - 44469806 ( ITEM NO : OKI C510 BK )",
+    "correctSku": "OKI C510 BK",
+    "notes": ""
   }
 ]
