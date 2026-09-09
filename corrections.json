@@ -4158,5 +4158,18 @@
     "correctProductName": "HP 130A Yellow Original LaserJet Toner Cartridge (CF352A)",
     "correctSku": "HP CF352A",
     "notes": ""
+  },
+  {
+    "id": 809,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "HP CF 353 A (MAGENTA) / HP 130 (M)",
+    "qty": "1",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CF353A — HP 130A Magenta Original LaserJet Toner Cartridge (CF353A)",
+    "correctProductName": "HP 130A Magenta Original LaserJet Toner Cartridge (CF353A)",
+    "correctSku": "HP CF353A",
+    "notes": ""
   }
 ]
