@@ -5796,5 +5796,18 @@
     "correctProductName": "HP 80A Black LaserJet Toner Cartridge (CF280A)",
     "correctSku": "HP CF280A",
     "notes": "Label reconstructed from a PDF page-break split. HP LaserJet Pro 400 M401dn uses HP 80A."
+  },
+  {
+    "id": 935,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Toner Cartridge for HP LaserJet PRO P1102 (Black)",
+    "qty": "370",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CE285A — HP 85A Black LaserJet Toner Cartridge (CE285A)",
+    "correctProductName": "HP 85A Black LaserJet Toner Cartridge (CE285A)",
+    "correctSku": "HP CE285A",
+    "notes": "Confirmed by user: HP LaserJet Pro P1102 uses HP 85A."
   }
 ]
