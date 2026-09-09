@@ -4561,5 +4561,18 @@
     "correctProductName": "HP 508A Cyan Original LaserJet Toner Cartridge (CF361A)",
     "correctSku": "HP CF361A",
     "notes": ""
+  },
+  {
+    "id": 840,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "HP 508A (Y) / CF 360 A",
+    "qty": "1",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CF362A — HP 508A Yellow Original LaserJet Toner Cartridge (CF362A)",
+    "correctProductName": "HP 508A Yellow Original LaserJet Toner Cartridge (CF362A)",
+    "correctSku": "HP CF362A",
+    "notes": ""
   }
 ]
