@@ -7369,5 +7369,18 @@
     "correctProductName": "Canon GI-790 - Black (135ml) Ink Cartridge",
     "correctSku": "C GI 790 BK",
     "notes": "Confirmed correct by user."
+  },
+  {
+    "id": 1056,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_3.pdf",
+    "description": "GI-790 (CYAN)",
+    "qty": "20",
+    "uom": "unit",
+    "autoMatchAttempt": "C GI 790 C — Canon GI-790 - Cyan (70ml) Ink Cartridge",
+    "correctProductName": "Canon GI-790 - Cyan (70ml) Ink Cartridge",
+    "correctSku": "C GI 790 C",
+    "notes": "Confirmed correct by user."
   }
 ]
