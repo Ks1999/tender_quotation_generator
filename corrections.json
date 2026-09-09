@@ -7668,5 +7668,18 @@
     "correctProductName": "OKI C310 C510 Cyan Toner Cartridge (44469757)",
     "correctSku": "OKI C310 CY",
     "notes": ""
+  },
+  {
+    "id": 1079,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi105.pdf",
+    "description": "Toner Oki C510/C531/MC561/MC56 2 Magenta",
+    "qty": "1000",
+    "uom": "unit",
+    "autoMatchAttempt": "OKI C310 MA — OKI C310 C510 Magenta Toner Cartridge (44469756)",
+    "correctProductName": "OKI C310 C510 Magenta Toner Cartridge (44469756)",
+    "correctSku": "OKI C310 MA",
+    "notes": ""
   }
 ]
