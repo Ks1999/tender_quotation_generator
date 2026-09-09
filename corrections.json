@@ -7538,5 +7538,18 @@
     "correctProductName": "Canon PG 88 Black Ink Cartridge",
     "correctSku": "C PG 88BK",
     "notes": ""
+  },
+  {
+    "id": 1069,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_3.pdf",
+    "description": "CANON CL-57",
+    "qty": "200",
+    "uom": "unit",
+    "autoMatchAttempt": "C CL 57S — Canon CL-57S Colour Fine Cartridge - 8ml",
+    "correctProductName": "Canon CL-57S Colour Fine Cartridge - 8ml",
+    "correctSku": "C CL 57S",
+    "notes": ""
   }
 ]
