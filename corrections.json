@@ -5120,5 +5120,18 @@
     "correctProductName": "HP 89A Black Original LaserJet Toner Cartridge",
     "correctSku": "HP CF289A",
     "notes": ""
+  },
+  {
+    "id": 883,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_2.pdf",
+    "description": "HP W1107A",
+    "qty": "10",
+    "uom": "unit",
+    "autoMatchAttempt": "HP W1107A — HP 107A Black Original Laser Toner Cartridge  For Model HP Laser 100 Printer series, HP Laser MFP 130 Printer series",
+    "correctProductName": "HP 107A Black Original Laser Toner Cartridge  For Model HP Laser 100 Printer series, HP Laser MFP 130 Printer series",
+    "correctSku": "HP W1107A",
+    "notes": ""
   }
 ]
