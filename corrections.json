@@ -8227,5 +8227,18 @@
     "correctProductName": "Not carried",
     "correctSku": "N/A",
     "notes": "Confirmed via web search that the Zebra TLP3842 barcode printer uses a 110mm-wide thermal transfer wax/resin ribbon (this consumable type is in GOH's scope); no entry in corrections.md. Note: spec lists brand as 'RICOH' for a Zebra-model printer -- likely a spec labelling error (ribbon brand vs printer brand mismatch); needs catalog lookup and brand clarification."
+  },
+  {
+    "id": 1190,
+    "contributedBy": "(not provided)",
+    "date": "2026-09-09",
+    "sourceSpec": "BURHANI_KAJIAN_PASARAN-SUPPLIER_extracted_items.json",
+    "description": "OKI C612 (Yellow) | PART NUMBER: 46507509 | PAGE YIELD: 6,000",
+    "qty": 1,
+    "uom": "unit",
+    "autoMatchAttempt": "Flagged for review — no candidate",
+    "correctProductName": "OKI C612 Yellow Toner 6K APSTNRFG - 46507509",
+    "correctSku": "OKI C612 YE",
+    "notes": ""
   }
 ]
