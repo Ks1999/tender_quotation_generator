@@ -8149,5 +8149,18 @@
     "correctProductName": "OKI C650 CYAN TONER 6K [YA8001-1088G035]",
     "correctSku": "OKI C650 CY",
     "notes": ""
+  },
+  {
+    "id": 1116,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi105.pdf",
+    "description": "OKI C650dn Black Image Drum",
+    "qty": "80",
+    "uom": "unit",
+    "autoMatchAttempt": "OKI C650 BK DR — OKI CC650 BLACK DRUM 50K",
+    "correctProductName": "OKI CC650 BLACK DRUM 50K",
+    "correctSku": "OKI C650 BK DR",
+    "notes": ""
   }
 ]
