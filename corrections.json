@@ -7213,5 +7213,18 @@
     "correctProductName": "Not carried",
     "correctSku": "N/A",
     "notes": "Confirmed by user: Lexmark not carried by GOH at all."
+  },
+  {
+    "id": 1044,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_3.pdf",
+    "description": "SAMSUNG MLT D-101S",
+    "qty": "10",
+    "uom": "unit",
+    "autoMatchAttempt": "No Match",
+    "correctProductName": "Not carried",
+    "correctSku": "N/A",
+    "notes": "Samsung MLT-D101S = HP SU696A (HP's renumbered code) -- but GOH's catalog does not carry HP SU696A. Genuine gap."
   }
 ]
