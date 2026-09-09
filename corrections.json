@@ -9202,5 +9202,18 @@
     "correctProductName": "HP 201X Magenta Original LaserJet Toner Cartridge (CF403X)",
     "correctSku": "HP CF403X",
     "notes": ""
+  },
+  {
+    "id": 1265,
+    "contributedBy": "(not provided)",
+    "date": "2026-09-09",
+    "sourceSpec": "KDN_Kementerian_Dalam_Negeri-BURHANI_extracted_items.json",
+    "description": "HP 26X HIGH YIELD BLACK ORIGINAL LASERJET TONER CARTRIDGE (CF226XC)",
+    "qty": 100,
+    "uom": "unit",
+    "autoMatchAttempt": "Flagged for review — no candidate",
+    "correctProductName": "HP 26X Black LaserJet Toner Cartridge (CF226X)",
+    "correctSku": "HP CF226X",
+    "notes": ""
   }
 ]
