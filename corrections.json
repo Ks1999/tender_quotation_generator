@@ -4457,5 +4457,18 @@
     "correctProductName": "HP 206A Cyan Original LaserJet Toner Cartridge (W2111A)",
     "correctSku": "HP W2111A",
     "notes": ""
+  },
+  {
+    "id": 832,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "HP 206A (Y) / W 2112A (Y)",
+    "qty": "6",
+    "uom": "unit",
+    "autoMatchAttempt": "HP W2112A — HP 206A Yellow Original LaserJet Toner Cartridge (W2112A)",
+    "correctProductName": "HP 206A Yellow Original LaserJet Toner Cartridge (W2112A)",
+    "correctSku": "HP W2112A",
+    "notes": ""
   }
 ]
