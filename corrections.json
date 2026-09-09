@@ -1753,5 +1753,18 @@
     "correctProductName": "HP 128A Magenta LaserJet Toner Cartridge (CE323A)",
     "correctSku": "HP CE323A",
     "notes": ""
+  },
+  {
+    "id": 624,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "HP CE410A (HP 305A) Black Original Laser Jet Toner Cartridge",
+    "qty": "12",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CE410A — HP 305A Black LaserJet Toner Cartridge (CE410A) [676107]",
+    "correctProductName": "HP 305A Black LaserJet Toner Cartridge (CE410A) [676107]",
+    "correctSku": "HP CE410A",
+    "notes": ""
   }
 ]
