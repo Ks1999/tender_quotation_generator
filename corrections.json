@@ -7304,5 +7304,18 @@
     "correctProductName": "Canon Cartridge 312 Toner Cartridge",
     "correctSku": "C CATR 312",
     "notes": ""
+  },
+  {
+    "id": 1051,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_3.pdf",
+    "description": "HP 79A",
+    "qty": "200",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CF279A — HP 79A Black Original LaserJet Toner Cartridge (CF279A)",
+    "correctProductName": "HP 79A Black Original LaserJet Toner Cartridge (CF279A)",
+    "correctSku": "HP CF279A",
+    "notes": ""
   }
 ]
