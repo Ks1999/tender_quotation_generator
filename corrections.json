@@ -3755,5 +3755,18 @@
     "correctProductName": "Canon PGI-750 Black Ink Cartridge",
     "correctSku": "C PGI 750BK",
     "notes": ""
+  },
+  {
+    "id": 778,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "CANON CLI 751 BK",
+    "qty": "40",
+    "uom": "unit",
+    "autoMatchAttempt": "C CLI 751BK — Canon CLI-751 Black Ink Cartridge",
+    "correctProductName": "Canon CLI-751 Black Ink Cartridge",
+    "correctSku": "C CLI 751BK",
+    "notes": ""
   }
 ]
