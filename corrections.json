@@ -2468,5 +2468,18 @@
     "correctProductName": "HP 80A Black LaserJet Toner Cartridge (CF280A)",
     "correctSku": "HP CF280A",
     "notes": ""
+  },
+  {
+    "id": 679,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "HP C2P04AA (HP 62 Black)",
+    "qty": "230",
+    "uom": "unit",
+    "autoMatchAttempt": "HP C2P04AA — HP 62 Black Ink Cartridge (C2P04AA)",
+    "correctProductName": "HP 62 Black Ink Cartridge (C2P04AA)",
+    "correctSku": "HP C2P04AA",
+    "notes": ""
   }
 ]
