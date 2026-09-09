@@ -2130,5 +2130,18 @@
     "correctProductName": "Canon PG-810 Black Ink Cartridge",
     "correctSku": "C PG 810",
     "notes": ""
+  },
+  {
+    "id": 653,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "Canon PGI-725 Black Ink Cartridge",
+    "qty": "30",
+    "uom": "unit",
+    "autoMatchAttempt": "C PGI 725 BK — Canon PGI-725 Black Ink Cartridge",
+    "correctProductName": "Canon PGI-725 Black Ink Cartridge",
+    "correctSku": "C PGI 725 BK",
+    "notes": ""
   }
 ]
