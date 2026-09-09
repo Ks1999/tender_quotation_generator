@@ -4743,5 +4743,18 @@
     "correctProductName": "HP 19A Original LaserJet Imaging Drum (CF219A)",
     "correctSku": "HP CF219A",
     "notes": ""
+  },
+  {
+    "id": 854,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "HP CF. 351A (CYAN)",
+    "qty": "2",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CF351A — HP 130A Cyan Original LaserJet Toner Cartridge (CF351A)",
+    "correctProductName": "HP 130A Cyan Original LaserJet Toner Cartridge (CF351A)",
+    "correctSku": "HP CF351A",
+    "notes": ""
   }
 ]
