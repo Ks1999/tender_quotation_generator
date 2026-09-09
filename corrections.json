@@ -2572,5 +2572,18 @@
     "correctProductName": "HP 78A Black LaserJet Toner Cartridge (CE278A) [644808]",
     "correctSku": "HP CE278A",
     "notes": ""
+  },
+  {
+    "id": 687,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "HP CE285A (Black 85A)",
+    "qty": "750",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CE285A — HP 85A Black LaserJet Toner Cartridge (CE285A)",
+    "correctProductName": "HP 85A Black LaserJet Toner Cartridge (CE285A)",
+    "correctSku": "HP CE285A",
+    "notes": ""
   }
 ]
