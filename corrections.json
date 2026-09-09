@@ -6082,5 +6082,18 @@
     "correctProductName": "HP 201A Black Original LaserJet Toner Cartridge (CF400A) [748846]",
     "correctSku": "HP CF400A",
     "notes": "Confirmed by user: HP Color LaserJet Pro M252dw uses HP 201A series."
+  },
+  {
+    "id": 957,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Toner Cartridge for HP Color LaserJet Pro M252dw (Cyan)",
+    "qty": "8",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CF401A — HP 201A Cyan Original LaserJet Toner Cartridge (CF401A) [748844]",
+    "correctProductName": "HP 201A Cyan Original LaserJet Toner Cartridge (CF401A) [748844]",
+    "correctSku": "HP CF401A",
+    "notes": ""
   }
 ]
