@@ -6290,5 +6290,18 @@
     "correctProductName": "Canon 055 Magenta Toner Cartridge 2.3k",
     "correctSku": "C CATR 055M",
     "notes": ""
+  },
+  {
+    "id": 973,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Toner Cartridge for Canon imageCLASS LBP162dw Printer",
+    "qty": "750",
+    "uom": "unit",
+    "autoMatchAttempt": "C CATR 051 — Canon Cartridge 051 Toner (1.7k)",
+    "correctProductName": "Canon Cartridge 051 Toner (1.7k)",
+    "correctSku": "C CATR 051",
+    "notes": "Confirmed via web search: Canon imageCLASS LBP162dw uses Canon Cartridge 051 series (standard-yield; GOH also carries 051H high-yield)."
   }
 ]
