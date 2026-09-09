@@ -7941,5 +7941,18 @@
     "correctProductName": "OKI 45807107 Black High Capacity Toner Cartridge 7k - B412/432/512/472/492",
     "correctSku": "OKI C432   7K",
     "notes": ""
+  },
+  {
+    "id": 1100,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi105.pdf",
+    "description": "Toner Cartridge Oki B412/ B432/B512/MB472/MB49 2DN (7K)",
+    "qty": "12384",
+    "uom": "unit",
+    "autoMatchAttempt": "OKI C432   7K — OKI 45807107 Black High Capacity Toner Cartridge 7k - B412/432/512/472/492",
+    "correctProductName": "OKI 45807107 Black High Capacity Toner Cartridge 7k - B412/432/512/472/492",
+    "correctSku": "OKI C432   7K",
+    "notes": ""
   }
 ]
