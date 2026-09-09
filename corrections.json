@@ -7915,5 +7915,18 @@
     "correctProductName": "OKI C610 C711 Fuser Unit (44289104)",
     "correctSku": "OKI C610 FU",
     "notes": ""
+  },
+  {
+    "id": 1098,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi105.pdf",
+    "description": "Oki C610DN Transfer Belt",
+    "qty": "7",
+    "uom": "unit",
+    "autoMatchAttempt": "OKI C610 TR BLT — OKI C610/711/711WT Transfer Belt 60K (Item No: OKI C610 TR BLT) - 44341903",
+    "correctProductName": "OKI C610/711/711WT Transfer Belt 60K (Item No: OKI C610 TR BLT) - 44341903",
+    "correctSku": "OKI C610 TR BLT",
+    "notes": ""
   }
 ]
