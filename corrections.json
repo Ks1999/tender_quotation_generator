@@ -6641,5 +6641,18 @@
     "correctProductName": "HP 680 Black Original Ink Advantage Cartridge (F6V27AA)",
     "correctSku": "HP F6V27AA",
     "notes": "Confirmed via web search: HP DeskJet Ink Advantage 2336 (2300 series) uses HP 680 ink series."
+  },
+  {
+    "id": 1000,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Ink for HP DeskJet Ink Advantage 2336 All-in-One Printer (Tri-color)",
+    "qty": "36",
+    "uom": "unit",
+    "autoMatchAttempt": "HP F6V26AA — HP 680 Tri-Color Original Ink Advantage Cartridge (F6V26AA)",
+    "correctProductName": "HP 680 Tri-Color Original Ink Advantage Cartridge (F6V26AA)",
+    "correctSku": "HP F6V26AA",
+    "notes": ""
   }
 ]
