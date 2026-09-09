@@ -7915,5 +7915,18 @@
     "correctProductName": "OKI C612 Black Toner 8K APSTNRFG - 46507512",
     "correctSku": "OKI C612 BK",
     "notes": ""
+  },
+  {
+    "id": 1166,
+    "contributedBy": "(not provided)",
+    "date": "2026-09-09",
+    "sourceSpec": "BURHANI_KAJIAN_PASARAN-SUPPLIER_extracted_items.json",
+    "description": "LEXMARK CS 521, CS622 (Magenta) | PART NUMBER: 78C3XMO | MODEL: Magenta CRTG Extra Return | PAGE YIELD: 5,000",
+    "qty": 1,
+    "uom": "unit",
+    "autoMatchAttempt": "No match",
+    "correctProductName": "Not carried",
+    "correctSku": "N/A",
+    "notes": "Confirmed catalog gap: GOH does not carry Lexmark."
   }
 ]
