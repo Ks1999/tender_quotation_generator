@@ -1402,5 +1402,18 @@
     "correctProductName": "HP 213A Cyan Toner Cartridge 3k",
     "correctSku": "HP W2131A",
     "notes": ""
+  },
+  {
+    "id": 597,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "HP 213A Magenta Original Laser Jet Toner Cartridge",
+    "qty": "24",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CF213A — HP 131A Magenta LaserJet Toner Cartridge (CF213A)",
+    "correctProductName": "HP 131A Magenta LaserJet Toner Cartridge (CF213A)",
+    "correctSku": "HP CF213A",
+    "notes": ""
   }
 ]
