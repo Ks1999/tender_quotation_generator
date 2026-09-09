@@ -6498,5 +6498,18 @@
     "correctProductName": "Not carried",
     "correctSku": "N/A",
     "notes": "Confirmed by user: GOH does not carry any Canon waste toner containers at all."
+  },
+  {
+    "id": 989,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Ink for HP DeskJet Ink Advantage 2029 Printer (Black)",
+    "qty": "12",
+    "uom": "unit",
+    "autoMatchAttempt": "No Match",
+    "correctProductName": "Not carried",
+    "correctSku": "N/A",
+    "notes": "Confirmed via web search: HP DeskJet Ink Advantage 2029 uses HP 46 ink series. GOH's catalog does not carry HP 46 Black. Genuine gap."
   }
 ]
