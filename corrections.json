@@ -6537,5 +6537,18 @@
     "correctProductName": "HP 60 Black Ink Cartridge (CC640WA)",
     "correctSku": "HP CC640WA",
     "notes": "Confirmed via web search: HP DeskJet D2560 uses HP 60 ink series."
+  },
+  {
+    "id": 992,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Ink for HP DESKJET D2560 COLOR PRINTER (Tri-Color)",
+    "qty": "16",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CC643WA — HP 60 Tri-color Ink Cartridge (CC643WA)",
+    "correctProductName": "HP 60 Tri-color Ink Cartridge (CC643WA)",
+    "correctSku": "HP CC643WA",
+    "notes": ""
   }
 ]
