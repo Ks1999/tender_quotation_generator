@@ -7733,5 +7733,18 @@
     "correctProductName": "Brother TN-1000 Toner Cartridge",
     "correctSku": "B TN 1000",
     "notes": ""
+  },
+  {
+    "id": 1152,
+    "contributedBy": "(not provided)",
+    "date": "2026-09-09",
+    "sourceSpec": "BURHANI_KAJIAN_PASARAN-SUPPLIER_extracted_items.json",
+    "description": "LEXMARK MS 310, MS312, MS410, MS415, MS510, MS610 | PART NUMBER: 503F3HOE | MODEL: 503HE Black High Yield Corporate Toner Cartridge (MS310/410/510/610/312/415) | PAGE YIELD: 5,000",
+    "qty": 1,
+    "uom": "unit",
+    "autoMatchAttempt": "No match",
+    "correctProductName": "Not carried",
+    "correctSku": "N/A",
+    "notes": "Confirmed catalog gap: GOH does not carry Lexmark."
   }
 ]
