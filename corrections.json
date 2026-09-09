@@ -1259,5 +1259,18 @@
     "correctProductName": "Canon PGI-725 Black Ink Cartridge",
     "correctSku": "C PGI 725 BK",
     "notes": ""
+  },
+  {
+    "id": 586,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "Epson LQ-310 Ribbon",
+    "qty": "20",
+    "uom": "unit",
+    "autoMatchAttempt": "EPS SO15639 — Epson LQ310 Ribbon (EPS SO15639)",
+    "correctProductName": "Epson LQ310 Ribbon (EPS SO15639)",
+    "correctSku": "EPS SO15639",
+    "notes": ""
   }
 ]
