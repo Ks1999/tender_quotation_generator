@@ -6953,5 +6953,18 @@
     "correctProductName": "Epson 003 T00V100 Ink Bottle Black 65ml",
     "correctSku": "EPS T00V100",
     "notes": "Confirmed by user: Epson 003 series."
+  },
+  {
+    "id": 1024,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Ink for EPSON L5190 Printer (Cyan)",
+    "qty": "8",
+    "uom": "unit",
+    "autoMatchAttempt": "EPS T00V200 — Epson 003 T00V200 Ink Bottle Cyan 65ml",
+    "correctProductName": "Epson 003 T00V200 Ink Bottle Cyan 65ml",
+    "correctSku": "EPS T00V200",
+    "notes": "Label reconstructed from a PDF page-break split."
   }
 ]
