@@ -5562,5 +5562,18 @@
     "correctProductName": "HP 215A Cyan Original LaserJet Toner Cartridge (New)",
     "correctSku": "HP W2311A",
     "notes": ""
+  },
+  {
+    "id": 917,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_2.pdf",
+    "description": "HP 215A Magenta",
+    "qty": "3",
+    "uom": "unit",
+    "autoMatchAttempt": "HP W2313A — HP 215A Magenta Original LaserJet Toner Cartridge (New)",
+    "correctProductName": "HP 215A Magenta Original LaserJet Toner Cartridge (New)",
+    "correctSku": "HP W2313A",
+    "notes": ""
   }
 ]
