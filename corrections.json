@@ -4795,5 +4795,18 @@
     "correctProductName": "HP 130A Magenta Original LaserJet Toner Cartridge (CF353A)",
     "correctSku": "HP CF353A",
     "notes": ""
+  },
+  {
+    "id": 858,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "HP 145A",
+    "qty": "2",
+    "uom": "unit",
+    "autoMatchAttempt": "HP W1450A — HP 145A Black Toner Cartridge (1.7k)",
+    "correctProductName": "HP 145A Black Toner Cartridge (1.7k)",
+    "correctSku": "HP W1450A",
+    "notes": ""
   }
 ]
