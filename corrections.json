@@ -4639,5 +4639,18 @@
     "correctProductName": "HP 30A Black Original LaserJet Toner Cartridge (CF230A)",
     "correctSku": "HP CF230A",
     "notes": ""
+  },
+  {
+    "id": 846,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "HP 119A (BK) / W 2090A",
+    "qty": "1",
+    "uom": "unit",
+    "autoMatchAttempt": "HP W2090A — HP 119A Black Original Laser Toner Cartridge",
+    "correctProductName": "HP 119A Black Original Laser Toner Cartridge",
+    "correctSku": "HP W2090A",
+    "notes": ""
   }
 ]
