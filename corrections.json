@@ -8331,5 +8331,18 @@
     "correctProductName": "Not carried",
     "correctSku": "N/A",
     "notes": "Confirmed via web search that the Neopost IS-440 franking machine uses a dedicated ink cartridge; no entry in corrections.md, and franking-machine ink is outside GOH's usual toner/ink/drum/ribbon scope. Needs confirmation this is carried before treating as a genuine match vs. a category gap."
+  },
+  {
+    "id": 1198,
+    "contributedBy": "(not provided)",
+    "date": "2026-09-09",
+    "sourceSpec": "BURHANI_KAJIAN_PASARAN-SUPPLIER_extracted_items.json",
+    "description": "MESIN PENCETAK KOD BAR ZEBRA TLP3842 | JENAMA: RICOH (as labelled) | PART NUMBER: Thermal Transfer Ribbon 110mm x 70m (Premium Wax Resin)",
+    "qty": 1,
+    "uom": "unit",
+    "autoMatchAttempt": "Flagged for review — no candidate",
+    "correctProductName": "Not carried",
+    "correctSku": "N/A",
+    "notes": "Confirmed via web search that the Zebra TLP3842 barcode printer uses a 110mm-wide thermal transfer wax/resin ribbon (this consumable type is in GOH's scope); no entry in corrections.md. Note: spec lists brand as 'RICOH' for a Zebra-model printer -- likely a spec labelling error (ribbon brand vs printer brand mismatch); needs catalog lookup and brand clarification."
   }
 ]
