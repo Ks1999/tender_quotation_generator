@@ -8435,5 +8435,18 @@
     "correctProductName": "Not carried",
     "correctSku": "N/A",
     "notes": "Catalog-checked 2026-09-03: no hits. Same gap category as #553. Label was reconstructed from a PDF page-break split in the source spec; reconstruction itself checked out fine."
+  },
+  {
+    "id": 1138,
+    "contributedBy": "(not provided)",
+    "date": "2026-09-03",
+    "sourceSpec": "PKD_SEGAMAT-GOH_extracted_items.json",
+    "description": "PUNCH CLOCK RIBBON MOA 8500, 8600, 8700 (Black/Red dual colour, for MOA 1600/1800/8500/8600/8700/8800)",
+    "qty": "10",
+    "uom": "unit",
+    "autoMatchAttempt": "No candidate given",
+    "correctProductName": "Not carried",
+    "correctSku": "N/A",
+    "notes": "Catalog-checked 2026-09-03: no hits. Same gap category as #553."
   }
 ]
