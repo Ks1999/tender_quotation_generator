@@ -8370,5 +8370,18 @@
     "correctProductName": "OKI B433/B513 12k Toner",
     "correctSku": "OKI C433B 12K",
     "notes": ""
+  },
+  {
+    "id": 1133,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi105.pdf",
+    "description": "Image drum Oki B433/B513",
+    "qty": "25",
+    "uom": "unit",
+    "autoMatchAttempt": "OKI C433B DR — OKI B433/B513 30k Drum",
+    "correctProductName": "OKI B433/B513 30k Drum",
+    "correctSku": "OKI C433B DR",
+    "notes": ""
   }
 ]
