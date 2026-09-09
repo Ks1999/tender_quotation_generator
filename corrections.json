@@ -5900,5 +5900,18 @@
     "correctProductName": "HP 126A Black LaserJet Toner Cartridge (CE310A)",
     "correctSku": "HP CE310A",
     "notes": "Confirmed via web search: HP LaserJet Pro 100 Color MFP M175a uses HP 126A series."
+  },
+  {
+    "id": 943,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Toner Cartridge for HP Laserjet Pro 100 Color MFP M175A Printer (Cyan)",
+    "qty": "4",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CE311A — HP 126A Cyan LaserJet Toner Cartridge (CE311A)",
+    "correctProductName": "HP 126A Cyan LaserJet Toner Cartridge (CE311A)",
+    "correctSku": "HP CE311A",
+    "notes": ""
   }
 ]
