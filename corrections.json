@@ -5406,5 +5406,18 @@
     "correctProductName": "Canon CLI-65 Black Ink Tank (12.6ml)",
     "correctSku": "C CLI 65 BK",
     "notes": ""
+  },
+  {
+    "id": 905,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_2.pdf",
+    "description": "CANON 054H BLACK",
+    "qty": "2",
+    "uom": "unit",
+    "autoMatchAttempt": "C CATR 054H BK — Canon 054H Black Toner Cartridge 3.1k",
+    "correctProductName": "Canon 054H Black Toner Cartridge 3.1k",
+    "correctSku": "C CATR 054H BK",
+    "notes": ""
   }
 ]
