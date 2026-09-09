@@ -2065,5 +2065,18 @@
     "correctProductName": "Canon CLI-726 Yellow Ink Cartridge",
     "correctSku": "C CLI 726 Y",
     "notes": ""
+  },
+  {
+    "id": 648,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "Canon Ink Cartridge CL 98 (Colour)",
+    "qty": "39",
+    "uom": "unit",
+    "autoMatchAttempt": "C CL 98CL — Canon CL 98 Color Ink Cartridge",
+    "correctProductName": "Canon CL 98 Color Ink Cartridge",
+    "correctSku": "C CL 98CL",
+    "notes": ""
   }
 ]
