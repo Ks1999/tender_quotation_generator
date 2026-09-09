@@ -2338,5 +2338,18 @@
     "correctProductName": "HP 35A Black LaserJet Toner Cartridge (CB435A)",
     "correctSku": "HP CB435A",
     "notes": ""
+  },
+  {
+    "id": 669,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "HP 410A CF411A Cyan Toner Cartridge",
+    "qty": "270",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CF411A — HP 410A Cyan LaserJet Toner Cartridge (CF411A)",
+    "correctProductName": "HP 410A Cyan LaserJet Toner Cartridge (CF411A)",
+    "correctSku": "HP CF411A",
+    "notes": ""
   }
 ]
