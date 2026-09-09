@@ -7863,5 +7863,18 @@
     "correctProductName": "OKI C610 Black Drum - 44315112",
     "correctSku": "OKI C610B DR",
     "notes": ""
+  },
+  {
+    "id": 1094,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi105.pdf",
+    "description": "Oki C610DN Yellow Image Drum",
+    "qty": "15",
+    "uom": "unit",
+    "autoMatchAttempt": "OKI C610Y DR — OKI C610 Yellow Drum - 44315109",
+    "correctProductName": "OKI C610 Yellow Drum - 44315109",
+    "correctSku": "OKI C610Y DR",
+    "notes": ""
   }
 ]
