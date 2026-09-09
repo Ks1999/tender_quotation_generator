@@ -2156,5 +2156,18 @@
     "correctProductName": "Epson LQ310 Ribbon (EPS SO15639)",
     "correctSku": "EPS SO15639",
     "notes": ""
+  },
+  {
+    "id": 655,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "Epson T6641 Black",
+    "qty": "315",
+    "uom": "unit",
+    "autoMatchAttempt": "EPS T664100 — Epson L100 L200 L300 Black Ink Cartridge (T6641 - C13T664100)",
+    "correctProductName": "Epson L100 L200 L300 Black Ink Cartridge (T6641 - C13T664100)",
+    "correctSku": "EPS T664100",
+    "notes": ""
   }
 ]
