@@ -8721,5 +8721,18 @@
     "correctProductName": "Brother TN-263 Yellow Toner 1.3k",
     "correctSku": "B TN 263Y",
     "notes": ""
+  },
+  {
+    "id": 1228,
+    "contributedBy": "(not provided)",
+    "date": "2026-09-09",
+    "sourceSpec": "Hospital_Tengku_Permaisuri_Norashikin_WCC_Kajang-BURHANI_extracted_items.json",
+    "description": "CANON 054 BLACK",
+    "qty": 150,
+    "uom": "unit",
+    "autoMatchAttempt": "Flagged for review — no candidate",
+    "correctProductName": "Canon 054 Black Toner Cartridge 1.5k",
+    "correctSku": "C CATR 054BK",
+    "notes": ""
   }
 ]
