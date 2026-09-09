@@ -6381,5 +6381,18 @@
     "correctProductName": "Canon Cartridge 040 Cyan Toner 5.4k",
     "correctSku": "C CATR 040 C",
     "notes": ""
+  },
+  {
+    "id": 980,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Toner Cartridge for Canon image CLASS LBP712CX Printer (Yellow)",
+    "qty": "50",
+    "uom": "unit",
+    "autoMatchAttempt": "C CATR 040 Y — Canon Cartridge 040 Yellow Toner 5.4k",
+    "correctProductName": "Canon Cartridge 040 Yellow Toner 5.4k",
+    "correctSku": "C CATR 040 Y",
+    "notes": ""
   }
 ]
