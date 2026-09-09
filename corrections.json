@@ -8500,5 +8500,18 @@
     "correctProductName": "HP 154A Black LaserJet Tank Toner Rld Kit",
     "correctSku": "HP W1540A",
     "notes": ""
+  },
+  {
+    "id": 1211,
+    "contributedBy": "(not provided)",
+    "date": "2026-09-09",
+    "sourceSpec": "Hospital_Tengku_Permaisuri_Norashikin_WCC_Kajang-BURHANI_extracted_items.json",
+    "description": "HP 230A - BLACK (W2300A)",
+    "qty": 120,
+    "uom": "unit",
+    "autoMatchAttempt": "Flagged for review — no candidate",
+    "correctProductName": "HP 230A Original Black Toner Cartridge 2,000 pages (W2300A)",
+    "correctSku": "HP W2300A",
+    "notes": ""
   }
 ]
