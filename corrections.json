@@ -3742,5 +3742,18 @@
     "correctProductName": "CANON GI-71 BLACK INK BOTTLE (135ml)",
     "correctSku": "C GI 71 BK",
     "notes": ""
+  },
+  {
+    "id": 777,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "CANON PGI 750 PGBK",
+    "qty": "70",
+    "uom": "unit",
+    "autoMatchAttempt": "C PGI 750BK — Canon PGI-750 Black Ink Cartridge",
+    "correctProductName": "Canon PGI-750 Black Ink Cartridge",
+    "correctSku": "C PGI 750BK",
+    "notes": ""
   }
 ]
