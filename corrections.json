@@ -7226,5 +7226,18 @@
     "correctProductName": "Not carried",
     "correctSku": "N/A",
     "notes": "Samsung MLT-D101S = HP SU696A (HP's renumbered code) -- but GOH's catalog does not carry HP SU696A. Genuine gap."
+  },
+  {
+    "id": 1045,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_3.pdf",
+    "description": "CANON CH-7",
+    "qty": "20",
+    "uom": "unit",
+    "autoMatchAttempt": "C CH 7 — Canon Printhead G1000/2000/3000/4000, 10",
+    "correctProductName": "Canon Printhead G1000/2000/3000/4000, 10",
+    "correctSku": "C CH 7",
+    "notes": ""
   }
 ]
