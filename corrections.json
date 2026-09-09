@@ -5627,5 +5627,18 @@
     "correctProductName": "HP 05A Black LaserJet Toner Cartridge (CE505A) [646805]",
     "correctSku": "HP CE505A",
     "notes": "Confirmed via web search 2026-08-26: correct toner for the HP LaserJet P2055dn is HP 05A."
+  },
+  {
+    "id": 922,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Toner Cartridge for HP Laserjet M1005 MFP Printer (Black)",
+    "qty": "100",
+    "uom": "unit",
+    "autoMatchAttempt": "HP Q2612A — HP 12A Black LaserJet Toner Cartridge (Q2612A)",
+    "correctProductName": "HP 12A Black LaserJet Toner Cartridge (Q2612A)",
+    "correctSku": "HP Q2612A",
+    "notes": "Confirmed via web search: correct toner for the HP LaserJet M1005 MFP is HP 12A."
   }
 ]
