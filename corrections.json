@@ -1220,5 +1220,18 @@
     "correctProductName": "Not carried",
     "correctSku": "N/A",
     "notes": "Canon PG-40 not carried (confirmed by user 2026-08-25)"
+  },
+  {
+    "id": 583,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "Canon PG-745 Black Fine Cartridge",
+    "qty": "36",
+    "uom": "unit",
+    "autoMatchAttempt": "C PG 745 — Canon PG-745 Black Ink Cartridge",
+    "correctProductName": "Canon PG-745 Black Ink Cartridge",
+    "correctSku": "C PG 745",
+    "notes": ""
   }
 ]
