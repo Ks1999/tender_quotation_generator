@@ -8981,5 +8981,18 @@
     "correctProductName": "HP 87A Black LaserJet Toner Cartridge (CF287A)",
     "correctSku": "HP CF287A",
     "notes": ""
+  },
+  {
+    "id": 1248,
+    "contributedBy": "(not provided)",
+    "date": "2026-09-09",
+    "sourceSpec": "KDN_Kementerian_Dalam_Negeri-BURHANI_extracted_items.json",
+    "description": "CANON CART 057H (Product Code 3010C003AA, Yield 10,000pg)",
+    "qty": 100,
+    "uom": "unit",
+    "autoMatchAttempt": "Flagged for review — no candidate",
+    "correctProductName": "Canon 057H Toner Cartridge - Black, 9.2k",
+    "correctSku": "C CATR 057H",
+    "notes": ""
   }
 ]
