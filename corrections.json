@@ -2442,5 +2442,18 @@
     "correctProductName": "HP 682 Color Ink Cartridge (3YM76AA)",
     "correctSku": "HP 3YM76AA",
     "notes": ""
+  },
+  {
+    "id": 677,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "HP 79A Black Original Laser Jet Toner Cartridge (CF279A)",
+    "qty": "340",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CF279A — HP 79A Black Original LaserJet Toner Cartridge (CF279A)",
+    "correctProductName": "HP 79A Black Original LaserJet Toner Cartridge (CF279A)",
+    "correctSku": "HP CF279A",
+    "notes": ""
   }
 ]
