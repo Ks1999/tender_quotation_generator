@@ -5419,5 +5419,18 @@
     "correctProductName": "Canon 054H Black Toner Cartridge 3.1k",
     "correctSku": "C CATR 054H BK",
     "notes": ""
+  },
+  {
+    "id": 906,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_2.pdf",
+    "description": "CANON 054H CYAN",
+    "qty": "2",
+    "uom": "unit",
+    "autoMatchAttempt": "C CATR 054H C — Canon 054H Cyan Toner Cartridge 2.3k",
+    "correctProductName": "Canon 054H Cyan Toner Cartridge 2.3k",
+    "correctSku": "C CATR 054H C",
+    "notes": ""
   }
 ]
