@@ -58,6 +58,8 @@
   .btn-prev:disabled { opacity: 0.4; cursor: not-allowed; }
   .btn-clear { background: transparent; color: var(--text-tertiary); border: 1px solid transparent; border-radius: 9px; font-weight: 600; font-size: 13.5px; padding: 12px 16px; cursor: pointer; display: inline-flex; align-items: center; gap: 7px; }
   .btn-clear:hover { color: #c0392b; background: oklch(0.96 0.03 25); }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .spin { animation: spin 0.9s linear infinite; }
   .btn-export { background: var(--surface); color: var(--accent); border: 1.5px solid var(--accent); border-radius: 9px; font-weight: 700; font-size: 13.5px; padding: 11px 18px; cursor: pointer; display: inline-flex; align-items: center; gap: 7px; }
   .btn-export:hover { background: var(--accent-soft); }
   .btn-export:disabled { opacity: 0.5; cursor: not-allowed; }
@@ -308,6 +310,17 @@ window.buildXlsx = buildXlsx;
 /* ---- end inlined XLSX writer ---- */
 
 /* =========================================================================
+   WORKER ENDPOINTS — set these once the Worker is deployed. Leave the
+   corrections endpoint blank and the app behaves exactly as it did before
+   (local file export only). Leave the PDF endpoint blank and Step 1 falls
+   back to JSON-only import. WORKER_APP_KEY is the same shared soft-deterrent
+   key for both endpoints (the Worker's X-App-Key check).
+   ========================================================================= */
+var CORRECTIONS_SUBMIT_ENDPOINT = 'https://goh-quotation-worker.goh-office.workers.dev/submit-correction';
+var PDF_EXTRACT_ENDPOINT = 'https://goh-quotation-worker.goh-office.workers.dev/extract';
+var WORKER_APP_KEY = '';
+
+/* =========================================================================
    DATA — real GOH master data, embedded so the app works fully offline.
    ========================================================================= */
 var CUSTOMERS = [{"name": "ARENA STABIL SDN BHD", "accountCode": "30A0503", "contactFirstName": "Ansel / Mr Tan", "email": "arena_stabil@yahoo.com", "phone": "0333232428", "address": "No 29 & 29A, LORONG SENTOSA 4A", "address2": "TAMAN BAYU TINGGI", "postcode": "41200", "city": "KLANG", "state": "Selangor", "country": "Malaysia"}, {"name": "SYAMADDUN SDN BHD", "accountCode": "30S0999", "contactFirstName": "MS Farah", "email": "nur.farah@syamaddun.com.my", "phone": "60355693818", "address": "UNIT 17.2, LEVEL 17, WISMA SUNWAY", "address2": "NO 1 JALAN TENGKU AMPUAN ZABEDAH C9/C, SEKSYEN 9", "postcode": "40100", "city": "SHAH ALAM", "state": "Selangor", "country": "Malaysia"}, {"name": "REWANAS SDN BHD (706165-K)", "accountCode": "30R0102", "contactFirstName": "Puan Noraini", "email": "sales@rewanas.com", "phone": "60379838811", "address": "B-3-3, Kuchai Exchange", "address2": "43, Jalan Kuchai Maju 13", "postcode": "58200", "city": "Kuala Lumpur", "state": "Kuala Lumpur", "country": "Malaysia"}, {"name": "ALGOMINDA SDN BHD", "accountCode": "30A0530", "contactFirstName": "Mr.Salem Heong", "email": "sales@algominda.com.my", "phone": "6052548546", "address": "5 & 5A, Hala Bendahara 1", "address2": "", "postcode": "31650", "city": "Ipoh", "state": "Perak", "country": "Malaysia"}, {"name": "AGIH TINTA SDN BHD", "accountCode": "30A0724", "contactFirstName": "Yvonne", "email": "mazlan@agih.com.my", "phone": "0378850309", "address": "No.15, Jalan PJU 3/40", "address2": "Sunway Damansara Technology Park", "postcode": "47810", "city": "Petaling Jaya", "state": "Selangor", "country": "Malaysia"}, {"name": "PACIFIC ONE GLOBAL SDN BHD", "accountCode": "30P0070", "contactFirstName": "Janice", "email": "janice@pacificoffice.com.my", "phone": "60355693322", "address": "No.18, Jalan Pemaju U1/15", "address2": "Section U1 Hicom Glenmarie Industrial Park", "postcode": "40150", "city": "Shah Alam", "state": "Selangor", "country": "Malaysia"}, {"name": "BURHANI STATIONERS (001335741-A)", "accountCode": "30B0133", "contactFirstName": "En Burhan", "email": "bhn_fida52@yahoo.com", "phone": "60361895786", "address": "Lot 352, Lorong Kedah", "address2": "Melawati Urban 1, Taman Melawati", "postcode": "53100", "city": "Kuala Lumpur", "state": "Kuala Lumpur", "country": "Malaysia"}, {"name": "DAYABUMI CEMERLANG SDN BHD", "accountCode": "30D0422", "contactFirstName": "Daya", "email": "daya.einvoice@dbcsb.com.my", "phone": "0133396242", "address": "L-07-01, Level 7, Block L", "address2": "Solaris Mont Kiara, No.2, Jalan Solaris Mont Kiara", "postcode": "50480", "city": "Kuala Lumpur", "state": "Kuala Lumpur", "country": "Malaysia"}, {"name": "GEOIMEJ TECHNOLOGIES SDN BHD", "accountCode": "30G0308", "contactFirstName": "Connie", "email": "accounts@geoimej.com.my", "phone": "082665887", "address": "NO G, TINGKAT 1 STUDENT PAVILION WEST WING", "address2": "UNIMAS NEW CAMPUS, KOTA SAMARAHAN", "postcode": "94300", "city": "Kota Samarahan", "state": "Sarawak", "country": "Malaysia"}, {"name": "ALLMAX VISION (M) SDN BHD", "accountCode": "30A0050", "contactFirstName": "Mr Fakhir / Faridah", "email": "fakhir@allmax.com.my", "phone": "60356313984", "address": "No.68, Jalan TS6/5", "address2": "Subang Industri Park", "postcode": "47510", "city": "Subang Jaya", "state": "Selangor", "country": "Malaysia"}, {"name": "GEO BILD (M) SDN BHD", "accountCode": "30G0307", "contactFirstName": "Connie", "email": "accounts@geobild.com.my", "phone": "0376249833", "address": "No. 46, Jalan Awan Hijau", "address2": "Taman Overseas Union", "postcode": "58200", "city": "Kuala Lumpur", "state": "Kuala Lumpur", "country": "Malaysia"}, {"name": "SKY ACTIVE SDN BHD", "accountCode": "30S0841", "contactFirstName": "Ansel", "email": "ansel_new@hotmail.com", "phone": "0127363934", "address": "NO.34, JALAN PUTRA 1", "address2": "TAMAN SRI PUTRA", "postcode": "81200", "city": "JOHOR BAHRU", "state": "Johor", "country": "Malaysia"}, {"name": "IBNU KHALID HOLDINGS SDN BHD", "accountCode": "30I0516", "contactFirstName": "Nur Hanie", "email": "ibkh.holding@gmail.com", "phone": "0149002149", "address": "Menara Delima Satu, Jalan Forest", "address2": "Pulau Satu", "postcode": "81550", "city": "Gelang Patah", "state": "Johor", "country": "Malaysia"}];
@@ -450,6 +463,11 @@ var state = {
   items: [],
   sourceFileName: '',
   importError: '',
+  // Set while a spec PDF is being sent to the Worker for extraction+matching.
+  extractingPdf: false,
+  // Set on the item set currently loaded if the last PDF extraction was
+  // served from the Worker's duplicate-PDF cache (same spec seen before).
+  extractFromCache: false,
   // Account codes of the selected customers, in the order they were picked.
   // One quotation Row No. is generated per entry here, in this order — see
   // doDownloadQuotation().
@@ -503,6 +521,58 @@ function loadItems(rawItems, fileName) {
   state.sourceFileName = fileName;
   state.importError = '';
   recomputeSortOrder();
+}
+
+// Sends a spec PDF straight to the Worker's /extract endpoint (extraction +
+// catalog matching happen there) and loads the resulting items the same way
+// a JSON import does — same item shape, same downstream steps, no separate
+// Claude session needed. Falls back to a plain error (with the JSON import
+// still available) if the Worker is unreachable, unconfigured, or fails.
+function handleSpecPdfFile(file) {
+  if (state.extractingPdf) return;
+  if (!PDF_EXTRACT_ENDPOINT) {
+    state.importError = 'PDF extraction isn’t set up on this copy of the app yet — import an extracted_items.json file instead.';
+    render();
+    return;
+  }
+
+  state.extractingPdf = true;
+  state.importError = '';
+  render();
+
+  var formData = new FormData();
+  formData.append('file', file);
+  var headers = {};
+  if (WORKER_APP_KEY) headers['X-App-Key'] = WORKER_APP_KEY;
+
+  fetch(PDF_EXTRACT_ENDPOINT, { method: 'POST', headers: headers, body: formData })
+    .then(function (res) {
+      return res.json().catch(function () { return {}; }).then(function (data) {
+        return { ok: res.ok, status: res.status, data: data };
+      });
+    })
+    .then(function (result) {
+      state.extractingPdf = false;
+      if (!result.ok) {
+        state.importError = (result.data && result.data.error) || ('PDF extraction failed (HTTP ' + result.status + ').');
+        render();
+        return;
+      }
+      var items = (result.data && result.data.items) || [];
+      if (items.length === 0) {
+        state.importError = 'No line items were found in that PDF — double-check it’s a spec/tender document, or import an extracted_items.json file instead.';
+        render();
+        return;
+      }
+      state.extractFromCache = !!(result.data && result.data.fromCache);
+      loadItems(items, file.name);
+      render();
+    })
+    .catch(function (err) {
+      state.extractingPdf = false;
+      state.importError = 'Network error while extracting: ' + err.message + ' — you can also import an extracted_items.json file instead.';
+      render();
+    });
 }
 
 function recomputeSortOrder() {
@@ -654,12 +724,16 @@ function renderStep1() {
 
   var successBlock = '';
   if (hasItems) {
+    var cacheNote = state.extractFromCache
+      ? '<p style="margin:4px 0 0 0; font-size:12px; color:var(--text-tertiary); font-style:italic;">This exact spec was seen before, so it was matched instantly.</p>'
+      : '';
     successBlock =
       '<div style="margin-top:20px; background:var(--success-soft); border:1px solid var(--success-border); border-radius:12px; padding:16px 18px; display:flex; align-items:flex-start; gap:10px;">' +
         '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--success); flex-shrink:0; margin-top:2px;"><path d="M20 6 9 17l-5-5"/></svg>' +
         '<div>' +
           '<p style="margin:0; font-size:13.5px; font-weight:700; color:var(--text);">' + state.items.length + ' item' + (state.items.length === 1 ? '' : 's') + ' parsed from ' + escapeHtml(state.sourceFileName) + '</p>' +
           '<p style="margin:4px 0 0 0; font-size:12.5px; color:var(--text-secondary);">' + matchedCount + ' auto-matched &middot; ' + attentionCount + ' need your review in the next steps.</p>' +
+          cacheNote +
         '</div>' +
       '</div>';
   }
@@ -668,29 +742,45 @@ function renderStep1() {
     ? '<p style="margin:16px 0 0 0; font-size:13px; color:var(--danger); line-height:1.4;">' + escapeHtml(state.importError) + '</p>'
     : '';
 
+  var dropzoneInner;
+  if (state.extractingPdf) {
+    dropzoneInner =
+      '<div style="pointer-events:none; width:56px; height:56px; border-radius:14px; background:var(--accent-soft); display:flex; align-items:center; justify-content:center; color:var(--accent);">' +
+        '<svg class="spin" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12a9 9 0 1 1-9-9"/></svg>' +
+      '</div>' +
+      '<div style="pointer-events:none;">' +
+        '<p style="font-size:15px; font-weight:700; margin:0 0 4px 0;">Extracting and matching items&hellip;</p>' +
+        '<p style="font-size:13px; color:var(--text-tertiary); margin:0;">This can take up to a minute for a long spec.</p>' +
+      '</div>';
+  } else {
+    dropzoneInner =
+      '<div style="pointer-events:none; width:56px; height:56px; border-radius:14px; background:var(--accent-soft); display:flex; align-items:center; justify-content:center; color:var(--accent);">' +
+        '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a4.6 4.4 0 0 1-1.242-8.99 4.5 4.5 0 0 1 8.965-1.686A4.6 4.6 0 0 1 17.5 18"/><path d="M12 12v9"/><path d="m9.5 14.5 2.5-2.5 2.5 2.5"/></svg>' +
+      '</div>' +
+      '<div style="pointer-events:none;">' +
+        '<p style="font-size:15px; font-weight:700; margin:0 0 4px 0;">' + (state.fileDragActive ? 'Drop to extract' : 'Click or drag &amp; drop a spec PDF here') + '</p>' +
+        '<p style="font-size:13px; color:var(--text-tertiary); margin:0;">PDF only &mdash; items are extracted and matched to the catalog automatically</p>' +
+      '</div>' +
+      '<button class="btn-primary" style="pointer-events:none;">Browse files</button>';
+  }
+
   return (
     '<div>' +
       '<div style="max-width:640px;">' +
         '<div style="margin-bottom:24px;">' +
           '<h1 style="font-size:22px; font-weight:800; margin:0 0 6px 0; letter-spacing:-0.01em;">New quotation</h1>' +
-          '<p style="font-size:14px; color:var(--text-secondary); margin:0;">A spec PDF never comes in here directly. Run it through the <span style="font-family:monospace;">goh-sku-extractor</span> skill in a Claude session first, then import the <span style="font-family:monospace;">extracted_items.json</span> it produces.</p>' +
+          '<p style="font-size:14px; color:var(--text-secondary); margin:0;">Drop a spec PDF in below &mdash; it&rsquo;s extracted and matched against the catalog automatically, no separate Claude session needed.</p>' +
         '</div>' +
 
+        '<input type="file" accept="application/pdf" id="specPdfInput" style="display:none;">' +
         '<input type="file" accept=".json,application/json" id="extractedItemsInput" style="display:none;">' +
 
         // pointer-events:none on every child keeps drag events landing squarely on
         // #dropzone itself (never on the icon/text/button inside it) — otherwise
         // dragenter/dragleave fire on those children as the cursor crosses them,
         // which flickers the highlight on and off while dragging over the box.
-        '<div id="dropzone" style="border:2px dashed ' + (state.fileDragActive ? 'var(--accent)' : 'var(--border-strong)') + '; border-radius:16px; background:' + (state.fileDragActive ? 'var(--accent-soft)' : 'var(--surface)') + '; padding:56px 40px; display:flex; flex-direction:column; align-items:center; text-align:center; gap:16px; cursor:pointer; transition:border-color 0.15s ease, background 0.15s ease;" data-action="trigger-file-input">' +
-          '<div style="pointer-events:none; width:56px; height:56px; border-radius:14px; background:var(--accent-soft); display:flex; align-items:center; justify-content:center; color:var(--accent);">' +
-            '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a4.6 4.4 0 0 1-1.242-8.99 4.5 4.5 0 0 1 8.965-1.686A4.6 4.6 0 0 1 17.5 18"/><path d="M12 12v9"/><path d="m9.5 14.5 2.5-2.5 2.5 2.5"/></svg>' +
-          '</div>' +
-          '<div style="pointer-events:none;">' +
-            '<p style="font-size:15px; font-weight:700; margin:0 0 4px 0;">' + (state.fileDragActive ? 'Drop to import' : 'Click or drag &amp; drop extracted_items.json here') + '</p>' +
-            '<p style="font-size:13px; color:var(--text-tertiary); margin:0;">JSON only &mdash; produced by the goh-sku-extractor skill</p>' +
-          '</div>' +
-          '<button class="btn-primary" style="pointer-events:none;">Browse files</button>' +
+        '<div id="dropzone" style="border:2px dashed ' + (state.fileDragActive ? 'var(--accent)' : 'var(--border-strong)') + '; border-radius:16px; background:' + (state.fileDragActive ? 'var(--accent-soft)' : 'var(--surface)') + '; padding:56px 40px; display:flex; flex-direction:column; align-items:center; text-align:center; gap:16px; cursor:' + (state.extractingPdf ? 'default' : 'pointer') + '; transition:border-color 0.15s ease, background 0.15s ease;" ' + (state.extractingPdf ? '' : 'data-action="trigger-pdf-input"') + '>' +
+          dropzoneInner +
         '</div>' +
 
         successBlock + errorBlock +
@@ -700,7 +790,8 @@ function renderStep1() {
           '<span style="font-size:12px; color:var(--text-tertiary);">or</span>' +
           '<div style="flex:1; height:1px; background:var(--border);"></div>' +
         '</div>' +
-        '<div style="margin-top:16px; text-align:center;">' +
+        '<div style="margin-top:16px; display:flex; justify-content:center; gap:10px; flex-wrap:wrap;">' +
+          '<button class="btn-outline" data-action="trigger-json-input">Import an extracted_items.json file instead</button>' +
           '<button class="btn-outline" data-action="load-sample">Load sample data (9 items, for a quick look around)</button>' +
         '</div>' +
 
@@ -1133,10 +1224,7 @@ function renderStep5() {
       '<button class="btn-prev" data-action="prev-step"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>Previous</button>' +
       '<div style="display:flex; align-items:center; gap:12px;">' +
         '<button class="btn-clear" data-action="clear-all"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/></svg>Clear quotation &amp; start over</button>' +
-        (corrected.length > 0
-          ? '<button class="btn-export" data-action="export-corrections">Export corrections (' + corrected.length + ')</button>'
-          : '') +
-        '<button class="btn-primary" data-action="download-quotation" ' + (canGenerate ? '' : 'disabled') + '><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3"/><path d="m7 10 5 5 5-5"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/></svg>Download Quotation</button>' +
+        '<button class="btn-primary" data-action="download-quotation" ' + (canGenerate ? '' : 'disabled') + '><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3"/><path d="m7 10 5 5 5-5"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/></svg>Download Quotation' + (corrected.length > 0 ? ' & Sync' : '') + '</button>' +
       '</div>' +
     '</div>'
   );
@@ -1272,10 +1360,47 @@ function saveFile(filename, data, mimeType) {
   });
 }
 
-function doExportCorrections() {
-  var corrected = getCorrectedItems();
-  if (corrected.length === 0) return;
-  var contributor = (state.contributorName || '').trim() || '(not provided)';
+function submitCorrectionsToWorker(corrected, contributor) {
+  if (!CORRECTIONS_SUBMIT_ENDPOINT) return Promise.resolve({ skipped: true });
+  var headers = { 'Content-Type': 'application/json' };
+  if (WORKER_APP_KEY) headers['X-App-Key'] = WORKER_APP_KEY;
+  var total = corrected.length;
+  var succeeded = 0;
+
+  // Sent ONE AT A TIME (not all at once): GitHub can only save one change to
+  // the file at a time, so firing them in parallel causes most to collide
+  // and fail with a 409 conflict. Waiting for each to finish before starting
+  // the next avoids that.
+  function sendOne(index) {
+    if (index >= total) {
+      return { skipped: false, succeeded: succeeded, total: total };
+    }
+    var it = corrected[index];
+    var finalProduct = productByModel(it.matchedSku);
+    var finalName = it.status === 'not_carried' ? 'Not carried' : (finalProduct ? finalProduct.name : (it.matchedSku || ''));
+    var finalModel = it.status === 'not_carried' ? 'N/A' : (it.matchedSku || '');
+    var body = {
+      contributedBy: contributor,
+      date: todayStr(),
+      sourceSpec: state.sourceFileName || '',
+      description: it.description,
+      qty: it.qty,
+      uom: it.uom,
+      autoMatchAttempt: describeOriginalMatch(it),
+      correctProductName: finalName,
+      correctSku: finalModel,
+      notes: it.note || ''
+    };
+    return fetch(CORRECTIONS_SUBMIT_ENDPOINT, { method: 'POST', headers: headers, body: JSON.stringify(body) })
+      .then(function (res) { if (res.ok) succeeded++; })
+      .catch(function () { /* counted as not-succeeded */ })
+      .then(function () { return sendOne(index + 1); });
+  }
+
+  return Promise.resolve().then(function () { return sendOne(0); });
+}
+
+function buildCorrectionsMarkdown(corrected, contributor) {
   var lines = [
     '| Contributed By | Date | Source Spec | Spec Item Description (as written) | Qty | UOM | Auto-Match Attempt | Correct Product Name | Correct Model/SKU | Notes |',
     '|---|---|---|---|---|---|---|---|---|---|'
@@ -1290,16 +1415,7 @@ function doExportCorrections() {
       mdEscape(describeOriginalMatch(it)), mdEscape(finalName), mdEscape(finalModel), mdEscape(it.note)
     ].join(' | ') + ' |');
   });
-  var md = lines.join('\n') + '\n';
-  var filename = 'review_corrections_' + todayStr() + '.md';
-  saveFile(filename, md, 'text/markdown').then(function () {
-    state.toast = 'Downloaded ' + filename + ' — ' + corrected.length + ' corrected item' + (corrected.length === 1 ? '' : 's') + '. Send it to your admin to compile into the skill.';
-    render();
-  }).catch(function (err) {
-    if (err && err.code === 'declined') return;
-    state.toast = 'Could not export corrections (' + (err && err.code || 'unknown error') + ').';
-    render();
-  });
+  return lines.join('\n') + '\n';
 }
 
 function doDownloadQuotation() {
@@ -1334,10 +1450,48 @@ function doDownloadQuotation() {
     safeName = customers.length + '_customers';
   }
   var filename = 'Quotation_' + safeName + '_' + todayStr() + '.xlsx';
+  var quotationLabel = customers.length + ' quotation' + (customers.length === 1 ? '' : 's') + ' (Row No. 1' + (customers.length > 1 ? '–' + customers.length : '') + ')';
 
-  saveFile(filename, bytes, 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet').then(function () {
-    state.toast = 'Downloaded ' + filename + ' — ' + customers.length + ' quotation' + (customers.length === 1 ? '' : 's') + ' (Row No. 1' + (customers.length > 1 ? '–' + customers.length : '') + ').';
-    render();
+  // Download Quotation also syncs any corrected items in the background, so
+  // nobody has to remember a separate "export corrections" step. The local
+  // corrections backup (.md) file is only downloaded when it's actually
+  // needed as a safety net — i.e. when syncing wasn't fully successful, or
+  // wasn't configured at all. When every correction synced cleanly, GitHub
+  // already has it, so a redundant local copy is skipped.
+  var corrected = getCorrectedItems();
+  var contributor = (state.contributorName || '').trim() || '(not provided)';
+  var syncPromise = corrected.length > 0
+    ? submitCorrectionsToWorker(corrected, contributor)
+    : Promise.resolve({ skipped: true, succeeded: 0, total: 0 });
+
+  syncPromise.then(function (syncResult) {
+    return saveFile(filename, bytes, 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet').then(function () {
+      var fullySynced = corrected.length > 0 && !syncResult.skipped && syncResult.succeeded === syncResult.total;
+      var needsBackup = corrected.length > 0 && !fullySynced;
+
+      if (corrected.length === 0) {
+        return { needsBackup: false };
+      }
+      if (needsBackup) {
+        var md = buildCorrectionsMarkdown(corrected, contributor);
+        var mdFilename = 'review_corrections_' + todayStr() + '.md';
+        return saveFile(mdFilename, md, 'text/markdown').then(function () {
+          return { needsBackup: true, mdFilename: mdFilename };
+        });
+      }
+      return { needsBackup: false };
+    }).then(function (backupResult) {
+      if (corrected.length === 0) {
+        state.toast = 'Downloaded ' + filename + ' — ' + quotationLabel + '.';
+      } else if (syncResult.skipped) {
+        state.toast = 'Downloaded ' + filename + ' and ' + backupResult.mdFilename + ' — ' + corrected.length + ' corrected item' + (corrected.length === 1 ? '' : 's') + '. Send it to your admin to compile into the skill.';
+      } else if (syncResult.succeeded === syncResult.total) {
+        state.toast = 'Downloaded ' + filename + ' — ' + quotationLabel + '. Synced ' + syncResult.succeeded + ' correction' + (syncResult.succeeded === 1 ? '' : 's') + ' automatically.';
+      } else {
+        state.toast = 'Downloaded ' + filename + ' and ' + backupResult.mdFilename + '. Synced ' + syncResult.succeeded + ' of ' + syncResult.total + ' corrections (some failed — check your connection), so the rest were saved locally too.';
+      }
+      render();
+    });
   }).catch(function (err) {
     if (err && err.code === 'declined') return;
     state.toast = 'Could not generate the quotation file (' + (err && err.code || 'unknown error') + ').';
@@ -1382,6 +1536,7 @@ function handleImportFile(file) {
           throw new Error('Row ' + (i + 1) + ' has status "' + row.status + '" — expected matched, review, or nomatch.');
         }
       });
+      state.extractFromCache = false;
       loadItems(data, file.name);
     } catch (err) {
       state.importError = err.message;
@@ -1402,12 +1557,19 @@ root.addEventListener('click', function (e) {
   var id = el.getAttribute('data-id');
 
   switch (action) {
-    case 'trigger-file-input': {
-      var input = document.getElementById('extractedItemsInput');
-      if (input) input.click();
+    case 'trigger-pdf-input': {
+      if (state.extractingPdf) return;
+      var pdfInput = document.getElementById('specPdfInput');
+      if (pdfInput) pdfInput.click();
+      return; // no render needed
+    }
+    case 'trigger-json-input': {
+      var jsonInput = document.getElementById('extractedItemsInput');
+      if (jsonInput) jsonInput.click();
       return; // no render needed
     }
     case 'load-sample':
+      state.extractFromCache = false;
       loadItems(sampleItems(), '05_Spesifikasi.pdf (sample)');
       break;
     case 'goto-step':
@@ -1490,7 +1652,6 @@ root.addEventListener('click', function (e) {
       if (it4) { it4.status = 'not_carried'; it4.matchedSku = null; it4.open = false; }
       break;
     }
-    case 'export-corrections': doExportCorrections(); return;
     case 'download-quotation': doDownloadQuotation(); return;
     case 'clear-all': resetAll(); break;
     case 'dismiss-toast': state.toast = ''; break;
@@ -1525,14 +1686,19 @@ root.addEventListener('input', function (e) {
 });
 
 root.addEventListener('change', function (e) {
-  if (e.target.id === 'extractedItemsInput') {
-    var file = e.target.files && e.target.files[0];
-    if (file) handleImportFile(file);
+  if (e.target.id === 'specPdfInput') {
+    var pdfFile = e.target.files && e.target.files[0];
+    if (pdfFile) handleSpecPdfFile(pdfFile);
+  } else if (e.target.id === 'extractedItemsInput') {
+    var jsonFile = e.target.files && e.target.files[0];
+    if (jsonFile) handleImportFile(jsonFile);
   }
 });
 
 /* =========================================================================
-   DRAG & DROP — extracted_items.json onto the Step 1 dropzone
+   DRAG & DROP onto the Step 1 dropzone — a spec PDF goes through
+   handleSpecPdfFile (Worker extraction), an extracted_items.json goes
+   through handleImportFile (local parse), decided by file type/extension.
    ========================================================================= */
 // Without this, dragging a file anywhere over the page and missing the
 // dropzone makes the browser navigate to / render the raw file, replacing
@@ -1543,6 +1709,7 @@ document.addEventListener('dragover', function (e) { e.preventDefault(); });
 document.addEventListener('drop', function (e) { e.preventDefault(); });
 
 root.addEventListener('dragenter', function (e) {
+  if (state.extractingPdf) return;
   if (e.target && e.target.id === 'dropzone' && !state.fileDragActive) {
     state.fileDragActive = true;
     render();
@@ -1558,11 +1725,21 @@ root.addEventListener('drop', function (e) {
   if (!(e.target && e.target.id === 'dropzone')) return;
   e.preventDefault();
   state.fileDragActive = false;
+  if (state.extractingPdf) return;
   var file = e.dataTransfer && e.dataTransfer.files && e.dataTransfer.files[0];
-  if (file) {
+  if (!file) {
+    state.importError = 'Could not read the dropped file — try Browse files instead.';
+    render();
+    return;
+  }
+  var isPdf = file.type === 'application/pdf' || /\.pdf$/i.test(file.name);
+  var isJson = file.type === 'application/json' || /\.json$/i.test(file.name);
+  if (isPdf) {
+    handleSpecPdfFile(file);
+  } else if (isJson) {
     handleImportFile(file);
   } else {
-    state.importError = 'Could not read the dropped file — try Browse files instead.';
+    state.importError = 'Drop a spec PDF, or an extracted_items.json file.';
     render();
   }
 });
