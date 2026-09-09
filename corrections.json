@@ -6563,5 +6563,18 @@
     "correctProductName": "HP 61XL Black Ink Cartridge",
     "correctSku": "HP C0PA4AA",
     "notes": "Confirmed by user: HP DeskJet 3000 uses HP 61XL Black -- not the coincidental Panasonic KX-MB3000 number collision the auto-matcher picked."
+  },
+  {
+    "id": 994,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Ink for HP DESKJET 3000 Printer (Tri-Color)",
+    "qty": "10",
+    "uom": "unit",
+    "autoMatchAttempt": "HP C0PA5AA — HP 61 Tri-Color Ink Cartridge",
+    "correctProductName": "HP 61 Tri-Color Ink Cartridge",
+    "correctSku": "HP C0PA5AA",
+    "notes": ""
   }
 ]
