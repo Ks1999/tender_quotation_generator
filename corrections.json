@@ -9072,5 +9072,18 @@
     "correctProductName": "Not carried",
     "correctSku": "N/A",
     "notes": "Confirmed catalog gap: GOH does not carry Lexmark."
+  },
+  {
+    "id": 1255,
+    "contributedBy": "(not provided)",
+    "date": "2026-09-09",
+    "sourceSpec": "KDN_Kementerian_Dalam_Negeri-BURHANI_extracted_items.json",
+    "description": "LEXMARK BLACK CRTG ULTRA RETURN CS521/CS622/CX622/CX625 (78C3UK0)",
+    "qty": 100,
+    "uom": "unit",
+    "autoMatchAttempt": "No match",
+    "correctProductName": "Not carried",
+    "correctSku": "N/A",
+    "notes": "Confirmed catalog gap: GOH does not carry Lexmark."
   }
 ]
