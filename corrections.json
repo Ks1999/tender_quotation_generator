@@ -2169,5 +2169,18 @@
     "correctProductName": "Epson L100 L200 L300 Black Ink Cartridge (T6641 - C13T664100)",
     "correctSku": "EPS T664100",
     "notes": ""
+  },
+  {
+    "id": 656,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "Epson T6642 Cyan",
+    "qty": "315",
+    "uom": "unit",
+    "autoMatchAttempt": "EPS T664200 — Epson L100 L200 L300 Cyan Ink Cartridge (C13T664200)",
+    "correctProductName": "Epson L100 L200 L300 Cyan Ink Cartridge (C13T664200)",
+    "correctSku": "EPS T664200",
+    "notes": ""
   }
 ]
