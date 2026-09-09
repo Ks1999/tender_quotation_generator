@@ -8435,5 +8435,18 @@
     "correctProductName": "Canon 054 Cyan Toner Cartridge 1.2k",
     "correctSku": "C CATR 054C",
     "notes": ""
+  },
+  {
+    "id": 1206,
+    "contributedBy": "(not provided)",
+    "date": "2026-09-09",
+    "sourceSpec": "Hospital_Tengku_Permaisuri_Norashikin_WCC_Kajang-BURHANI_extracted_items.json",
+    "description": "CANON 054 MAGENTA",
+    "qty": 150,
+    "uom": "unit",
+    "autoMatchAttempt": "Flagged for review — no candidate",
+    "correctProductName": "Canon 054 Magenta Toner Cartridge 1.2k",
+    "correctSku": "C CATR 054M",
+    "notes": ""
   }
 ]
