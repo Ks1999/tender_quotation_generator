@@ -2091,5 +2091,18 @@
     "correctProductName": "Canon PG 88 Black Ink Cartridge",
     "correctSku": "C PG 88BK",
     "notes": ""
+  },
+  {
+    "id": 650,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "Canon PG-40BK Black Fine Cartridge",
+    "qty": "290",
+    "uom": "unit",
+    "autoMatchAttempt": "No Match",
+    "correctProductName": "Not carried",
+    "correctSku": "N/A",
+    "notes": "Canon PG-40 not carried (confirmed by user 2026-08-25)"
   }
 ]
