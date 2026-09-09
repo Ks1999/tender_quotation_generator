@@ -4834,5 +4834,18 @@
     "correctProductName": "HP 222A Cyn LaserJet Toner Cartridge 1.2",
     "correctSku": "HP W2221A",
     "notes": ""
+  },
+  {
+    "id": 861,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "HP W2222A (Y)",
+    "qty": "5",
+    "uom": "unit",
+    "autoMatchAttempt": "HP W2222A — HP 222A Ylw LaserJet Toner Cartridge 1.2",
+    "correctProductName": "HP 222A Ylw LaserJet Toner Cartridge 1.2",
+    "correctSku": "HP W2222A",
+    "notes": ""
   }
 ]
