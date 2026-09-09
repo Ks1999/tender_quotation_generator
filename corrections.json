@@ -2910,5 +2910,18 @@
     "correctProductName": "Not carried",
     "correctSku": "N/A",
     "notes": "Confirmed by user 2026-08-25: HP 51A (Q7551A) not carried by GOH."
+  },
+  {
+    "id": 713,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "Lexmark 520ZA (part number 52D0ZA0)",
+    "qty": "40",
+    "uom": "unit",
+    "autoMatchAttempt": "No Match",
+    "correctProductName": "Not carried",
+    "correctSku": "N/A",
+    "notes": "Confirmed by user 2026-08-25: Lexmark not carried by GOH at all."
   }
 ]
