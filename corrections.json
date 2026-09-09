@@ -3625,5 +3625,18 @@
     "correctProductName": "Not carried",
     "correctSku": "N/A",
     "notes": "Canon PG-40 not carried (confirmed by user 2026-08-25)"
+  },
+  {
+    "id": 768,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "CANON CL 41",
+    "qty": "5",
+    "uom": "unit",
+    "autoMatchAttempt": "No Match",
+    "correctProductName": "Not carried",
+    "correctSku": "N/A",
+    "notes": "Canon CL-41 not carried (confirmed by user 2026-08-25)"
   }
 ]
