@@ -5224,5 +5224,18 @@
     "correctProductName": "Epson 003 T00V300 Ink Bottle Magenta 65ml",
     "correctSku": "EPS T00V300",
     "notes": ""
+  },
+  {
+    "id": 891,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_2.pdf",
+    "description": "Epson L3110",
+    "qty": "10",
+    "uom": "unit",
+    "autoMatchAttempt": "No Match",
+    "correctProductName": "Not carried",
+    "correctSku": "N/A",
+    "notes": "Confirmed by user 2026-08-25: this printer itself (not a consumable) is not carried by GOH."
   }
 ]
