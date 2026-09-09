@@ -947,5 +947,18 @@
     "correctProductName": "Brother TN-2280 Toner Cartridge - HIGH Capacity",
     "correctSku": "B TN 2280",
     "notes": ""
+  },
+  {
+    "id": 562,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "Canon 337",
+    "qty": "260",
+    "uom": "unit",
+    "autoMatchAttempt": "C CATR 337 — Canon Cartridge 337 Toner Cartridge",
+    "correctProductName": "Canon Cartridge 337 Toner Cartridge",
+    "correctSku": "C CATR 337",
+    "notes": ""
   }
 ]
