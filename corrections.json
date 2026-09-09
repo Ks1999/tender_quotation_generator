@@ -6342,5 +6342,18 @@
     "correctProductName": "Canon Cartridge 335  Yellow Toner 16.5k",
     "correctSku": "C CATR 335 Y",
     "notes": ""
+  },
+  {
+    "id": 977,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Toner Cartridge for Canon imageCLASS LBP841Cdn Printer (Magenta)",
+    "qty": "100",
+    "uom": "unit",
+    "autoMatchAttempt": "C CATR 335 M — Canon Cartridge 335 Magenta Toner 16.5k",
+    "correctProductName": "Canon Cartridge 335 Magenta Toner 16.5k",
+    "correctSku": "C CATR 335 M",
+    "notes": ""
   }
 ]
