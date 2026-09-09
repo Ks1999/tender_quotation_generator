@@ -3300,5 +3300,18 @@
     "correctProductName": "Tally T5040 Black Ribbon (Item No: MT 5040)",
     "correctSku": "MT 5040",
     "notes": "Confirmed by user 2026-08-25: a Google search for \"Tally 043393\" returns the Tally T5040 ribbon, which GOH carries as catalog SKU MT 5040 (Tally T5040 Black Ribbon)."
+  },
+  {
+    "id": 743,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "Wincor Nixdorf 4915XE",
+    "qty": "16282",
+    "uom": "unit",
+    "autoMatchAttempt": "No Match",
+    "correctProductName": "Not carried",
+    "correctSku": "N/A",
+    "notes": "Confirmed by user 2026-08-25: Wincor Nixdorf not carried by GOH at all."
   }
 ]
