@@ -2390,5 +2390,18 @@
     "correctProductName": "HP 61XL Black Ink Cartridge",
     "correctSku": "HP C0PA4AA",
     "notes": "Corrected 2026-08-27 (Kian Seen): originally matched to the Tri-Color SKU (C0PA5AA), likely copy-pasted from item #45's Tri-Color spec line -- this is a Black spec item. Standard-grade HP 61 Black is discontinued, replaced by HP 61 Black XL; correct match is HP C0PA4AA. See item #506."
+  },
+  {
+    "id": 673,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "HP 61 Tri-Color Original Ink Cartridge (CH562WN)",
+    "qty": "70",
+    "uom": "unit",
+    "autoMatchAttempt": "HP C0PA5AA — HP 61 Tri-Color Ink Cartridge",
+    "correctProductName": "HP 61 Tri-Color Ink Cartridge",
+    "correctSku": "HP C0PA5AA",
+    "notes": ""
   }
 ]
