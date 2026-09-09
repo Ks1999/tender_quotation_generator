@@ -8058,5 +8058,18 @@
     "correctProductName": "Canon 054 Black Toner Cartridge 1.5k",
     "correctSku": "C CATR 054BK",
     "notes": ""
+  },
+  {
+    "id": 1177,
+    "contributedBy": "(not provided)",
+    "date": "2026-09-09",
+    "sourceSpec": "BURHANI_KAJIAN_PASARAN-SUPPLIER_extracted_items.json",
+    "description": "LEXMARK MS 321, MS 421 | PART NUMBER: 56F3HOO | MODEL: Black CRTG High Return (MS/MX 320,420,520,620) | PAGE YIELD: 15,000",
+    "qty": 1,
+    "uom": "unit",
+    "autoMatchAttempt": "No match",
+    "correctProductName": "Not carried",
+    "correctSku": "N/A",
+    "notes": "Confirmed catalog gap: GOH does not carry Lexmark."
   }
 ]
