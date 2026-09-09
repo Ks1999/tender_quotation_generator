@@ -5510,5 +5510,18 @@
     "correctProductName": "HP Deskjet GT52 All-In-One Yellow Ink Bottles",
     "correctSku": "HP M0H56AA",
     "notes": ""
+  },
+  {
+    "id": 913,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_2.pdf",
+    "description": "HP 151A",
+    "qty": "6",
+    "uom": "unit",
+    "autoMatchAttempt": "HP W1510A — HP 151A Black LaserJet Toner Cartridge",
+    "correctProductName": "HP 151A Black LaserJet Toner Cartridge",
+    "correctSku": "HP W1510A",
+    "notes": ""
   }
 ]
