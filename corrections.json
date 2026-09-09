@@ -6459,5 +6459,18 @@
     "correctProductName": "HP 120A Original Laser Imaging Drum",
     "correctSku": "HP W1120A",
     "notes": "Confirmed via web search: imaging drum for HP Color Laser MFP 179fnw is HP 120A. The auto-matcher had previously false-matched this to an unrelated clothing SKU via a coincidental bare '179' digit collision -- fixed generally by penalizing catalog rows the matcher can't identify as any recognized office/printer brand when the spec names a brand."
+  },
+  {
+    "id": 986,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Drum for Canon imageClass LBP162dw",
+    "qty": "500",
+    "uom": "unit",
+    "autoMatchAttempt": "C CATR 051 DR — Canon Cartridge 051 Drum (23k)",
+    "correctProductName": "Canon Cartridge 051 Drum (23k)",
+    "correctSku": "C CATR 051 DR",
+    "notes": "Confirmed by user (\"Canon 051 series\"): drum for Canon imageCLASS LBP162dw is Canon Cartridge 051 Drum."
   }
 ]
