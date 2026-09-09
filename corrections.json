@@ -1597,5 +1597,18 @@
     "correctProductName": "HP 62 Black Ink Cartridge (C2P04AA)",
     "correctSku": "HP C2P04AA",
     "notes": ""
+  },
+  {
+    "id": 612,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "HP C2P06AA (HP 62 Tri-Colour) Ink Cartridge",
+    "qty": "170",
+    "uom": "unit",
+    "autoMatchAttempt": "HP C2P06AA — HP 62 Tri-color Ink Cartridge (C2P06AA)",
+    "correctProductName": "HP 62 Tri-color Ink Cartridge (C2P06AA)",
+    "correctSku": "HP C2P06AA",
+    "notes": ""
   }
 ]
