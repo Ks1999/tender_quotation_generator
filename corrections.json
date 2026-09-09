@@ -5133,5 +5133,18 @@
     "correctProductName": "HP 107A Black Original Laser Toner Cartridge  For Model HP Laser 100 Printer series, HP Laser MFP 130 Printer series",
     "correctSku": "HP W1107A",
     "notes": ""
+  },
+  {
+    "id": 884,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_2.pdf",
+    "description": "CANON PG-47 BLACK",
+    "qty": "6",
+    "uom": "unit",
+    "autoMatchAttempt": "C PG 47BK — Canon PG-47 Black Ink Cartridge",
+    "correctProductName": "Canon PG-47 Black Ink Cartridge",
+    "correctSku": "C PG 47BK",
+    "notes": ""
   }
 ]
