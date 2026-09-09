@@ -1610,5 +1610,18 @@
     "correctProductName": "HP 62 Tri-color Ink Cartridge (C2P06AA)",
     "correctSku": "HP C2P06AA",
     "notes": ""
+  },
+  {
+    "id": 613,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "HP CB540A (HP 125A) Black Laser Jet Toner Cartridge",
+    "qty": "60",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CB540A — HP 125A Black LaserJet Toner Cartridge (CB540A)",
+    "correctProductName": "HP 125A Black LaserJet Toner Cartridge (CB540A)",
+    "correctSku": "HP CB540A",
+    "notes": ""
   }
 ]
