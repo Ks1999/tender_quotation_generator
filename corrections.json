@@ -6940,5 +6940,18 @@
     "correctProductName": "Epson L800 Light Magenta Ink (T6736)",
     "correctSku": "EPS T673600",
     "notes": "See Black entry."
+  },
+  {
+    "id": 1023,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Ink for EPSON L5190 Printer (Black)",
+    "qty": "10",
+    "uom": "unit",
+    "autoMatchAttempt": "EPS T00V100 — Epson 003 T00V100 Ink Bottle Black 65ml",
+    "correctProductName": "Epson 003 T00V100 Ink Bottle Black 65ml",
+    "correctSku": "EPS T00V100",
+    "notes": "Confirmed by user: Epson 003 series."
   }
 ]
