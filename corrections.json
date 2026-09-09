@@ -5601,5 +5601,18 @@
     "correctProductName": "HP 136A Black Original LaserJet Toner Cartridge (W1360A)",
     "correctSku": "HP W1360A",
     "notes": ""
+  },
+  {
+    "id": 920,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_2.pdf",
+    "description": "MC - G02",
+    "qty": "10",
+    "uom": "unit",
+    "autoMatchAttempt": "C MC G02 — Canon MC-G02 Maintenance Cartridge – G1020",
+    "correctProductName": "G2020",
+    "correctSku": "G3020",
+    "notes": "G3060"
   }
 ]
