@@ -4600,5 +4600,18 @@
     "correctProductName": "HP 136A Black Original LaserJet Toner Cartridge (W1360A)",
     "correctSku": "HP W1360A",
     "notes": ""
+  },
+  {
+    "id": 843,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "HP 107A",
+    "qty": "35",
+    "uom": "unit",
+    "autoMatchAttempt": "HP W1107A — HP 107A Black Original Laser Toner Cartridge  For Model HP Laser 100 Printer series, HP Laser MFP 130 Printer series",
+    "correctProductName": "HP 107A Black Original Laser Toner Cartridge  For Model HP Laser 100 Printer series, HP Laser MFP 130 Printer series",
+    "correctSku": "HP W1107A",
+    "notes": ""
   }
 ]
