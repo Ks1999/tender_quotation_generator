@@ -8682,5 +8682,18 @@
     "correctProductName": "Brother TN-263 Black Toner 1.4k",
     "correctSku": "B TN 263BK",
     "notes": ""
+  },
+  {
+    "id": 1225,
+    "contributedBy": "(not provided)",
+    "date": "2026-09-09",
+    "sourceSpec": "Hospital_Tengku_Permaisuri_Norashikin_WCC_Kajang-BURHANI_extracted_items.json",
+    "description": "BROTHER TN-263C",
+    "qty": 25,
+    "uom": "unit",
+    "autoMatchAttempt": "Flagged for review — no candidate",
+    "correctProductName": "Brother TN-263 Cyan Toner 1.3k",
+    "correctSku": "B TN 263C",
+    "notes": ""
   }
 ]
