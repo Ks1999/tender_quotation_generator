@@ -2351,5 +2351,18 @@
     "correctProductName": "HP 410A Cyan LaserJet Toner Cartridge (CF411A)",
     "correctSku": "HP CF411A",
     "notes": ""
+  },
+  {
+    "id": 670,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "HP 46 Black (CZ637AA) Ink Cartridge",
+    "qty": "50",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CZ637AA — HP 46 Black Ink Cartridge (CZ637AA)",
+    "correctProductName": "HP 46 Black Ink Cartridge (CZ637AA)",
+    "correctSku": "HP CZ637AA",
+    "notes": ""
   }
 ]
