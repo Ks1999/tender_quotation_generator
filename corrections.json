@@ -5341,5 +5341,18 @@
     "correctProductName": "HP 131A Yellow LaserJet Toner Cartridge (CF212A)",
     "correctSku": "HP CF212A",
     "notes": ""
+  },
+  {
+    "id": 900,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_2.pdf",
+    "description": "LEXMARK MS431 TONER 55B3000 (BLACK)",
+    "qty": "80",
+    "uom": "unit",
+    "autoMatchAttempt": "No Match",
+    "correctProductName": "Not carried",
+    "correctSku": "N/A",
+    "notes": "Confirmed by user 2026-08-25: Lexmark not carried by GOH at all."
   }
 ]
