@@ -2299,5 +2299,18 @@
     "correctProductName": "HP 131A Magenta LaserJet Toner Cartridge (CF213A)",
     "correctSku": "HP CF213A",
     "notes": ""
+  },
+  {
+    "id": 666,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "HP 213A Yellow Original Laser Jet Toner Cartridge",
+    "qty": "24",
+    "uom": "unit",
+    "autoMatchAttempt": "HP W2132A — HP 213A Yellow Toner Cartridge 3k",
+    "correctProductName": "HP 213A Yellow Toner Cartridge 3k",
+    "correctSku": "HP W2132A",
+    "notes": ""
   }
 ]
