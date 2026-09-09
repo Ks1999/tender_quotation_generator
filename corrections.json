@@ -4301,5 +4301,18 @@
     "correctProductName": "HP 126A Yellow LaserJet Toner Cartridge (CE312A)",
     "correctSku": "HP CE312A",
     "notes": ""
+  },
+  {
+    "id": 820,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "HP CE 313A (M) / 126A (M)",
+    "qty": "1",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CE313A — HP 126A Magenta LaserJet Toner Cartridge (CE313A)",
+    "correctProductName": "HP 126A Magenta LaserJet Toner Cartridge (CE313A)",
+    "correctSku": "HP CE313A",
+    "notes": ""
   }
 ]
