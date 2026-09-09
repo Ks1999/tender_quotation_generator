@@ -5952,5 +5952,18 @@
     "correctProductName": "HP 131A Black LaserJet Toner Cartridge (CF210A)",
     "correctSku": "HP CF210A",
     "notes": "Confirmed via web search: HP Color LaserJet Pro 200 MFP (M276) uses HP 131A series."
+  },
+  {
+    "id": 947,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Toner Cartridge for HP Color Laserjet Pro 200 MFP Printer (Cyan)",
+    "qty": "6",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CF211A — HP 131A Cyan LaserJet Toner Cartridge (CF211A)",
+    "correctProductName": "HP 131A Cyan LaserJet Toner Cartridge (CF211A)",
+    "correctSku": "HP CF211A",
+    "notes": ""
   }
 ]
