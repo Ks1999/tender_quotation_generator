@@ -8188,5 +8188,18 @@
     "correctProductName": "Canon PGI-35 Black Ink Cartridge",
     "correctSku": "C PGI 35 [BK]",
     "notes": ""
+  },
+  {
+    "id": 1187,
+    "contributedBy": "(not provided)",
+    "date": "2026-09-09",
+    "sourceSpec": "BURHANI_KAJIAN_PASARAN-SUPPLIER_extracted_items.json",
+    "description": "OKI B411DN (Black) | PART NUMBER: 44574703 | MODEL: B411DN | PAGE YIELD: 4,000",
+    "qty": 1,
+    "uom": "unit",
+    "autoMatchAttempt": "Flagged for review — no candidate",
+    "correctProductName": "OKI B411 B431 Toner Cartridge 44574703 (Item No: OKI C411 TNR)",
+    "correctSku": "OKI C411 TNR",
+    "notes": ""
   }
 ]
