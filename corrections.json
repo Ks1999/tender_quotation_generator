@@ -4782,5 +4782,18 @@
     "correctProductName": "HP 130A Black Original LaserJet Toner Cartridge (CF350A)",
     "correctSku": "HP CF350A",
     "notes": ""
+  },
+  {
+    "id": 857,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "HP CF. 353A (MAGENTA)",
+    "qty": "2",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CF353A — HP 130A Magenta Original LaserJet Toner Cartridge (CF353A)",
+    "correctProductName": "HP 130A Magenta Original LaserJet Toner Cartridge (CF353A)",
+    "correctSku": "HP CF353A",
+    "notes": ""
   }
 ]
