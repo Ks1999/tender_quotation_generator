@@ -5523,5 +5523,18 @@
     "correctProductName": "HP 151A Black LaserJet Toner Cartridge",
     "correctSku": "HP W1510A",
     "notes": ""
+  },
+  {
+    "id": 914,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_2.pdf",
+    "description": "HP 110A",
+    "qty": "10",
+    "uom": "unit",
+    "autoMatchAttempt": "HP W1112A — HP 110A Blk Original laser Toner Crtg",
+    "correctProductName": "HP 110A Blk Original laser Toner Crtg",
+    "correctSku": "HP W1112A",
+    "notes": ""
   }
 ]
