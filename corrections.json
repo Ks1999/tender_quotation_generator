@@ -3352,5 +3352,18 @@
     "correctProductName": "Brother LC-535XL Cyan Ink Cartridge",
     "correctSku": "B LC 535XLC",
     "notes": ""
+  },
+  {
+    "id": 747,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "BROHER LC 535 XL (M)",
+    "qty": "10",
+    "uom": "unit",
+    "autoMatchAttempt": "B LC 535XLM — Brother LC-535XL Magenta Ink Cartridge",
+    "correctProductName": "Brother LC-535XL Magenta Ink Cartridge",
+    "correctSku": "B LC 535XLM",
+    "notes": ""
   }
 ]
