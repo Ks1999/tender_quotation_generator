@@ -4886,5 +4886,18 @@
     "correctProductName": "Samsung MLT-D111S (SU812A) Black Toner Cartridge",
     "correctSku": "HP SU812A",
     "notes": "Confirmed correct by user 2026-08-25. GOH catalogs this Samsung-compatible toner under its own \"HP\" SKU prefix code (HP SU812A / Samsung MLT-D111S)."
+  },
+  {
+    "id": 865,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "FUJI XEROX CT202264/ BK",
+    "qty": "2",
+    "uom": "unit",
+    "autoMatchAttempt": "XER CP115BK — Xerox DPC115-116-225 Toner Standard Cap 2k - Black (Item No: XER CP115BK)",
+    "correctProductName": "Xerox DPC115-116-225 Toner Standard Cap 2k - Black (Item No: XER CP115BK)",
+    "correctSku": "XER CP115BK",
+    "notes": "Confirmed by user 2026-08-25 (\"XER CP115 series\"): Fuji Xerox CT202264 = GOH catalog XER CP115BK."
   }
 ]
