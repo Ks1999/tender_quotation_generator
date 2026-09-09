@@ -7109,5 +7109,18 @@
     "correctProductName": "Epson LQ680 (EPS SO15016)",
     "correctSku": "EPS SO15016",
     "notes": ""
+  },
+  {
+    "id": 1036,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Ribbon for Dot Matrix Printers 24-PIN LQ-2090II/LQ-2090IIN",
+    "qty": "24",
+    "uom": "unit",
+    "autoMatchAttempt": "EPS SO15345 — Epson LQ2090 (EPS SO15345)",
+    "correctProductName": "Epson LQ2090 (EPS SO15345)",
+    "correctSku": "EPS SO15345",
+    "notes": "Confirmed by user: correct ribbon is EPS SO15345. The auto-matcher had previously false-matched this to an unrelated Canon toner cartridge via a coincidental bare '24' digit collision (from '24-PIN') -- fixed generally by excluding short family-less digit matches for hardware categories (drum/fuser/belt/ribbon/maintenance)."
   }
 ]
