@@ -7252,5 +7252,18 @@
     "correctProductName": "Canon Print Head G1000/2000/3000/4000,G1",
     "correctSku": "C BH 7",
     "notes": ""
+  },
+  {
+    "id": 1047,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_3.pdf",
+    "description": "CANON 328",
+    "qty": "3",
+    "uom": "unit",
+    "autoMatchAttempt": "C CATR 328 — Canon Cartridge 328 Black Toner Cartridge",
+    "correctProductName": "Canon Cartridge 328 Black Toner Cartridge",
+    "correctSku": "C CATR 328",
+    "notes": ""
   }
 ]
