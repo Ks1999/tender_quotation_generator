@@ -1025,5 +1025,18 @@
     "correctProductName": "Canon Cartridge 325 Toner Cartridge",
     "correctSku": "C CATR 325",
     "notes": ""
+  },
+  {
+    "id": 568,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "Canon Cartridge 328 Toner",
+    "qty": "30",
+    "uom": "unit",
+    "autoMatchAttempt": "C CATR 328 — Canon Cartridge 328 Black Toner Cartridge",
+    "correctProductName": "Canon Cartridge 328 Black Toner Cartridge",
+    "correctSku": "C CATR 328",
+    "notes": ""
   }
 ]
