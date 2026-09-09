@@ -1324,5 +1324,18 @@
     "correctProductName": "Epson L100 L200 L300 Yellow Ink Cartridge (C13T664400)",
     "correctSku": "EPS T664400",
     "notes": ""
+  },
+  {
+    "id": 591,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "Epson T7741 (Black)",
+    "qty": "16",
+    "uom": "unit",
+    "autoMatchAttempt": "EPS T774100 — Epson T7741 Pigment Black Ink Bottle - 140ml (Item No: EPS T774100)",
+    "correctProductName": "Epson T7741 Pigment Black Ink Bottle - 140ml (Item No: EPS T774100)",
+    "correctSku": "EPS T774100",
+    "notes": ""
   }
 ]
