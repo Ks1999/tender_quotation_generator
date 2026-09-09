@@ -1532,5 +1532,18 @@
     "correctProductName": "HP 64A Black LaserJet Toner Cartridge (CC364A) [646745]",
     "correctSku": "HP CC364A",
     "notes": ""
+  },
+  {
+    "id": 607,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "HP 682 Black Original Ink Advantage Cartridge",
+    "qty": "6",
+    "uom": "unit",
+    "autoMatchAttempt": "HP 3YM77AA — HP 682 Black Ink Cartridge (3YM77AA)",
+    "correctProductName": "HP 682 Black Ink Cartridge (3YM77AA)",
+    "correctSku": "HP 3YM77AA",
+    "notes": ""
   }
 ]
