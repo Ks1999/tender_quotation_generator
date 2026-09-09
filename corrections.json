@@ -7603,5 +7603,18 @@
     "correctProductName": "Canon PG-89 Black Ink Cartridge",
     "correctSku": "C PG 89BK",
     "notes": ""
+  },
+  {
+    "id": 1074,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_3.pdf",
+    "description": "CANON CL-99",
+    "qty": "30",
+    "uom": "unit",
+    "autoMatchAttempt": "C CL 99CL — Canon CL-99 Color Ink Cartridge",
+    "correctProductName": "Canon CL-99 Color Ink Cartridge",
+    "correctSku": "C CL 99CL",
+    "notes": ""
   }
 ]
