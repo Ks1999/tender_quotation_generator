@@ -7096,5 +7096,18 @@
     "correctProductName": "Epson LQ310 Ribbon (EPS SO15639)",
     "correctSku": "EPS SO15639",
     "notes": ""
+  },
+  {
+    "id": 1035,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Ribbon for EPSON LQ-680 PRO",
+    "qty": "70",
+    "uom": "unit",
+    "autoMatchAttempt": "EPS SO15016 — Epson LQ680 (EPS SO15016)",
+    "correctProductName": "Epson LQ680 (EPS SO15016)",
+    "correctSku": "EPS SO15016",
+    "notes": ""
   }
 ]
