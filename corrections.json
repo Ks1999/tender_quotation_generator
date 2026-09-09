@@ -7707,5 +7707,18 @@
     "correctProductName": "OKI C310 C510 Drum 44494203 (Item No: OKI C310 DR)",
     "correctSku": "OKI C310 DR",
     "notes": "Label reconstructed from a PDF page-break split."
+  },
+  {
+    "id": 1082,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi105.pdf",
+    "description": "Oki C531dn/MC562/C332/MC 363 CMYK Image Drum",
+    "qty": "550",
+    "uom": "unit",
+    "autoMatchAttempt": "OKI C511 DR — OKI C301, C321, C331, C511, C531 Drum Cartridge Unit Black, Cyan, Magenta, Yellow - 44968302",
+    "correctProductName": "OKI C301, C321, C331, C511, C531 Drum Cartridge Unit Black, Cyan, Magenta, Yellow - 44968302",
+    "correctSku": "OKI C511 DR",
+    "notes": ""
   }
 ]
