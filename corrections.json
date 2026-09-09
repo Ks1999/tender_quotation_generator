@@ -3469,5 +3469,18 @@
     "correctProductName": "Brother DR-2255 Drum Cartridge",
     "correctSku": "B DR 2255",
     "notes": ""
+  },
+  {
+    "id": 756,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "CANON PG 47 (BLACK)",
+    "qty": "35",
+    "uom": "unit",
+    "autoMatchAttempt": "C PG 47BK — Canon PG-47 Black Ink Cartridge",
+    "correctProductName": "Canon PG-47 Black Ink Cartridge",
+    "correctSku": "C PG 47BK",
+    "notes": ""
   }
 ]
