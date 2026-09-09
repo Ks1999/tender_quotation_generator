@@ -5302,5 +5302,18 @@
     "correctProductName": "HP 131X Black LaserJet Toner Cartridge (CF210X)",
     "correctSku": "HP CF210X",
     "notes": ""
+  },
+  {
+    "id": 897,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_2.pdf",
+    "description": "HP CF211A CYAN 131A",
+    "qty": "3",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CF211A — HP 131A Cyan LaserJet Toner Cartridge (CF211A)",
+    "correctProductName": "HP 131A Cyan LaserJet Toner Cartridge (CF211A)",
+    "correctSku": "HP CF211A",
+    "notes": ""
   }
 ]
