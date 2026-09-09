@@ -2221,5 +2221,18 @@
     "correctProductName": "Epson T7741 Pigment Black Ink Bottle - 140ml (Item No: EPS T774100)",
     "correctSku": "EPS T774100",
     "notes": ""
+  },
+  {
+    "id": 660,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "HP 107A Black Original Laser Toner Cartridge",
+    "qty": "100",
+    "uom": "unit",
+    "autoMatchAttempt": "HP W1107A — HP 107A Black Original Laser Toner Cartridge  For Model HP Laser 100 Printer series, HP Laser MFP 130 Printer series",
+    "correctProductName": "HP 107A Black Original Laser Toner Cartridge  For Model HP Laser 100 Printer series, HP Laser MFP 130 Printer series",
+    "correctSku": "HP W1107A",
+    "notes": ""
   }
 ]
