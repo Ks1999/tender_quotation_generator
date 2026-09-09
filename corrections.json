@@ -6069,5 +6069,18 @@
     "correctProductName": "Not carried",
     "correctSku": "N/A",
     "notes": "HP 117A series, catalog code W2073A for Magenta. Genuine gap."
+  },
+  {
+    "id": 956,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Toner Cartridge for HP Color LaserJet Pro M252dw (Black)",
+    "qty": "10",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CF400A — HP 201A Black Original LaserJet Toner Cartridge (CF400A) [748846]",
+    "correctProductName": "HP 201A Black Original LaserJet Toner Cartridge (CF400A) [748846]",
+    "correctSku": "HP CF400A",
+    "notes": "Confirmed by user: HP Color LaserJet Pro M252dw uses HP 201A series."
   }
 ]
