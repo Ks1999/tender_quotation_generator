@@ -7174,5 +7174,18 @@
     "correctProductName": "Not carried",
     "correctSku": "N/A",
     "notes": "Label reconstructed from a PDF page-break split. Blank media sleeve, outside catalog scope."
+  },
+  {
+    "id": 1041,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_3.pdf",
+    "description": "HP 136X High Yield Black Original Laset Jet Toner Catridge",
+    "qty": "6",
+    "uom": "unit",
+    "autoMatchAttempt": "HP W1360X — HP 136X Black Toner Cartridge",
+    "correctProductName": "HP 136X Black Toner Cartridge",
+    "correctSku": "HP W1360X",
+    "notes": ""
   }
 ]
