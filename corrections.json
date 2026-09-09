@@ -8019,5 +8019,18 @@
     "correctProductName": "OKI C532, MC573 Cyan Toner #46490507 - 3k",
     "correctSku": "OKI C532 CY",
     "notes": ""
+  },
+  {
+    "id": 1106,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi105.pdf",
+    "description": "Oki C532/MC573 Black Image Drum",
+    "qty": "15",
+    "uom": "unit",
+    "autoMatchAttempt": "OKI C532 BK DR — OKI C532, MC573 Black Drum #46484112 - 30k",
+    "correctProductName": "OKI C532, MC573 Black Drum #46484112 - 30k",
+    "correctSku": "OKI C532 BK DR",
+    "notes": ""
   }
 ]
