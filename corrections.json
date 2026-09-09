@@ -9319,5 +9319,18 @@
     "correctProductName": "Not carried",
     "correctSku": "N/A",
     "notes": "Confirmed via web search: genuine HP W1030XC Contract Black toner cartridge for LaserJet Pro 4003dn. No entry in corrections.md. Needs GOH catalog lookup."
+  },
+  {
+    "id": 1274,
+    "contributedBy": "(not provided)",
+    "date": "2026-09-09",
+    "sourceSpec": "KDN_Kementerian_Dalam_Negeri-BURHANI_extracted_items.json",
+    "description": "EPSON WF-579R BK/LARGE (C13T01D100, Yield 50,000pg)",
+    "qty": 200,
+    "uom": "unit",
+    "autoMatchAttempt": "Flagged for review — no candidate",
+    "correctProductName": "Epson T01D100 Black ink Cartridge 50k",
+    "correctSku": "EPS T01D100",
+    "notes": ""
   }
 ]
