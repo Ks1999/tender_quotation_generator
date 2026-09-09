@@ -6407,5 +6407,18 @@
     "correctProductName": "Canon Cartridge 040 Magenta Toner 5.4k",
     "correctSku": "C CATR 040 M",
     "notes": ""
+  },
+  {
+    "id": 982,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Toner Cartridge for Canon IMAGECLASS LBP226dw Printer",
+    "qty": "80",
+    "uom": "unit",
+    "autoMatchAttempt": "C CATR 057 — Canon 057 Toner Cartridge - Black, 3.1k",
+    "correctProductName": "Canon 057 Toner Cartridge - Black, 3.1k",
+    "correctSku": "C CATR 057",
+    "notes": "Confirmed via web search: Canon imageCLASS LBP226dw uses Canon 057 series (standard yield; GOH also carries 057H high-yield)."
   }
 ]
