@@ -3430,5 +3430,18 @@
     "correctProductName": "Brother Original TN-2480 Toner 3K",
     "correctSku": "B TN 2480",
     "notes": ""
+  },
+  {
+    "id": 753,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "BROHER TN 2280",
+    "qty": "5",
+    "uom": "unit",
+    "autoMatchAttempt": "B TN 2280 — Brother TN-2280 Toner Cartridge - HIGH Capacity",
+    "correctProductName": "Brother TN-2280 Toner Cartridge - HIGH Capacity",
+    "correctSku": "B TN 2280",
+    "notes": ""
   }
 ]
