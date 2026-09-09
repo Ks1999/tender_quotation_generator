@@ -4015,5 +4015,18 @@
     "correctProductName": "HP 85A Black LaserJet Toner Cartridge (CE285A)",
     "correctSku": "HP CE285A",
     "notes": ""
+  },
+  {
+    "id": 798,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "HP 678 (BLACK)",
+    "qty": "30",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CZ107AA — HP 678 Black Ink Cartridge (CZ107AA)",
+    "correctProductName": "HP 678 Black Ink Cartridge (CZ107AA)",
+    "correctSku": "HP CZ107AA",
+    "notes": ""
   }
 ]
