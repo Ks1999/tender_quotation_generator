@@ -3261,5 +3261,18 @@
     "correctProductName": "Not carried",
     "correctSku": "N/A",
     "notes": "Confirmed by user 2026-08-25: Riso not carried by GOH at all."
+  },
+  {
+    "id": 740,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "Riso S-8113UA (FII Type) Black Ink",
+    "qty": "50",
+    "uom": "unit",
+    "autoMatchAttempt": "No Match",
+    "correctProductName": "Not carried",
+    "correctSku": "N/A",
+    "notes": "Confirmed by user 2026-08-25: Riso not carried by GOH at all."
   }
 ]
