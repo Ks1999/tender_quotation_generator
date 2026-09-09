@@ -6888,5 +6888,18 @@
     "correctProductName": "Epson L800 Cyan Ink (T6732)",
     "correctSku": "EPS T673200",
     "notes": "See Black entry for the false-match root cause, now fixed generally."
+  },
+  {
+    "id": 1019,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Ink for EPSON L1800 A3 PRINTER (Yellow)",
+    "qty": "11",
+    "uom": "unit",
+    "autoMatchAttempt": "EPS T673400 — Epson L800 Yellow Ink (T6734)",
+    "correctProductName": "Epson L800 Yellow Ink (T6734)",
+    "correctSku": "EPS T673400",
+    "notes": "See Black entry."
   }
 ]
