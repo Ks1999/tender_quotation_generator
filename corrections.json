@@ -8578,5 +8578,18 @@
     "correctProductName": "HP 955XL Cyan Original Ink Cartridge (L0S63AA)",
     "correctSku": "HP L0S63AA",
     "notes": ""
+  },
+  {
+    "id": 1217,
+    "contributedBy": "(not provided)",
+    "date": "2026-09-09",
+    "sourceSpec": "Hospital_Tengku_Permaisuri_Norashikin_WCC_Kajang-BURHANI_extracted_items.json",
+    "description": "HP 955 XL MAGENTA",
+    "qty": 36,
+    "uom": "unit",
+    "autoMatchAttempt": "Flagged for review — no candidate",
+    "correctProductName": "HP 955XL Magenta Original Ink Cartridge (L0S66AA)",
+    "correctSku": "HP L0S66AA",
+    "notes": ""
   }
 ]
