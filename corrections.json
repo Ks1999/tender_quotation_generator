@@ -4678,5 +4678,18 @@
     "correctProductName": "HP 119A Yellow Original Laser Toner Cartridge",
     "correctSku": "HP W2092A",
     "notes": ""
+  },
+  {
+    "id": 849,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "HP 119A (M) / W 2093A",
+    "qty": "1",
+    "uom": "unit",
+    "autoMatchAttempt": "HP W2093A — HP 119A Magenta Original Laser Toner Cartridge",
+    "correctProductName": "HP 119A Magenta Original Laser Toner Cartridge",
+    "correctSku": "HP W2093A",
+    "notes": ""
   }
 ]
