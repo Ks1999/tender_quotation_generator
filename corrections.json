@@ -9150,5 +9150,18 @@
     "correctProductName": "Canon Cartridge 069H Yellow Toner 5.5k",
     "correctSku": "C CATR 069H Y",
     "notes": ""
+  },
+  {
+    "id": 1261,
+    "contributedBy": "(not provided)",
+    "date": "2026-09-09",
+    "sourceSpec": "KDN_Kementerian_Dalam_Negeri-BURHANI_extracted_items.json",
+    "description": "HP 201X HIGH YIELD BLACK ORIGINAL LASERJET TONER CARTRIDGE (CF400X)",
+    "qty": 50,
+    "uom": "unit",
+    "autoMatchAttempt": "Flagged for review — no candidate",
+    "correctProductName": "HP 201X Black Original LaserJet Toner Cartridge (CF400X)",
+    "correctSku": "HP CF400X",
+    "notes": ""
   }
 ]
