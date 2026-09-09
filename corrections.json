@@ -2689,5 +2689,18 @@
     "correctProductName": "HP 305A Magenta LaserJet Toner Cartridge (CE413A) [676109]",
     "correctSku": "HP CE413A",
     "notes": ""
+  },
+  {
+    "id": 696,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "HP CF210A (131A) Black Original Laser Jet Toner Cartridge",
+    "qty": "10",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CF210A — HP 131A Black LaserJet Toner Cartridge (CF210A)",
+    "correctProductName": "HP 131A Black LaserJet Toner Cartridge (CF210A)",
+    "correctSku": "HP CF210A",
+    "notes": ""
   }
 ]
