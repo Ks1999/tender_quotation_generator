@@ -8097,5 +8097,18 @@
     "correctProductName": "#46394902 OKI C532/M573 Transfer Belt 60",
     "correctSku": "OKI C532 TR BLT",
     "notes": ""
+  },
+  {
+    "id": 1112,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi105.pdf",
+    "description": "Toner cartridge Oki C650dn Black",
+    "qty": "280",
+    "uom": "unit",
+    "autoMatchAttempt": "OKI C650 BK — OKI C650 BLACK TONER 7K [YA8001-1088G036]",
+    "correctProductName": "OKI C650 BLACK TONER 7K [YA8001-1088G036]",
+    "correctSku": "OKI C650 BK",
+    "notes": ""
   }
 ]
