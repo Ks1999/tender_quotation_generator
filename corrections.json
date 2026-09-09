@@ -8630,5 +8630,18 @@
     "correctProductName": "Not carried",
     "correctSku": "N/A",
     "notes": "Confirmed via web search: genuine Canon NPG-51 black toner for iR2520/2525/2530/2535 series copiers. No entry in corrections.md. Needs GOH catalog lookup."
+  },
+  {
+    "id": 1221,
+    "contributedBy": "(not provided)",
+    "date": "2026-09-09",
+    "sourceSpec": "Hospital_Tengku_Permaisuri_Norashikin_WCC_Kajang-BURHANI_extracted_items.json",
+    "description": "CANON NPG-50",
+    "qty": 15,
+    "uom": "unit",
+    "autoMatchAttempt": "Flagged for review — no candidate",
+    "correctProductName": "Not carried",
+    "correctSku": "N/A",
+    "notes": "Confirmed via web search: genuine Canon NPG-50 black toner, same iR2520/2525/2530/2535 series family as row 70. No entry in corrections.md. Needs GOH catalog lookup."
   }
 ]
