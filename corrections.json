@@ -5354,5 +5354,18 @@
     "correctProductName": "Not carried",
     "correctSku": "N/A",
     "notes": "Confirmed by user 2026-08-25: Lexmark not carried by GOH at all."
+  },
+  {
+    "id": 901,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_2.pdf",
+    "description": "LEXMARK MS431 IMAGING UNIT 55B0ZA0",
+    "qty": "80",
+    "uom": "unit",
+    "autoMatchAttempt": "No Match",
+    "correctProductName": "Not carried",
+    "correctSku": "N/A",
+    "notes": "Confirmed by user 2026-08-25: Lexmark not carried by GOH at all."
   }
 ]
