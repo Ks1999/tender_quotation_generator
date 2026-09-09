@@ -3144,5 +3144,18 @@
     "correctProductName": "OKI C650 BLACK TONER 7K [YA8001-1088G036]",
     "correctSku": "OKI C650 BK",
     "notes": ""
+  },
+  {
+    "id": 731,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "OKI C650 Cyan Toner Cartridge",
+    "qty": "1394",
+    "uom": "unit",
+    "autoMatchAttempt": "OKI C650 CY — OKI C650 CYAN TONER 6K [YA8001-1088G035]",
+    "correctProductName": "OKI C650 CYAN TONER 6K [YA8001-1088G035]",
+    "correctSku": "OKI C650 CY",
+    "notes": ""
   }
 ]
