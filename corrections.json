@@ -7733,5 +7733,18 @@
     "correctProductName": "OKI C310 C330 C510 C530 Fuser Unit 44472604 (Item No: OKI C310 FU)",
     "correctSku": "OKI C310 FU",
     "notes": ""
+  },
+  {
+    "id": 1084,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi105.pdf",
+    "description": "Oki C510/C531/MC561/MC56 2/C332/MC363 Transfer Belt",
+    "qty": "310",
+    "uom": "unit",
+    "autoMatchAttempt": "OKI C310 TR BLT — OKI C310 C330 C510 C530 Transfer Belt - 60k (44472203)",
+    "correctProductName": "OKI C310 C330 C510 C530 Transfer Belt - 60k (44472203)",
+    "correctSku": "OKI C310 TR BLT",
+    "notes": ""
   }
 ]
