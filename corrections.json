@@ -8318,5 +8318,18 @@
     "correctProductName": "OKI #4844486 MAGENTA DRUM 30K",
     "correctSku": "OKI ES8473 MA DR",
     "notes": ""
+  },
+  {
+    "id": 1129,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi105.pdf",
+    "description": "OKI ES8473MFP Yellow Image Drum",
+    "qty": "25",
+    "uom": "unit",
+    "autoMatchAttempt": "OKI ES8473 YE DR — OKI #4844485 YELLOW DRUM 30K",
+    "correctProductName": "OKI #4844485 YELLOW DRUM 30K",
+    "correctSku": "OKI ES8473 YE DR",
+    "notes": ""
   }
 ]
