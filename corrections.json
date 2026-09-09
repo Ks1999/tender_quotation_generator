@@ -8305,5 +8305,18 @@
     "correctProductName": "Canon PGI-35 Black Ink Cartridge",
     "correctSku": "C PGI 35 [BK]",
     "notes": ""
+  },
+  {
+    "id": 1196,
+    "contributedBy": "(not provided)",
+    "date": "2026-09-09",
+    "sourceSpec": "BURHANI_KAJIAN_PASARAN-SUPPLIER_extracted_items.json",
+    "description": "CANON PIXMA TR150 (Tri-colour) | PART NUMBER: CLI 36 Tri Colour | PAGE YIELD: 100",
+    "qty": 1,
+    "uom": "unit",
+    "autoMatchAttempt": "Flagged for review — no candidate",
+    "correctProductName": "Canon CLI-36 Color Ink Cartridge",
+    "correctSku": "C CLI 36 [CL]",
+    "notes": ""
   }
 ]
