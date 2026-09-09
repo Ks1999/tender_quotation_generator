@@ -7785,5 +7785,18 @@
     "correctProductName": "Not carried",
     "correctSku": "N/A",
     "notes": "Confirmed catalog gap: GOH does not carry Lexmark."
+  },
+  {
+    "id": 1156,
+    "contributedBy": "(not provided)",
+    "date": "2026-09-09",
+    "sourceSpec": "BURHANI_KAJIAN_PASARAN-SUPPLIER_extracted_items.json",
+    "description": "LEXMARK MS 331, MS431 | PART NUMBER: 55B3HOO | MODEL: High Yield Return Program Toner Cartridge (MS331,MS431,MX331,MX431) | PAGE YIELD: 15,000",
+    "qty": 1,
+    "uom": "unit",
+    "autoMatchAttempt": "No match",
+    "correctProductName": "Not carried",
+    "correctSku": "N/A",
+    "notes": "Confirmed catalog gap: GOH does not carry Lexmark."
   }
 ]
