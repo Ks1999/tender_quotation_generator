@@ -1571,5 +1571,18 @@
     "correctProductName": "HP 79A Black Original LaserJet Toner Cartridge (CF279A)",
     "correctSku": "HP CF279A",
     "notes": ""
+  },
+  {
+    "id": 610,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "HP 80A (CF280A) Black Toner Cartridge",
+    "qty": "660",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CF280A — HP 80A Black LaserJet Toner Cartridge (CF280A)",
+    "correctProductName": "HP 80A Black LaserJet Toner Cartridge (CF280A)",
+    "correctSku": "HP CF280A",
+    "notes": ""
   }
 ]
