@@ -2507,5 +2507,18 @@
     "correctProductName": "HP 125A Black LaserJet Toner Cartridge (CB540A)",
     "correctSku": "HP CB540A",
     "notes": ""
+  },
+  {
+    "id": 682,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "HP CB541A (125A) Cyan Toner Cartridge",
+    "qty": "80",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CB541A — HP 125A Cyan LaserJet Toner Cartridge (CB541A)",
+    "correctProductName": "HP 125A Cyan LaserJet Toner Cartridge (CB541A)",
+    "correctSku": "HP CB541A",
+    "notes": ""
   }
 ]
