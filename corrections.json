@@ -5081,5 +5081,18 @@
     "correctProductName": "HP 26A Black LaserJet Toner Cartridge (CF226A)",
     "correctSku": "HP CF226A",
     "notes": ""
+  },
+  {
+    "id": 880,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_2.pdf",
+    "description": "HP CF279A",
+    "qty": "20",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CF279A — HP 79A Black Original LaserJet Toner Cartridge (CF279A)",
+    "correctProductName": "HP 79A Black Original LaserJet Toner Cartridge (CF279A)",
+    "correctSku": "HP CF279A",
+    "notes": ""
   }
 ]
