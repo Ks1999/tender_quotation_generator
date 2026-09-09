@@ -4938,5 +4938,18 @@
     "correctProductName": "Xerox DPC115-116-225 Toner Standard Cap 1.4k - Yellow (Item No: XER CP115Y)",
     "correctSku": "XER CP115Y",
     "notes": "Confirmed by user 2026-08-25 (\"XER CP115 series\"): Fuji Xerox CT202267 = GOH catalog XER CP115Y."
+  },
+  {
+    "id": 869,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "TONER 45807103 OKI B412 C412 APSTNRRFG",
+    "qty": "332",
+    "uom": "unit",
+    "autoMatchAttempt": "OKI C412 — OKI C412 black Toner 45807103 (Item no: OKI C412)",
+    "correctProductName": "OKI C412 black Toner 45807103 (Item no: OKI C412)",
+    "correctSku": "OKI C412",
+    "notes": ""
   }
 ]
