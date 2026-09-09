@@ -6446,5 +6446,18 @@
     "correctProductName": "HP 126A LaserJet Imaging Drum (CE314A)",
     "correctSku": "HP CE314A",
     "notes": "Confirmed via web search: imaging drum for HP LaserJet Pro 100 Color MFP M175a is HP 126A Imaging Drum."
+  },
+  {
+    "id": 985,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "05_Spesifikasi_1.pdf",
+    "description": "Drum for HP Color Laser MFP M179fnw",
+    "qty": "4",
+    "uom": "unit",
+    "autoMatchAttempt": "HP W1120A — HP 120A Original Laser Imaging Drum",
+    "correctProductName": "HP 120A Original Laser Imaging Drum",
+    "correctSku": "HP W1120A",
+    "notes": "Confirmed via web search: imaging drum for HP Color Laser MFP 179fnw is HP 120A. The auto-matcher had previously false-matched this to an unrelated clothing SKU via a coincidental bare '179' digit collision -- fixed generally by penalizing catalog rows the matcher can't identify as any recognized office/printer brand when the spec names a brand."
   }
 ]
