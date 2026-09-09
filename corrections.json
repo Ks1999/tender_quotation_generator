@@ -2988,5 +2988,18 @@
     "correctProductName": "OKI C510/530 BLACK TONER  5K - 44469806 ( ITEM NO : OKI C510 BK )",
     "correctSku": "OKI C510 BK",
     "notes": ""
+  },
+  {
+    "id": 719,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "OKI 45807103 Black Toner Cartridge",
+    "qty": "47384",
+    "uom": "unit",
+    "autoMatchAttempt": "OKI C412 — OKI C412 black Toner 45807103 (Item no: OKI C412)",
+    "correctProductName": "OKI C412 black Toner 45807103 (Item no: OKI C412)",
+    "correctSku": "OKI C412",
+    "notes": ""
   }
 ]
