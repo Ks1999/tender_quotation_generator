@@ -1870,5 +1870,18 @@
     "correctProductName": "Canon Cartridge 312 Toner Cartridge",
     "correctSku": "C CATR 312",
     "notes": ""
+  },
+  {
+    "id": 633,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "Canon Cartridge 319 (Black)",
+    "qty": "30",
+    "uom": "unit",
+    "autoMatchAttempt": "C CATR 319 [II] — Canon Cartridge 319 II Toner Cartridge - 6.4k",
+    "correctProductName": "Canon Cartridge 319 II Toner Cartridge - 6.4k",
+    "correctSku": "C CATR 319 [II]",
+    "notes": ""
   }
 ]
