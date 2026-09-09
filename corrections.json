@@ -4626,5 +4626,18 @@
     "correctProductName": "HP 32A Original LaserJet Imaging Drum (CF232A)",
     "correctSku": "HP CF232A",
     "notes": "Label reconstructed from a PDF page-break split in the source spec (verified against raw extracted text)."
+  },
+  {
+    "id": 845,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "HP CF230A",
+    "qty": "15",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CF230A — HP 30A Black Original LaserJet Toner Cartridge (CF230A)",
+    "correctProductName": "HP 30A Black Original LaserJet Toner Cartridge (CF230A)",
+    "correctSku": "HP CF230A",
+    "notes": ""
   }
 ]
