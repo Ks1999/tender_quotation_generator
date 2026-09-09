@@ -1311,5 +1311,18 @@
     "correctProductName": "Epson L100 L200 L300 Magenta Ink Cartridge (C13T664300)",
     "correctSku": "EPS T664300",
     "notes": ""
+  },
+  {
+    "id": 590,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "06_Spesifikasi.pdf",
+    "description": "Epson T6644 Yellow",
+    "qty": "315",
+    "uom": "unit",
+    "autoMatchAttempt": "EPS T664400 — Epson L100 L200 L300 Yellow Ink Cartridge (C13T664400)",
+    "correctProductName": "Epson L100 L200 L300 Yellow Ink Cartridge (C13T664400)",
+    "correctSku": "EPS T664400",
+    "notes": ""
   }
 ]
