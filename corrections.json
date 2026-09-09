@@ -4171,5 +4171,18 @@
     "correctProductName": "HP 130A Magenta Original LaserJet Toner Cartridge (CF353A)",
     "correctSku": "HP CF353A",
     "notes": ""
+  },
+  {
+    "id": 810,
+    "contributedBy": "Kian Seen",
+    "date": "2026-08-25",
+    "sourceSpec": "SPESIFIKASI.pdf",
+    "description": "HP 26A",
+    "qty": "50",
+    "uom": "unit",
+    "autoMatchAttempt": "HP CF226A — HP 26A Black LaserJet Toner Cartridge (CF226A)",
+    "correctProductName": "HP 26A Black LaserJet Toner Cartridge (CF226A)",
+    "correctSku": "HP CF226A",
+    "notes": ""
   }
 ]
