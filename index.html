@@ -542,6 +542,7 @@ function handleSpecPdfFile(file) {
 
   var formData = new FormData();
   formData.append('file', file);
+  formData.append('contributedBy', state.contributorName || '');
   var headers = {};
   if (WORKER_APP_KEY) headers['X-App-Key'] = WORKER_APP_KEY;
 
