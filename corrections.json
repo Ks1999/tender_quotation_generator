@@ -10437,5 +10437,18 @@
     "correctProductName": "Canon Cartridge 069H Yellow Toner 5.5k",
     "correctSku": "C CATR 069H Y",
     "notes": ""
+  },
+  {
+    "id": 1360,
+    "contributedBy": "(not provided)",
+    "date": "2026-09-11",
+    "sourceSpec": "PERKAKASAN_extracted_items.json",
+    "description": "CANON TONER CARTRIDGE 057H 19752 - BLACK",
+    "qty": 1,
+    "uom": "unit",
+    "autoMatchAttempt": "Flagged for review — no candidate",
+    "correctProductName": "Canon 057H Toner Cartridge - Black, 9.2k",
+    "correctSku": "C CATR 057H",
+    "notes": ""
   }
 ]
