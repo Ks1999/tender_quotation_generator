@@ -10489,5 +10489,18 @@
     "correctProductName": "HP 307A Yellow LaserJet Toner Cartridge (CE742A)",
     "correctSku": "HP CE742A",
     "notes": "Confirmed real HP part via web search, but no prior entry in corrections.md - needs GOH catalog confirmation."
+  },
+  {
+    "id": 1364,
+    "contributedBy": "(not provided)",
+    "date": "2026-09-11",
+    "sourceSpec": "PERKAKASAN_extracted_items.json",
+    "description": "HP 307A MAGENTA ORIGINAL LASERJET TONER CARTRIDGE (CE743A)",
+    "qty": 1,
+    "uom": "unit",
+    "autoMatchAttempt": "Flagged for review — candidate: HP CE743A (HP 307A Magenta LaserJet Toner Cartridge (CE743A))",
+    "correctProductName": "HP 307A Magenta LaserJet Toner Cartridge (CE743A)",
+    "correctSku": "HP CE743A",
+    "notes": "Confirmed real HP part via web search, but no prior entry in corrections.md - needs GOH catalog confirmation."
   }
 ]
