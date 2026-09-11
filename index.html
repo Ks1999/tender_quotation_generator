@@ -92,6 +92,7 @@
 </head>
 <body>
 
+
 <div id="root"></div>
 
 <script>
@@ -315,9 +316,23 @@ window.buildXlsx = buildXlsx;
    (local file export only). Leave the PDF endpoint blank and Step 1 falls
    back to JSON-only import. WORKER_APP_KEY is the same shared soft-deterrent
    key for both endpoints (the Worker's X-App-Key check).
+
+   ADMIN_* endpoints back the Admin panel (customers + corrections
+   add/edit/remove). Reads (CUSTOMERS_ENDPOINT, CORRECTIONS_GET_ENDPOINT) are
+   public, same as everything else the app already fetches. Writes go
+   through ADMIN_KEY, sent as X-Admin-Key — that's a Worker secret (wrangler
+   secret put ADMIN_KEY), never a value stored anywhere in this file; the
+   Admin panel just asks whoever opens it to type it in each time.
    ========================================================================= */
 var CORRECTIONS_SUBMIT_ENDPOINT = 'https://goh-quotation-worker.goh-office.workers.dev/submit-correction';
+var CORRECTIONS_GET_ENDPOINT = 'https://goh-quotation-worker.goh-office.workers.dev/corrections';
 var PDF_EXTRACT_ENDPOINT = 'https://goh-quotation-worker.goh-office.workers.dev/extract';
+var CUSTOMERS_ENDPOINT = 'https://goh-quotation-worker.goh-office.workers.dev/customers';
+var ADMIN_CUSTOMERS_ADD_ENDPOINT = 'https://goh-quotation-worker.goh-office.workers.dev/admin/customers/add';
+var ADMIN_CUSTOMERS_UPDATE_ENDPOINT = 'https://goh-quotation-worker.goh-office.workers.dev/admin/customers/update';
+var ADMIN_CUSTOMERS_REMOVE_ENDPOINT = 'https://goh-quotation-worker.goh-office.workers.dev/admin/customers/remove';
+var ADMIN_CORRECTIONS_UPDATE_ENDPOINT = 'https://goh-quotation-worker.goh-office.workers.dev/admin/corrections/update';
+var ADMIN_CORRECTIONS_REMOVE_ENDPOINT = 'https://goh-quotation-worker.goh-office.workers.dev/admin/corrections/remove';
 var WORKER_APP_KEY = '';
 
 /* =========================================================================
@@ -492,7 +507,35 @@ var state = {
   // (cookies/storage wiped, private browsing, etc). Once a name is saved it will
   // not pop up on its own again; it can still be reopened from the header.
   userMenuOpen: !loadStoredContributorName().trim(),
-  toast: ''
+  toast: '',
+  // Admin panel (customers + corrections add/edit/remove) — see the ADMIN_
+  // action handlers and renderAdmin* functions below. `unlocked`/`key` live
+  // only in memory: closing the tab or reloading forgets the PIN, it is
+  // never persisted anywhere (not localStorage, not baked into the file).
+  admin: {
+    open: false,
+    unlocked: false,
+    keyInput: '',
+    key: '',
+    tab: 'customers',
+    loading: false,
+    error: '',
+    customers: null,
+    corrections: null,
+    customerSearch: '',
+    correctionSearch: '',
+    correctionPage: 1,
+    correctionPageSize: 25,
+    editingCustomer: null,
+    editingCorrection: null,
+    pendingDeleteCustomer: null,
+    pendingDeleteCorrection: null
+  }
+};
+
+var BLANK_CUSTOMER_RECORD = {
+  name: '', accountCode: '', contactFirstName: '', email: '', phone: '',
+  address: '', address2: '', postcode: '', city: '', state: '', country: 'Malaysia'
 };
 
 function normalizeImportedItems(raw) {
@@ -625,6 +668,227 @@ function reviewItemMatchesQuery(it, query) {
 }
 
 /* =========================================================================
+   ADMIN PANEL — data layer (fetch/save/delete customers + corrections
+   against the Worker's /admin/* endpoints). UI/render functions and the
+   click-action handlers that call these are further down.
+   ========================================================================= */
+
+// Runs once at boot, in the background, for EVERY visitor (not just admin
+// use) — this is what makes a customer added through the Admin panel show
+// up for the whole team without anyone republishing or re-sending this
+// file: CUSTOMERS is a plain `var`, so reassigning it here is picked up by
+// every part of the app that reads it (Select Customer, filterCustomers(),
+// etc.), no extra wiring needed. Silent no-op on failure (offline, Worker
+// unreachable, CORS) — the app just keeps using whatever was baked in at
+// publish time, exactly as before this existed.
+function refreshCustomersFromLive() {
+  fetch(CUSTOMERS_ENDPOINT)
+    .then(function (res) { return res.ok ? res.json() : Promise.reject(new Error('HTTP ' + res.status)); })
+    .then(function (data) {
+      if (Array.isArray(data) && data.length > 0) {
+        CUSTOMERS = data;
+        render();
+      }
+    })
+    .catch(function () { /* offline/unreachable — keep the baked-in list */ });
+}
+
+function adminHeaders() {
+  return { 'Content-Type': 'application/json', 'X-Admin-Key': state.admin.key || '' };
+}
+
+// Loads both lists fresh from GitHub (via the Worker's read passthroughs)
+// when the Admin panel is opened. Falls back to the baked-in CUSTOMERS array
+// for customers (corrections has no baked-in equivalent — an empty list is
+// the honest fallback there) so the panel is never just a blank error page.
+function fetchAdminData() {
+  state.admin.loading = true;
+  state.admin.error = '';
+  render();
+  Promise.all([
+    fetch(CUSTOMERS_ENDPOINT).then(function (res) { return res.ok ? res.json() : Promise.reject(new Error('customers: HTTP ' + res.status)); }),
+    fetch(CORRECTIONS_GET_ENDPOINT).then(function (res) { return res.ok ? res.json() : Promise.reject(new Error('corrections: HTTP ' + res.status)); })
+  ]).then(function (results) {
+    state.admin.customers = results[0];
+    state.admin.corrections = results[1];
+    state.admin.loading = false;
+    render();
+  }).catch(function (err) {
+    state.admin.loading = false;
+    state.admin.error = 'Could not load live data (' + err.message + ') — showing what’s baked into this copy where possible.';
+    if (state.admin.customers === null) state.admin.customers = CUSTOMERS.slice();
+    if (state.admin.corrections === null) state.admin.corrections = [];
+    render();
+  });
+}
+
+// Shared by add and update — the Worker tells the two apart by which
+// endpoint is hit, not by a flag in the body, so this just posts the record.
+function submitAdminCustomer() {
+  var rec = state.admin.editingCustomer;
+  if (!rec) return;
+  if (!rec.name.trim() || !rec.accountCode.trim()) {
+    state.admin.error = 'Name and Account Code are both required.';
+    render();
+    return;
+  }
+  var endpoint = rec._isNew ? ADMIN_CUSTOMERS_ADD_ENDPOINT : ADMIN_CUSTOMERS_UPDATE_ENDPOINT;
+  var payload = {};
+  for (var k in BLANK_CUSTOMER_RECORD) { if (BLANK_CUSTOMER_RECORD.hasOwnProperty(k)) payload[k] = rec[k]; }
+
+  state.admin.loading = true;
+  state.admin.error = '';
+  render();
+
+  fetch(endpoint, { method: 'POST', headers: adminHeaders(), body: JSON.stringify(payload) })
+    .then(function (res) { return res.json().catch(function () { return {}; }).then(function (data) { return { ok: res.ok, status: res.status, data: data }; }); })
+    .then(function (result) {
+      state.admin.loading = false;
+      if (!result.ok) {
+        if (result.status === 401) { state.admin.unlocked = false; state.admin.key = ''; }
+        state.admin.error = (result.data && result.data.error) || ('Save failed (HTTP ' + result.status + ').');
+        render();
+        return;
+      }
+      var saved = result.data.customer;
+      if (rec._isNew) {
+        state.admin.customers.push(saved);
+      } else {
+        var idx = -1;
+        for (var i = 0; i < state.admin.customers.length; i++) {
+          if (state.admin.customers[i].accountCode === rec._originalAccountCode) { idx = i; break; }
+        }
+        if (idx !== -1) state.admin.customers[idx] = saved; else state.admin.customers.push(saved);
+      }
+      // Also refresh the live CUSTOMERS array so this session's own Select
+      // Customer step reflects the change immediately, not just next reload.
+      refreshCustomersFromLive();
+      state.admin.editingCustomer = null;
+      state.toast = (rec._isNew ? 'Added ' : 'Updated ') + saved.name + '.';
+      render();
+    })
+    .catch(function (err) {
+      state.admin.loading = false;
+      state.admin.error = 'Network error: ' + err.message;
+      render();
+    });
+}
+
+function deleteAdminCustomer(accountCode) {
+  state.admin.loading = true;
+  state.admin.error = '';
+  render();
+  fetch(ADMIN_CUSTOMERS_REMOVE_ENDPOINT, { method: 'POST', headers: adminHeaders(), body: JSON.stringify({ accountCode: accountCode }) })
+    .then(function (res) { return res.json().catch(function () { return {}; }).then(function (data) { return { ok: res.ok, status: res.status, data: data }; }); })
+    .then(function (result) {
+      state.admin.loading = false;
+      if (!result.ok) {
+        if (result.status === 401) { state.admin.unlocked = false; state.admin.key = ''; }
+        state.admin.error = (result.data && result.data.error) || ('Remove failed (HTTP ' + result.status + ').');
+        render();
+        return;
+      }
+      state.admin.customers = state.admin.customers.filter(function (c) { return c.accountCode !== accountCode; });
+      state.admin.pendingDeleteCustomer = null;
+      refreshCustomersFromLive();
+      state.toast = 'Removed ' + (result.data.removed ? result.data.removed.name : accountCode) + '.';
+      render();
+    })
+    .catch(function (err) {
+      state.admin.loading = false;
+      state.admin.error = 'Network error: ' + err.message;
+      render();
+    });
+}
+
+function submitAdminCorrection() {
+  var rec = state.admin.editingCorrection;
+  if (!rec) return;
+  if (!rec.description || !rec.correctSku) {
+    state.admin.error = 'Description and Correct SKU are both required.';
+    render();
+    return;
+  }
+  state.admin.loading = true;
+  state.admin.error = '';
+  render();
+
+  fetch(ADMIN_CORRECTIONS_UPDATE_ENDPOINT, { method: 'POST', headers: adminHeaders(), body: JSON.stringify(rec) })
+    .then(function (res) { return res.json().catch(function () { return {}; }).then(function (data) { return { ok: res.ok, status: res.status, data: data }; }); })
+    .then(function (result) {
+      state.admin.loading = false;
+      if (!result.ok) {
+        if (result.status === 401) { state.admin.unlocked = false; state.admin.key = ''; }
+        state.admin.error = (result.data && result.data.error) || ('Save failed (HTTP ' + result.status + ').');
+        render();
+        return;
+      }
+      var idx = -1;
+      for (var i = 0; i < state.admin.corrections.length; i++) {
+        if (state.admin.corrections[i].id === rec.id) { idx = i; break; }
+      }
+      if (idx !== -1) state.admin.corrections[idx] = result.data.correction;
+      state.admin.editingCorrection = null;
+      state.toast = 'Updated correction #' + rec.id + '.';
+      render();
+    })
+    .catch(function (err) {
+      state.admin.loading = false;
+      state.admin.error = 'Network error: ' + err.message;
+      render();
+    });
+}
+
+function deleteAdminCorrection(id) {
+  state.admin.loading = true;
+  state.admin.error = '';
+  render();
+  fetch(ADMIN_CORRECTIONS_REMOVE_ENDPOINT, { method: 'POST', headers: adminHeaders(), body: JSON.stringify({ id: id }) })
+    .then(function (res) { return res.json().catch(function () { return {}; }).then(function (data) { return { ok: res.ok, status: res.status, data: data }; }); })
+    .then(function (result) {
+      state.admin.loading = false;
+      if (!result.ok) {
+        if (result.status === 401) { state.admin.unlocked = false; state.admin.key = ''; }
+        state.admin.error = (result.data && result.data.error) || ('Remove failed (HTTP ' + result.status + ').');
+        render();
+        return;
+      }
+      state.admin.corrections = state.admin.corrections.filter(function (r) { return r.id !== id; });
+      state.admin.pendingDeleteCorrection = null;
+      state.toast = 'Removed correction #' + id + '.';
+      render();
+    })
+    .catch(function (err) {
+      state.admin.loading = false;
+      state.admin.error = 'Network error: ' + err.message;
+      render();
+    });
+}
+
+function filterAdminCustomers(list, query) {
+  var q = (query || '').trim().toLowerCase();
+  if (!q) return list;
+  var words = q.split(/\s+/).filter(function (w) { return w.length > 0; });
+  return list.filter(function (c) {
+    var hay = (c.name + ' ' + c.accountCode + ' ' + c.city + ' ' + c.state + ' ' + (c.contactFirstName || '') + ' ' + (c.email || '')).toLowerCase();
+    return words.every(function (w) { return hay.indexOf(w) !== -1; });
+  });
+}
+
+function filterAdminCorrections(list, query) {
+  var q = (query || '').trim().toLowerCase();
+  if (!q) return list;
+  var words = q.split(/\s+/).filter(function (w) { return w.length > 0; });
+  return list.filter(function (r) {
+    var hay = (
+      (r.description || '') + ' ' + (r.correctSku || '') + ' ' + (r.correctProductName || '') + ' ' +
+      (r.contributedBy || '') + ' ' + (r.sourceSpec || '') + ' ' + (r.notes || '') + ' ' + String(r.id || '')
+    ).toLowerCase();
+    return words.every(function (w) { return hay.indexOf(w) !== -1; });
+  });
+}
+
+/* =========================================================================
    RENDER — SHELL (header + step rail + toast)
    ========================================================================= */
 var STEP_NAMES = ['Upload Spec', 'Select Customer', 'Review Matches', 'Comments', 'Generate'];
@@ -699,7 +963,10 @@ function renderShell(innerHtml) {
           '</div>' +
         '</div>' +
         '<div style="display:flex; align-items:center;">' + renderStepRail() + '</div>' +
-        '<div style="display:flex; align-items:center; justify-content:flex-end; width:260px; position:relative;">' +
+        '<div style="display:flex; align-items:center; justify-content:flex-end; gap:10px; width:260px; position:relative;">' +
+          '<button data-action="open-admin" title="Admin panel" style="display:flex; align-items:center; justify-content:center; width:34px; height:34px; border-radius:8px; border:1px solid var(--border); background:var(--surface); cursor:pointer; color:var(--text-tertiary); flex-shrink:0;">' +
+            '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>' +
+          '</button>' +
           '<button data-action="toggle-user-menu" style="display:flex; align-items:center; gap:10px; background:none; border:none; cursor:pointer; padding:4px 6px; border-radius:8px; font-family:inherit;">' +
             '<span style="font-size:13px; color:var(--text-secondary);">' + escapeHtml(displayName) + '</span>' +
             '<div style="width:30px; height:30px; border-radius:999px; background:var(--accent-soft); color:var(--accent); display:flex; align-items:center; justify-content:center; font-size:12px; font-weight:700; flex-shrink:0;">' + escapeHtml(initials) + '</div>' +
@@ -712,6 +979,268 @@ function renderShell(innerHtml) {
       userMenuHtml +
     '</div>' +
     toastHtml
+  );
+}
+
+/* =========================================================================
+   ADMIN PANEL — render (PIN gate, Customers tab, Corrections-review tab).
+   Data layer (fetch/save/delete, filter helpers) lives further up, right
+   before this SHELL section. Click-action wiring for everything here is in
+   the delegated click listener near the bottom of the file (data-action
+   values prefixed "admin-"); text-field wiring is in the input listener.
+   ========================================================================= */
+var ADMIN_CUSTOMER_FIELD_LABELS = {
+  name: 'Customer name', accountCode: 'Account code', contactFirstName: 'Contact name',
+  email: 'Email', phone: 'Phone', address: 'Address line 1', address2: 'Address line 2',
+  postcode: 'Postcode', city: 'City', state: 'State', country: 'Country'
+};
+var ADMIN_CORRECTION_FIELD_LABELS = {
+  contributedBy: 'Contributed by', date: 'Date', sourceSpec: 'Source spec',
+  description: 'Description (as written)', qty: 'Qty', uom: 'UOM',
+  autoMatchAttempt: 'Auto-match attempt', correctProductName: 'Correct product name',
+  correctSku: 'Correct SKU / Model', notes: 'Notes'
+};
+// Fields long enough to want the form's full width rather than sitting in a
+// two-column grid cell.
+var ADMIN_CORRECTION_WIDE_FIELDS = { description: 1, autoMatchAttempt: 1, correctProductName: 1, notes: 1 };
+
+function renderAdminShell() {
+  var toastHtml = '';
+  if (state.toast) {
+    toastHtml = '<div class="toast">' +
+      '<span>' + escapeHtml(state.toast) + '</span>' +
+      '<button data-action="dismiss-toast" style="background:none; border:none; cursor:pointer; color:rgba(255,255,255,0.7); padding:0; flex-shrink:0;">' +
+      '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>' +
+      '</button></div>';
+  }
+  return (
+    '<div style="min-height:100vh; background:var(--bg); display:flex; flex-direction:column;">' +
+      '<div style="height:72px; flex-shrink:0; display:flex; align-items:center; justify-content:space-between; padding:0 40px; background:var(--surface); border-bottom:1px solid var(--border);">' +
+        '<div style="display:flex; align-items:center; gap:12px;">' +
+          '<div style="width:32px; height:32px; border-radius:8px; background:var(--accent); display:flex; align-items:center; justify-content:center; color:white; font-weight:700; font-size:14px;">G</div>' +
+          '<div style="display:flex; flex-direction:column; line-height:1.15;">' +
+            '<span style="font-size:13px; font-weight:700; color:var(--text);">Goh Office Supplies</span>' +
+            '<span style="font-size:11px; color:var(--text-tertiary);">Admin panel</span>' +
+          '</div>' +
+        '</div>' +
+        '<button class="btn-prev" data-action="close-admin"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>Close &amp; back to dashboard</button>' +
+      '</div>' +
+      '<div style="flex:1; display:flex; justify-content:center; padding:48px 40px;">' +
+        '<div style="width:1100px;">' + renderAdminBody() + '</div>' +
+      '</div>' +
+    '</div>' +
+    toastHtml
+  );
+}
+
+function renderAdminBody() {
+  if (!state.admin.unlocked) return renderAdminGate();
+
+  var tabsHtml =
+    '<div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:24px; border-bottom:1px solid var(--border);">' +
+      '<div style="display:flex; gap:4px;">' +
+        '<button data-action="admin-tab" data-tab="customers" style="background:none; border:none; cursor:pointer; padding:12px 18px; font-size:14px; font-weight:700; border-bottom:2.5px solid ' + (state.admin.tab === 'customers' ? 'var(--accent)' : 'transparent') + '; color:' + (state.admin.tab === 'customers' ? 'var(--accent)' : 'var(--text-secondary)') + ';">Customers</button>' +
+        '<button data-action="admin-tab" data-tab="corrections" style="background:none; border:none; cursor:pointer; padding:12px 18px; font-size:14px; font-weight:700; border-bottom:2.5px solid ' + (state.admin.tab === 'corrections' ? 'var(--accent)' : 'transparent') + '; color:' + (state.admin.tab === 'corrections' ? 'var(--accent)' : 'var(--text-secondary)') + ';">Corrections review</button>' +
+      '</div>' +
+      '<button class="btn-action" data-action="admin-lock" style="margin-bottom:10px; flex-shrink:0;">Lock</button>' +
+    '</div>';
+
+  var errorHtml = state.admin.error
+    ? '<div style="background:var(--danger-soft); border:1px solid var(--danger-border); color:var(--danger); border-radius:10px; padding:12px 16px; font-size:13px; margin-bottom:18px;">' + escapeHtml(state.admin.error) + '</div>'
+    : '';
+
+  var bodyHtml = state.admin.tab === 'corrections' ? renderAdminCorrectionsTab() : renderAdminCustomersTab();
+
+  return tabsHtml + errorHtml + bodyHtml;
+}
+
+function renderAdminGate() {
+  return (
+    '<div style="max-width:420px; margin:60px auto 0 auto; background:var(--surface); border:1px solid var(--border); border-radius:16px; padding:36px 32px; text-align:center;">' +
+      '<div style="width:52px; height:52px; border-radius:14px; background:var(--accent-soft); color:var(--accent); display:flex; align-items:center; justify-content:center; margin:0 auto 18px auto;">' +
+        '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>' +
+      '</div>' +
+      '<h1 style="font-size:19px; font-weight:800; margin:0 0 8px 0;">Admin access</h1>' +
+      '<p style="font-size:13.5px; color:var(--text-secondary); margin:0 0 22px 0; line-height:1.5;">Enter the shared admin PIN to manage customers and review corrections.</p>' +
+      '<input type="password" id="adminPinInput" value="' + escapeHtml(state.admin.keyInput) + '" placeholder="Admin PIN" autocomplete="off" style="width:100%; padding:12px 14px; font-size:15px; text-align:center; letter-spacing:0.05em; border:1px solid var(--border-strong); border-radius:9px; outline:none; margin-bottom:14px; box-sizing:border-box;">' +
+      (state.admin.error ? '<p style="font-size:12.5px; color:var(--danger); margin:0 0 14px 0;">' + escapeHtml(state.admin.error) + '</p>' : '') +
+      '<button class="btn-primary" data-action="admin-unlock" style="width:100%; justify-content:center;" ' + (state.admin.keyInput.trim() ? '' : 'disabled') + '>Unlock</button>' +
+    '</div>'
+  );
+}
+
+function renderAdminCustomersTab() {
+  if (state.admin.editingCustomer) return renderAdminCustomerForm();
+  if (state.admin.customers === null) {
+    return '<p style="text-align:center; color:var(--text-tertiary); padding:60px 0;">' + (state.admin.loading ? 'Loading customers…' : 'No data loaded yet.') + '</p>';
+  }
+
+  var filtered = filterAdminCustomers(state.admin.customers, state.admin.customerSearch)
+    .slice()
+    .sort(function (a, b) { return (a.name || '').localeCompare(b.name || ''); });
+
+  var rowsHtml = filtered.map(function (c) {
+    var isPendingDelete = state.admin.pendingDeleteCustomer === c.accountCode;
+    var actionsHtml = isPendingDelete
+      ? (
+        '<span style="font-size:12.5px; color:var(--danger); margin-right:8px;">Remove?</span>' +
+        '<button class="btn-action-danger" data-action="admin-delete-customer" data-code="' + escapeHtml(c.accountCode) + '">Confirm</button> ' +
+        '<button class="btn-action" data-action="admin-delete-customer-cancel">Cancel</button>'
+      )
+      : (
+        '<button class="btn-action" data-action="admin-edit-customer" data-code="' + escapeHtml(c.accountCode) + '">Edit</button> ' +
+        '<button class="btn-action-danger" data-action="admin-delete-customer-confirm" data-code="' + escapeHtml(c.accountCode) + '">Remove</button>'
+      );
+    return (
+      '<tr>' +
+        '<td style="border-top:none;"><p style="margin:0; font-weight:600;">' + escapeHtml(c.name) + '</p><p style="margin:2px 0 0 0; font-size:12px; color:var(--text-tertiary);">' + escapeHtml(c.email || '') + '</p></td>' +
+        '<td style="border-top:none; color:var(--text-secondary);">' + escapeHtml(c.accountCode) + '</td>' +
+        '<td style="border-top:none; color:var(--text-secondary);">' + escapeHtml(c.city || '') + '</td>' +
+        '<td style="border-top:none; color:var(--text-secondary);">' + escapeHtml(c.state || '') + '</td>' +
+        '<td style="border-top:none; color:var(--text-secondary);">' + escapeHtml(c.contactFirstName || '—') + '</td>' +
+        '<td style="border-top:none; text-align:right; white-space:nowrap;">' + actionsHtml + '</td>' +
+      '</tr>'
+    );
+  }).join('');
+
+  var noResultsRow = filtered.length === 0
+    ? '<tr><td colspan="6" style="text-align:center; color:var(--text-tertiary); padding:32px 20px;">No customers match.</td></tr>'
+    : '';
+
+  return (
+    '<div style="display:flex; align-items:center; justify-content:space-between; gap:16px; margin-bottom:16px;">' +
+      '<input type="text" id="adminCustomerSearchInput" value="' + escapeHtml(state.admin.customerSearch) + '" placeholder="Search customers by name, account code, city…" style="flex:1; max-width:380px; padding:10px 14px; font-size:13.5px; border:1px solid var(--border-strong); border-radius:9px; outline:none;">' +
+      '<button class="btn-primary" data-action="admin-add-customer" style="flex-shrink:0;">+ Add customer</button>' +
+    '</div>' +
+    '<div style="background:var(--surface); border:1px solid var(--border); border-radius:14px; overflow:hidden;">' +
+      '<table><thead><tr style="background:var(--surface-2);">' +
+        '<th style="padding-top:14px;">Customer</th><th style="padding-top:14px;">Account Code</th><th style="padding-top:14px;">City</th><th style="padding-top:14px;">State</th><th style="padding-top:14px;">Contact</th><th style="padding-top:14px;"></th>' +
+      '</tr></thead><tbody>' + rowsHtml + noResultsRow + '</tbody></table>' +
+    '</div>' +
+    '<p style="font-size:11.5px; color:var(--text-tertiary); margin:14px 0 0 0;">' + filtered.length + ' of ' + state.admin.customers.length + ' customers' + (state.admin.loading ? ' — saving…' : '') + '</p>'
+  );
+}
+
+function renderAdminCustomerForm() {
+  var rec = state.admin.editingCustomer;
+  var fieldsHtml = Object.keys(BLANK_CUSTOMER_RECORD).map(function (key) {
+    var isAccountCode = key === 'accountCode';
+    var disabled = (isAccountCode && !rec._isNew) ? 'disabled' : '';
+    var required = (key === 'name' || key === 'accountCode') ? ' *' : '';
+    return (
+      '<label style="display:block; margin-bottom:14px;">' +
+        '<span style="display:block; font-size:12px; font-weight:700; color:var(--text-secondary); margin-bottom:5px;">' + ADMIN_CUSTOMER_FIELD_LABELS[key] + required + '</span>' +
+        '<input type="text" class="admin-customer-field" data-field="' + key + '" value="' + escapeHtml(rec[key] || '') + '" ' + disabled + ' style="width:100%; padding:10px 13px; font-size:13.5px; border:1px solid var(--border-strong); border-radius:8px; outline:none; background:' + (disabled ? 'var(--surface-2)' : 'var(--surface)') + '; box-sizing:border-box;">' +
+      '</label>'
+    );
+  }).join('');
+
+  return (
+    '<div style="background:var(--surface); border:1px solid var(--border); border-radius:14px; padding:28px; max-width:660px;">' +
+      '<h2 style="font-size:16px; font-weight:800; margin:0 0 4px 0;">' + (rec._isNew ? 'Add customer' : 'Edit customer') + '</h2>' +
+      (rec._isNew ? '' : '<p style="font-size:12px; color:var(--text-tertiary); margin:0 0 18px 0;">Account code can&rsquo;t be changed once created — remove and re-add instead if it was entered wrong.</p>') +
+      '<div style="display:grid; grid-template-columns:1fr 1fr; gap:0 16px; margin-top:' + (rec._isNew ? '18px' : '0') + ';">' + fieldsHtml + '</div>' +
+      '<div style="display:flex; gap:10px; margin-top:8px;">' +
+        '<button class="btn-primary" data-action="admin-save-customer" ' + (state.admin.loading ? 'disabled' : '') + '>' + (state.admin.loading ? 'Saving…' : 'Save') + '</button>' +
+        '<button class="btn-action" data-action="admin-cancel-edit-customer">Cancel</button>' +
+      '</div>' +
+    '</div>'
+  );
+}
+
+function renderAdminCorrectionsTab() {
+  if (state.admin.editingCorrection) return renderAdminCorrectionForm();
+  if (state.admin.corrections === null) {
+    return '<p style="text-align:center; color:var(--text-tertiary); padding:60px 0;">' + (state.admin.loading ? 'Loading corrections…' : 'No data loaded yet.') + '</p>';
+  }
+
+  var filtered = filterAdminCorrections(state.admin.corrections, state.admin.correctionSearch)
+    .slice()
+    .sort(function (a, b) { return (b.id || 0) - (a.id || 0); });
+
+  var pageSize = state.admin.correctionPageSize;
+  var totalPages = Math.max(1, Math.ceil(filtered.length / pageSize));
+  var currentPage = Math.max(1, Math.min(state.admin.correctionPage, totalPages));
+  var startIdx = (currentPage - 1) * pageSize;
+  var pageRows = filtered.slice(startIdx, startIdx + pageSize);
+
+  var rowsHtml = pageRows.map(function (r) {
+    var isPendingDelete = state.admin.pendingDeleteCorrection === r.id;
+    var actionsHtml = isPendingDelete
+      ? (
+        '<span style="font-size:12.5px; color:var(--danger); margin-right:8px;">Remove?</span>' +
+        '<button class="btn-action-danger" data-action="admin-delete-correction" data-id="' + r.id + '">Confirm</button> ' +
+        '<button class="btn-action" data-action="admin-delete-correction-cancel">Cancel</button>'
+      )
+      : (
+        '<button class="btn-action" data-action="admin-edit-correction" data-id="' + r.id + '">Edit</button> ' +
+        '<button class="btn-action-danger" data-action="admin-delete-correction-confirm" data-id="' + r.id + '">Remove</button>'
+      );
+    return (
+      '<tr>' +
+        '<td style="border-top:none; color:var(--text-tertiary); font-size:12px;">#' + escapeHtml(String(r.id)) + '</td>' +
+        '<td style="border-top:none;"><p style="margin:0; font-weight:600;">' + escapeHtml(r.description || '') + '</p><p style="margin:2px 0 0 0; font-size:12px; color:var(--text-tertiary);">' + escapeHtml(r.sourceSpec || '') + '</p></td>' +
+        '<td style="border-top:none; color:var(--text-secondary);">' + escapeHtml(r.correctSku || '') + '</td>' +
+        '<td style="border-top:none; color:var(--text-secondary);">' + escapeHtml(r.contributedBy || '') + '</td>' +
+        '<td style="border-top:none; color:var(--text-secondary);">' + escapeHtml(r.date || '') + '</td>' +
+        '<td style="border-top:none; text-align:right; white-space:nowrap;">' + actionsHtml + '</td>' +
+      '</tr>'
+    );
+  }).join('');
+
+  var noResultsRow = filtered.length === 0
+    ? '<tr><td colspan="6" style="text-align:center; color:var(--text-tertiary); padding:32px 20px;">No corrections match.</td></tr>'
+    : '';
+
+  return (
+    '<div style="margin-bottom:16px;">' +
+      '<input type="text" id="adminCorrectionSearchInput" value="' + escapeHtml(state.admin.correctionSearch) + '" placeholder="Search corrections by description, SKU, contributor…" style="width:100%; max-width:420px; padding:10px 14px; font-size:13.5px; border:1px solid var(--border-strong); border-radius:9px; outline:none;">' +
+    '</div>' +
+    '<div style="background:var(--surface); border:1px solid var(--border); border-radius:14px; overflow:hidden;">' +
+      '<table><thead><tr style="background:var(--surface-2);">' +
+        '<th style="padding-top:14px;">ID</th><th style="padding-top:14px;">Description</th><th style="padding-top:14px;">Correct SKU</th><th style="padding-top:14px;">Contributed by</th><th style="padding-top:14px;">Date</th><th style="padding-top:14px;"></th>' +
+      '</tr></thead><tbody>' + rowsHtml + noResultsRow + '</tbody></table>' +
+    '</div>' +
+    '<div style="display:flex; align-items:center; justify-content:space-between; margin-top:16px;">' +
+      '<span style="font-size:12.5px; color:var(--text-tertiary);">' + filtered.length + ' correction' + (filtered.length === 1 ? '' : 's') + (state.admin.loading ? ' — saving…' : '') + '</span>' +
+      '<div style="display:flex; align-items:center; gap:8px;">' +
+        '<button class="btn-outline" data-action="admin-correction-prev-page" ' + (currentPage <= 1 ? 'disabled' : '') + '>Previous</button>' +
+        '<span style="font-size:12.5px; color:var(--text-secondary); padding:0 6px;">Page ' + currentPage + ' of ' + totalPages + '</span>' +
+        '<button class="btn-outline" data-action="admin-correction-next-page" ' + (currentPage >= totalPages ? 'disabled' : '') + '>Next</button>' +
+      '</div>' +
+    '</div>'
+  );
+}
+
+function renderAdminCorrectionForm() {
+  var rec = state.admin.editingCorrection;
+  var fieldsHtml = Object.keys(ADMIN_CORRECTION_FIELD_LABELS).map(function (key) {
+    var isTextarea = !!ADMIN_CORRECTION_WIDE_FIELDS[key];
+    var tag = isTextarea ? 'textarea' : 'input';
+    var typeAttr = isTextarea ? '' : ' type="text"';
+    var rowsAttr = isTextarea ? ' rows="2"' : '';
+    var rawVal = rec[key] == null ? '' : rec[key];
+    var valueAttr = isTextarea ? '' : ' value="' + escapeHtml(rawVal) + '"';
+    var inner = isTextarea ? escapeHtml(rawVal) : '';
+    var wideStyle = isTextarea ? ' grid-column:1 / -1;' : '';
+    var required = (key === 'description' || key === 'correctSku') ? ' *' : '';
+    return (
+      '<label style="display:block; margin-bottom:14px;' + wideStyle + '">' +
+        '<span style="display:block; font-size:12px; font-weight:700; color:var(--text-secondary); margin-bottom:5px;">' + ADMIN_CORRECTION_FIELD_LABELS[key] + required + '</span>' +
+        '<' + tag + ' class="admin-correction-field" data-field="' + key + '"' + typeAttr + rowsAttr + valueAttr + ' style="width:100%; padding:10px 13px; font-size:13.5px; border:1px solid var(--border-strong); border-radius:8px; outline:none; box-sizing:border-box; font-family:inherit; resize:vertical;">' + inner + '</' + tag + '>' +
+      '</label>'
+    );
+  }).join('');
+
+  return (
+    '<div style="background:var(--surface); border:1px solid var(--border); border-radius:14px; padding:28px; max-width:660px;">' +
+      '<h2 style="font-size:16px; font-weight:800; margin:0 0 18px 0;">Edit correction #' + escapeHtml(String(rec.id)) + '</h2>' +
+      '<div style="display:grid; grid-template-columns:1fr 1fr; gap:0 16px;">' + fieldsHtml + '</div>' +
+      '<div style="display:flex; gap:10px; margin-top:8px;">' +
+        '<button class="btn-primary" data-action="admin-save-correction" ' + (state.admin.loading ? 'disabled' : '') + '>' + (state.admin.loading ? 'Saving…' : 'Save') + '</button>' +
+        '<button class="btn-action" data-action="admin-cancel-edit-correction">Cancel</button>' +
+      '</div>' +
+    '</div>'
   );
 }
 
@@ -1131,7 +1660,7 @@ function renderStep4() {
    STEP 5 — Summary / Generate
    ========================================================================= */
 function computeLineItems() {
-  return state.items
+  var raw = state.items
     .filter(function (it) { return it.status !== 'not_carried' && it.status !== 'nomatch' && it.matchedSku; })
     .map(function (it) {
       var p = productByModel(it.matchedSku);
@@ -1148,6 +1677,27 @@ function computeLineItems() {
         price3: p ? p.price3 : 0
       };
     });
+
+  // A spec PDF can list the same product across more than one line (a
+  // formatting split, a repeated spec section, a page break, etc.). Once
+  // those separate rows are reviewed/matched to the same catalog SKU, GOH's
+  // import system rejects the generated file for having duplicate SKU rows
+  // under one Row No. So combine same-SKU rows here into a single line item
+  // with the quantities summed, rather than exporting them as separate
+  // duplicate rows. This runs before both the Generate-page preview table
+  // and the actual Excel export, so what's shown matches what's downloaded.
+  var merged = [];
+  var indexByModel = {};
+  raw.forEach(function (li) {
+    var idx = indexByModel[li.model];
+    if (idx === undefined) {
+      indexByModel[li.model] = merged.length;
+      merged.push(li);
+    } else {
+      merged[idx].qty += li.qty;
+    }
+  });
+  return merged;
 }
 
 function renderStep5() {
@@ -1260,7 +1810,7 @@ function render() {
     focusInfo = { id: active.id, selStart: active.selectionStart, selEnd: active.selectionEnd, cls: active.className, dataId: active.getAttribute('data-id') };
   }
 
-  root.innerHTML = renderShell(currentStepHtml());
+  root.innerHTML = state.admin.open ? renderAdminShell() : renderShell(currentStepHtml());
 
   // One-shot autofocus request: e.g. right after opening a review item's search
   // panel, so the user can start typing immediately without clicking into it.
@@ -1658,6 +2208,102 @@ root.addEventListener('click', function (e) {
     case 'dismiss-toast': state.toast = ''; break;
     case 'toggle-user-menu': state.userMenuOpen = !state.userMenuOpen; break;
     case 'close-user-menu': state.userMenuOpen = false; break;
+
+    /* --- Admin panel --- */
+    case 'open-admin':
+      state.admin.open = true;
+      state.admin.tab = 'customers';
+      state.admin.error = '';
+      if (state.admin.unlocked && state.admin.customers === null) fetchAdminData();
+      break;
+    case 'close-admin':
+      state.admin.open = false;
+      state.admin.editingCustomer = null;
+      state.admin.editingCorrection = null;
+      state.admin.pendingDeleteCustomer = null;
+      state.admin.pendingDeleteCorrection = null;
+      state.admin.error = '';
+      break;
+    case 'admin-tab':
+      state.admin.tab = el.getAttribute('data-tab');
+      state.admin.editingCustomer = null;
+      state.admin.editingCorrection = null;
+      state.admin.error = '';
+      break;
+    case 'admin-unlock': {
+      var pin = (state.admin.keyInput || '').trim();
+      if (!pin) return;
+      state.admin.key = pin;
+      state.admin.unlocked = true;
+      state.admin.keyInput = '';
+      state.admin.error = '';
+      fetchAdminData();
+      break;
+    }
+    case 'admin-lock':
+      state.admin.unlocked = false;
+      state.admin.key = '';
+      state.admin.customers = null;
+      state.admin.corrections = null;
+      state.admin.editingCustomer = null;
+      state.admin.editingCorrection = null;
+      break;
+    case 'admin-add-customer':
+      state.admin.editingCustomer = Object.assign({}, BLANK_CUSTOMER_RECORD, { _isNew: true });
+      state.admin.error = '';
+      break;
+    case 'admin-edit-customer': {
+      var editCode = el.getAttribute('data-code');
+      var foundCustomer = (state.admin.customers || []).filter(function (c) { return c.accountCode === editCode; })[0];
+      if (foundCustomer) {
+        state.admin.editingCustomer = Object.assign({}, BLANK_CUSTOMER_RECORD, foundCustomer, { _isNew: false, _originalAccountCode: foundCustomer.accountCode });
+        state.admin.error = '';
+      }
+      break;
+    }
+    case 'admin-cancel-edit-customer':
+      state.admin.editingCustomer = null;
+      state.admin.error = '';
+      break;
+    case 'admin-save-customer': submitAdminCustomer(); return;
+    case 'admin-delete-customer-confirm':
+      state.admin.pendingDeleteCustomer = el.getAttribute('data-code');
+      break;
+    case 'admin-delete-customer-cancel':
+      state.admin.pendingDeleteCustomer = null;
+      break;
+    case 'admin-delete-customer': deleteAdminCustomer(el.getAttribute('data-code')); return;
+    case 'admin-correction-prev-page':
+      state.admin.correctionPage = Math.max(1, state.admin.correctionPage - 1);
+      break;
+    case 'admin-correction-next-page': {
+      var filteredCorr = filterAdminCorrections(state.admin.corrections || [], state.admin.correctionSearch);
+      var totalCorrPages = Math.max(1, Math.ceil(filteredCorr.length / state.admin.correctionPageSize));
+      state.admin.correctionPage = Math.min(totalCorrPages, state.admin.correctionPage + 1);
+      break;
+    }
+    case 'admin-edit-correction': {
+      var editId = parseInt(el.getAttribute('data-id'), 10);
+      var foundCorrection = (state.admin.corrections || []).filter(function (r) { return r.id === editId; })[0];
+      if (foundCorrection) {
+        state.admin.editingCorrection = Object.assign({}, foundCorrection);
+        state.admin.error = '';
+      }
+      break;
+    }
+    case 'admin-cancel-edit-correction':
+      state.admin.editingCorrection = null;
+      state.admin.error = '';
+      break;
+    case 'admin-save-correction': submitAdminCorrection(); return;
+    case 'admin-delete-correction-confirm':
+      state.admin.pendingDeleteCorrection = parseInt(el.getAttribute('data-id'), 10);
+      break;
+    case 'admin-delete-correction-cancel':
+      state.admin.pendingDeleteCorrection = null;
+      break;
+    case 'admin-delete-correction': deleteAdminCorrection(parseInt(el.getAttribute('data-id'), 10)); return;
+
     default: return;
   }
   render();
@@ -1683,6 +2329,42 @@ root.addEventListener('input', function (e) {
   } else if (t.classList.contains('item-search-input')) {
     var it = itemById(t.getAttribute('data-id'));
     if (it) { it.query = t.value; render(); }
+  } else if (t.id === 'adminPinInput') {
+    state.admin.keyInput = t.value;
+    state.admin.error = '';
+    render();
+  } else if (t.id === 'adminCustomerSearchInput') {
+    state.admin.customerSearch = t.value;
+    render();
+  } else if (t.id === 'adminCorrectionSearchInput') {
+    state.admin.correctionSearch = t.value;
+    state.admin.correctionPage = 1;
+    render();
+  } else if (t.classList.contains('admin-customer-field')) {
+    // Deliberately no render() here: these fields aren't covered by the
+    // id-based focus-restore above (they share a class, not a stable id),
+    // so re-rendering on every keystroke would drop focus. Mutating state
+    // directly and letting the input keep its own DOM value works fine
+    // since nothing else on screen depends on these values mid-edit.
+    if (state.admin.editingCustomer) state.admin.editingCustomer[t.getAttribute('data-field')] = t.value;
+  } else if (t.classList.contains('admin-correction-field')) {
+    if (state.admin.editingCorrection) state.admin.editingCorrection[t.getAttribute('data-field')] = t.value;
+  }
+});
+
+// Enter-to-submit on the admin PIN field — the only text input in the app
+// where pressing Enter should trigger an action instead of just typing.
+root.addEventListener('keydown', function (e) {
+  if (e.key === 'Enter' && e.target && e.target.id === 'adminPinInput') {
+    e.preventDefault();
+    var pin = (state.admin.keyInput || '').trim();
+    if (!pin) return;
+    state.admin.key = pin;
+    state.admin.unlocked = true;
+    state.admin.keyInput = '';
+    state.admin.error = '';
+    fetchAdminData();
+    render();
   }
 });
 
@@ -1749,6 +2431,12 @@ root.addEventListener('drop', function (e) {
    BOOT
    ========================================================================= */
 render();
+// Picks up any customers added/edited/removed via the Admin panel since this
+// file was last published, so the whole team sees them without a republish.
+// Runs after the first render, non-blocking, and no-ops silently if the
+// Worker is unreachable (see refreshCustomersFromLive() above).
+refreshCustomersFromLive();
 </script>
+
 </body>
 </html>
