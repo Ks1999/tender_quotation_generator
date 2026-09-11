@@ -10346,5 +10346,18 @@
     "correctProductName": "HP 307A Black LaserJet Toner Cartridge (CE740A)",
     "correctSku": "HP CE740A",
     "notes": "Confirmed real HP part via web search (genuine OEM, HP Color LaserJet CP5225 series), but no prior entry in corrections.md for this SKU - needs GOH catalog confirmation."
+  },
+  {
+    "id": 1353,
+    "contributedBy": "(not provided)",
+    "date": "2026-09-11",
+    "sourceSpec": "PERKAKASAN_extracted_items.json",
+    "description": "HP 307A CYAN ORIGINAL LASERJET TONER CARTRIDGE (CE741A)",
+    "qty": 1,
+    "uom": "unit",
+    "autoMatchAttempt": "Flagged for review — candidate: HP CE741A (HP 307A Cyan LaserJet Toner Cartridge (CE741A))",
+    "correctProductName": "HP 307A Cyan LaserJet Toner Cartridge (CE741A)",
+    "correctSku": "HP CE741A",
+    "notes": "Confirmed real HP part via web search, but no prior entry in corrections.md - needs GOH catalog confirmation."
   }
 ]
