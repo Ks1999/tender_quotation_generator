@@ -10476,5 +10476,18 @@
     "correctProductName": "HP 307A Cyan LaserJet Toner Cartridge (CE741A)",
     "correctSku": "HP CE741A",
     "notes": "Confirmed real HP part via web search, but no prior entry in corrections.md - needs GOH catalog confirmation."
+  },
+  {
+    "id": 1363,
+    "contributedBy": "(not provided)",
+    "date": "2026-09-11",
+    "sourceSpec": "PERKAKASAN_extracted_items.json",
+    "description": "HP 307A YELLOW ORIGINAL LASERJET TONER CARTRIDGE (CE742A)",
+    "qty": 1,
+    "uom": "unit",
+    "autoMatchAttempt": "Flagged for review — candidate: HP CE742A (HP 307A Yellow LaserJet Toner Cartridge (CE742A))",
+    "correctProductName": "HP 307A Yellow LaserJet Toner Cartridge (CE742A)",
+    "correctSku": "HP CE742A",
+    "notes": "Confirmed real HP part via web search, but no prior entry in corrections.md - needs GOH catalog confirmation."
   }
 ]
