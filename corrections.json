@@ -10541,5 +10541,18 @@
     "correctProductName": "Canon Cartridge 069H Magenta Toner 5.5k",
     "correctSku": "C CATR 069H M",
     "notes": ""
+  },
+  {
+    "id": 1368,
+    "contributedBy": "(not provided)",
+    "date": "2026-09-11",
+    "sourceSpec": "PERKAKASAN_extracted_items.json",
+    "description": "CANON TONER CARTRIDGE 069H - YELLOW",
+    "qty": 1,
+    "uom": "unit",
+    "autoMatchAttempt": "Flagged for review — no candidate",
+    "correctProductName": "Canon Cartridge 069H Yellow Toner 5.5k",
+    "correctSku": "C CATR 069H Y",
+    "notes": ""
   }
 ]
