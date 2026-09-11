@@ -10398,5 +10398,18 @@
     "correctProductName": "Canon Cartridge 069H Black Toner 7.6k",
     "correctSku": "C CATR 069H BK",
     "notes": "Spec explicitly asks for high-yield 069H (unlike the bare '069' case in corrections.md, which defaults to standard grade). 069H BK SKU string appears in corrections.md as a catalog entry, but not confirmed for this exact spec context - needs sign-off."
+  },
+  {
+    "id": 1357,
+    "contributedBy": "(not provided)",
+    "date": "2026-09-11",
+    "sourceSpec": "PERKAKASAN_extracted_items.json",
+    "description": "CANON TONER CARTRIDGE 069H - CYAN",
+    "qty": 1,
+    "uom": "unit",
+    "autoMatchAttempt": "Flagged for review — no candidate",
+    "correctProductName": "Canon Cartridge 069H Cyan Toner 5.5k",
+    "correctSku": "C CATR 069H C",
+    "notes": ""
   }
 ]
