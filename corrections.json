@@ -10541,5 +10541,18 @@
     "correctProductName": "Canon 057H Toner Cartridge - Black, 9.2k",
     "correctSku": "C CATR 057H",
     "notes": ""
+  },
+  {
+    "id": 1370,
+    "contributedBy": "Kian Seen",
+    "date": "2026-09-15",
+    "sourceSpec": "05_Spesifikasi (8).pdf",
+    "description": "Toner Oki B412d/B432dn/MB492dn black toner cartridge (7K), for Oki printer model B412d/B432dn/MB492dn, part no. 45807107, Yield 7,000 pages",
+    "qty": "100",
+    "uom": "unit",
+    "autoMatchAttempt": "Matched to OKI C512   12K (OKI B432/B512/MB492 BLACK TONER #45807112 (item no: OKI C512   12K))",
+    "correctProductName": "OKI 45807107 Black High Capacity Toner Cartridge 7k - B412/432/512/472/492",
+    "correctSku": "OKI C432   7K",
+    "notes": ""
   }
 ]
