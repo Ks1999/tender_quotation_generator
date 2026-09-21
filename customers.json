@@ -180,5 +180,18 @@
     "city": "SHAH ALAM",
     "state": "Selangor",
     "country": "Malaysia"
+  },
+  {
+    "name": "MAMZ LEGACY SDN BHD",
+    "accountCode": "30N0555",
+    "contactFirstName": "Nur Arifah Binti Noor Azam",
+    "email": "eperolehanmamzlegacy@gmail.com",
+    "phone": "0194715989",
+    "address": "A-1-9 BLOK A, OSTIA BANGI BUSINESS AVENUE",
+    "address2": "JALAN OSTIA UTAMA, SEKSYEN 14",
+    "postcode": "43650",
+    "city": "ULU LANGAT",
+    "state": "Selangor",
+    "country": "Malaysia"
   }
 ]
