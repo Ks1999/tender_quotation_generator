@@ -10749,5 +10749,18 @@
     "correctProductName": "HP Deskjet GT52 All-In-One Yellow Ink Bottles",
     "correctSku": "HP M0H56AA",
     "notes": ""
+  },
+  {
+    "id": 1386,
+    "contributedBy": "CATH",
+    "date": "2026-09-23",
+    "sourceSpec": "05_Spesifikasi (1).pdf",
+    "description": "NEOPOST CS-200/IS-280 INK CARTRIDGE",
+    "qty": "1",
+    "uom": "unit",
+    "autoMatchAttempt": "No match",
+    "correctProductName": "Not carried",
+    "correctSku": "N/A",
+    "notes": "Neopost/franking machine supplies not carried in GOH catalog. Catalog scope is printer/IT consumables and office machines."
   }
 ]
