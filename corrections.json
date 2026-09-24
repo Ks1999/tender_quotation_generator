@@ -10879,5 +10879,18 @@
     "correctProductName": "HP Deskjet GT52 All-In-One Yellow Ink Bottles",
     "correctSku": "HP M0H56AA",
     "notes": ""
+  },
+  {
+    "id": 1396,
+    "contributedBy": "Aishah",
+    "date": "2026-09-24",
+    "sourceSpec": "05_Spesifikasi (6).pdf",
+    "description": "LEXMARK TONER CARTRIDGE 503HE LEXMARK 50F3HOE BLACK",
+    "qty": "12",
+    "uom": "unit",
+    "autoMatchAttempt": "No match",
+    "correctProductName": "Not carried",
+    "correctSku": "N/A",
+    "notes": "Lexmark not carried in GOH catalog. Catalog scope explicitly excludes Lexmark."
   }
 ]
