@@ -10983,5 +10983,18 @@
     "correctProductName": "Not carried",
     "correctSku": "N/A",
     "notes": "Neopost/franking machine supplies not carried in GOH catalog. Catalog scope is printer/IT consumables and office machines."
+  },
+  {
+    "id": 1404,
+    "contributedBy": "Aishah",
+    "date": "2026-09-24",
+    "sourceSpec": "05_Spesifikasi (6).pdf",
+    "description": "THERMAL TRANSFER RIBBON DGWA 110MM X 300MM BLACK",
+    "qty": "300",
+    "uom": "unit",
+    "autoMatchAttempt": "No match",
+    "correctProductName": "Not carried",
+    "correctSku": "N/A",
+    "notes": "Thermal transfer ribbons (DGWA) not in catalog. GOH carries only specific branded ribbons for known printer models."
   }
 ]
