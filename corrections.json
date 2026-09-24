@@ -10944,5 +10944,18 @@
     "correctProductName": "HP Deskjet GT52 All-In-One Yellow Ink Bottles",
     "correctSku": "HP M0H56AA",
     "notes": ""
+  },
+  {
+    "id": 1401,
+    "contributedBy": "Aishah",
+    "date": "2026-09-24",
+    "sourceSpec": "05_Spesifikasi (6).pdf",
+    "description": "THERMAL TRANSFER RIBBON (TTF) SIZE: 59MM(W) X 300MM 1/2\" BLACK",
+    "qty": "400",
+    "uom": "unit",
+    "autoMatchAttempt": "No match",
+    "correctProductName": "Not carried",
+    "correctSku": "N/A",
+    "notes": "Thermal transfer ribbons for general labeling not in catalog. GOH carries only specific branded ribbons for known printer models."
   }
 ]
