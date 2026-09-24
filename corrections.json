@@ -10892,5 +10892,18 @@
     "correctProductName": "Not carried",
     "correctSku": "N/A",
     "notes": "Lexmark not carried in GOH catalog. Catalog scope explicitly excludes Lexmark."
+  },
+  {
+    "id": 1397,
+    "contributedBy": "Aishah",
+    "date": "2026-09-24",
+    "sourceSpec": "05_Spesifikasi (6).pdf",
+    "description": "THERMAL TRANSFER RIBBON (TTF) SIZE: 85MM X 100MM 1/2\"",
+    "qty": "400",
+    "uom": "unit",
+    "autoMatchAttempt": "No match",
+    "correctProductName": "Not carried",
+    "correctSku": "N/A",
+    "notes": "Thermal transfer ribbons for general labeling not in catalog. GOH carries only specific branded ribbons for known printer models."
   }
 ]
