@@ -10918,5 +10918,18 @@
     "correctProductName": "HP Deskjet GT52 All-In-One Cyan Ink Bottles",
     "correctSku": "HP M0H54AA",
     "notes": ""
+  },
+  {
+    "id": 1399,
+    "contributedBy": "Aishah",
+    "date": "2026-09-24",
+    "sourceSpec": "05_Spesifikasi (6).pdf",
+    "description": "HP GT51/GT52 XL MAGENTA",
+    "qty": "2",
+    "uom": "unit",
+    "autoMatchAttempt": "Flagged for review — no candidate",
+    "correctProductName": "HP Deskjet GT52 All-In-One Magenta Ink Bottles",
+    "correctSku": "HP M0H55AA",
+    "notes": ""
   }
 ]
