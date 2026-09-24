@@ -10840,5 +10840,18 @@
     "correctProductName": "HP GT53XL Black Original Ink Bottle 135ml",
     "correctSku": "HP 1VV21AA",
     "notes": ""
+  },
+  {
+    "id": 1393,
+    "contributedBy": "Aishah",
+    "date": "2026-09-24",
+    "sourceSpec": "05_Spesifikasi (6).pdf",
+    "description": "HP GT51/GT52 XL CYAN",
+    "qty": "2",
+    "uom": "unit",
+    "autoMatchAttempt": "Flagged for review — no candidate",
+    "correctProductName": "HP Deskjet GT52 All-In-One Cyan Ink Bottles",
+    "correctSku": "HP M0H54AA",
+    "notes": ""
   }
 ]
