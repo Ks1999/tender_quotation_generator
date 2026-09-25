@@ -11230,5 +11230,18 @@
     "correctProductName": "Not carried",
     "correctSku": "N/A",
     "notes": "Thermal transfer ribbons (DGWA) not in catalog. GOH carries only specific branded ribbons for known printer models."
+  },
+  {
+    "id": 1423,
+    "contributedBy": "cath",
+    "date": "2026-09-25",
+    "sourceSpec": "05_Spesifikasi (3).pdf",
+    "description": "NEOPOST CS-200/IS-280 INK CARTRIDGE",
+    "qty": "1",
+    "uom": "unit",
+    "autoMatchAttempt": "No match",
+    "correctProductName": "Not carried",
+    "correctSku": "N/A",
+    "notes": "Neopost/franking machine supplies not carried in GOH catalog. Catalog scope is printer/IT consumables and office machines."
   }
 ]
