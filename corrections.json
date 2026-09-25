@@ -11217,5 +11217,18 @@
     "correctProductName": "Not carried",
     "correctSku": "N/A",
     "notes": "Thermal transfer ribbons for general labeling not in catalog. GOH carries only specific branded ribbons for known printer models."
+  },
+  {
+    "id": 1422,
+    "contributedBy": "cath",
+    "date": "2026-09-25",
+    "sourceSpec": "05_Spesifikasi (3).pdf",
+    "description": "THERMAL TRANSFER RIBBON DGWA 110MM X 300MM BLACK",
+    "qty": "300",
+    "uom": "unit",
+    "autoMatchAttempt": "No match",
+    "correctProductName": "Not carried",
+    "correctSku": "N/A",
+    "notes": "Thermal transfer ribbons (DGWA) not in catalog. GOH carries only specific branded ribbons for known printer models."
   }
 ]
