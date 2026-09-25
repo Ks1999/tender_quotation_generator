@@ -11035,5 +11035,18 @@
     "correctProductName": "Not carried",
     "correctSku": "N/A",
     "notes": "Manufacturer part number 498M5A not found in catalog; plausible HP DesignJet ink but unable to confirm exact SKU"
+  },
+  {
+    "id": 1408,
+    "contributedBy": "cath",
+    "date": "2026-09-25",
+    "sourceSpec": "05_Spesifikasi (2).pdf",
+    "description": "HP DesignJet T850 Ink Cartridge 738 Yellow - Ink Cartridge 738 Yellow 4J6Y7A",
+    "qty": "4",
+    "uom": "unit",
+    "autoMatchAttempt": "Flagged for review — no candidate",
+    "correctProductName": "Not carried",
+    "correctSku": "N/A",
+    "notes": "Manufacturer part number 4J6Y7A not found in catalog; plausible HP DesignJet ink but unable to confirm exact SKU"
   }
 ]
