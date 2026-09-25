@@ -11139,5 +11139,18 @@
     "correctProductName": "Not carried",
     "correctSku": "N/A",
     "notes": "Lexmark not carried in GOH catalog. Catalog scope explicitly excludes Lexmark."
+  },
+  {
+    "id": 1416,
+    "contributedBy": "cath",
+    "date": "2026-09-25",
+    "sourceSpec": "05_Spesifikasi (3).pdf",
+    "description": "HP GT51/GT52 XL CYAN",
+    "qty": "2",
+    "uom": "unit",
+    "autoMatchAttempt": "Flagged for review — no candidate",
+    "correctProductName": "HP Deskjet GT52 All-In-One Cyan Ink Bottles",
+    "correctSku": "HP M0H54AA",
+    "notes": ""
   }
 ]
