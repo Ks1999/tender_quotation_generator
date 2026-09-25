@@ -11074,5 +11074,18 @@
     "correctProductName": "HP 26X Black LaserJet Toner Cartridge (CF226X)",
     "correctSku": "HP CF226X",
     "notes": ""
+  },
+  {
+    "id": 1411,
+    "contributedBy": "cath",
+    "date": "2026-09-25",
+    "sourceSpec": "05_Spesifikasi (3).pdf",
+    "description": "HP GT51/GT51 XL BLACK",
+    "qty": "2",
+    "uom": "unit",
+    "autoMatchAttempt": "Flagged for review — no candidate",
+    "correctProductName": "HP GT53XL Black Original Ink Bottle 135ml",
+    "correctSku": "HP 1VV21AA",
+    "notes": ""
   }
 ]
