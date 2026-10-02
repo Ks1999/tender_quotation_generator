@@ -4765,9 +4765,9 @@
     "description": "Toner Cartridge for HP Laserjet PRO M203DN Printer (Black)",
     "qty": "100",
     "uom": "unit",
-    "autoMatchAttempt": "HP SU917A — Samsung MLT-D203U (SU917A) Black Ultra High Yield Toner Cartridge",
-    "correctProductName": "Samsung MLT-D203U (SU917A) Black Ultra High Yield Toner Cartridge",
-    "correctSku": "HP SU917A",
+    "autoMatchAttempt": "HP 30A Black Original LaserJet Toner Cartridge (CF230A)",
+    "correctProductName": "HP 30A Black Original LaserJet Toner Cartridge (CF230A)",
+    "correctSku": "HP CF230A",
     "notes": ""
   },
   {
