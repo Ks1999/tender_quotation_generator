@@ -2334,9 +2334,9 @@
     "description": "Ricoh SP 311HS",
     "qty": "30",
     "uom": "unit",
-    "autoMatchAttempt": "RC SP311 LS — Ricoh SP311DN/DNw/SFN,SFNw Toner 2K 407250 ( ITEM NO : RC SP311 LS )",
-    "correctProductName": "Ricoh SP311DN/DNw/SFN,SFNw Toner 2K 407250 ( ITEM NO : RC SP311 LS )",
-    "correctSku": "RC SP311 LS",
+    "autoMatchAttempt": "",
+    "correctProductName": "",
+    "correctSku": "RC SP311 HS",
     "notes": ""
   },
   {
