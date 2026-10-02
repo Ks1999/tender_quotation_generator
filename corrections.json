@@ -1411,9 +1411,9 @@
     "description": "HP 213A Magenta Original Laser Jet Toner Cartridge",
     "qty": "24",
     "uom": "unit",
-    "autoMatchAttempt": "HP CF213A — HP 131A Magenta LaserJet Toner Cartridge (CF213A)",
-    "correctProductName": "HP 131A Magenta LaserJet Toner Cartridge (CF213A)",
-    "correctSku": "HP CF213A",
+    "autoMatchAttempt": "HP 213A Magenta Toner Cartridge 3k",
+    "correctProductName": "HP 213A Magenta Toner Cartridge 3k",
+    "correctSku": "HP W2133A",
     "notes": ""
   },
   {
