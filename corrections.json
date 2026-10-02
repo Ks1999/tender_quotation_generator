@@ -995,9 +995,9 @@
     "description": "Canon Cartridge 319 (Black)",
     "qty": "30",
     "uom": "unit",
-    "autoMatchAttempt": "C CATR 319 [II] — Canon Cartridge 319 II Toner Cartridge - 6.4k",
-    "correctProductName": "Canon Cartridge 319 II Toner Cartridge - 6.4k",
-    "correctSku": "C CATR 319 [II]",
+    "autoMatchAttempt": "Canon Cartridge 319 Toner Cartridge - 2.1k",
+    "correctProductName": "Canon Cartridge 319 Toner Cartridge - 2.1k",
+    "correctSku": "C CATR 319",
     "notes": ""
   },
   {
