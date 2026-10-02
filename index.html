@@ -1002,7 +1002,9 @@ var ADMIN_CORRECTION_FIELD_LABELS = {
 };
 // Fields long enough to want the form's full width rather than sitting in a
 // two-column grid cell.
-var ADMIN_CORRECTION_WIDE_FIELDS = { description: 1, autoMatchAttempt: 1, correctProductName: 1, notes: 1 };
+var ADMIN_CORRECTION_WIDE_FIELDS = { description: 1, autoMatchAttempt: 1, notes: 1 };
+// Fields that double as catalog search boxes (pick a product → fills both).
+var ADMIN_CORRECTION_CATALOG_FIELDS = { correctProductName: 1, correctSku: 1 };
 
 function renderAdminShell() {
   var toastHtml = '';
@@ -1112,7 +1114,7 @@ function renderAdminCustomersTab() {
       '<input type="text" id="adminCustomerSearchInput" value="' + escapeHtml(state.admin.customerSearch) + '" placeholder="Search customers by name, account code, city…" style="flex:1; max-width:380px; padding:10px 14px; font-size:13.5px; border:1px solid var(--border-strong); border-radius:9px; outline:none;">' +
       '<button class="btn-primary" data-action="admin-add-customer" style="flex-shrink:0;">+ Add customer</button>' +
     '</div>' +
-    '<div style="background:var(--surface); border:1px solid var(--border); border-radius:14px; overflow:hidden;">' +
+    '<div style="background:var(--surface); border:1px solid var(--border); border-radius:14px; overflow-x:auto;">' +
       '<table><thead><tr style="background:var(--surface-2);">' +
         '<th style="padding-top:14px;">Customer</th><th style="padding-top:14px;">Account Code</th><th style="padding-top:14px;">City</th><th style="padding-top:14px;">State</th><th style="padding-top:14px;">Contact</th><th style="padding-top:14px;"></th>' +
       '</tr></thead><tbody>' + rowsHtml + noResultsRow + '</tbody></table>' +
@@ -1179,10 +1181,10 @@ function renderAdminCorrectionsTab() {
     return (
       '<tr>' +
         '<td style="border-top:none; color:var(--text-tertiary); font-size:12px;">#' + escapeHtml(String(r.id)) + '</td>' +
-        '<td style="border-top:none;"><p style="margin:0; font-weight:600;">' + escapeHtml(r.description || '') + '</p><p style="margin:2px 0 0 0; font-size:12px; color:var(--text-tertiary);">' + escapeHtml(r.sourceSpec || '') + '</p></td>' +
-        '<td style="border-top:none; color:var(--text-secondary);">' + escapeHtml(r.correctSku || '') + '</td>' +
+        '<td style="border-top:none; overflow-wrap:anywhere; word-break:break-word;"><p style="margin:0; font-weight:600;">' + escapeHtml(r.description || '') + '</p><p style="margin:2px 0 0 0; font-size:12px; color:var(--text-tertiary);">' + escapeHtml(r.sourceSpec || '') + '</p></td>' +
+        '<td style="border-top:none; color:var(--text-secondary); overflow-wrap:anywhere;">' + escapeHtml(r.correctSku || '') + '</td>' +
         '<td style="border-top:none; color:var(--text-secondary);">' + escapeHtml(r.contributedBy || '') + '</td>' +
-        '<td style="border-top:none; color:var(--text-secondary);">' + escapeHtml(r.date || '') + '</td>' +
+        '<td style="border-top:none; color:var(--text-secondary); white-space:nowrap;">' + escapeHtml(r.date || '') + '</td>' +
         '<td style="border-top:none; text-align:right; white-space:nowrap;">' + actionsHtml + '</td>' +
       '</tr>'
     );
@@ -1196,7 +1198,7 @@ function renderAdminCorrectionsTab() {
     '<div style="margin-bottom:16px;">' +
       '<input type="text" id="adminCorrectionSearchInput" value="' + escapeHtml(state.admin.correctionSearch) + '" placeholder="Search corrections by description, SKU, contributor…" style="width:100%; max-width:420px; padding:10px 14px; font-size:13.5px; border:1px solid var(--border-strong); border-radius:9px; outline:none;">' +
     '</div>' +
-    '<div style="background:var(--surface); border:1px solid var(--border); border-radius:14px; overflow:hidden;">' +
+    '<div style="background:var(--surface); border:1px solid var(--border); border-radius:14px; overflow-x:auto;">' +
       '<table><thead><tr style="background:var(--surface-2);">' +
         '<th style="padding-top:14px;">ID</th><th style="padding-top:14px;">Description</th><th style="padding-top:14px;">Correct SKU</th><th style="padding-top:14px;">Contributed by</th><th style="padding-top:14px;">Date</th><th style="padding-top:14px;"></th>' +
       '</tr></thead><tbody>' + rowsHtml + noResultsRow + '</tbody></table>' +
@@ -1212,6 +1214,30 @@ function renderAdminCorrectionsTab() {
   );
 }
 
+function hideAdminCatalogResults(exceptBox) {
+  var boxes = root.querySelectorAll('.admin-catalog-results');
+  for (var i = 0; i < boxes.length; i++) if (boxes[i] !== exceptBox) boxes[i].style.display = 'none';
+}
+function updateAdminCatalogResults(input) {
+  var box = input.parentNode.parentNode.querySelector('.admin-catalog-results');
+  if (!box) return;
+  hideAdminCatalogResults(box);
+  var q = (input.value || '').trim();
+  if (!q) { box.style.display = 'none'; box.innerHTML = ''; return; }
+  var results = searchProducts(q);
+  var html = results.length
+    ? results.map(function (p) {
+        return '<button type="button" data-action="admin-pick-catalog-product" data-model="' + escapeHtml(p.model) + '" style="display:block; width:100%; text-align:left; background:none; border:none; border-top:1px solid var(--border); padding:9px 13px; cursor:pointer; font-family:inherit;" onmouseover="this.style.background=\'var(--accent-soft)\'" onmouseout="this.style.background=\'none\'">' +
+          '<span style="display:block; font-size:13px; font-weight:600; color:var(--text);">' + escapeHtml(p.name) + '</span>' +
+          '<span style="display:block; font-size:12px; color:var(--text-tertiary); margin-top:1px;">' + escapeHtml(p.model) + (p.manufacturer ? ' · ' + escapeHtml(p.manufacturer) : '') + '</span>' +
+        '</button>';
+      }).join('')
+    : '<div style="padding:12px 13px; font-size:12.5px; color:var(--text-tertiary);">No catalog products match.</div>';
+  box.innerHTML = html;
+  box.style.cssText = 'display:block; position:absolute; left:0; right:0; top:100%; margin-top:4px; z-index:50; background:var(--surface); border:1px solid var(--border-strong); border-radius:9px; box-shadow:0 10px 28px rgba(0,0,0,0.12); max-height:300px; overflow-y:auto;';
+  if (box.firstChild && box.firstChild.style) box.firstChild.style.borderTop = 'none';
+}
+
 function renderAdminCorrectionForm() {
   var rec = state.admin.editingCorrection;
   var fieldsHtml = Object.keys(ADMIN_CORRECTION_FIELD_LABELS).map(function (key) {
@@ -1224,6 +1250,18 @@ function renderAdminCorrectionForm() {
     var inner = isTextarea ? escapeHtml(rawVal) : '';
     var wideStyle = isTextarea ? ' grid-column:1 / -1;' : '';
     var required = (key === 'description' || key === 'correctSku') ? ' *' : '';
+    if (ADMIN_CORRECTION_CATALOG_FIELDS[key]) {
+      return (
+        '<div style="display:block; margin-bottom:14px; position:relative;">' +
+          '<span style="display:block; font-size:12px; font-weight:700; color:var(--text-secondary); margin-bottom:5px;">' + ADMIN_CORRECTION_FIELD_LABELS[key] + required + '</span>' +
+          '<div style="position:relative;">' +
+            '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" style="position:absolute; left:12px; top:50%; transform:translateY(-50%); color:var(--text-tertiary); pointer-events:none;"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>' +
+            '<input type="text" autocomplete="off" class="admin-correction-field admin-catalog-input" data-field="' + key + '" value="' + escapeHtml(rawVal) + '" placeholder="Search catalog by name or SKU…" style="width:100%; padding:10px 13px 10px 34px; font-size:13.5px; border:1px solid var(--border-strong); border-radius:8px; outline:none; box-sizing:border-box; font-family:inherit;">' +
+          '</div>' +
+          '<div class="admin-catalog-results" data-for="' + key + '" style="display:none;"></div>' +
+        '</div>'
+      );
+    }
     return (
       '<label style="display:block; margin-bottom:14px;' + wideStyle + '">' +
         '<span style="display:block; font-size:12px; font-weight:700; color:var(--text-secondary); margin-bottom:5px;">' + ADMIN_CORRECTION_FIELD_LABELS[key] + required + '</span>' +
@@ -1236,6 +1274,10 @@ function renderAdminCorrectionForm() {
     '<div style="background:var(--surface); border:1px solid var(--border); border-radius:14px; padding:28px; max-width:660px;">' +
       '<h2 style="font-size:16px; font-weight:800; margin:0 0 18px 0;">Edit correction #' + escapeHtml(String(rec.id)) + '</h2>' +
       '<div style="display:grid; grid-template-columns:1fr 1fr; gap:0 16px;">' + fieldsHtml + '</div>' +
+      '<div style="display:flex; align-items:center; gap:10px; margin:-4px 0 18px 0; font-size:12.5px; color:var(--text-tertiary);">' +
+        '<span>Type in either catalog field and pick a product to fill both — or</span>' +
+        '<button class="btn-action-danger" data-action="admin-correction-not-carried" style="padding:5px 11px;">Mark as not carried</button>' +
+      '</div>' +
       '<div style="display:flex; gap:10px; margin-top:8px;">' +
         '<button class="btn-primary" data-action="admin-save-correction" ' + (state.admin.loading ? 'disabled' : '') + '>' + (state.admin.loading ? 'Saving…' : 'Save') + '</button>' +
         '<button class="btn-action" data-action="admin-cancel-edit-correction">Cancel</button>' +
@@ -2102,6 +2144,7 @@ function handleImportFile(file) {
    EVENT WIRING (delegated — content is re-rendered wholesale on every change)
    ========================================================================= */
 root.addEventListener('click', function (e) {
+  if (!e.target.closest('.admin-catalog-results') && !e.target.closest('.admin-catalog-input')) hideAdminCatalogResults(null);
   var el = e.target.closest('[data-action]');
   if (!el) return;
   var action = el.getAttribute('data-action');
@@ -2296,6 +2339,21 @@ root.addEventListener('click', function (e) {
       state.admin.error = '';
       break;
     case 'admin-save-correction': submitAdminCorrection(); return;
+    case 'admin-pick-catalog-product': {
+      var pickModel = el.getAttribute('data-model');
+      var picked = PRODUCTS.filter(function (p) { return p.model === pickModel; })[0];
+      if (picked && state.admin.editingCorrection) {
+        state.admin.editingCorrection.correctSku = picked.model;
+        state.admin.editingCorrection.correctProductName = picked.name;
+      }
+      break;
+    }
+    case 'admin-correction-not-carried':
+      if (state.admin.editingCorrection) {
+        state.admin.editingCorrection.correctSku = 'N/A';
+        state.admin.editingCorrection.correctProductName = 'Not carried';
+      }
+      break;
     case 'admin-delete-correction-confirm':
       state.admin.pendingDeleteCorrection = parseInt(el.getAttribute('data-id'), 10);
       break;
@@ -2349,12 +2407,16 @@ root.addEventListener('input', function (e) {
     if (state.admin.editingCustomer) state.admin.editingCustomer[t.getAttribute('data-field')] = t.value;
   } else if (t.classList.contains('admin-correction-field')) {
     if (state.admin.editingCorrection) state.admin.editingCorrection[t.getAttribute('data-field')] = t.value;
+    if (t.classList.contains('admin-catalog-input')) updateAdminCatalogResults(t);
   }
 });
 
 // Enter-to-submit on the admin PIN field — the only text input in the app
 // where pressing Enter should trigger an action instead of just typing.
 root.addEventListener('keydown', function (e) {
+  if (e.key === 'Escape' && e.target && e.target.classList && e.target.classList.contains('admin-catalog-input')) {
+    hideAdminCatalogResults(null);
+  }
   if (e.key === 'Enter' && e.target && e.target.id === 'adminPinInput') {
     e.preventDefault();
     var pin = (state.admin.keyInput || '').trim();
