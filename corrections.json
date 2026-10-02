@@ -5564,19 +5564,6 @@
     "notes": "Confirmed by user: GOH does not carry any Canon waste toner containers at all."
   },
   {
-    "id": 990,
-    "contributedBy": "Kian Seen",
-    "date": "2026-08-25",
-    "sourceSpec": "05_Spesifikasi_1.pdf",
-    "description": "Ink for HP DeskJet Ink Advantage 2029 Printer (Tri-Color)",
-    "qty": "12",
-    "uom": "unit",
-    "autoMatchAttempt": "No Match",
-    "correctProductName": "Not carried",
-    "correctSku": "N/A",
-    "notes": "HP 46 series. GOH's catalog does not carry HP 46 Tri-Color. Genuine gap."
-  },
-  {
     "id": 991,
     "contributedBy": "Kian Seen",
     "date": "2026-08-25",
