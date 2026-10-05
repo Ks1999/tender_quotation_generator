@@ -499,6 +499,10 @@ var state = {
   // render() can focus its newly-created .item-search-input without the user
   // having to click it first. Cleared by render() the very next time it runs.
   pendingFocusId: null,
+  // Review Matches "Add an item" panel — lets the reviewer add a product that
+  // wasn't in the spec, picked strictly from the PRODUCTS catalog (no free
+  // text). Added rows are flagged `manual: true` on the item itself.
+  addItem: { open: false, query: '', selectedModel: null, qty: '1' },
   comment: '',
   fileDragActive: false,
   contributorName: loadStoredContributorName(),
@@ -639,6 +643,35 @@ function recomputeSortOrder() {
   state.reviewSortOrder = items.map(function (it) { return it.id; });
 }
 
+// Adds a catalog product to the review list as a new, already-matched line.
+// Only ever called with a model that exists in PRODUCTS (the picker can't
+// produce anything else), so manual items are always real GOH SKUs.
+function addManualItem(model, qty) {
+  var p = productByModel(model);
+  if (!p) return null;
+  var maxRowId = state.items.reduce(function (m, it) { return Math.max(m, Number(it.rowId) || 0); }, 0);
+  var rowId = maxRowId + 1;
+  var item = {
+    rowId: rowId,
+    description: p.name,
+    qty: qty,
+    uom: 'unit',
+    status: 'matched',
+    matchedSku: p.model,
+    notes: '',
+    id: 'm' + rowId,
+    note: '',
+    open: false,
+    query: '',
+    originalStatus: 'matched',
+    originalMatchedSku: p.model,
+    manual: true
+  };
+  state.items.push(item);
+  recomputeSortOrder();
+  return item;
+}
+
 function itemById(id) {
   for (var i = 0; i < state.items.length; i++) { if (state.items[i].id === id) return state.items[i]; }
   return null;
@@ -646,6 +679,9 @@ function itemById(id) {
 
 function getCorrectedItems() {
   return state.items.filter(function (it) {
+    // Manually added items didn't come from the spec, so there's no
+    // auto-match to correct — never sync them to the corrections log.
+    if (it.manual) return false;
     return it.status !== it.originalStatus || it.matchedSku !== it.originalMatchedSku;
   });
 }
@@ -1508,7 +1544,7 @@ function renderReviewItemRow(it) {
   var isReviewWithCandidate = it.status === 'review' && !!match;
 
   var matchLine = match
-    ? '<p style="margin:4px 0 0 0; font-size:13px; color:var(--text-secondary);"><strong style="color:var(--text);">' + escapeHtml(match.model) + '</strong> &mdash; ' + escapeHtml(match.name) + ' &middot; ' + money(match.price) + '</p>'
+    ? '<p style="margin:4px 0 0 0; font-size:13px; color:var(--text-secondary);"><strong style="color:var(--text);">' + escapeHtml(match.model) + '</strong> &mdash; ' + escapeHtml(match.name) + ' &middot; ' + (it.manual ? money(match.price3) + ' <span style="color:var(--text-tertiary);">(Price 3)</span>' : money(match.price)) + '</p>'
     : (it.status === 'not_carried' ? '<p style="margin:4px 0 0 0; font-size:13px; color:var(--text-tertiary); font-style:italic;">Marked as not carried.</p>' : '');
 
   var noteLine = it.note
@@ -1551,9 +1587,17 @@ function renderReviewItemRow(it) {
           '<div style="display:flex; align-items:center; gap:10px;">' +
             '<span style="font-size:11.5px; font-weight:700; color:var(--text-tertiary);">#' + it.rowId + '</span>' +
             '<span class="badge" style="background:' + meta.bg + '; color:' + meta.color + '; border:1px solid ' + meta.border + ';">' + meta.label + '</span>' +
+            (it.manual ? '<span class="badge" style="background:var(--accent-soft); color:var(--accent); border:1px solid var(--accent-soft-border);">Added manually</span>' : '') +
           '</div>' +
           '<p style="margin:6px 0 0 0; font-size:14.5px; font-weight:600;">' + escapeHtml(it.description) + '</p>' +
-          '<p style="margin:3px 0 0 0; font-size:12.5px; color:var(--text-tertiary);">Qty ' + escapeHtml(it.qty) + ' ' + escapeHtml(it.uom) + '</p>' +
+          (it.manual
+            ? '<div style="margin:6px 0 0 0; display:flex; align-items:center; gap:8px; font-size:12.5px; color:var(--text-tertiary);">' +
+                '<label for="manualQty-' + it.id + '">Qty</label>' +
+                '<input type="text" inputmode="numeric" class="manual-qty-input" id="manualQty-' + it.id + '" data-id="' + it.id + '" value="' + escapeHtml(it.qty) + '" style="width:72px; padding:5px 8px; font-size:13px; border:1px solid ' + ((Number(it.qty) > 0) ? 'var(--border-strong)' : 'var(--danger)') + '; border-radius:6px; outline:none;">' +
+                '<span>' + escapeHtml(it.uom) + '</span>' +
+                '<button class="btn-action" style="font-size:12px; padding:4px 10px; margin-left:4px;" data-action="remove-manual-item" data-id="' + it.id + '">Remove</button>' +
+              '</div>'
+            : '<p style="margin:3px 0 0 0; font-size:12.5px; color:var(--text-tertiary);">Qty ' + escapeHtml(it.qty) + ' ' + escapeHtml(it.uom) + '</p>') +
           matchLine + noteLine +
         '</div>' +
         (isReviewWithCandidate
@@ -1569,6 +1613,73 @@ function renderReviewItemRow(it) {
             : '<button class="btn-action" style="flex-shrink:0;" data-action="toggle-open" data-id="' + it.id + '">' + actionLabel + '</button>') +
       '</div>' +
       panel +
+    '</div>'
+  );
+}
+
+function renderAddItemPanel() {
+  var ai = state.addItem;
+  if (!ai.open) {
+    return (
+      '<div style="margin:6px 0 10px 0;">' +
+        '<button class="btn-outline" data-action="open-add-item" style="display:inline-flex; align-items:center; gap:6px;">' +
+          '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg>' +
+          'Add an item from the catalog' +
+        '</button>' +
+      '</div>'
+    );
+  }
+  var selected = productByModel(ai.selectedModel);
+  var results = (ai.query || '').trim() ? searchProducts(ai.query) : [];
+  var inList = {};
+  state.items.forEach(function (it) { if (it.matchedSku && it.status !== 'not_carried') inList[it.matchedSku] = true; });
+
+  var resultsHtml = '';
+  if ((ai.query || '').trim()) {
+    resultsHtml = results.length
+      ? results.map(function (p) {
+          var isSel = selected && selected.model === p.model;
+          return (
+            '<div class="alt-row" style="display:flex; align-items:center; justify-content:space-between; gap:10px; padding:10px 12px; border:1px solid ' + (isSel ? 'var(--accent-soft-border)' : 'var(--border)') + '; background:' + (isSel ? 'var(--accent-soft)' : 'var(--surface)') + '; border-radius:8px; margin-bottom:6px; cursor:pointer;" data-action="pick-add-item" data-model="' + escapeHtml(p.model) + '">' +
+              '<div>' +
+                '<p style="margin:0; font-size:13px; font-weight:600;">' + escapeHtml(p.name) + (p.manufacturer ? ' <span style="color:var(--text-tertiary); font-weight:500;">(' + escapeHtml(p.manufacturer) + ')</span>' : '') + '</p>' +
+                '<p style="margin:2px 0 0 0; font-size:12px; color:var(--text-tertiary);">' + escapeHtml(p.model) + ' &middot; ' + money(p.price3) + ' <span style="color:var(--text-tertiary);">(Price 3)</span>' + (inList[p.model] ? ' &middot; <span style="color:var(--warning); font-weight:600;">already in this quotation</span>' : '') + '</p>' +
+              '</div>' +
+              (isSel ? '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--accent); flex-shrink:0;"><path d="M20 6 9 17l-5-5"/></svg>' : '') +
+            '</div>'
+          );
+        }).join('')
+      : '<p style="font-size:13px; color:var(--text-tertiary); padding:10px 0; margin:0;">No matching products found in the catalog.</p>';
+  } else {
+    resultsHtml = '<p style="font-size:12.5px; color:var(--text-tertiary); padding:4px 0 8px 0; margin:0;">Type a product name, brand, or SKU to search. Only products in the GOH catalog can be added.</p>';
+  }
+
+  var qtyNum = Number(ai.qty);
+  var qtyValid = isFinite(qtyNum) && qtyNum > 0;
+  var canAdd = !!selected && qtyValid;
+
+  var footerHtml =
+    '<div style="display:flex; align-items:center; justify-content:space-between; gap:12px; margin-top:10px; padding-top:12px; border-top:1px solid var(--border); flex-wrap:wrap;">' +
+      '<div style="font-size:13px; color:var(--text-secondary); min-width:0; flex:1;">' +
+        (selected
+          ? 'Selected: <strong style="color:var(--text);">' + escapeHtml(selected.model) + '</strong> &mdash; ' + escapeHtml(selected.name) + ' &middot; <strong style="color:var(--text);">' + money(selected.price3) + '</strong> (Price 3)' +
+            (inList[selected.model] ? '<div style="margin-top:4px; font-size:12px; color:var(--warning);">This SKU is already in the list &mdash; quantities will be combined into one line on the quotation.</div>' : '')
+          : '<span style="color:var(--text-tertiary);">Pick a product above.</span>') +
+      '</div>' +
+      '<div style="display:flex; align-items:center; gap:8px; flex-shrink:0;">' +
+        '<label for="addItemQtyInput" style="font-size:12.5px; color:var(--text-tertiary);">Qty</label>' +
+        '<input type="text" inputmode="numeric" id="addItemQtyInput" value="' + escapeHtml(ai.qty) + '" style="width:72px; padding:8px 10px; font-size:13px; border:1px solid ' + (qtyValid ? 'var(--border-strong)' : 'var(--danger)') + '; border-radius:7px; outline:none;">' +
+        '<button class="btn-action" data-action="cancel-add-item">Cancel</button>' +
+        '<button class="btn-action-accent" data-action="confirm-add-item" ' + (canAdd ? '' : 'disabled style="opacity:0.45; cursor:not-allowed;"') + '>Add to quotation</button>' +
+      '</div>' +
+    '</div>';
+
+  return (
+    '<div style="background:var(--surface); border:1px solid var(--accent-soft-border); border-left:3px solid var(--accent); border-radius:12px; padding:16px 20px; margin:6px 0 14px 0;">' +
+      '<p style="margin:0 0 10px 0; font-size:14px; font-weight:700;">Add an item</p>' +
+      '<input type="text" id="addItemSearchInput" value="' + escapeHtml(ai.query) + '" placeholder="Search the product catalog&hellip;" style="width:100%; padding:10px 14px; font-size:13.5px; border:1px solid var(--border-strong); border-radius:8px; outline:none; margin-bottom:10px; box-sizing:border-box;">' +
+      resultsHtml +
+      footerHtml +
     '</div>'
   );
 }
@@ -1647,6 +1758,8 @@ function renderStep3() {
       '<div style="display:flex; align-items:center; gap:4px;">' + sortBtn('status', 'Needs review first (default)') + sortBtn('rowid', 'Spec order') + sortBtn('name', 'Product name') + sortBtn('model', 'Model') + '</div>' +
       '<span style="font-size:12px; color:var(--text-tertiary);">' + matchedCount + ' matched &middot; ' + reviewCount + ' review &middot; ' + nomatchCount + ' no match' + (notCarriedCount ? (' &middot; ' + notCarriedCount + ' not carried') : '') + '</span>' +
     '</div>' +
+
+    renderAddItemPanel() +
 
     (pageItems.length
       ? pageItems.map(renderReviewItemRow).join('')
@@ -1859,7 +1972,9 @@ function render() {
   // Consumed (cleared) here every render regardless of whether the element was
   // found, so it never lingers and fires on some unrelated later render.
   if (state.pendingFocusId) {
-    var pendingEl = document.querySelector('.item-search-input[data-id="' + CSS.escape(state.pendingFocusId) + '"]');
+    var pendingEl = state.pendingFocusId === '__addItemSearch'
+      ? document.getElementById('addItemSearchInput')
+      : document.querySelector('.item-search-input[data-id="' + CSS.escape(state.pendingFocusId) + '"]');
     if (pendingEl) {
       pendingEl.focus();
       // Select any pre-filled guess text (see guessSearchQuery()) so typing
@@ -2106,6 +2221,7 @@ function resetAll() {
   state.reviewSearch = '';
   state.reviewPage = 1;
   state.pendingFocusId = null;
+  state.addItem = { open: false, query: '', selectedModel: null, qty: '1' };
   state.comment = '';
   state.toast = '';
   state.fileDragActive = false;
@@ -2246,6 +2362,33 @@ root.addEventListener('click', function (e) {
       if (it4) { it4.status = 'not_carried'; it4.matchedSku = null; it4.open = false; }
       break;
     }
+    case 'open-add-item':
+      state.addItem = { open: true, query: '', selectedModel: null, qty: '1' };
+      state.pendingFocusId = '__addItemSearch';
+      break;
+    case 'cancel-add-item':
+      state.addItem = { open: false, query: '', selectedModel: null, qty: '1' };
+      break;
+    case 'pick-add-item': {
+      var pickedModel = el.getAttribute('data-model');
+      if (productByModel(pickedModel)) state.addItem.selectedModel = pickedModel;
+      break;
+    }
+    case 'confirm-add-item': {
+      var addQty = Number(state.addItem.qty);
+      if (!state.addItem.selectedModel || !isFinite(addQty) || addQty <= 0) return;
+      var added = addManualItem(state.addItem.selectedModel, addQty);
+      if (added) {
+        state.addItem = { open: false, query: '', selectedModel: null, qty: '1' };
+        state.toast = 'Added ' + added.matchedSku + ' (qty ' + addQty + ') to the quotation.';
+      }
+      break;
+    }
+    case 'remove-manual-item': {
+      state.items = state.items.filter(function (i) { return !(i.id === id && i.manual); });
+      recomputeSortOrder();
+      break;
+    }
     case 'download-quotation': doDownloadQuotation(); return;
     case 'clear-all': resetAll(); break;
     case 'dismiss-toast': state.toast = ''; break;
@@ -2384,6 +2527,19 @@ root.addEventListener('input', function (e) {
     state.contributorName = t.value;
     saveStoredContributorName(t.value);
     render();
+  } else if (t.id === 'addItemSearchInput') {
+    state.addItem.query = t.value;
+    render();
+  } else if (t.id === 'addItemQtyInput') {
+    state.addItem.qty = t.value;
+    render();
+  } else if (t.classList.contains('manual-qty-input')) {
+    var mit = itemById(t.getAttribute('data-id'));
+    if (mit && mit.manual) {
+      var mq = Number(t.value);
+      mit.qty = (t.value.trim() !== '' && isFinite(mq)) ? mq : t.value;
+      render();
+    }
   } else if (t.classList.contains('item-search-input')) {
     var it = itemById(t.getAttribute('data-id'));
     if (it) { it.query = t.value; render(); }
@@ -2416,6 +2572,11 @@ root.addEventListener('input', function (e) {
 root.addEventListener('keydown', function (e) {
   if (e.key === 'Escape' && e.target && e.target.classList && e.target.classList.contains('admin-catalog-input')) {
     hideAdminCatalogResults(null);
+  }
+  if (e.key === 'Enter' && e.target && (e.target.id === 'addItemQtyInput' || e.target.id === 'addItemSearchInput')) {
+    var addBtn = document.querySelector('[data-action="confirm-add-item"]:not([disabled])');
+    if (addBtn) { e.preventDefault(); addBtn.click(); }
+    return;
   }
   if (e.key === 'Enter' && e.target && e.target.id === 'adminPinInput') {
     e.preventDefault();
