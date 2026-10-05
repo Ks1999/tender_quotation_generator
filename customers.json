@@ -193,5 +193,18 @@
     "city": "ULU LANGAT",
     "state": "Selangor",
     "country": "Malaysia"
+  },
+  {
+    "name": "KEN SIA",
+    "accountCode": "30F0288",
+    "contactFirstName": "KEN SIA",
+    "email": "",
+    "phone": "6088396552",
+    "address": "NO.32A , LOT 38 , TYPE S1 ,",
+    "address2": "BIGWHEEL INDUSTRIAL PARK , MILE 7 1/2 , MENGGATAL ,",
+    "postcode": "88450",
+    "city": "KK",
+    "state": "SABAH",
+    "country": "Malaysia"
   }
 ]
