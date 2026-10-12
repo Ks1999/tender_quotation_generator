@@ -11126,5 +11126,18 @@
     "correctProductName": "Canon Cartridge 325 Toner Cartridge",
     "correctSku": "C CATR 325",
     "notes": "Canon Cartridge 325 is the usual toner for LBP6000/6030 and MF3010. Corrections log row 340 says LBP6030 uses Cartridge 125 (gap in GOH catalog) - conflicts. Confirm."
+  },
+  {
+    "id": 1441,
+    "contributedBy": "cath",
+    "date": "2026-10-12",
+    "sourceSpec": "HOSPITAL_QUEEN_ELIZABETH_II-GOH_extracted_items.json",
+    "description": "Model Printer: - (37) Canon PIXMA E500, E510, E600, E610 - BLACK",
+    "qty": 10,
+    "uom": "unit",
+    "autoMatchAttempt": "Flagged for review — candidate: C PG 88BK (Canon PG 88 Black Ink Cartridge)",
+    "correctProductName": "Canon PG 88 Black Ink Cartridge",
+    "correctSku": "C PG 88BK",
+    "notes": "A Malaysian retailer lists PG-88 for E500/E510/E600/E610. SKU already in log for 'PG-88' specs; printer list not in log by name."
   }
 ]
