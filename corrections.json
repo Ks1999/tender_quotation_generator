@@ -11204,5 +11204,18 @@
     "correctProductName": "Canon 054 Cyan Toner Cartridge 1.2k",
     "correctSku": "C CATR 054C",
     "notes": ""
+  },
+  {
+    "id": 1447,
+    "contributedBy": "cath",
+    "date": "2026-10-12",
+    "sourceSpec": "HOSPITAL_QUEEN_ELIZABETH_II-GOH_extracted_items.json",
+    "description": "Model Printer: - (42) Canon Color imageCLASS LBP621Cw, LBP623Cdw, MF641Cw, MF643Cdw, MF645Cx - MAGENTA",
+    "qty": 4,
+    "uom": "unit",
+    "autoMatchAttempt": "Flagged for review — no candidate",
+    "correctProductName": "Canon 054 Magenta Toner Cartridge 1.2k",
+    "correctSku": "C CATR 054M",
+    "notes": ""
   }
 ]
