@@ -11165,5 +11165,18 @@
     "correctProductName": "Canon Cartridge 326 Toner Cartridge",
     "correctSku": "C CATR 326",
     "notes": "Canon 326 is the toner for LBP6200d/6230dn. SKU already in log for 'Canon 326' specs; printer list not in log by name."
+  },
+  {
+    "id": 1444,
+    "contributedBy": "cath",
+    "date": "2026-10-12",
+    "sourceSpec": "HOSPITAL_QUEEN_ELIZABETH_II-GOH_extracted_items.json",
+    "description": "Model Printer: - (40) Canon Color imageCLASS LBP621Cw, LBP623Cdw, MF641Cw, MF643Cdw, MF645Cx - BLACK",
+    "qty": 6,
+    "uom": "unit",
+    "autoMatchAttempt": "Flagged for review — no candidate",
+    "correctProductName": "Canon 054 Black Toner Cartridge 1.5k",
+    "correctSku": "C CATR 054BK",
+    "notes": ""
   }
 ]
