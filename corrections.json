@@ -11230,5 +11230,18 @@
     "correctProductName": "Canon 054 Yellow Toner Cartridge 1.2k",
     "correctSku": "C CATR 054Y",
     "notes": ""
+  },
+  {
+    "id": 1449,
+    "contributedBy": "cath",
+    "date": "2026-10-12",
+    "sourceSpec": "HOSPITAL_QUEEN_ELIZABETH_II-GOH_extracted_items.json",
+    "description": "Model Printer: - (45) Canon PIXMA E560, E560R - COLOR",
+    "qty": 24,
+    "uom": "unit",
+    "autoMatchAttempt": "Flagged for review — candidate: C CL 99CL (Canon CL-99 Color Ink Cartridge)",
+    "correctProductName": "Canon CL-99 Color Ink Cartridge",
+    "correctSku": "C CL 99CL",
+    "notes": "Companion CL-99 colour; see black row."
   }
 ]
