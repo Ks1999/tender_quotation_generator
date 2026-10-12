@@ -10996,5 +10996,18 @@
     "correctProductName": "HP 30A Black Original LaserJet Toner Cartridge (CF230A)",
     "correctSku": "HP CF230A",
     "notes": "HP 30A (CF230A) is the standard toner for this family. WARNING: corrections log row 296 maps 'M203DN toner' to HP SU917A (Samsung MLT-D203U) - looks like a coincidental-match error; not propagated. Please confirm and fix the log."
+  },
+  {
+    "id": 1431,
+    "contributedBy": "cath",
+    "date": "2026-10-12",
+    "sourceSpec": "HOSPITAL_QUEEN_ELIZABETH_II-GOH_extracted_items.json",
+    "description": "Model Printer: - (20) HP DeskJet Ink Advantage 1115, 2135, 2138, 2675, 2676, 2677, 2678, 3635, 3636, 3638, 3775, 3776, 3777, 3778, 3779, 3835, 4535, 4675, 5075, 5078, 5275 (BLACK)",
+    "qty": 4,
+    "uom": "unit",
+    "autoMatchAttempt": "Flagged for review — candidate: HP F6V27AA (HP 680 Black Original Ink Advantage Cartridge (F6V27AA))",
+    "correctProductName": "HP 680 Black Original Ink Advantage Cartridge (F6V27AA)",
+    "correctSku": "HP F6V27AA",
+    "notes": "This printer list is the HP 680 family. HP 680 Black is already in the log, but corrections log row 369 maps DeskJet 4535 to HP 664 (genuine gap), which conflicts with this being the HP 680 family. Confirm."
   }
 ]
