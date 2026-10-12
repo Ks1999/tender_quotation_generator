@@ -11308,5 +11308,18 @@
     "correctProductName": "Brother TN-2360 Toner",
     "correctSku": "B TN 2360",
     "notes": ""
+  },
+  {
+    "id": 1455,
+    "contributedBy": "cath",
+    "date": "2026-10-12",
+    "sourceSpec": "HOSPITAL_QUEEN_ELIZABETH_II-GOH_extracted_items.json",
+    "description": "Model Printer: - (59) Sony UP-20, UP-21MD, UP-25MD (Color Video Printer / Medical Printer Paper)",
+    "qty": 10,
+    "uom": "unit",
+    "autoMatchAttempt": "Flagged for review — no candidate",
+    "correctProductName": "Not carried",
+    "correctSku": "N/A",
+    "notes": ""
   }
 ]
