@@ -11048,5 +11048,18 @@
     "correctProductName": "HP 206A Cyan Original LaserJet Toner Cartridge (W2111A)",
     "correctSku": "HP W2111A",
     "notes": "HP 206A series; see black row."
+  },
+  {
+    "id": 1435,
+    "contributedBy": "cath",
+    "date": "2026-10-12",
+    "sourceSpec": "HOSPITAL_QUEEN_ELIZABETH_II-GOH_extracted_items.json",
+    "description": "Model Printer: - (27) HP Color LaserJet Pro M255dw, MFP M282nw, M283fdn, M283fdw - CYAN",
+    "qty": 12,
+    "uom": "unit",
+    "autoMatchAttempt": "Flagged for review — candidate: HP W2111A (HP 206A Cyan Original LaserJet Toner Cartridge (W2111A))",
+    "correctProductName": "HP 206A Cyan Original LaserJet Toner Cartridge (W2111A)",
+    "correctSku": "HP W2111A",
+    "notes": "HP 206A series; see black row."
   }
 ]
