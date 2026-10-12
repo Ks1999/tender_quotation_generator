@@ -10983,5 +10983,18 @@
     "correctProductName": "HP 19A Original LaserJet Imaging Drum (CF219A)",
     "correctSku": "HP CF219A",
     "notes": ""
+  },
+  {
+    "id": 1430,
+    "contributedBy": "cath",
+    "date": "2026-10-12",
+    "sourceSpec": "HOSPITAL_QUEEN_ELIZABETH_II-GOH_extracted_items.json",
+    "description": "Model Printer: - (19) HP LaserJet Pro M203d, M203dn, M203dw, MFP M227fdn, M227fdw, M227sdn",
+    "qty": 36,
+    "uom": "unit",
+    "autoMatchAttempt": "Flagged for review — candidate: HP CF230A (HP 30A Black Original LaserJet Toner Cartridge (CF230A))",
+    "correctProductName": "HP 30A Black Original LaserJet Toner Cartridge (CF230A)",
+    "correctSku": "HP CF230A",
+    "notes": "HP 30A (CF230A) is the standard toner for this family. WARNING: corrections log row 296 maps 'M203DN toner' to HP SU917A (Samsung MLT-D203U) - looks like a coincidental-match error; not propagated. Please confirm and fix the log."
   }
 ]
