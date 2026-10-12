@@ -11113,5 +11113,18 @@
     "correctProductName": "Canon Cartridge 337 Toner Cartridge",
     "correctSku": "C CATR 337",
     "notes": "MF210/220/230/240 series use Canon Cartridge 337 (high confidence). SKU confirmed in log for 'Canon 337' specs; printer list not in log by name."
+  },
+  {
+    "id": 1440,
+    "contributedBy": "cath",
+    "date": "2026-10-12",
+    "sourceSpec": "HOSPITAL_QUEEN_ELIZABETH_II-GOH_extracted_items.json",
+    "description": "Model Printer: - (33) Canon LBP6000, LBP6030, LBP6030w, MF3010",
+    "qty": 156,
+    "uom": "unit",
+    "autoMatchAttempt": "Flagged for review — candidate: C CATR 325 (Canon Cartridge 325 Toner Cartridge)",
+    "correctProductName": "Canon Cartridge 325 Toner Cartridge",
+    "correctSku": "C CATR 325",
+    "notes": "Canon Cartridge 325 is the usual toner for LBP6000/6030 and MF3010. Corrections log row 340 says LBP6030 uses Cartridge 125 (gap in GOH catalog) - conflicts. Confirm."
   }
 ]
