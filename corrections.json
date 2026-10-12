@@ -11022,5 +11022,18 @@
     "correctProductName": "HP 680 Tri-Color Original Ink Advantage Cartridge (F6V26AA)",
     "correctSku": "HP F6V26AA",
     "notes": "HP 680 Tri-Color; see the black row for the DeskJet 4535 / HP 664 conflict in the log."
+  },
+  {
+    "id": 1433,
+    "contributedBy": "cath",
+    "date": "2026-10-12",
+    "sourceSpec": "HOSPITAL_QUEEN_ELIZABETH_II-GOH_extracted_items.json",
+    "description": "Model Printer: - (26) HP Color LaserJet Pro M255dw, MFP M282nw, M283fdn, M283fdw - BLACK",
+    "qty": 12,
+    "uom": "unit",
+    "autoMatchAttempt": "Flagged for review — candidate: HP W2110A (HP 206A Black Original LaserJet Toner Cartridge (W2110A))",
+    "correctProductName": "HP 206A Black Original LaserJet Toner Cartridge (W2110A)",
+    "correctSku": "HP W2110A",
+    "notes": "HP 206A series is the toner for this family (high confidence). SKU already confirmed in log for 'HP 206A' specs; printer list not in log by name."
   }
 ]
