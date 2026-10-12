@@ -11087,5 +11087,18 @@
     "correctProductName": "HP 206A Magenta Original LaserJet Toner Cartridge (W2113A)",
     "correctSku": "HP W2113A",
     "notes": "HP 206A series; see black row."
+  },
+  {
+    "id": 1438,
+    "contributedBy": "cath",
+    "date": "2026-10-12",
+    "sourceSpec": "HOSPITAL_QUEEN_ELIZABETH_II-GOH_extracted_items.json",
+    "description": "Model Printer: - (32) Canon imageCLASS MF211, MF212w, MF215, MF217w, MF221d, MF226dn, MF232w, MF235, MF237w, MF241d, MF244dw, MF246dn, MF249dw",
+    "qty": 10,
+    "uom": "unit",
+    "autoMatchAttempt": "Flagged for review — candidate: C CATR 337 (Canon Cartridge 337 Toner Cartridge)",
+    "correctProductName": "Canon Cartridge 337 Toner Cartridge",
+    "correctSku": "C CATR 337",
+    "notes": "MF210/220/230/240 series use Canon Cartridge 337 (high confidence). SKU confirmed in log for 'Canon 337' specs; printer list not in log by name."
   }
 ]
