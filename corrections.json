@@ -11269,5 +11269,18 @@
     "correctProductName": "Not carried",
     "correctSku": "N/A",
     "notes": "Time clock ribbon (web search: Amano ribbon cartridge CE-315151 fits the PIX series). Not in corrections log; catalog presence unverified."
+  },
+  {
+    "id": 1452,
+    "contributedBy": "cath",
+    "date": "2026-10-12",
+    "sourceSpec": "HOSPITAL_QUEEN_ELIZABETH_II-GOH_extracted_items.json",
+    "description": "Model Printer: - (53) Brother HL-1110, HL-1210W, DCP-1510, DCP-1610W, MFC-1810, MFC-1910W",
+    "qty": 4,
+    "uom": "unit",
+    "autoMatchAttempt": "Flagged for review — no candidate",
+    "correctProductName": "Brother TN-1000 Toner Cartridge",
+    "correctSku": "B TN 1000",
+    "notes": ""
   }
 ]
