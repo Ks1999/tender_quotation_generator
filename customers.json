@@ -206,5 +206,18 @@
     "city": "KK",
     "state": "SABAH",
     "country": "Malaysia"
+  },
+  {
+    "name": "THE BRIDGE BUSINESS ALLIANCE SDN BHD",
+    "accountCode": "30T0597",
+    "contactFirstName": "atif",
+    "email": "atif@tbbasb.com",
+    "phone": "60383221818",
+    "address": "C-3A-3, ITECH TOWER JALAN IMPACT",
+    "address2": "CYBER 6",
+    "postcode": "63000",
+    "city": "CYBERJAYA",
+    "state": "Selangor",
+    "country": "Malaysia"
   }
 ]
