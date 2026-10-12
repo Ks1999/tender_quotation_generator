@@ -10931,5 +10931,18 @@
     "correctProductName": "HP 83A Black Original LaserJet Toner Cartridge (CF283A)",
     "correctSku": "HP CF283A",
     "notes": "HP 83A is the toner for this printer family (high confidence), but this printer list is not in the corrections log by printer name. SKU HP CF283A is already confirmed in the log for 'HP 83A' specs."
+  },
+  {
+    "id": 1426,
+    "contributedBy": "cath",
+    "date": "2026-10-12",
+    "sourceSpec": "HOSPITAL_QUEEN_ELIZABETH_II-GOH_extracted_items.json",
+    "description": "Model Printer: - (13) HP LaserJet P2014, P2015, P2015d, P2015dn, P2015n, M2727 mfp",
+    "qty": 8,
+    "uom": "unit",
+    "autoMatchAttempt": "Flagged for review — no candidate",
+    "correctProductName": "HP 53A Black LaserJet Toner Cartridge (Q7553A)",
+    "correctSku": "HP Q7553A",
+    "notes": ""
   }
 ]
