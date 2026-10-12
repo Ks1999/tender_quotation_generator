@@ -10918,5 +10918,18 @@
     "correctProductName": "Not carried",
     "correctSku": "N/A",
     "notes": "Zebra printer ribbons not carried by GOH"
+  },
+  {
+    "id": 1425,
+    "contributedBy": "cath",
+    "date": "2026-10-12",
+    "sourceSpec": "HOSPITAL_QUEEN_ELIZABETH_II-GOH_extracted_items.json",
+    "description": "Model Printer: - (2) HP LaserJet Pro M201, M202, M125, M126, M127, M128, M225",
+    "qty": 10,
+    "uom": "unit",
+    "autoMatchAttempt": "Flagged for review — candidate: HP CF283A (HP 83A Black Original LaserJet Toner Cartridge (CF283A))",
+    "correctProductName": "HP 83A Black Original LaserJet Toner Cartridge (CF283A)",
+    "correctSku": "HP CF283A",
+    "notes": "HP 83A is the toner for this printer family (high confidence), but this printer list is not in the corrections log by printer name. SKU HP CF283A is already confirmed in the log for 'HP 83A' specs."
   }
 ]
