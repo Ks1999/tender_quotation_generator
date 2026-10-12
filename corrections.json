@@ -11282,5 +11282,18 @@
     "correctProductName": "Brother TN-1000 Toner Cartridge",
     "correctSku": "B TN 1000",
     "notes": ""
+  },
+  {
+    "id": 1453,
+    "contributedBy": "cath",
+    "date": "2026-10-12",
+    "sourceSpec": "HOSPITAL_QUEEN_ELIZABETH_II-GOH_extracted_items.json",
+    "description": "Model Printer: - (55) Brother HL-L2370DN, HL-L2375DW, HL-L2385DW, DCP-L2535DW, DCP-L2550DW, MFC-L2715DW, MFC-L2750DW, MFC-L2770DW (Drum)",
+    "qty": 8,
+    "uom": "unit",
+    "autoMatchAttempt": "Flagged for review — no candidate",
+    "correctProductName": "Brother DR-2455 Genuine Monochrome Drum Unit, Black, Page Yield up to 12,000 pages",
+    "correctSku": "B DR 2455",
+    "notes": ""
   }
 ]
