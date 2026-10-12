@@ -11256,5 +11256,18 @@
     "correctProductName": "Canon CL-99 Color Ink Cartridge",
     "correctSku": "C CL 99CL",
     "notes": "Companion CL-99 colour; see black row."
+  },
+  {
+    "id": 1451,
+    "contributedBy": "cath",
+    "date": "2026-10-12",
+    "sourceSpec": "HOSPITAL_QUEEN_ELIZABETH_II-GOH_extracted_items.json",
+    "description": "Model Printer: - (46) Amano PIX-200, PIX-4000, PIX-55, PIX-3000x (Time Recorder)",
+    "qty": 48,
+    "uom": "unit",
+    "autoMatchAttempt": "Flagged for review — no candidate",
+    "correctProductName": "Not carried",
+    "correctSku": "N/A",
+    "notes": "Time clock ribbon (web search: Amano ribbon cartridge CE-315151 fits the PIX series). Not in corrections log; catalog presence unverified."
   }
 ]
