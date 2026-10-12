@@ -10970,5 +10970,18 @@
     "correctProductName": "HP 17A Black Original LaserJet Toner Cartridge (CF217A)",
     "correctSku": "HP CF217A",
     "notes": "HP 17A is the toner for this printer family (high confidence). SKU HP CF217A already confirmed in log for 'HP 17A' specs; printer list not in log by name."
+  },
+  {
+    "id": 1429,
+    "contributedBy": "cath",
+    "date": "2026-10-12",
+    "sourceSpec": "HOSPITAL_QUEEN_ELIZABETH_II-GOH_extracted_items.json",
+    "description": "Model Printer: - (17) HP LaserJet Pro M102a, M102w, MFP M130a, M130fn, M130fw, M130nw (Imaging Drum)",
+    "qty": 12,
+    "uom": "unit",
+    "autoMatchAttempt": "Flagged for review — no candidate",
+    "correctProductName": "HP 19A Original LaserJet Imaging Drum (CF219A)",
+    "correctSku": "HP CF219A",
+    "notes": ""
   }
 ]
