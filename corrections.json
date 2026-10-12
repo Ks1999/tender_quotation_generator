@@ -11295,5 +11295,18 @@
     "correctProductName": "Brother DR-2455 Genuine Monochrome Drum Unit, Black, Page Yield up to 12,000 pages",
     "correctSku": "B DR 2455",
     "notes": ""
+  },
+  {
+    "id": 1454,
+    "contributedBy": "cath",
+    "date": "2026-10-12",
+    "sourceSpec": "HOSPITAL_QUEEN_ELIZABETH_II-GOH_extracted_items.json",
+    "description": "Model Printer: - (57) Brother HL-L2320D, HL-L2360DN, HL-L2365DW, DCP-L2520D, DCP-L2540DN, MFC-L2700D, MFC-L2700DW, MFC-L2740DW",
+    "qty": 96,
+    "uom": "unit",
+    "autoMatchAttempt": "Flagged for review — candidate: B TN 2360 (Brother TN-2360 Toner)",
+    "correctProductName": "Brother TN-2360 Toner",
+    "correctSku": "B TN 2360",
+    "notes": ""
   }
 ]
