@@ -10944,5 +10944,18 @@
     "correctProductName": "HP 53A Black LaserJet Toner Cartridge (Q7553A)",
     "correctSku": "HP Q7553A",
     "notes": ""
+  },
+  {
+    "id": 1427,
+    "contributedBy": "cath",
+    "date": "2026-10-12",
+    "sourceSpec": "HOSPITAL_QUEEN_ELIZABETH_II-GOH_extracted_items.json",
+    "description": "Model Printer: - (14) HP DeskJet 1000, 1050, 2050, 2510, 2540, 3000, 3050, 3510, ENVY 4500, 5530 - BLACK",
+    "qty": 8,
+    "uom": "unit",
+    "autoMatchAttempt": "Flagged for review — candidate: HP C0PA4AA (HP 61XL Black Ink Cartridge)",
+    "correctProductName": "HP 61XL Black Ink Cartridge",
+    "correctSku": "HP C0PA4AA",
+    "notes": "HP 61 family. Log confirms DeskJet 3000 -> HP 61XL Black (C0PA4AA), but the spec gives no yield, so standard HP 61 Black (CH561WA) may be intended. Log row 44 maps CH561WA to the Tri-Color SKU (suspected data-entry error, not propagated). Confirm standard vs XL."
   }
 ]
