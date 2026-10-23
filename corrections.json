@@ -11334,5 +11334,18 @@
     "correctProductName": "OKI 45807107 Black High Capacity Toner Cartridge 7k - B412/432/512/472/492",
     "correctSku": "OKI C432   7K",
     "notes": ""
+  },
+  {
+    "id": 1457,
+    "contributedBy": "cath",
+    "date": "2026-10-23",
+    "sourceSpec": "05_Spesifikasi (18).pdf",
+    "description": "RIBBON EPSON NEC 6300",
+    "qty": "300",
+    "uom": "unit",
+    "autoMatchAttempt": "No match",
+    "correctProductName": "Not carried",
+    "correctSku": "N/A",
+    "notes": "NEC 6300 ribbon not found in GOH catalog; OKI C6300FB ribbon found but not NEC brand"
   }
 ]
